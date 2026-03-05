@@ -1,0 +1,366 @@
+name;tag;dob;pob;dept_ob;dep_num;region;lat;lon;confidence;id
+Odette Grzegrzulka;depute;1947;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;3615
+Charles Baur;depute;1929;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;506
+Jean-Michel Belorgey;depute;1944;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;595
+Pierre, Guy Coulon;depute;1913;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;2022
+Jacques Lacarin;depute;1912;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;4214
+Jacqueline Mathieu-Obadia;depute;1935;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;5099
+Henri Fiszbin;depute;1930;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;3015
+Olivier Giscard d'Estaing;depute;1927;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;3447
+Pierre Sauvaigo;depute;1921;Paris 3;Paris;75;Île-de-France;48.863365173339844;2.358234405517578;0.473;6314
+Diomède, Anne, Claude Catroux;depute;1916;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;1525
+Charles Ehrmann;depute;1911;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;2813
+Claude Vissac;depute;1943;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;7395
+Jean Le Gall;depute;1922;Paris 1;Paris;75;Île-de-France;48.863826751708984;2.3342583179473877;0.473;7580
+Vincent Trébuchet;depute;1988;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;20012
+Robert Chapuis;depute;1933;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;1652
+François Baroin;depute;1965;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;421
+Jacques Delhalle;depute;1922;Paris 20;Paris;75;Île-de-France;48.863311767578125;2.3996946811676025;0.473;2299
+Robert Galley;depute;1921;Paris 5;Paris;75;Île-de-France;48.8465576171875;2.3515963554382324;0.473;3219
+Henri Terré;depute;1900;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;6992
+David Habib;depute;1961;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;10692
+Josy Poueyto;depute;1954;Paris 4;Paris;75;Île-de-France;48.854515075683594;2.3588101863861084;0.473;19338
+Gisèle Lelouis;depute;1952;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19707
+Bernard Tapie;depute;1943;Paris 20;Paris;75;Île-de-France;48.863311767578125;2.3996946811676025;0.473;6949
+Jean-Claude Chermann;depute;1939;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;10468
+Jean-Bernard Raimond;depute;1926;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;6583
+Jérémie Patrier-Leitus;depute;1989;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19762
+Élisabeth Borne;depute;1961;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;19586
+Guy Bailliart;depute;1946;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19438
+François d'Harcourt;depute;1928;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;3750
+Michel d'Ornano;depute;1924;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;5613
+Robert Bisson;depute;1909;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;829
+Raymond Triboulet;depute;1906;Paris 1;Paris;75;Île-de-France;48.863826751708984;2.3342583179473877;0.473;7151
+Alain Marleix;depute;1946;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5008
+Pierre Raynal;depute;1920;Paris 20;Paris;75;Île-de-France;48.863311767578125;2.3996946811676025;0.473;6632
+Henri de Richemont;depute;1946;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;6743
+Félix Gaillard;depute;1919;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;3200
+Jean, Noël de Lipkowski;depute;1920;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;7863
+Alain Calmat;depute;1940;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1381
+Jean-François Deniau;depute;1928;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;2370
+Jean Boinvilliers;depute;1921;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;895
+Frédérique Meunier;depute;1960;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19283
+Jacques Chirac;depute;1932;Paris 5;Paris;75;Île-de-France;48.8465576171875;2.3515963554382324;0.473;1798
+Didier Paris;depute;1954;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19315
+Pierre Charles;depute;1924;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;1662
+Corentin Le Fur;depute;1989;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;19960
+Didier Chouat;depute;1945;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;1815
+Delphine Batho;depute;1973;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;17264
+Madeleine Aymé de la Chevrelière;depute;1906;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.459;303
+Michel Suchod;depute;1946;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;6917
+Alain Bonnet;depute;1934;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;947
+Pierre Moscovici;depute;1957;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;5437
+André Boulloche;depute;1915;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;1062
+Patrick Labaune;depute;1951;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;4198
+Nicolas Dupont-Aignan;depute;1961;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;2721
+Françoise de Salvador;depute;1952;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;18566
+Françoise Briand;depute;1951;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;17772
+Bernard Bouley;depute;1950;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19508
+Jean Marsaudon;depute;1946;Paris 3;Paris;75;Île-de-France;48.863365173339844;2.358234405517578;0.473;5027
+Odile Moirin;depute;1942;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5322
+Jacques Guyard;depute;1937;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;3705
+Michel Pelchat;depute;1935;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5757
+Jean-Claude Fortuit;depute;1935;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;3065
+Maurice, Jean Fraudeau;depute;1924;Paris 4;Paris;75;Île-de-France;48.854515075683594;2.3588101863861084;0.473;3137
+Léo Hamon;depute;1908;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;3743
+Marc Vampa;depute;1946;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;17393
+Jean de Broglie;depute;1921;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;1250
+Pierre Monfrais;depute;1917;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;5340
+Marie-France Stirbois;depute;1944;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;6910
+Pierre Lelong;depute;1931;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;7743
+Georges Lombard;depute;1925;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;7880
+Edmond Michelet;depute;1899;Paris 19;Paris;75;Île-de-France;48.88661575317383;2.384809970855713;0.473;5266
+Pieyre-Alexandre Anglade;depute;1986;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.459;19012
+Paula Forteza;depute;1986;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19158
+Eléonore Caroit;depute;1985;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19600
+Remi Provendier;depute;1971;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;20031
+Roland Lescure;depute;1966;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.459;19250
+Pierre Meurin;depute;1989;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19744
+Georgina Dufoix;depute;1942;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;2671
+Gilbert Millet;depute;1930;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;5285
+Charles Pineton de Chambrun;depute;1930;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1621
+Jean-René Cazeneuve;depute;1958;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19080
+Patrice, Pierre, François Brocas;depute;1919;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;1245
+Pierre de Montesquiou;depute;1909;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;5382
+Jacques, Michel, Pierre Chaban-Delmas;depute;1915;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;10179
+Robert Brettes;depute;1902;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;1205
+Dominique Baudis;depute;1947;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;492
+René Cathala;depute;1927;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;1522
+Antoine Armand;depute;1991;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19562
+Evelyne Guilhem;depute;1955;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;3667
+Jacques Boutard;depute;1906;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;1119
+Robert de Caumont;depute;1930;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;1532
+Marie François-Bénard;depute;1917;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;3129
+Jacques Fourcade;depute;1902;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;3087
+Élisabeth De Maistre;depute;1975;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;20039
+Virginie Lanlo;depute;1968;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19864
+Marie-Hélène Amiable;depute;1960;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;17216
+Pierre-Christophe Baguet;depute;1955;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;334
+Nicolas Sarkozy;depute;1955;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;6289
+Christian Dupuy;depute;1950;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;2735
+Jacqueline Fraysse;depute;1947;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;3139
+Jean-Pierre Stirbois;depute;1945;Paris 18;Paris;75;Île-de-France;48.8870221;2.3478318;0.473;6909
+Michel Thauvin;depute;1943;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;11055
+Jean-Pierre Schosteck;depute;1942;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;17424
+André Santini;depute;1940;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;6282
+Jacques Kossowski;depute;1940;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;4152
+Georges Le Baill;depute;1939;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;7542
+Jacques Brunhes;depute;1934;Paris 4;Paris;75;Île-de-France;48.854515075683594;2.3588101863861084;0.473;1291
+Florence d'Harcourt;depute;1929;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;3749
+Henri Ginoux;depute;1909;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;3417
+Emile, Henri Tricon;depute;1908;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;7155
+Robert Lecou;depute;1950;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;10716
+Alain Barrau;depute;1947;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;430
+Pierre Leroy-Beaulieu;depute;1928;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.459;7804
+Pierre Arraut;depute;1910;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;207
+André Valabrègue;depute;1903;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;7262
+Jules Moch;depute;1893;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;5316
+Laurence Maillart-Méhaignerie;depute;1967;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;19262
+Jean-Gilles Berthommier;depute;1948;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;734
+Alain Madelin;depute;1946;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;4872
+Michel Cointat;depute;1921;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;1887
+Nicolas Forissier;depute;1961;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;3059
+André Laignel;depute;1942;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;4276
+Sophie Métadier;depute;1961;Paris;Paris;75;Île-de-France;48.859;2.347;0.97;19540
+Pascal Ménage;depute;1960;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;13043
+Marisol Touraine;depute;1959;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;7110
+Daniel Labaronne;depute;1955;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19220
+Hervé Novelli;depute;1949;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5585
+Michèle Beuzelin Née Agis-Garcin;depute;1939;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;773
+Thierry Perez;depute;1966;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19987
+Philippe Langenieux-Villard;depute;1955;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;4333
+Monique Limon;depute;1953;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19252
+Bruno Megret;depute;1949;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5160
+Richard Cazenave;depute;1948;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1561
+Louis Mermaz;depute;1931;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;5210
+Jean Giard;depute;1926;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;3402
+Hubert Dubedout;depute;1922;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;2608
+Jean-Marcel Jeanneney;depute;1910;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;4023
+Pierre, Isaac, Isidore Mendès France;depute;1907;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5176
+Jacques Duhamel;depute;1924;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;2684
+Michel Debré;depute;1912;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;2196
+Marc Fesneau;depute;1971;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.459;19152
+Nicolas Perruchot;depute;1966;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;10747
+Maurice Leroy;depute;1959;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;7800
+Pierre Sudreau;depute;1919;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;6918
+Pierre Comte-Offenbach;depute;1910;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;1935
+Serge Grouard;depute;1959;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;10691
+Claude De Ganay;depute;1953;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;18429
+Eric Doligé;depute;1943;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;2536
+Jean-Pierre Lapaire;depute;1942;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;4342
+Jacques Douffiagues;depute;1941;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;2567
+Xavier Deniau;depute;1923;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;2372
+Robert Szigeti;depute;1905;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;6931
+Alain Chastagnol;depute;1945;Paris 20;Paris;75;Île-de-France;48.863311767578125;2.3996946811676025;0.473;1697
+Martin Malvy;depute;1936;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;4941
+Edouard Schloesing;depute;1916;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;6341
+Jacques Raphaël-Leygues;depute;1913;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;6602
+Henri Trémolet de Villers;depute;1912;Paris 5;Paris;75;Île-de-France;48.8465576171875;2.3515963554382324;0.473;7145
+Hervé de Charette;depute;1938;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1656
+Philippe Rivain;depute;1912;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;6795
+Pierre Hénault;depute;1892;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;3791
+Jean-Claude Thomas;depute;1950;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;7048
+René Charpentier;depute;1909;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1679
+Robert, Albert, Gaston Buron;depute;1910;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;1320
+Jean-Paul Durieux;depute;1929;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;2773
+Jean-Jacques Servan-Schreiber;depute;1924;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;6807
+André, Emmanuel Beauguitte;depute;1901;Paris 3;Paris;75;Île-de-France;48.863365173339844;2.358234405517578;0.473;532
+Jimmy Pahun;depute;1962;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19309
+Christian, Charles, Auguste Bonnet;depute;1921;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;948
+Yves du Halgouët;depute;1910;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;3732
+Maurice Bardet;depute;1903;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;398
+Jacques Huyghues des Étages;depute;1923;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;3917
+Daniel Benoist;depute;1908;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;630
+Aurélien Le Coq;depute;1996;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19959
+David Guiraud;depute;1992;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;19671
+Jean-Louis Borloo;depute;1951;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;980
+Martine Aubry;depute;1950;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;242
+Brigitte Douay;depute;1947;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;2565
+Jacques Vernier;depute;1944;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;7416
+Jacques Legendre;depute;1941;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;7710
+Maurice Schumann;depute;1911;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;6359
+Pascal Bois;depute;1959;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;19045
+Béatrice Marre;depute;1952;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;5023
+Dominique Le Sourd;depute;1950;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;18565
+Michel Françaix;depute;1943;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;3117
+Jean, Constant Legendre;depute;1906;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;7709
+Marcel Dassault;depute;1892;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;2147
+Sylvia Bassot;depute;1940;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;467
+Hubert Bassot;depute;1932;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;466
+Francis Geng;depute;1931;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;3339
+Pierre Noal;depute;1914;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;5559
+Emile Janvier;depute;1900;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;3996
+Céline Hervieu;depute;1993;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;19946
+David Amiel;depute;1992;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19558
+Sarah Legrain;depute;1985;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.459;19706
+Benjamin Haddad;depute;1985;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19674
+Mounir Mahjoubi;depute;1984;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;19260
+Stanislas Guerini;depute;1982;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19184
+Clément Beaune;depute;1981;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19572
+Julien Bayou;depute;1980;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19571
+Olivia Grégoire;depute;1978;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19180
+Pascal Cherki;depute;1966;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.459;18389
+Emmanuelle Hoffman;depute;1964;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.459;20023
+Véronique Carrion-Bastok;depute;1963;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1469
+Laurent Dominati;depute;1960;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;2541
+Jean-François Lamour;depute;1956;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;17336
+Jean-Marie Le Guen;depute;1953;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;7589
+Danièle Hoffman-Rispal;depute;1951;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;10697
+Marielle De Sarnez;depute;1951;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;19375
+Jean-Paul Planchou;depute;1948;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5969
+Michel Charzat;depute;1942;Paris 20;Paris;75;Île-de-France;48.863311767578125;2.3996946811676025;0.473;1689
+Alain Billon;depute;1942;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;811
+Gisèle Moreau;depute;1941;Paris 18;Paris;75;Île-de-France;48.8870221;2.3478318;0.473;5405
+René Béguet;depute;1939;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;574
+Tony Dreyfus;depute;1939;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;2588
+Jean Tiberi;depute;1935;Paris 5;Paris;75;Île-de-France;48.8465576171875;2.3515963554382324;0.473;7071
+Roger Chinaud;depute;1934;Paris 18;Paris;75;Île-de-France;48.8870221;2.3478318;0.473;1796
+Claude-Gérard Marcus;depute;1933;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;4985
+Henri Modiano;depute;1932;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;5319
+Lionel Assouad;depute;1930;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;219
+Claude Martin;depute;1930;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;5035
+Robert Calméjane;depute;1929;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;1382
+Serge Boucheny;depute;1929;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;1007
+Jacques Mer;depute;1927;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;5187
+Hélène Missoffe;depute;1927;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;5308
+Michel Caldaguès;depute;1926;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;1374
+Gilbert Noël;depute;1926;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;5565
+Philippe, Pierre, Jules, Eugène, Charles Vayron;depute;1926;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;7214
+Claude Estier;depute;1925;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;2854
+Gilbert Gantier;depute;1924;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;3243
+Pierre Remond;depute;1924;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;6667
+Louis Baillot;depute;1924;Paris 18;Paris;75;Île-de-France;48.8870221;2.3478318;0.473;340
+Georges Bourriquet;depute;1923;Paris 19;Paris;75;Île-de-France;48.88661575317383;2.384809970855713;0.473;1105
+Jacques Marette;depute;1922;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;4989
+Michel Marquet;depute;1921;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;5020
+Georges, Henri, Paul Germain;depute;1920;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;3375
+Hubert Germain;depute;1920;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;3377
+Bernard Rocher;depute;1920;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;6036
+Monique Tisné;depute;1920;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;7086
+Michel Peytel;depute;1919;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;5872
+Maurice, Georges Nilès;depute;1919;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;5554
+Gabriel Kaspereit;depute;1919;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;4117
+Maurice Druon;depute;1918;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;2603
+Jean-Claude Servan-Schreiber;depute;1918;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;6806
+Joël Le Tac;depute;1918;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;7625
+Raymond Colibeau;depute;1917;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;1892
+Michel Junot;depute;1916;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;4103
+Daniel Dreyfous-Ducas;depute;1914;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;2586
+Michel, Alfred Maurice-Bokanowski;depute;1912;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;5127
+Marie-Claude Vaillant-Couturier Née Vogel;depute;1912;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;7202
+Bernard Lepeu;depute;1910;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;7783
+René Sanson;depute;1910;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;6279
+Bernard Duperier;depute;1907;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;2712
+Pierre, Armand, Gaston Billotte;depute;1906;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;813
+Pierre Ferri;depute;1904;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;2978
+Jean Albert-Sorel;depute;1902;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;73
+Edouard Frédéric-Dupont;depute;1902;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;3144
+Raymond Bousquet;depute;1899;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;1114
+Edmond Pezé;depute;1897;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;5875
+Agnès Pannier-Runacher;depute;1974;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.459;19984
+Catherine Genisson;depute;1949;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;3341
+Louis Giscard d'Estaing;depute;1958;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;10619
+Renaud Gauquelin;depute;1954;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19443
+Jean-Claude Bahu;depute;1941;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;336
+Jean-Pierre Reveau;depute;1932;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;6692
+Emmanuel Hamel;depute;1922;Paris 5;Paris;75;Île-de-France;48.8465576171875;2.3515963554382324;0.473;3737
+Jacques-Philippe Vendroux;depute;1923;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.459;7319
+Henry Le Besnerais;depute;1921;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;7545
+Fabienne Labrette-Ménager;depute;1961;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;17334
+Raymond Douyère;depute;1939;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;2578
+Michel d'Aillières;depute;1923;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;53
+Jean-François Coulomme;depute;1966;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19617
+Louis Margueritte;depute;1984;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19724
+Éric Michoux;depute;1959;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19979
+André Gentien;depute;1938;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;3344
+Pierre Joxe;depute;1934;Paris 1;Paris;75;Île-de-France;48.863826751708984;2.3342583179473877;0.473;4082
+Philippe Malaud;depute;1925;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;4918
+Florence Herouin-Léautey;depute;1972;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19944
+Frédérique Bredin;depute;1956;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1189
+Pierre Léautey;depute;1946;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;18571
+Laurent Fabius;depute;1946;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;2876
+Dominique Chaboche;depute;1937;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;1592
+Marc Massion;depute;1935;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5080
+Olivier de Sarnez;depute;1927;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;6292
+Colette Privat;depute;1925;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;6508
+Roger, Armand Dusseaulx;depute;1913;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;2786
+Raymond Offroy;depute;1909;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;5597
+Fatiha Keloua Hachi;depute;1971;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19687
+Pascal Popelin;depute;1967;Paris 19;Paris;75;Île-de-France;48.88661575317383;2.384809970855713;0.459;18501
+Sabine Rubin;depute;1960;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19366
+Alain Ramadier;depute;1958;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19346
+Eric Raoult;depute;1955;Paris 19;Paris;75;Île-de-France;48.88661575317383;2.384809970855713;0.473;6601
+Bernard Birsinger;depute;1954;Paris 18;Paris;75;Île-de-France;48.8870221;2.3478318;0.473;825
+Patrick Braouezec;depute;1950;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1178
+Pierre Zarka;depute;1948;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;7354
+Véronique Neiertz;depute;1942;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5524
+Jacques Mahéas;depute;1939;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;4894
+Paulette Fost;depute;1937;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;3068
+Gilbert Bonnemaison;depute;1930;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;944
+Jacqueline Chonavel;depute;1924;Paris 5;Paris;75;Île-de-France;48.8465576171875;2.3515963554382324;0.473;1809
+Claude Fuzier;depute;1924;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;10618
+Raymond Valenet;depute;1912;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;7315
+Franck Riester;depute;1974;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.459;17373
+Emeric Bréhier;depute;1971;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;18370
+Frédéric Valletoux;depute;1966;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.459;19822
+Guy Geoffroy;depute;1949;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;10681
+Chantal Brunel;depute;1948;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;10641
+Jacques Heuclin;depute;1946;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;3832
+Gérard Jeffray;depute;1943;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;4026
+Didier Julia;depute;1934;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;4093
+Bertrand Flornoy;depute;1910;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;3036
+William Martinet;depute;1988;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19730
+Aurore Bergé;depute;1986;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.459;19036
+Jean-Noël Barrot;depute;1983;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.459;19026
+Pascal Thévenot;depute;1966;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19473
+Jacques Masdeu-Arus;depute;1942;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;5066
+Colette, Marie, Françoise Le Moal Née Amicel;depute;1932;Paris 13;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;17624
+André Damien;depute;1930;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;2116
+Jean Riquin;depute;1925;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;6788
+Yves Le Coat de Kerveguen;depute;1925;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.459;4137
+René Ribière;depute;1922;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;6726
+Georges-Paul, Marie Wagner;depute;1921;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;7406
+Bernard Destremau;depute;1917;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;2460
+Pierre Picard;depute;1910;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;5901
+Jacqueline Thome-Patenôtre;depute;1906;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;7054
+Michel Jamot;depute;1904;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.473;3988
+René Leduc;depute;1901;Paris 18;Paris;75;Île-de-France;48.8870221;2.3478318;0.473;7680
+Jean-Paul Palewski;depute;1898;Paris 9;Paris;75;Île-de-France;48.872615814208984;2.340359926223755;0.473;5659
+Ingrid Dordain;depute;1978;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19868
+Jacques Fleury;depute;1941;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;3028
+Charles, Henry Bignon;depute;1921;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;797
+Emile Luciani;depute;1913;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;4847
+Bernard Carayon;depute;1957;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1432
+Guillaume Bigot;depute;1969;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19899
+Romain Eskenazi;depute;1986;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19926
+Jérôme Chartier;depute;1966;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;10644
+Alain Richard;depute;1945;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;6731
+Jean Bardet;depute;1941;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;397
+Robert Montdargent;depute;1934;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;5372
+Raymond Lamontagne;depute;1923;Paris 17;Paris;75;Île-de-France;48.88784408569336;2.3070974349975586;0.473;4315
+Michel, Casimir Poniatowski;depute;1922;Paris 7;Paris;75;Île-de-France;48.857215881347656;2.3098840713500977;0.473;6415
+Solange Troisier;depute;1919;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;7160
+Claude Weber;depute;1919;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;7348
+Nicolas Tryzna;depute;1987;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;20055
+Vincent Jeanbrun;depute;1984;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19949
+Sandrine Lalanne;depute;1973;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;20053
+Maud Petit;depute;1971;Paris 15;Paris;75;Île-de-France;48.84374237060547;2.2927637100219727;0.459;19324
+Henri Plagnol;depute;1961;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;5963
+Jean-Luc Laurent;depute;1957;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.473;18456
+Gilles Carrez;depute;1948;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;1466
+Pierre Gosnat;depute;1948;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;17316
+Jean-Claude Lefort;depute;1944;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;7702
+Maxime Kalinsky;depute;1931;Paris 11;Paris;75;Île-de-France;48.86030960083008;2.3786137104034424;0.473;4112
+Jean-Louis Beaumont;depute;1925;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;534
+Alain Griotteray;depute;1922;Paris 8;Paris;75;Île-de-France;48.87311553955078;2.310023307800293;0.473;3590
+Aymeric Simon-Lorière;depute;1944;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;6846
+Daniel Colin;depute;1933;Paris 12;Paris;75;Île-de-France;48.836666107177734;2.403441905975342;0.473;1895
+Mario Bénard;depute;1932;Paris 6;Paris;75;Île-de-France;48.85261154174805;2.3332111835479736;0.473;604
+René-Georges Laurin;depute;1921;Paris 10;Paris;75;Île-de-France;48.87582778930664;2.360285758972168;0.473;7512
+Dominique Taddei;depute;1938;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;6933
+Philippe Latombe;depute;1975;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.459;19230
+Patricia Gallerneau;depute;1954;Paris 20;Paris;75;Île-de-France;48.863311767578125;2.3996946811676025;0.473;19164
+Lionel de Tinguy du Pouët;depute;1911;Paris 16;Paris;75;Île-de-France;48.86101150512695;2.2834136486053467;0.473;7079
+Julien Odoul;depute;1985;Paris;Paris;75;Île-de-France;48.825944;2.385147;0.459;19752
+Sophie-Laurence Roy;depute;1955;Paris;Paris;75;Île-de-France;48.854446;2.33678;0.473;19997
+Astrid Panosyan-Bouvet;depute;1971;Paris 14;Paris;75;Île-de-France;48.83161926269531;2.3244473934173584;0.97;19758

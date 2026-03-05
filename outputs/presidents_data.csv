@@ -1,0 +1,10 @@
+name;tag;dob;pob;dep_name;dep_num;region;lat;lon
+Charles de Gaulle;president;1890;Lille;Nord;59;Hauts-de-France;50.630951;3.045391
+Alain Poher;president;1909;Ablon-sur-Seine;Val-de-Marne;94;Île-de-France;48.7247;2.42285
+Georges Pompidou;president;1911;Montboudif;Cantal;15;Auvergne-Rhône-Alpes;45.373385;2.718417
+Valéry Giscard d'Estaing;president;1926;foreign;foreign;foreign;foreign;foreign;foreign
+François Mitterrand;president;1916;Jarnac;Charente;16;Nouvelle-Aquitaine;45.690032;-0.169722
+Jacques Chirac;president;1932;Paris 5e;Paris;75;Île-de-France;48.845277;2.350554
+Nicolas Sarkozy;president;1955;Paris 17e;Paris;75;Île-de-France;48.887702;2.304844
+François Hollande;president;1954;Rouen;Seine-Maritime;76;Normandie;49.440044;1.093912
+Emmanuel Macron;president;1977;Amiens;Somme;80;Hauts-de-France;49.903041;2.292605

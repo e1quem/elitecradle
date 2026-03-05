@@ -1,0 +1,156 @@
+name;tag;dob;pob;dept_ob;dept_num;region;lat;lon;confidence;id
+Fiona Lazaar;depute;1985;Val-d’Oise;Haute-Garonne;31;Occitanie;43.58485;1.327324;0.697;19233
+André Godin;depute;1942;Bourg-en-Bresse;Ain;1;Auvergne-Rhône-Alpes;46.206576;5.241985;0.952;3465
+Bernard Lefranc;depute;1936;Vouël;Finistère;29;Bretagne;48.05431;-4.002782;0.847;7704
+Joseph dit Virgile Barel;depute;1889;Drap;Alpes-Maritimes;6;Provence-Alpes-Côte d'Azur;43.758587;7.333517;0.943;405
+Francis Galizi;depute;1938;Peyruis;Alpes-de-Haute-Provence;4;Provence-Alpes-Côte d'Azur;44.034454;5.943435;0.94;10948
+Pierre Girardot;depute;1913;Laragne;Hautes-Alpes;5;Provence-Alpes-Côte d'Azur;44.319256;5.824603;0.85;3435
+Pierre, Marie, Henri Grandcolas;depute;1909;Gripport;Meurthe-et-Moselle;54;Grand Est;48.412671;6.253403;0.93;3539
+Mireille Robert;depute;1962;Orthez;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.493121;-0.773351;0.946;19360
+Sébastien David;depute;1976;Saint-Affrique;Aveyron;12;Occitanie;43.961458;2.854273;0.945;19543
+Roger Julien;depute;1932;Nant;Haute-Loire;43;Auvergne-Rhône-Alpes;45.193518;3.913288;0.946;4097
+Jean Briane;depute;1930;Quins;Aveyron;12;Occitanie;44.233874;2.379366;0.935;1214
+Victor Ringeisen;depute;1946;Erstein;Bas-Rhin;67;Grand Est;48.41893;7.667782;0.946;10608
+Colette Capdevielle;depute;1958;Orthez;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.493121;-0.773351;0.946;18378
+Jean Espilondo;depute;1948;Mauléon;Deux-Sèvres;79;Nouvelle-Aquitaine;46.931266;-0.755166;0.945;9612
+Daniel Poulou;depute;1943;Biarritz;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.472166;-1.555076;0.95;6452
+Jean-Pierre Destrade;depute;1941;Biarritz;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.472166;-1.555076;0.95;2459
+Guy Ebrard;depute;1926;Assat;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.254609;-0.289753;0.939;2810
+Maurice Plantier;depute;1921;Biarritz;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.472166;-1.555076;0.95;5975
+Yves Vidal;depute;1946;Pernès;Pas-de-Calais;62;Hauts-de-France;50.485598;2.411721;0.938;7398
+Jean-Yves Cousin;depute;1949;Périers;Manche;50;Normandie;49.190374;-1.412089;0.939;10654
+Jean-Marc Lefranc;depute;1947;Grandcamp-les-bains;Haute-Saône;70;Bourgogne-Franche-Comté;47.812038;6.367901;0.3;10717
+Charles Malouin;depute;1912;Lassy;Indre-et-Loire;37;Centre-Val de Loire;47.228575;0.675398;0.953;4936
+Firmin Bédoussac;depute;1916;Omps;Cantal;15;Auvergne-Rhône-Alpes;44.879695;2.275065;0.93;565
+Jacques Bobe;depute;1936;Touzac;Corrèze;19;Nouvelle-Aquitaine;45.304433;1.848324;0.946;10636
+Pierre Pranchère;depute;1927;Brive-la-gaillarde;Corrèze;19;Nouvelle-Aquitaine;45.148038;1.517353;0.953;6480
+Marc Marcangeli;depute;1939;Ajaccio;Corse-du-Sud;2A;Corse;41.93368;8.715325;0.955;4966
+Viviane Le Dissez;depute;1959;Tréguier;Morbihan;56;Bretagne;48.009875;-2.380134;0.941;18461
+René Benoît;depute;1937;Dinan;Finistère;29;Bretagne;48.234562;-4.548457;0.958;635
+Yves Le Foll;depute;1912;Pleyben;Finistère;29;Bretagne;48.239335;-3.979163;0.941;7575
+Pierre Bourdellès;depute;1908;Louannec;Côtes-d'Armor;22;Bretagne;48.783518;-3.158227;0.944;1075
+Colette Langlade;depute;1956;Sorges;Creuse;23;Nouvelle-Aquitaine;46.283122;2.031739;0.942;17539
+Michel Delpon;depute;1949;Lafitte;Gironde;33;Nouvelle-Aquitaine;44.87354;-0.47063;0.947;19114
+Jean Capelle;depute;1909;Calès;Lot;46;Occitanie;44.763136;1.830158;0.934;1422
+Christian Genevard;depute;1924;Biarritz;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.472166;-1.555076;0.95;3337
+Claire Lejeune;depute;1994;Juvisy;Essonne;91;Île-de-France;48.691689;2.370786;0.858;19962
+Amélie De Montchalin;depute;1985;Lyon 8;Rhône;69;Auvergne-Rhône-Alpes;45.73036;4.865284;0.688;19293
+Geneviève Colot;depute;1950;Commegnies;Val-d'Oise;95;Île-de-France;49.125231;1.894531;0.322;1922
+Moerani Frébault;depute;1988;Atuona hiva oa;Polynésie française;987;;-9.727;-138.981;0.408;19883
+Moetai Brotherson;depute;1969;Papeete;Polynésie française;987;;-17.546787;-149.562303;0.95;19061
+Jonas Tahuaitu;depute;1944;Papearii;foreign;foreign;foreign;;;;18533
+Claude Michel;depute;1938;Elne;Pyrénées-Orientales;66;Occitanie;42.6019;2.986351;0.946;5258
+Jean Peuziat;depute;1924;Pouldavid-sur-mer;Finistère;29;Bretagne;48.608773;-4.313965;0.444;5859
+Marie Jacq;depute;1919;Henvic;Finistère;29;Bretagne;48.63363;-3.927065;0.936;3959
+Gabriel de Poulpiquet;depute;1914;Milizac;Finistère;29;Bretagne;48.468098;-4.56043;0.852;6453
+Jean Faget;depute;1923;Houeills;Lot-et-Garonne;47;Nouvelle-Aquitaine;44.195521;0.039193;0.569;11031
+Christelle Dubos;depute;1976;Le coteau;Maine-et-Loire;49;Pays de la Loire;47.284403;-1.250584;0.957;19129
+Frédéric Zgainski;depute;1972;Lyon 9;foreign;foreign;foreign;;;;19849
+Gilbert Mitterrand;depute;1949;Boulogne-billancourt;Hauts-de-Seine;92;Île-de-France;48.837892;2.241994;0.957;5313
+Noël Mamère;depute;1948;Libourne;Gironde;33;Nouvelle-Aquitaine;44.920384;-0.226836;0.95;4943
+Martine Faure;depute;1948;Langon;Gironde;33;Nouvelle-Aquitaine;44.535691;-0.241774;0.945;17300
+Jean-François Régère;depute;1947;Talais;Gironde;33;Nouvelle-Aquitaine;45.472506;-1.05076;0.934;10756
+Michèle Delaunay;depute;1947;Clermont-ferrand;Puy-de-Dôme;63;Auvergne-Rhône-Alpes;45.786671;3.107055;0.958;17280
+Chantal Bourragué;depute;1946;Angoulême;Charente;16;Nouvelle-Aquitaine;45.644105;0.148008;0.952;10639
+Alain Juppé;depute;1945;Mont-de-marsan;Landes;40;Nouvelle-Aquitaine;43.891332;-0.50031;0.951;4104
+Bernard Madrelle;depute;1944;Saint-seurin-de-cursac;Gironde;33;Nouvelle-Aquitaine;45.157149;-0.626055;0.934;4875
+Conchita Lacuey;depute;1943;Bordeaux;Gironde;33;Nouvelle-Aquitaine;44.851897;-0.587877;0.961;4241
+Pierre Ducout;depute;1942;Bordeaux;Gironde;33;Nouvelle-Aquitaine;44.851897;-0.587877;0.961;2658
+Jean-Claude Barran;depute;1942;Narosse;Landes;40;Nouvelle-Aquitaine;43.694999;-1.007074;0.733;429
+Hugues Martin;depute;1942;Mâcon;Saône-et-Loire;71;Bourgogne-Franche-Comté;46.325859;4.810979;0.952;13571
+Chantal Berthelot;depute;1958;Mana;Guyane;973;;5.603816;-53.704129;0.947;17266
+Roch Meynier;depute;1928;Pontchy;Haute-Savoie;74;Auvergne-Rhône-Alpes;46.069593;6.405893;0.693;5245
+Jean Brocard;depute;1920;Gray;Haute-Saône;70;Bourgogne-Franche-Comté;47.440426;5.599432;0.943;1244
+Christian Bergelin;depute;1945;Gray;Haute-Saône;70;Bourgogne-Franche-Comté;47.440426;5.599432;0.943;661
+Pierre, Joseph, Louis, Léon Vitter;depute;1913;Gray;Haute-Saône;70;Bourgogne-Franche-Comté;47.440426;5.599432;0.943;7259
+René, Sylvain, Edouard Billères;depute;1910;Ger;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.251147;-0.061441;0.939;809
+Michel Margnes;depute;1944;Cancon;Lot-et-Garonne;47;Nouvelle-Aquitaine;44.549655;0.640621;0.937;4992
+Jean, Eugène, Pierre Lacombe;depute;1939;Saint-cyr-l'ecole;Yvelines;78;Île-de-France;48.80279;2.063622;0.949;4227
+Charles Pasqua;depute;1927;Grasse;Alpes-Maritimes;6;Provence-Alpes-Côte d'Azur;43.654057;6.937765;0.953;5698
+Nathalie Oziol;depute;1990;Toulouse;Haute-Garonne;31;Occitanie;43.604082;1.433805;0.964;19755
+Gilles d'Ettore;depute;1968;Agde;Hérault;34;Occitanie;43.302779;3.484797;0.951;17284
+Mickaël Bouloux;depute;1972;Dinan;Finistère;29;Bretagne;48.234562;-4.548457;0.958;19587
+Gilles Lurton;depute;1963;Saint-servan-sur mer;foreign;foreign;foreign;;;;18474
+Georges Coudray;depute;1902;Evran;Ille-et-Vilaine;35;Bretagne;48.192423;-1.669559;0.953;2010
+Henri Lassourd;depute;1902;Ploubalay;Côtes-d'Armor;22;Bretagne;48.56272;-2.138304;0.854;4385
+Bernard Pousset;depute;1950;Diou;Allier;3;Auvergne-Rhône-Alpes;46.526622;3.744945;0.937;13045
+René Caillaud;depute;1891;Issoudin;Indre;36;Centre-Val de Loire;46.944428;2.01544;0.492;1364
+Claude Greff;depute;1954;Briey;Moselle;57;Grand Est;49.256168;6.023892;0.695;10689
+Pierre Lepage;depute;1909;Orbigny;Indre-et-Loire;37;Centre-Val de Loire;47.209073;1.263256;0.934;7776
+Louis Jouhanneau;depute;1885;Nohant-vicq;Indre;36;Centre-Val de Loire;46.640588;1.959227;0.759;4065
+Alain Moyne-Bressand;depute;1945;Jallieu;Isère;38;Auvergne-Rhône-Alpes;45.593821;5.275957;0.702;5470
+Georges Colombier;depute;1940;Jallieu;Isère;38;Auvergne-Rhône-Alpes;45.593821;5.275957;0.702;1915
+Odile Sicard;depute;1930;Broc;Lot-et-Garonne;47;Nouvelle-Aquitaine;44.34833;0.366306;0.943;6826
+Jean Boyer;depute;1923;Oyeu;Isère;38;Auvergne-Rhône-Alpes;45.426009;5.484442;0.936;1153
+Jean Bernard;depute;1912;Plan;Lot-et-Garonne;47;Nouvelle-Aquitaine;44.125545;0.416107;0.935;684
+Joël Goyheneix;depute;1954;Mauléon;Deux-Sèvres;79;Nouvelle-Aquitaine;46.931266;-0.755166;0.945;3532
+Louis Lauga;depute;1940;Momas;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.447987;-0.432859;0.933;4395
+Jean-Pierre Pénicaut;depute;1937;Amou;Landes;40;Nouvelle-Aquitaine;43.585642;-0.745271;0.938;5767
+Paul Cormier;depute;1921;Houssay;Eure-et-Loir;28;Centre-Val de Loire;48.340191;1.606325;0.939;1965
+Jean Auroux;depute;1942;Thizy;Yonne;89;Bourgogne-Franche-Comté;47.568321;4.053944;0.928;286
+Liliane Vaginay;depute;1941;Thizy;Yonne;89;Bourgogne-Franche-Comté;47.568321;4.053944;0.928;14360
+Vincent Delaroux;depute;1938;Labernerie;foreign;foreign;foreign;;;;2266
+Olivier Guichard;depute;1920;Néac;Gironde;33;Nouvelle-Aquitaine;44.942541;-0.182824;0.93;3652
+Stéphane Chouin;depute;1969;;foreign;foreign;foreign;;;;20048
+Jean-Paul Charié;depute;1952;Egry;Loiret;45;Centre-Val de Loire;48.099881;2.437998;0.931;1658
+Jean-Claude Portheault;depute;1935;Toury;Cher;18;Centre-Val de Loire;47.29699;2.247514;0.944;6436
+Pierre Charié;depute;1915;Egry;Loiret;45;Centre-Val de Loire;48.099881;2.437998;0.931;1659
+Henri, Albert, André Duvillard;depute;1910;Luxeuil-les-bains;Haute-Saône;70;Bourgogne-Franche-Comté;47.817813;6.374503;0.944;2807
+Georges Caillau;depute;1922;Nérac;Loire-Atlantique;44;Pays de la Loire;47.628522;-2.01704;0.952;1361
+Gabriel Lapeyrusse;depute;1907;Nérac;Loire-Atlantique;44;Pays de la Loire;47.628522;-2.01704;0.952;4343
+Jean-Jacques Delmas;depute;1938;Mazieux;Rhône;69;Auvergne-Rhône-Alpes;45.811349;4.469576;0.94;2315
+Annette Chépy-Léger;depute;1953;Châlons-sur-marne;Marne;51;Grand Est;48.898266;4.339489;0.679;1764
+Jean-Pierre Bouquet;depute;1951;Gray;Haute-Saône;70;Bourgogne-Franche-Comté;47.440426;5.599432;0.943;1069
+Bruno Bourg-Broc;depute;1945;Châlons-sur-marne;foreign;foreign;foreign;;;;1079
+Sylvie Pichot;depute;1955;Poissy;Yvelines;78;Île-de-France;48.930299;2.033457;0.952;18580
+Anchya Bamana;depute;1971;Sada;Mayotte;976;;-12.854124;45.107585;0.946;19891
+Ibrahim Aboubacar;depute;1965;Fomboni;foreign;foreign;foreign;;;;18330
+André Rossinot;depute;1939;Briey;Moselle;57;Grand Est;49.256168;6.023892;0.695;6099
+Robert Richoux;depute;1914;Fumay;Ardennes;8;Grand Est;49.986865;4.694259;0.941;6749
+Hubert Martin;depute;1912;Briey;Moselle;57;Grand Est;49.256168;6.023892;0.695;5040
+André, Marie, Antoine Droitcourt;depute;1932;Pange;Moselle;57;Grand Est;49.083818;6.350386;0.935;2594
+Jean Maurice Bernard;depute;1923;Brabant-lès-villers;foreign;foreign;foreign;;;;683
+Yves Allainmat;depute;1906;Kérity;Finistère;29;Bretagne;48.004256;-4.203291;0.943;86
+Aloyse Warhouver;depute;1930;Hoff;Moselle;57;Grand Est;48.746451;7.054478;0.95;7408
+Gaetan Gorce;depute;1958;Luzy;Nièvre;58;Bourgogne-Franche-Comté;46.79197;3.983703;0.939;3483
+Stéphane Dermaux;depute;1929;Roncq;Nord;59;Hauts-de-France;50.744651;3.117107;0.947;2406
+Albert Maton;depute;1916;Fréneuse;Yvelines;78;Île-de-France;49.041421;1.598916;0.942;5106
+Astrid Panosyan-Bouvet;depute;1971;Paris;Paris;75;Île-de-France;48.859;2.347;0.97;19758
+Claire Vergnaud;depute;1930;Rouy;Nièvre;58;Bourgogne-Franche-Comté;47.033738;3.540004;0.934;7311
+Jacques Féron;depute;1912;Houilles;Yvelines;78;Île-de-France;48.926572;2.186545;0.951;2963
+François Porteu de la Morandière;depute;1928;Sèvres;Hauts-de-Seine;92;Île-de-France;48.819588;2.212003;0.95;6435
+Louis Le Sénéchal;depute;1910;Berck-sur-mer;Pas-de-Calais;62;Hauts-de-France;50.411853;2.876748;0.355;7622
+Arthur, Léon Conte;depute;1920;Salses;Pyrénées-Orientales;66;Occitanie;42.830849;2.911454;0.851;1949
+Tiffany Joncour;depute;1989;Lyon 8;Rhône;69;Auvergne-Rhône-Alpes;45.73036;4.865284;0.688;19951
+Pierre, Joseph, Antoine Morison;depute;1927;Retournac;Haute-Loire;43;Auvergne-Rhône-Alpes;45.222908;4.020359;0.94;5426
+Xavier Hamelin;depute;1922;Lardin;Gironde;33;Nouvelle-Aquitaine;44.596464;-0.26341;0.855;3740
+Jean-Marie Geveaux;depute;1947;Vion;Sarthe;72;Pays de la Loire;47.813437;-0.270367;0.937;3391
+Daniel Boulay;depute;1946;La chapelle saint-rémy;Sarthe;72;Pays de la Loire;48.099131;0.465226;0.936;1053
+Guy-Michel Chauveau;depute;1944;Irais;Deux-Sèvres;79;Nouvelle-Aquitaine;46.878778;-0.090872;0.928;1729
+Pierre Hellier;depute;1942;Baud;Morbihan;56;Bretagne;47.870481;-3.03298;0.944;3785
+Guillaume Bachelay;depute;1974;Elbeuf-sur-seine;Seine-Maritime;76;Normandie;49.47535;1.376791;0.395;18619
+Alain Le Vern;depute;1948;Portsall;Finistère;29;Bretagne;48.547023;-4.683398;0.692;7632
+Daniel Paul;depute;1943;Plourivo;Côtes-d'Armor;22;Bretagne;48.736811;-3.083146;0.939;5721
+Sylvie Bouchet Bellecourt;depute;1957;Bondy;Seine-Saint-Denis;93;Île-de-France;48.903653;2.48526;0.953;19507
+Ghislain Bray;depute;1946;Nangis;Seine-et-Marne;77;Île-de-France;48.56085;3.019068;0.945;11026
+Alain Peyrefitte;depute;1925;Najac;Haute-Garonne;31;Occitanie;43.524171;1.752897;0.943;5862
+Joël Regnault;depute;1949;Plaisir;Yvelines;78;Île-de-France;48.812226;1.946353;0.951;18288
+Pierre Régis;depute;1924;Le pecq;Yvelines;78;Île-de-France;48.892587;2.102303;0.948;9085
+Paul-Louis Tenaillon;depute;1921;Vélizy;Yvelines;78;Île-de-France;48.785916;2.190427;0.859;6983
+Olivier Lefèvre d'Ormesson;depute;1918;Biarritz;Pyrénées-Atlantiques;64;Nouvelle-Aquitaine;43.472166;-1.555076;0.95;7697
+Marcelle Delabie Née Herbelin;depute;1903;Gorcy;Meurthe-et-Moselle;54;Grand Est;49.538395;5.67926;0.94;2242
+Jean-Paul Nunzi;depute;1942;Agen;Lot-et-Garonne;47;Nouvelle-Aquitaine;44.202304;0.631041;0.951;5589
+Pierre Larroque;depute;1915;Meauzac;Tarn-et-Garonne;82;Occitanie;44.092219;1.230473;0.937;4371
+Jean-Noël Carpentier;depute;1969;Nanterre;Hauts-de-Seine;92;Île-de-France;48.898095;2.202314;0.956;18381
+Christian Gourmelen;depute;1940;Sainte-foy-la-grande;Gironde;33;Nouvelle-Aquitaine;44.840339;0.217463;0.94;3513
+Michel Hamaide;depute;1936;Paris 16;Paris;75;Île-de-France;48.856305;2.267032;0.868;11036
+Paul Durieu;depute;1947;Camaret;Vaucluse;84;Provence-Alpes-Côte d'Azur;44.155112;4.891334;0.851;18569
+Georges Santoni;depute;1915;Apt;Vaucluse;84;Provence-Alpes-Côte d'Azur;43.878798;5.376042;0.946;6283
+Pierre Métais;depute;1930;Couhé-vérac;foreign;foreign;foreign;;;;5224
+Jacques Savatier;depute;1952;Fontenay-le-comte;Vendée;85;Pays de la Loire;46.459821;-0.794159;0.947;19377
+Guy Monjalon;depute;1947;Lésigny-sur-creuse;foreign;foreign;foreign;;;;5344
+Serge Beltrame;depute;1944;Vesoul;Haute-Saône;70;Bourgogne-Franche-Comté;47.628692;6.157979;0.948;596
+Christian Poncelet;depute;1928;Blaise;Deux-Sèvres;79;Nouvelle-Aquitaine;46.229774;-0.518376;0.944;6412
+Sylvain Brial;depute;1964;Sigave;Wallis et Futuna;986;;-14.274;-178.158;0.937;19465
+Kamilo Gata;depute;1949;Futuna;Finistère;29;Bretagne;47.984312;-4.090632;0.695;3284
+Jean, Jules, Eugène, Marie Chamant;depute;1913;Chagny;Saône-et-Loire;71;Bourgogne-Franche-Comté;46.905365;4.75628;0.943;1612

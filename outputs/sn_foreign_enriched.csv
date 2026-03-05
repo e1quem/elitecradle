@@ -1,0 +1,38 @@
+name,tag,dob,pob,dept_num,dept_ob,region,lat,lon,confidence
+Patrick Abate,senat,1956,Métlaoui,foreign,foreign,foreign,,,
+Michèle André,senat,1947,Saint-Jacques-d'Ambur,63,Puy-de-Dôme,Auvergne-Rhône-Alpes,45.89339,2.757132,0.93
+Salah Benacer,senat,1900,Mekla,foreign,foreign,foreign,,,
+Stéphane Bonduel,senat,1919,Pékin,40,Landes,Nouvelle-Aquitaine,43.910632,-0.558589,0.936
+Patrick Boré,senat,1956,Toulon,83,Var,Provence-Alpes-Côte d'Azur,43.136379,5.933443,0.959
+Nicole Bricq,senat,1947,La Rochefoucauld,16,Charente,Nouvelle-Aquitaine,45.735444,0.371541,0.851
+Louis Brives,senat,1912,Assier,46,Lot,Occitanie,44.679581,1.879045,0.934
+Alain Chatillon,senat,1943,Revel,31,Haute-Garonne,Occitanie,43.467366,1.99181,0.946
+Lionel Cherrier,senat,1929,Nakéty,foreign,foreign,foreign,,,
+Auguste Chupin,senat,1919,Chemillé,22,Côtes-d'Armor,Bretagne,48.492725,-2.887393,0.941
+Jean Collery,senat,1922,Aÿ,foreign,foreign,foreign,,,
+Marta de Cidrac,senat,1964,Bankya,foreign,foreign,foreign,,,
+Louis-Jean de Nicolaÿ,senat,1949,Le Mans,72,Sarthe,Pays de la Loire,47.993378,0.191169,0.958
+Luc Dejoie,senat,1931,Nantes,44,Loire-Atlantique,Pays de la Loire,47.239367,-1.555335,0.962
+Gaston Flosse,senat,1931,Rikitea,foreign,foreign,foreign,,,
+Joëlle Garriaud-Maylam,senat,1955,Maghnia,foreign,foreign,foreign,,,
+Adrien Giraud,senat,1936,Dzoumogné,foreign,foreign,foreign,,,
+Jacques Golliet,senat,1931,Annecy,74,Haute-Savoie,Auvergne-Rhône-Alpes,45.901584,6.125296,0.958
+Gérard Le Cam,senat,1954,Plussulien,22,Côtes-d'Armor,Bretagne,48.272498,-3.057593,0.932
+Jacques Maury,senat,1908,Le Mans,72,Sarthe,Pays de la Loire,47.993378,0.191169,0.958
+Georges Mazars,senat,1934,Mirandol-Bourgnounac,81,Tarn,Occitanie,44.143362,2.174399,0.936
+Pierre Médevielle,senat,1960,Saint-Laurent-de-Neste,65,Hautes-Pyrénées,Occitanie,43.084025,0.481278,0.935
+Mohamed Megdoud,senat,1908,Beni Amrane,foreign,foreign,foreign,,,
+Akli Mellouli,senat,1959,Souk El Ténine,foreign,foreign,foreign,,,
+Eugène Motte,senat,1910,Roubaix,59,Nord,Hauts-de-France,50.688454,3.183662,0.956
+Arthur Moulin,senat,1924,Saint-Aubin,87,Haute-Vienne,Nouvelle-Aquitaine,45.82672,1.515907,0.953
+Jacques Moulinier,senat,1938,Lyon 2,69,Rhône,Auvergne-Rhône-Alpes,45.750351,4.826148,0.86
+Albert Pen,senat,1931,Dartmouth,foreign,foreign,foreign,,,
+Alain Peyrefitte,senat,1925,Najac,31,Haute-Garonne,Occitanie,43.524171,1.752897,0.943
+Jean-Claude Peyronnet,senat,1940,Châlus,63,Puy-de-Dôme,Auvergne-Rhône-Alpes,45.619481,3.528131,0.941
+Alfred Poroi,senat,1906,Mataiea,foreign,foreign,foreign,,,
+Claude Prouvoyeur,senat,1927,Estourmel,59,Nord,Hauts-de-France,50.148782,3.323798,0.932
+Hervé Reynaud,senat,1972,Saint-Chamond,42,Loire,Auvergne-Rhône-Alpes,45.470463,4.505748,0.952
+Martial Taugourdeau,senat,1926,Beaufort-en-Vallée,49,Maine-et-Loire,Pays de la Loire,47.446328,-0.243803,0.694
+Paul Vergès,senat,1925,Ubon Ratchathani,foreign,foreign,foreign,,,
+Hector Viron,senat,1922,Lille,59,Nord,Hauts-de-France,50.630951,3.045391,0.96
+Henri Weber,senat,1944,Khodjent,foreign,foreign,foreign,,,
