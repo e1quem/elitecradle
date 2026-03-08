@@ -1,8 +1,10 @@
 import pandas as pd
 
 # Path
-output_path = "/Users/eyquem/Desktop/LeadersMap/outputs/senat_geo_enriched.csv"
-df = pd.read_csv(output_path)
+#path = "/Users/eyquem/Desktop/LeadersMap/outputs/sn_geo_enriched.csv"
+#path = "/Users/eyquem/Desktop/LeadersMap/outputs/cf_geo_enriched.csv"
+path = "/Users/eyquem/Desktop/LeadersMap/outputs/mn_geo_enriched.csv"
+df = pd.read_csv(path, sep=None, engine='python')
 
 # Precise coordinates
 paris_arrondissements = {
@@ -36,6 +38,6 @@ for index, row in df.iterrows():
         df.at[index, 'lon'] = lon
 
 # Save
-df.to_csv(output_path, index=False, encoding='utf-8')
+df.to_csv(path, index=False, encoding='utf-8')
 
-print(f"Done. {output_path}.")
+print(f"Done. {path}.")

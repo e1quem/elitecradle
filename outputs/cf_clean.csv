@@ -1,0 +1,369 @@
+name;tag;dob;pob;dept_num;dept_ob;region;lat;lon;confidence
+Frédéric Joliot;college_de_france;1900;Paris 16;75;Paris;Île-de-France;48.86101150512695;2.2834136486053467;0.868
+Georges Dumézil;college_de_france;1898;Paris 12;75;Paris;Île-de-France;48.836666107177734;2.403441905975342;0.867
+André Pézard;college_de_france;1893;Paris 11;75;Paris;Île-de-France;48.86030960083008;2.3786137104034424;0.867
+Georges Posener;college_de_france;1906;Paris 6;75;Paris;Île-de-France;48.85261154174805;2.3332111835479736;0.861
+Paul-Marie Duval;college_de_france;1912;Paris 7;75;Paris;Île-de-France;48.857215881347656;2.3098840713500977;0.862
+Paul Lemerle;college_de_france;1903;Paris 12;75;Paris;Île-de-France;48.836666107177734;2.403441905975342;0.867
+Jacques Monod;college_de_france;1910;Paris 17;75;Paris;Île-de-France;48.88784408569336;2.3070974349975586;0.868
+André Leroi-Gourhan;college_de_france;1911;Paris 11;75;Paris;Île-de-France;48.86030960083008;2.3786137104034424;0.867
+André Chastel;college_de_france;1912;Paris 12;75;Paris;Île-de-France;48.836666107177734;2.403441905975342;0.867
+Marcel Froissart;college_de_france;1934;Paris 6;75;Paris;Île-de-France;48.85261154174805;2.3332111835479736;0.861
+Jean Leclant;college_de_france;1920;Paris 14;75;Paris;Île-de-France;48.83161926269531;2.3244473934173584;0.867
+Pierre Hadot;college_de_france;1922;Paris 15;75;Paris;Île-de-France;48.84374237060547;2.2927637100219727;0.869
+Philippe Nozières;college_de_france;1932;Paris 16;75;Paris;Île-de-France;48.86101150512695;2.2834136486053467;0.868
+Gilles Gaston Granger;college_de_france;1920;Paris 6;75;Paris;Île-de-France;48.85261154174805;2.3332111835479736;0.861
+Antoine Labeyrie;college_de_france;1943;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Jean-Christophe Yoccoz;college_de_france;1957;Paris 11;75;Paris;Île-de-France;48.86030960083008;2.3786137104034424;0.867
+Daniel Roche;college_de_france;1935;Paris 14;75;Paris;Île-de-France;48.83161926269531;2.3244473934173584;0.867
+Gilles Veinstein;college_de_france;1945;Paris 7;75;Paris;Île-de-France;48.857215881347656;2.3098840713500977;0.862
+Philippe Descola;college_de_france;1949;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Mireille Delmas-Marty;college_de_france;1941;Paris 17;75;Paris;Île-de-France;48.88784408569336;2.3070974349975586;0.868
+Michel Devoret;college_de_france;1953;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Alain Prochiantz;college_de_france;1948;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Anne Cheng;college_de_france;1955;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Esther Duflo;college_de_france;1972;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Philippe Sansonetti;college_de_france;1949;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Antoine Georges;college_de_france;1961;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Serge Abiteboul;college_de_france;1953;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Jean-Noël Robert;college_de_france;1949;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Alain Fischer;college_de_france;1949;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Georges Calas;college_de_france;1948;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Philippe Aghion;college_de_france;1956;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Patrick Boucheron;college_de_france;1965;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Bénédicte Savoy;college_de_france;1972;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Arnaud Fontanet;college_de_france;1961;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Yanick Lahens;college_de_france;1953;Port-au-Prince;75;Paris;Île-de-France;48.819018;2.365597;0.695
+Jean-Philippe Bouchaud;college_de_france;1962;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Nalini Anantharaman;college_de_france;1976;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Esther Duflo;college_de_france;1972;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Benoît Peeters;college_de_france;1956;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Emile Benveniste;college_de_france;1902;Alep;83;Var;Provence-Alpes-Côte d'Azur;43.142599;5.896946;0.702
+Alain Connes;college_de_france;1947;Draguignan;83;Var;Provence-Alpes-Côte d'Azur;43.532153;6.459174;0.952
+Jean-Pierre Brun;college_de_france;1955;Ollioules;83;Var;Provence-Alpes-Côte d'Azur;43.134973;5.853916;0.948
+Jean-François Joanny;college_de_france;1956;Toulon;83;Var;Provence-Alpes-Côte d'Azur;43.136379;5.933443;0.959
+Mathilde Touvier;college_de_france;1980;La Seyne-sur-Mer;83;Var;Provence-Alpes-Côte d'Azur;43.093325;5.879651;0.954
+Paul Fallot;college_de_france;1889;Strasbourg;67;Bas-Rhin;Grand Est;48.579831;7.761454;0.961
+Robert Minder;college_de_france;1902;Wasselonne;67;Bas-Rhin;Grand Est;48.638764;7.442063;0.943
+Alfred Jost;college_de_france;1916;Strasbourg;67;Bas-Rhin;Grand Est;48.579831;7.761454;0.961
+Jean-Marie Lehn;college_de_france;1939;Rosheim;67;Bas-Rhin;Grand Est;48.495984;7.404783;0.943
+Jean-Marie Zemb;college_de_france;1928;Erstein;67;Bas-Rhin;Grand Est;48.41893;7.667782;0.946
+Étienne-Émile Baulieu;college_de_france;1926;Strasbourg;67;Bas-Rhin;Grand Est;48.579831;7.761454;0.961
+Roland Recht;college_de_france;1941;Strasbourg;67;Bas-Rhin;Grand Est;48.579831;7.761454;0.961
+Jean-Louis Mandel;college_de_france;1946;Strasbourg;67;Bas-Rhin;Grand Est;48.579831;7.761454;0.961
+Thomas Pavel;college_de_france;1941;Bucarest;67;Bas-Rhin;Grand Est;48.569385;7.776079;0.699
+Anselm Kiefer;college_de_france;1945;Donaueschingen;67;Bas-Rhin;Grand Est;48.732915;7.357231;0.689
+Bernard Derrida;college_de_france;1952;El Biar;67;Bas-Rhin;Grand Est;48.464848;7.440062;0.95
+Robert Courrier;college_de_france;1895;Saxon-Sion;54;Meurthe-et-Moselle;Grand Est;48.427092;6.079481;0.923
+Etienne Drioton;college_de_france;1889;Nancy;54;Meurthe-et-Moselle;Grand Est;48.688135;6.171263;0.957
+François Jacob;college_de_france;1920;Nancy;54;Meurthe-et-Moselle;Grand Est;48.688135;6.171263;0.957
+Pascal Dusapin;college_de_france;1955;Nancy;54;Meurthe-et-Moselle;Grand Est;48.688135;6.171263;0.957
+Szolem Mandelbrojt;college_de_france;1899;Varsovie;31;Haute-Garonne;Occitanie;43.596489;1.430218;0.708
+André Grabar;college_de_france;1896;Kiev;31;Haute-Garonne;Occitanie;43.571063;1.404782;0.702
+Yves Laporte;college_de_france;1920;Toulouse;31;Haute-Garonne;Occitanie;43.604082;1.433805;0.964
+Jean Dausset;college_de_france;1916;Toulouse;31;Haute-Garonne;Occitanie;43.604082;1.433805;0.964
+Bronislaw Geremek;college_de_france;1932;Varsovie;31;Haute-Garonne;Occitanie;43.596489;1.430218;0.708
+Louis Robert;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Alexandre Dauvillier;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Emile Gaspardone;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Francis Perrin;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Alfred Fessard;college_de_france;1900;Unknown;foreign;foreign;foreign;;;
+Gaston Wiet;college_de_france;1887;Unknown;foreign;foreign;foreign;;;
+Martial Guéroult;college_de_france;1891;Unknown;foreign;foreign;foreign;;;
+Jacques Benoit;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Jean Filliozat;college_de_france;1906;Unknown;foreign;foreign;foreign;;;
+Louis Chevalier;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Claude Frédéric-Armand Schaëffer-Forrer;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Jacques Berque;college_de_france;1910.0;Frenda;foreign;foreign;foreign;;;
+Anatole Abragam;college_de_france;1914.0;Daugavpils;foreign;foreign;foreign;;;
+Bernard Halpern;college_de_france;1904.0;Tarnoruda;foreign;foreign;foreign;;;
+Jacques Prentki;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Israël Salvator Révah;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Rolf Alfred Stein;college_de_france;1911.0;Świecie;foreign;foreign;foreign;;;
+François Morel;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Raymond Aron;college_de_france;1905.0;Paris 6;75;Paris;Île-de-France;48.85261154174805;2.3332111835479736;
+Pierre-Gilles Gennes, de;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Jacqueline Romilly, de;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Emmanuel Laroche;college_de_france;1914;Unknown;foreign;foreign;foreign;;;
+Emmanuel Le Roy Ladurie;college_de_france;1929;Unknown;foreign;foreign;foreign;;;
+Julian Ajuriaguerra, de;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+François Gros;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Gilbert Dagron;college_de_france;1932;Unknown;foreign;foreign;foreign;;;
+Bernard Frank;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Pierre Joliot;college_de_france;1932;Unknown;foreign;foreign;foreign;;;
+Françoise Héritier-Augé;college_de_france;1933.0;Veauche;42;Loire;Auvergne-Rhône-Alpes;45.561486;4.290024;0.945
+Jacques Glowinski;college_de_france;1936;Unknown;foreign;foreign;foreign;;;
+Paul Garelli;college_de_france;1924.0;Croydon;foreign;foreign;foreign;;;
+Xavier Le Pichon;college_de_france;1937.0;Quy Nhơn;foreign;foreign;foreign;;;
+Harald Weinrich;college_de_france;1927.0;Wismar;foreign;foreign;foreign;;;
+Jean Yoyotte;college_de_france;1927;Unknown;foreign;foreign;foreign;;;
+Michel Tardieu;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Harald Weinrich;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Werner Hildenbrand;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Guangda Zhang;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Norbert Ohler;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Orest Ranum;college_de_france;1933;Unknown;foreign;foreign;foreign;;;
+Harris Memel-Fotê;college_de_france;1930.0;Mopoyem;foreign;foreign;foreign;;;
+Klaus Rajewsky;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Jacques Bouveresse;college_de_france;1940;Unknown;foreign;foreign;foreign;;;
+Javier Teixidor;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Armand Ricqlès, de;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Jean Rouxel;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Brian Stock;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Abram de Swaan;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Jerzy Grotowski;college_de_france;1933.0;Rzeszów;foreign;foreign;foreign;;;
+Thomas W. Gaehtgens;college_de_france;1940.0;Leipzig;foreign;foreign;foreign;;;
+Patrice Higonnet;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Hans Wilhelm Müller-Gartner;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Jean-Marie Durand;college_de_france;1940;Unknown;foreign;foreign;foreign;;;
+Michael Edwards;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Miklós Szabó;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Anne Fagot-Largeault;college_de_france;1938;Unknown;foreign;foreign;foreign;;;
+Spyros Artavanis-Tsakonas;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Don B. Zagier;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Paul Farmer;college_de_france;1959.0;North Adams;foreign;foreign;foreign;;;
+Christine Petit;college_de_france;1948;Unknown;foreign;foreign;foreign;;;
+Hans Belting;college_de_france;1935.0;Andernach;59;Nord;Hauts-de-France;50.449085;3.437755;0.69
+Stuart Edelstein;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Theodor Berchem;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Jayant Vishnu Narlikar;college_de_france;1938.0;Kolhapur;foreign;foreign;foreign;;;
+Michael Edwards;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Maurice Bloch;college_de_france;2005.0;Caen;14;Calvados;Normandie;49.184316;-0.37193;0.957
+Celâl Şengör;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Sandro Stringari;college_de_france;;Tarcento;foreign;foreign;foreign;;;
+Christian Portzamparc, de;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Guy Orban;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Daniele Vitali;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Gérard Berry;college_de_france;1948;Unknown;foreign;foreign;foreign;;;
+Thomas C. Römer;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Gérard Berry;college_de_france;1948;Unknown;foreign;foreign;foreign;;;
+Patrick Couvreur;college_de_france;1950.0;Schaerbeek;foreign;foreign;foreign;;;
+Nicholas Stern;college_de_france;1946.0;Hammersmith;foreign;foreign;foreign;;;
+Martín Abadi;college_de_france;1963;Unknown;foreign;foreign;foreign;;;
+Elias Zerhouni;college_de_france;1951.0;Nedroma;foreign;foreign;foreign;;;
+Clément Sanchez;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Manuela Carneiro da Cunha;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Paul Colonna;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Barbara Romanowicz;college_de_france;1950.0;Suresnes;92;Hauts-de-Seine;Île-de-France;48.870985;2.218087;0.953
+Jean Dalibard;college_de_france;1958;Unknown;foreign;foreign;foreign;;;
+Karol Beffa;college_de_france;1973.0;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Dominique Kerouedan;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Gérard Berry;college_de_france;1948;Unknown;foreign;foreign;foreign;;;
+Frantz Grenet;college_de_france;1952.0;Gruchet-le-Valasse;76;Seine-Maritime;Normandie;49.551491;0.492499;0.941
+Nicholas Ayache;college_de_france;1958.0;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+François Bourguignon;college_de_france;1945;Unknown;foreign;foreign;foreign;;;
+Philippe Walter;college_de_france;1952.0;Metz;57;Moselle;Grand Est;49.108385;6.194891;0.957
+Dominique Charpin;college_de_france;1954.0;Neuilly-sur-Seine;92;Hauts-de-Seine;Île-de-France;48.886191;2.265869;0.954
+Hugues Thé, de;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Marie-Paule Cani;college_de_france;1965;Unknown;foreign;foreign;foreign;;;
+Jean-Louis Cohen;college_de_france;1949.0;Paris 11;75;Paris;Île-de-France;48.86030960083008;2.3786137104034424;
+Alain Mabanckou;college_de_france;1966;foreign;foreign;foreign;foreign;;;
+José-Alain Sahel;college_de_france;1955;foreign;foreign;foreign;foreign;;;
+Thomas Sterner;college_de_france;;Unknown;foreign;foreign;foreign;;;
+Jean-Daniel Boissonnat;college_de_france;1953;Unknown;foreign;foreign;foreign;;;
+Victor Stoichiță;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Xavier Leroy;college_de_france;1968;Unknown;foreign;foreign;foreign;;;
+Amos Gitaï;college_de_france;1950.0;Haïfa;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;43.251992;5.391115;0.695
+Molly Przeworski;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+François-Xavier Fauvelle;college_de_france;1968;Unknown;foreign;foreign;foreign;;;
+Bảo Châu Ngô;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+François Recanati;college_de_france;1952;Unknown;foreign;foreign;foreign;;;
+Yahd Ben Achour;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Didier Fassin;college_de_france;1955;Unknown;foreign;foreign;foreign;;;
+Walter Fontana;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Sonia Garel;college_de_france;1972.0;Paris;75;Paris;Île-de-France;48.859;2.347;0.97
+Timothy Gowers;college_de_france;1963;Unknown;foreign;foreign;foreign;;;
+Frédéric Magniez;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Virginie Courtier-Orgogozo;college_de_france;;Unknown;foreign;foreign;foreign;;;
+Tatiana Giraud;college_de_france;1972;Unknown;foreign;foreign;foreign;;;
+Daniel Lincot;college_de_france;1954;Unknown;foreign;foreign;foreign;;;
+Wendy Elizabeth Mackay;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Rémy Slama;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Didier Fassin;college_de_france;1955;Unknown;foreign;foreign;foreign;;;
+Antoine Lilti;college_de_france;1972;Unknown;foreign;foreign;foreign;;;
+Mieke Bal;college_de_france;1946.0;Heemstede;foreign;foreign;foreign;;;
+Lydéric Bocquet;college_de_france;1968;Unknown;foreign;foreign;foreign;;;
+Phượng  Bùi Trân;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Alessandro  Morbidelli;college_de_france;1966.0;Priocca;foreign;foreign;foreign;;;
+Kyle Harper;college_de_france;1979;foreign;foreign;foreign;foreign;;;
+Stéphanie Lacour;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Salikoko S. Mufwene;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Emmanuelle Porcher;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Benoît Sagot;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Peter Sloterdijk;college_de_france;1947.0;Karlsruhe;54;Meurthe-et-Moselle;Grand Est;48.677602;6.173306;0.696
+Nathalie Bajos;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+François-Marie Bréon;college_de_france;1965;Unknown;foreign;foreign;foreign;;;
+Sébastien Lecommandoux;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Wadji Mouawad;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Maria Melchior;college_de_france;Not found;Not found;foreign;foreign;foreign;;;
+Claude Grison;college_de_france;1960;Unknown;foreign;foreign;foreign;;;
+Isabelle Ratié;college_de_france;1976;Unknown;foreign;foreign;foreign;;;
+Marcel Bataillon;college_de_france;1895;Dijon;21;Côte-d'Or;Bourgogne-Franche-Comté;47.331848;5.033601;0.959
+André Lallemand;college_de_france;1904;Cirey-lès-Pontailler;21;Côte-d'Or;Bourgogne-Franche-Comté;47.309437;5.296085;0.928
+James Watson Cronin;college_de_france;1931;Chicago;21;Côte-d'Or;Bourgogne-Franche-Comté;47.301281;5.063328;0.701
+Jean Pommier;college_de_france;1922;Niort;79;Deux-Sèvres;Nouvelle-Aquitaine;46.327232;-0.466291;0.954
+Paul Demiéville;college_de_france;1894;Lausanne;37;Indre-et-Loire;Centre-Val de Loire;47.043244;1.182838;0.939
+Yves Bonnefoy;college_de_france;1923;Tours;37;Indre-et-Loire;Centre-Val de Loire;47.395476;0.695848;0.958
+Paul Mus;college_de_france;1902;Bourges;9;Ariège;Occitanie;42.962755;1.861999;0.954
+Pierre Gourou;college_de_france;1900;Tunis;47;Lot-et-Garonne;Nouvelle-Aquitaine;44.05238;0.276355;0.942
+Félix Lecoy;college_de_france;1903;Tunis;47;Lot-et-Garonne;Nouvelle-Aquitaine;44.05238;0.276355;0.942
+René-Jean Dupuy;college_de_france;1918;Tunis;47;Lot-et-Garonne;Nouvelle-Aquitaine;44.05238;0.276355;0.942
+Luigi Rizzi;college_de_france;1952;Gênes en Italie;47;Lot-et-Garonne;Nouvelle-Aquitaine;44.185642;0.62186;0.361
+Marcel Giraud;college_de_france;1900;Nice;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;43.71273;7.25092;0.962
+Jacques-Louis Lions;college_de_france;1928;Grasse;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;43.654057;6.937765;0.953
+Pierre-Louis Lions;college_de_france;1956;Grasse;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;43.654057;6.937765;0.953
+Jean Roche;college_de_france;1937;Beaujeu;5;Hautes-Alpes;Provence-Alpes-Côte d'Azur;44.316578;5.834988;0.949
+Jean Leray;college_de_france;1906;Chantenay-sur-Loire;77;Seine-et-Marne;Île-de-France;48.417037;3.090192;0.402
+Jean-Pierre Vernant;college_de_france;1914;Provins;77;Seine-et-Marne;Île-de-France;48.558668;3.2981;0.947
+Ismail Serageldin;college_de_france;1944;Gizeh;77;Seine-et-Marne;Île-de-France;48.852806;2.586398;0.688
+Roger Dion;college_de_france;1896;Argenton-sur-Creuse;36;Indre;Centre-Val de Loire;46.580769;1.496044;0.943
+Gilles Clément;college_de_france;1943;Argenton-sur-Creuse;36;Indre;Centre-Val de Loire;46.580769;1.496044;0.943
+Jean Laval;college_de_france;1900;Saint-Pardoux-le-Vieu;19;Corrèze;Nouvelle-Aquitaine;45.597529;2.277006;0.839
+Jean-Paul Laumond;college_de_france;1953;Donzenac;19;Corrèze;Nouvelle-Aquitaine;45.230446;1.523418;0.94
+Fernand Braudel;college_de_france;1902;Luméville-en-Ornois;55;Meuse;Grand Est;48.491135;5.467285;0.558
+René Huyghe;college_de_france;1906;Arras;62;Pas-de-Calais;Hauts-de-France;50.287896;2.768267;0.953
+Gérard Fussman;college_de_france;1940;Lens;62;Pas-de-Calais;Hauts-de-France;50.437872;2.819642;0.951
+Denis Knoepfler;college_de_france;1944;Bienne;62;Pas-de-Calais;Hauts-de-France;50.749616;1.757905;0.936
+Maurice Merleau-Ponty;college_de_france;1908;Rochefort;61;Orne;Normandie;48.755313;-0.717625;0.95
+André Vaillant;college_de_france;1890;Soissons;2;Aisne;Hauts-de-France;49.377401;3.327152;0.951
+Jean Kellens;college_de_france;1944;Seraing;2;Aisne;Hauts-de-France;50.027649;3.368787;0.704
+François Héran;college_de_france;1953;Laon;2;Aisne;Hauts-de-France;49.570287;3.614719;0.95
+Henri-Charles Puech;college_de_france;1902;Montpellier;34;Hérault;Occitanie;43.610476;3.87048;0.962
+Jean-Pierre Serre;college_de_france;1926;Bages;34;Hérault;Occitanie;43.624444;3.49938;0.947
+André Miquel;college_de_france;1929;Mèze;34;Hérault;Occitanie;43.435562;3.584267;0.947
+Françoise Combes;college_de_france;1952;Montpellier;34;Hérault;Occitanie;43.610476;3.87048;0.962
+René Labat;college_de_france;1904;Saint-Loubès;33;Gironde;Nouvelle-Aquitaine;44.922032;-0.430094;0.946
+Nicolas Grimal;college_de_france;1948;Libourne;33;Gironde;Nouvelle-Aquitaine;44.920384;-0.226836;0.95
+Gabriele Veneziano;college_de_france;1942;Florence;33;Gironde;Nouvelle-Aquitaine;44.84132;-0.411643;0.943
+Sanjay Subrahmanyam;college_de_france;1961;New Delhi;33;Gironde;Nouvelle-Aquitaine;44.869736;-0.54963;0.309
+Sanjay Subrahmanyam;college_de_france;1961;New Delhi;33;Gironde;Nouvelle-Aquitaine;44.869736;-0.54963;0.309
+Jean-Luc Fournet;college_de_france;1965;Bordeaux;33;Gironde;Nouvelle-Aquitaine;44.851897;-0.587877;0.961
+Pierre Courcelle;college_de_france;1912;Orléans;45;Loiret;Centre-Val de Loire;47.873569;1.911358;0.957
+Claude Lévi-Strauss;college_de_france;1908;Bruxelles;45;Loiret;Centre-Val de Loire;47.773607;2.881945;0.944
+Lucien Bernot;college_de_france;1919;Gien;45;Loiret;Centre-Val de Loire;47.69809;2.645031;0.947
+Antoine Compagnon;college_de_france;1950;Bruxelles;45;Loiret;Centre-Val de Loire;47.773607;2.881945;0.944
+Marc Henneaux;college_de_france;1955;Bruxelles;45;Loiret;Centre-Val de Loire;47.773607;2.881945;0.944
+Christian Gollier;college_de_france;1961;Bruxelles;45;Loiret;Centre-Val de Loire;47.773607;2.881945;0.944
+André Lichnerowicz;college_de_france;1915;Bourbon-l'Archambault;3;Allier;Auvergne-Rhône-Alpes;46.580561;3.059294;0.94
+Charles Oberling;college_de_france;1895;Metz;57;Moselle;Grand Est;49.108385;6.194891;0.957
+Nathan Wachtel;college_de_france;1935;Metz;57;Moselle;Grand Est;49.108385;6.194891;0.957
+François Déroche;college_de_france;1952;Metz;57;Moselle;Grand Est;49.108385;6.194891;0.957
+Pierre-Michel Menger;college_de_france;1953;Forbach;57;Moselle;Grand Est;49.190789;6.893798;0.949
+Jean Gagé;college_de_france;1902;Nainville-les-Roches;91;Essonne;Île-de-France;48.505229;2.49527;0.933
+Anny Cazenave;college_de_france;1944;Draveil;91;Essonne;Île-de-France;48.677829;2.412138;0.951
+Pascale Senellart;college_de_france;1972;Corbeil-Essonnes;91;Essonne;Île-de-France;48.598229;2.465045;0.954
+François Perroux;college_de_france;1903;Lyon;69;Rhône;Auvergne-Rhône-Alpes;45.758;4.835;0.964
+Antoine Guillaumont;college_de_france;1915;L'Arbresle;69;Rhône;Auvergne-Rhône-Alpes;45.834532;4.610769;0.944
+Roger Chartier;college_de_france;1945;Lyon;69;Rhône;Auvergne-Rhône-Alpes;45.758;4.835;0.964
+Pierre-Laurent Aimard;college_de_france;1957;Lyon;69;Rhône;Auvergne-Rhône-Alpes;45.758;4.835;0.964
+Sandra Lavorel;college_de_france;1965;Lyon;69;Rhône;Auvergne-Rhône-Alpes;45.758;4.835;0.964
+Etienne Wolff;college_de_france;1904;Auxerre;89;Yonne;Bourgogne-Franche-Comté;47.791247;3.579905;0.952
+Henri Laoust;college_de_france;1905;Fresnes-sur-Escaut;59;Nord;Hauts-de-France;50.433148;3.574831;0.945
+Stanislas Dehaene;college_de_france;1965;Roubaix;59;Nord;Hauts-de-France;50.688454;3.183662;0.956
+Laurent Coulon;college_de_france;1970;Villeneuve-d'Ascq;59;Nord;Hauts-de-France;50.637788;3.147967;0.954
+Alain Horeau;college_de_france;1909;Nantes;44;Loire-Atlantique;Pays de la Loire;47.239367;-1.555335;0.962
+Jean Delumeau;college_de_france;1923;Nantes;44;Loire-Atlantique;Pays de la Loire;47.239367;-1.555335;0.962
+Ian Hacking;college_de_france;1936;Vancouver;44;Loire-Atlantique;Pays de la Loire;47.259249;-1.577679;0.699
+Edouard Bard;college_de_france;1962;Genève;44;Loire-Atlantique;Pays de la Loire;47.21202;-1.60215;0.708
+John Scheid;college_de_france;1946;Luxembourg;44;Loire-Atlantique;Pays de la Loire;47.230756;-1.35472;0.95
+Alain Supiot;college_de_france;1949;Nantes;44;Loire-Atlantique;Pays de la Loire;47.239367;-1.555335;0.962
+Gilles Bœuf;college_de_france;1950;Paimbœuf;44;Loire-Atlantique;Pays de la Loire;47.286082;-2.028603;0.941
+Denis Duboule;college_de_france;1955;Genève;44;Loire-Atlantique;Pays de la Loire;47.21202;-1.60215;0.708
+Edhem Eldem;college_de_france;1960;Genève;44;Loire-Atlantique;Pays de la Loire;47.21202;-1.60215;0.708
+Denis Duboule;college_de_france;1955;Genève;44;Loire-Atlantique;Pays de la Loire;47.21202;-1.60215;0.708
+Alfred Sauvy;college_de_france;1898;Villeneuve-de-la-Raho;66;Pyrénées-Orientales;Occitanie;42.639539;2.909431;0.942
+Louis  Leprince-Ringuet;college_de_france;1901;Alès;30;Gard;Occitanie;44.125356;4.089242;0.953
+Maurice Agulhon;college_de_france;1926;Uzès;30;Gard;Occitanie;44.021276;4.415586;0.945
+William Marx;college_de_france;1966;Villeneuve-lès-Avignon;30;Gard;Occitanie;43.971791;4.77692;0.947
+Jules Vuillemin;college_de_france;1920;Pierrefontaine-les-Va;25;Doubs;Bourgogne-Franche-Comté;47.214176;6.541457;0.679
+Jean Hyppolite;college_de_france;1907;Jonzac;17;Charente-Maritime;Nouvelle-Aquitaine;45.444416;-0.427413;0.941
+Lea Ypi;college_de_france;1979;Tirana;17;Charente-Maritime;Nouvelle-Aquitaine;46.170384;-1.171936;0.693
+André Dupont-Sommer;college_de_france;1900;Marnes-la-Coquette;92;Hauts-de-Seine;Île-de-France;48.835162;2.170097;0.938
+Christian Goudineau;college_de_france;1939;Neuilly-sur-Seine;92;Hauts-de-Seine;Île-de-France;48.886191;2.265869;0.954
+Pierre Corvol;college_de_france;1941;Boulogne-Billancourt;92;Hauts-de-Seine;Île-de-France;48.837892;2.241994;0.957
+Alain Berthoz;college_de_france;1939;Neuilly-sur-Seine;92;Hauts-de-Seine;Île-de-France;48.886191;2.265869;0.954
+Michel Zink;college_de_france;1945;Issy-les-Moulineaux;92;Hauts-de-Seine;Île-de-France;48.823903;2.262887;0.955
+Philippe Kourilsky;college_de_france;1942;Boulogne-Billancourt;92;Hauts-de-Seine;Île-de-France;48.837892;2.241994;0.957
+Jacques Livage;college_de_france;1938;Neuilly-sur-Seine;92;Hauts-de-Seine;Île-de-France;48.886191;2.265869;0.954
+Henry Laurens;college_de_france;1954;Neuilly-sur-Seine;92;Hauts-de-Seine;Île-de-France;48.886191;2.265869;0.954
+Ariane Mnouchkine;college_de_france;1939;Boulogne-Billancourt;92;Hauts-de-Seine;Île-de-France;48.837892;2.241994;0.957
+Alain de Libera;college_de_france;1948;Neuilly-sur-Seine;92;Hauts-de-Seine;Île-de-France;48.886191;2.265869;0.954
+Didier Roux;college_de_france;1955;Neuilly-sur-Seine;92;Hauts-de-Seine;Île-de-France;48.886191;2.265869;0.954
+Stéphane Mallat;college_de_france;1962;Suresnes;92;Hauts-de-Seine;Île-de-France;48.870985;2.218087;0.953
+Jean-Claude Pecker;college_de_france;1923;Reims;51;Marne;Grand Est;49.250948;4.055595;0.959
+Jean-Paul Clozel;college_de_france;1955;Châlons-sur-Marne;51;Marne;Grand Est;48.898266;4.339489;0.679
+Louis Hambis;college_de_france;1906;Ligugé;86;Vienne;Nouvelle-Aquitaine;46.521779;0.285561;0.941
+Michel Foucault;college_de_france;1926;Poitiers;86;Vienne;Nouvelle-Aquitaine;46.586578;0.35668;0.956
+Claude Hagège;college_de_france;1936;Carthage;86;Vienne;Nouvelle-Aquitaine;46.522289;0.454441;0.942
+Bernard Meunier;college_de_france;1947;Poitiers;86;Vienne;Nouvelle-Aquitaine;46.586578;0.35668;0.956
+Louis Fensterbank;college_de_france;1967;Poitiers;86;Vienne;Nouvelle-Aquitaine;46.586578;0.35668;0.956
+Georges Blin;college_de_france;1917;Pertuis;84;Vaucluse;Provence-Alpes-Côte d'Azur;43.690751;5.501097;0.949
+Maurice Le Lannou;college_de_france;1906;Plouha;22;Côtes-d'Armor;Bretagne;48.687573;-2.931222;0.943
+Jacques Thuillier;college_de_france;1928;Vaucouleurs;22;Côtes-d'Armor;Bretagne;48.436933;-2.131917;0.948
+Yvon Maday ;college_de_france;1957;Saint-Brieuc;22;Côtes-d'Armor;Bretagne;48.508238;-2.766074;0.953
+André Bareau;college_de_france;1921;Saint-Mandé;94;Val-de-Marne;Île-de-France;48.841526;2.419441;0.949
+Jacques Ruffié;college_de_france;1921;Limoux;11;Aude;Occitanie;43.049781;2.237853;0.946
+Jean Guilaine;college_de_france;1936;Carcassonne;11;Aude;Occitanie;43.206781;2.349415;0.953
+Marc Fontecave;college_de_france;1956;Carcassonne;11;Aude;Occitanie;43.206781;2.349415;0.953
+André Caquot;college_de_france;1923;Épinal;88;Vosges;Grand Est;48.170226;6.484892;0.951
+Claude Cohen-Tannoudji;college_de_france;1933;Constantine;85;Vendée;Pays de la Loire;46.83879;-1.467818;0.957
+Umberto Eco;college_de_france;1932;Alexandrie;85;Vendée;Pays de la Loire;46.832106;-1.482419;0.953
+François-Xavier Coquin;college_de_france;1931;La Roche-sur-Yon;85;Vendée;Pays de la Loire;46.670848;-1.412533;0.954
+Jacques Gernet;college_de_france;1921;Alger;53;Mayenne;Pays de la Loire;48.334676;-0.546793;0.943
+Pierre Toubert;college_de_france;1932;Alger;53;Mayenne;Pays de la Loire;48.334676;-0.546793;0.943
+Roger Guesnerie;college_de_france;1943;Sainte-Gemmes-le-Robe;53;Mayenne;Pays de la Loire;48.202085;-0.370122;0.843
+Henri Leridon;college_de_france;1942;Alger;53;Mayenne;Pays de la Loire;48.334676;-0.546793;0.943
+Paul-Marie Veyne;college_de_france;1930;Aix-en-Provence;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;43.541369;5.406124;0.958
+Jean Irigoin;college_de_france;1920;Aix-en-Provence;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;43.541369;5.406124;0.958
+Marc Fumaroli;college_de_france;1932;Marseille;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;43.282;5.405;0.966
+Pierre Magistretti;college_de_france;1952;Milan;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;43.419298;4.977489;0.951
+Vinciane Pirenne-Delforge;college_de_france;1963;Verviers;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;43.693687;4.632299;0.692
+Dario Mantovani;college_de_france;1961;Milan;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;43.419298;4.977489;0.951
+Samantha Besson;college_de_france;1973;Beyrouth;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;43.246632;5.401532;0.698
+Jacques Tits;college_de_france;1930;Uccle;56;Morbihan;Bretagne;47.920746;-2.088213;0.31
+Yves Coppens;college_de_france;1934;Vannes;56;Morbihan;Bretagne;47.659971;-2.752192;0.954
+Nicole Le Douarin;college_de_france;1930;Lorient;56;Morbihan;Bretagne;47.750364;-3.378025;0.954
+Manfred Kropp;college_de_france;1947;Ludwigshafen;56;Morbihan;Bretagne;47.747348;-3.391812;0.689
+Bernard Chazelle;college_de_france;1955;Clamart;56;Morbihan;Bretagne;47.574557;-2.357271;0.958
+Roland Barthes;college_de_france;1915;Cherbourg;50;Manche;Normandie;49.628684;-1.63324;0.864
+Pierre Boulez;college_de_france;1925;Montbrison;42;Loire;Auvergne-Rhône-Alpes;45.604225;4.069547;0.948
+Carlo  Ossola;college_de_france;1946;Turin;42;Loire;Auvergne-Rhône-Alpes;45.879242;4.25004;0.947
+Jean-Pierre Changeux;college_de_france;1936;Domont;95;Val-d'Oise;Île-de-France;49.028712;2.327914;0.948
+Yann Le Cun;college_de_france;1960;Soisy-sous-Montmorency;95;Val-d'Oise;Île-de-France;48.988538;2.301698;0.949
+Claire Voisin;college_de_france;1962;Saint-Leu-la-Forêt;95;Val-d'Oise;Île-de-France;49.013301;2.242938;0.948
+Pierre Bourdieu;college_de_france;1930;Denguin;64;Pyrénées-Atlantiques;Nouvelle-Aquitaine;43.366099;-0.506644;0.938
+Edmond Malinvaud;college_de_france;1923;Limoges;87;Haute-Vienne;Nouvelle-Aquitaine;45.856159;1.221254;0.958
+Joseph Schell;college_de_france;1935;Anvers;87;Haute-Vienne;Nouvelle-Aquitaine;45.746698;0.83742;0.941
+Wolf Lepenies;college_de_france;1941;Allenstein;68;Haut-Rhin;Grand Est;47.753458;7.024429;0.339
+Pierre Chambon;college_de_france;1931;Mulhouse;68;Haut-Rhin;Grand Est;47.749509;7.36973;0.964
+Pierre Etienne Will;college_de_france;1944;Glay;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;45.832238;3.663984;0.936
+Yves Bréchet;college_de_france;1961;Chamalières;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;45.774269;3.060492;0.949
+Lluis Quintana-Murci;college_de_france;1970;Palma;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;46.024369;3.194664;0.943
+Georges Le Rider;college_de_france;1928;Saint-Hernin;29;Finistère;Bretagne;48.211386;-3.611703;0.934
+Peter Piot;college_de_france;1949;Keerbergen;29;Finistère;Bretagne;48.583492;-4.303381;0.453
+Claudine Tiercelin;college_de_france;1952;Brest;29;Finistère;Bretagne;48.406435;-4.497736;0.958
+Edith Heard;college_de_france;1965;Londres;29;Finistère;Bretagne;48.147822;-3.893296;0.943
+Igor Mel'čuk;college_de_france;1932;Odessa;93;Seine-Saint-Denis;Île-de-France;48.908181;2.465854;0.701
+Peter Westbroek;college_de_france;1937;La Haye;35;Ille-et-Vilaine;Bretagne;48.406511;-1.687716;0.961
+Laurence Boisson de Chazournes;college_de_france;1958;Douala;35;Ille-et-Vilaine;Bretagne;48.143227;-1.813778;0.861
+Pierre Briant;college_de_france;1940;Angers;49;Maine-et-Loire;Pays de la Loire;47.467471;-0.561615;0.958
+Jean-Marie Tarascon;college_de_france;1953;Marmande;49;Maine-et-Loire;Pays de la Loire;47.168475;-0.459141;0.951
+Jean-Marie Tarascon;college_de_france;1953;Marmande;49;Maine-et-Loire;Pays de la Loire;47.168475;-0.459141;0.951
+Thomas Lecuit;college_de_france;1971;Saumur;49;Maine-et-Loire;Pays de la Loire;47.261814;-0.082764;0.95
+Claudio Magris;college_de_france;1939;Trieste;32;Gers;Occitanie;43.929985;0.563676;0.708
+Serge Haroche;college_de_france;1944;Casablanca;40;Landes;Nouvelle-Aquitaine;43.663279;-1.288498;0.948
+Pierre Rosanvallon;college_de_france;1948;Blois;41;Loir-et-Cher;Centre-Val de Loire;47.581228;1.316533;0.953
+Jon Elster;college_de_france;1940;Oslo;71;Saône-et-Loire;Bourgogne-Franche-Comté;46.783677;4.927047;0.846
+Thomas Ebbesen;college_de_france;1954;Oslo;71;Saône-et-Loire;Bourgogne-Franche-Comté;46.783677;4.927047;0.846
+Mathias Fink;college_de_france;1945;Grenoble;38;Isère;Auvergne-Rhône-Alpes;45.182828;5.724369;0.958
+Thierry Coquand;college_de_france;1961;Jallieu;38;Isère;Auvergne-Rhône-Alpes;45.593821;5.275957;0.702
+Michel Brunet;college_de_france;1940;Magné;23;Creuse;Nouvelle-Aquitaine;45.883789;1.973288;0.94
+Jacques Nichet;college_de_france;1942;Albi;81;Tarn;Occitanie;43.929864;2.149681;0.953
+Tony Cragg;college_de_france;1949;Liverpool;16;Charente;Nouvelle-Aquitaine;45.696179;-0.318325;0.694
+Jean-Jacques Hublin;college_de_france;1953;Mostaganem;72;Sarthe;Pays de la Loire;48.012277;0.228402;0.7
+Jean-Jacques Hublin;college_de_france;1953;Mostaganem;72;Sarthe;Pays de la Loire;48.012277;0.228402;0.7
+Alberto Manguel;college_de_france;1948;Buenos Aires;72;Sarthe;Pays de la Loire;48.020606;0.21276;0.701
+Alain Wijffels;college_de_france;1954;Chêne-Bougeries près;74;Haute-Savoie;Auvergne-Rhône-Alpes;46.270998;6.26896;0.477
+Claire Mathieu;college_de_france;1965;Caen;14;Calvados;Normandie;49.184316;-0.37193;0.957
+Rachid Guerraoui;college_de_france;1967;Rabat;972;Martinique;;14.465505;-60.842925;0.855
+Lucrezia Reichlin;college_de_france;1954;Rome;8;Ardennes;Grand Est;49.687897;5.019168;0.948

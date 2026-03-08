@@ -1,5 +1,3 @@
-# cf_fetch.py
-
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import quote
 from bs4 import BeautifulSoup
@@ -41,7 +39,7 @@ def is_in_france(city_url):
         pass
     return True
 
-def is_correct_profile(soup, target_name, target_year):
+def is_correct_profile(soup, target_name):
     page_text = soup.get_text().lower()
     h1 = soup.find("h1", {"id": "firstHeading"})
     h1_text = h1.get_text().lower() if h1 else ""
@@ -59,12 +57,12 @@ def is_correct_profile(soup, target_name, target_year):
     name_match = any(part in h1_text for part in name_parts)
     
     # 2. Check for keyword match
-    is_politician = any(kw in page_text for kw in ["recherche", "chercheuse", "chercheur", "intellectuel", "professeur", "scientifique", "académie", "université", "thèse", "doctorat", "collège de france", "Collège de France"])
-
-    # 3. Check for dob match
-    has_year = str(target_year) in page_text if (target_year and str(target_year) != "nan") else True
+    is_politician = any(kw in page_text for kw in [
+        "recherche", "chercheuse", "chercheur", "intellectuel", "professeur", "scientifique", "académie",
+        "université", "thèse", "doctorat", "collège de france", "Collège de France", "universitaire",
+        "biologiste", "physicien", 'mathématicien", "chimiste", "sociologue", "historien", "économiste"'])
     
-    return name_match and is_politician and has_year
+    return name_match and is_politician
 
 def extract_paris_arrondissement(soup):
 
@@ -122,7 +120,6 @@ def extract_pob(soup):
                     # Paris : arr. logic
                     if "paris" in td.get_text().lower():
                         return extract_paris_arrondissement(soup)
-                    
                     # Check if it's french or foreign
                     link = td.find("a", href=True)
                     if link:
@@ -138,31 +135,79 @@ def extract_pob(soup):
         # Looking for "Naissance à ..." category
         cat_link = cats.find("a", string=re.compile(r"Naissance à .+"))
         if cat_link:
-            if not is_in_france(cat_link['href']): return "foreign"
-            return cat_link.get_text().replace("Naissance à ", "").strip()
+            cat_text = cat_link.get_text()
+            
+            # Simple check for Paris in categories
+            if "paris" in cat_text.lower():
+                return extract_paris_arrondissement(soup)
+                
+            if not is_in_france(cat_link['href']): 
+                return "foreign"
+                
+            return cat_text.replace("Naissance à ", "").strip()
 
     # 3. Intro paragraph
     content = soup.find("div", {"class": "mw-parser-output"})
     if content:
         p = content.find("p", recursive=False)
         if p:
-            # Regex for "né(e) à" or "né(e) le [date] à"
             p_text = p.get_text()
+            # Regex captures the city name after "à"
             match = re.search(r"n[ée]e?\s+(?:le\s+[^à]{1,30}?\s+)?à\s+([A-Z][\w\s\-]{1,20})", p_text)
             if match:
                 city_name = match.group(1).strip()
+
+                # Simple Paris check for the intro
+                if "paris" in city_name.lower():
+                    return extract_paris_arrondissement(soup)
                 link = p.find("a", string=re.compile(re.escape(city_name)))
-                if link and not is_in_france(link['href']): return "foreign"
+                if link and not is_in_france(link['href']): 
+                    return "foreign"
+                
                 return city_name
 
     return "Unknown"
 
+def extract_dob(soup):
+    # Infobox "naissance"
+    infobox = soup.find("table", {"class": "infobox"})
+    if infobox:
+        for row in infobox.find_all("tr"):
+            if "naissance" in row.get_text().lower():
+                time_tag = row.find("time", {"class": "date-lien"})
+                if time_tag and "datetime" in time_tag.attrs:
+                    return int(time_tag["datetime"].split("-")[0])
+                year_link = row.find("a", href=re.compile(r"/wiki/\d{4}"))
+                if year_link:
+                    return int(year_link.get_text())
 
-def get_wikipedia_soup(name, year):
+    # Introductory paragraph
+    content = soup.find("div", {"class": "mw-parser-output"})
+    if content:
+        p = content.find("p", recursive=False)
+        if p:
+            match = re.search(r"n[ée]e?\s+(?:le\s+\d{1,2}\s+[^\d]+\s+)?(\d{4})", p.get_text())
+            if match:
+                return int(match.group(1))
+
+    # Categories
+    cats = soup.find("div", {"id": "mw-normal-catlinks"})
+    if cats:
+        for link in cats.find_all("a"):
+            if "naissance" in link.get_text().lower():
+                match = re.search(r"(\d{4})", link.get_text())
+                if match:
+                    return int(match.group(1))
+
+    return None
+
+
+def get_wikipedia_soup(name):
     # Fetch wikipedia content
     clean_name = name.replace(',', '').strip()
     base_formatted = clean_name.replace(' ', '_')
-    variations = [base_formatted, f"{base_formatted}_(homme_politique)", f"{base_formatted}_(femme_politique)", f"{base_formatted}_(personnalité_politique)"]
+    variations = [base_formatted, ]
+    variations = [base_formatted, f"{base_formatted}_(universitaire)", f"{base_formatted}_(scientifique)", f"{base_formatted}_(chercheur)", f"{base_formatted}_(professeur)"]
     
     for variant in variations:
         url = f"https://fr.wikipedia.org/wiki/{quote(variant)}"
@@ -170,46 +215,62 @@ def get_wikipedia_soup(name, year):
             resp = requests.get(url, headers=HEADERS, timeout=5)
             if resp.status_code == 200:
                 soup = BeautifulSoup(resp.content, 'html.parser')
-                if is_correct_profile(soup, name, year):
+                if is_correct_profile(soup, name):
                     return soup
         except: continue
     return None
 
-def process_senator(index, name, dob):
+def process(index, name, dob):
     try:
-        soup = get_wikipedia_soup(name, dob)
+        soup = get_wikipedia_soup(name)
         if soup:
             pob = extract_pob(soup)
-            return index, pob
-        return index, "Not found"
+            dob = extract_dob(soup)
+            return index, pob, dob
+        return index, "Not found", "Not found"
     except Exception as e:
-        return index, f"Error: {str(e)}"
+        return index, f"Error: {str(e)}", "error"
 
 # Main
 
 if __name__ == "__main__":
-    # Load data and creating df
-    input_file = "/Users/eyquem/Desktop/LeadersMap/sources/data.senat_Informations_generales_sur_les_senateurs.xls"
+    import pandas as pd
+    from concurrent.futures import ThreadPoolExecutor
+
+    # Load data
+    input_file = "/Users/eyquem/Desktop/LeadersMap/sources/college_de_france_liste_historique_chaires.xlsx"
     df_raw = pd.read_excel(input_file)
     
-    df = pd.DataFrame()
-    df["name"] = df_raw.iloc[:, 3] + " " + df_raw.iloc[:, 2]  
-    df["tag"] = "senat"
-    df["dob"] = pd.to_datetime(df_raw.iloc[:, 5], errors='coerce').dt.year
-    df["pob"] = ""
+    df = pd.DataFrame(columns=["name", "tag", "dob", "pob"])
+    
+    for idx in range(399, len(df_raw)):
+        years = str(df_raw.iloc[idx, 3])
+        if "-" in years:
+            start, end = years.split("-", 1)
+            end = end.strip()
+            # We keep only if the course was ongoing during the Fifth Republic, or is still ongoing
+            if not end.isdigit() or int(end) >= 1958:
+                name = str(df_raw.iloc[idx, 1]) + " " + str(df_raw.iloc[idx, 0])
+                df = pd.concat([df, pd.DataFrame([{
+                    "name": name,
+                    "tag": "college_de_france",
+                    "dob": "",
+                    "pob": ""
+                }])], ignore_index=True)
 
-    print(f"Scraping wikipedia for dob of {len(df)} senators...")
+    print(f"Scraping wikipedia for dob of {len(df)} professors...")
     total = len(df)
 
-    with ThreadPoolExecutor(max_workers=10) as executor: # Using 10 threads
-        futures = [executor.submit(process_senator, i, row['name'], row['dob']) for i, row in df.iterrows()]
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        futures = [executor.submit(process, i, row['name'], row['dob']) for i, row in df.iterrows()]
         
         for future in futures:
-            idx, res = future.result()
-            df.at[idx, 'pob'] = res
-            print(f"\r\033[K[{idx+1}/{total}] {df.at[idx, 'name']} : {res}", end="", flush=True)
+            idx, pob, dob = future.result()
+            df.at[idx, 'pob'] = pob
+            df.at[idx, 'dob'] = dob
+            print(f"\r\033[K[{idx}/{total}] {df.at[idx, 'name']} : {pob}, {dob}", end="", flush=True)
 
-    output_file = "/Users/eyquem/Desktop/LeadersMap/outputs/senat_geo_missing.csv"
+    output_file = "/Users/eyquem/Desktop/LeadersMap/outputs/cf_geo_missing.csv"
     df.to_csv(output_file, index=False)
     print(df.head())
     print(f"\nResults saved to {output_file}")

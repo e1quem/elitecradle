@@ -53,13 +53,22 @@ def main():
     #input_path = "/Users/eyquem/Desktop/LeadersMap/sources/dp_geo_missing_2.csv"
     #output_path = "/Users/eyquem/Desktop/LeadersMap/outputs/dp_geo_enriched_2.csv"
 
-    # 3. Paths used to populate the geo data of senat_data_raw.csv
-    #input_path = "/Users/eyquem/Desktop/LeadersMap/outputs/senat_geo_missing.csv"
-    #output_path = "/Users/eyquem/Desktop/LeadersMap/outputs/senat_geo_enriched.csv"
+    # 3. Paths used to populate the geo data of sn_data_raw.csv
+    #input_path = "/Users/eyquem/Desktop/LeadersMap/outputs/sn_geo_missing.csv"
+    #output_path = "/Users/eyquem/Desktop/LeadersMap/outputs/sn_geo_enriched.csv"
 
     # 4. Paths used for the list of correct pob with foreing dept
-    input_path = "/Users/eyquem/Desktop/LeadersMap/sources/senat_foreign_missing.csv"
-    output_path = "/Users/eyquem/Desktop/LeadersMap/outputs/senat_foreign_enriched.csv"
+    #input_path = "/Users/eyquem/Desktop/LeadersMap/sources/sn_foreign_missing.csv"
+    #output_path = "/Users/eyquem/Desktop/LeadersMap/outputs/sn_foreign_enriched.csv"
+
+    # 5. Paths used for the Collège de France
+    #input_path = "/Users/eyquem/Desktop/LeadersMap/outputs/cf_geo_missing.csv"
+    #output_path = "/Users/eyquem/Desktop/LeadersMap/outputs/cf_geo_enriched.csv"
+
+    # 6. Paths used for ministers
+    input_path = "/Users/eyquem/Desktop/LeadersMap/outputs/mn_geo_missing.csv"
+    output_path = "/Users/eyquem/Desktop/LeadersMap/outputs/mn_geo_enriched.csv"
+
 
     df = pd.read_csv(input_path, sep=None, engine='python')
 
