@@ -204,7 +204,7 @@ def get_wikipedia_soup(name):
     clean_name = name.replace(',', '').strip()
     base_formatted = clean_name.replace(' ', '_')
     variations = [base_formatted, ]
-    variations = [base_formatted, f"{base_formatted}_(personalité_publique)", f"{base_formatted}_(chevalier_de_la_Légion_d'honneur)", f"{base_formatted}_(PDG)", f"{base_formatted}_(dirigeant)", f"{base_formatted}_(homme_d'affaire)", f"{base_formatted}_(femme_d'affaire)", f"{base_formatted}_(entrepreneur)"]
+    variations = [base_formatted, f"{base_formatted}_(personnalité_publique)", f"{base_formatted}_(chevalier_de_la_Légion_d'honneur)", f"{base_formatted}_(PDG)", f"{base_formatted}_(dirigeant)", f"{base_formatted}_(homme_d'affaire)", f"{base_formatted}_(femme_d'affaire)", f"{base_formatted}_(entrepreneur)"]
     
     for variant in variations:
         url = f"https://fr.wikipedia.org/wiki/{quote(variant)}"
