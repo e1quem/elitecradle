@@ -1,0 +1,405 @@
+name;tag;dob;pob;lat;lon;dep_num;dep_name;region;confidence
+Aiman Ezzat;executive;1961.0;Ismaïlia;;;;;;
+Alain Saïd;executive;1995.0;Noisy-le-Grand;48.840106;2.551491;93;Seine-Saint-Denis;Île-de-France;0.955
+Albert Frere;executive;1926.0;Fontaine-l'Évêque;49.125615;-0.991743;50;Manche;Normandie;0.935
+Alexandre Arnault;executive;1992.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Alexandre Begougne-De-Juniac;executive;1962.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Alexandre Bompard;executive;1972.0;Saint-Étienne;45.430195;4.370045;42;Loire;Auvergne-Rhône-Alpes;0.959
+Alexandre De-Palmas;executive;1974.0;Montpellier;43.610476;3.87048;34;Hérault;Occitanie;0.962
+Alexandre Ricard;executive;1972.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Alexandre Ricard;executive;1972.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+André Francois-Poncet;executive;1887.0;Provins;48.558668;3.2981;77;Seine-et-Marne;Île-de-France;0.947
+Andre Kudelski;executive;1960.0;Lausanne;47.043244;1.182838;37;Indre-et-Loire;Centre-Val de Loire;0.939
+Ann Achleitner;executive;1956.0;Linz;47.949623;7.113453;68;Haut-Rhin;Grand Est;0.85
+Anne Bardot;executive;1934.0;Paris 15;48.84374237060547;2.2927637100219727;75;Paris;Île-de-France;0.869
+Anne Heilbronner;executive;1969.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Anne Idrac;executive;1951.0;Saint-Brieuc;48.508238;-2.766074;22;Côtes-d'Armor;Bretagne;0.953
+Anne Idrac;executive;1951.0;Saint-Brieuc;48.508238;-2.766074;22;Côtes-d'Armor;Bretagne;0.953
+Anne Lalou;executive;1963.0;Paris 14;48.83161926269531;2.3244473934173584;75;Paris;Île-de-France;0.867
+Anne Rigail;executive;1969.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;0.957
+Anne-claire Meyer;executive;1945.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Anne-gabrielle Lahoud;executive;1969.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Anne-marie Couderc;executive;1950.0;Aubusson;45.948902;2.174535;23;Creuse;Nouvelle-Aquitaine;0.941
+Anne-marie Idrac;executive;1951.0;Saint-Brieuc;48.508238;-2.766074;22;Côtes-d'Armor;Bretagne;0.953
+Annette Winkler;executive;1959.0;Wiesbaden;;;;;;
+Antoine Arnault;executive;1977.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;0.956
+Antoine Bernard-De-Saint-Affrique;executive;1964.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Antoine Bernard-De-Saint-Affrique;executive;1964.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Antoine De-Saint-Affrique;executive;1964.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Antoine Frerot;executive;1958.0;Fontainebleau;44.74432;-0.416475;33;Gironde;Nouvelle-Aquitaine;0.955
+Arnaud Erulin;executive;1932.0;Dole;47.077883;5.493658;39;Jura;Bourgogne-Franche-Comté;0.95
+Arnaud Rousseau;executive;1974.0;Meaux;48.129978;-1.760489;35;Ille-et-Vilaine;Bretagne;0.956
+Arnaud Roy-De-Puyfontaine;executive;1964.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Arnaud Roy-De-Puyfontaine;executive;1964.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Arthur Sadoun;executive;1971.0;Dourdan;48.535769;2.012239;91;Essonne;Île-de-France;0.946
+Astrid Panosyan;executive;1971.0;Paris 14;48.83161926269531;2.3244473934173584;75;Paris;Île-de-France;0.867
+Astrid Panosyan;executive;1971.0;Paris 14;48.83161926269531;2.3244473934173584;75;Paris;Île-de-France;0.867
+Athina Onassis;executive;1985.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Aurélie Jean;executive;1982.0;Clamart;47.574611;-2.357272;56;Morbihan;Bretagne;0.958
+Axel Dumas;executive;1970.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Axel Dumas;executive;1970.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Aymeric Renaud;executive;1971.0;Boulogne-sur-Mer;50.726334;1.607492;62;Pas-de-Calais;Hauts-de-France;0.952
+Barbara Dalibard;executive;1958.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;0.953
+Barbara Kux;executive;1954.0;Zurich;48.5799;7.757655;67;Bas-Rhin;Grand Est;0.707
+Barbara Kux;executive;1954.0;Zurich;48.5799;7.757655;67;Bas-Rhin;Grand Est;0.707
+Baudoin Prot;executive;1951.0;Paris 17;48.88784408569336;2.3070974349975586;75;Paris;Île-de-France;0.868
+Baudoin Prot;executive;1951.0;Paris 17;48.88784408569336;2.3070974349975586;75;Paris;Île-de-France;0.868
+Baudouin Prot;executive;1951.0;Paris 17;48.88784408569336;2.3070974349975586;75;Paris;Île-de-France;0.868
+Belen Garijo;executive;1960.0;Almansa;46.086638;3.681519;3;Allier;Auvergne-Rhône-Alpes;0.36
+Benoit Bazin;executive;1968.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Benoît Bazin;executive;1968.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Benoit Potier;executive;1957.0;Mulhouse;47.749509;7.36973;68;Haut-Rhin;Grand Est;0.964
+Bernadette Chirac;executive;1933.0;Paris 16;48.86101150512695;2.2834136486053467;75;Paris;Île-de-France;0.868
+Bernard Arnault;executive;1949.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;0.956
+Bernard Dupouy;executive;1825.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;0.961
+Bernard Emie;executive;1958.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Bernard Fontana;executive;1961.0;Toamasina;;;;;;
+Bernard Ramanantsoa;executive;1948.0;Mulhouse;47.749509;7.36973;68;Haut-Rhin;Grand Est;0.964
+Bertrand Meheut;executive;1951.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;0.96
+Bruno Bonnell;executive;1958.0;Alger;48.334676;-0.546793;53;Mayenne;Pays de la Loire;0.943
+Bruno Roger;executive;1933.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Carlo Ferro;executive;1984.0;Torreón;48.588635;-4.530112;29;Finistère;Bretagne;0.455
+Carlos Ghosn-Bichara;executive;1954.0;Porto Velho;41.582755;9.263941;2A;Corse-du-Sud;Corse;0.419
+Caroline Laurent;executive;1963.0;Versailles;48.803019;2.131319;78;Yvelines;Île-de-France;0.956
+Caroline Laurent;executive;1963.0;Versailles;48.803019;2.131319;78;Yvelines;Île-de-France;0.956
+Caroline Parot;executive;1972.0;Aix-en-Provence;43.541369;5.406124;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.958
+Catherine Barba;executive;1973.0;Rueil-Malmaison;48.874531;2.180455;92;Hauts-de-Seine;Île-de-France;0.955
+Catherine Garde;executive;1519.0;Florence;44.84132;-0.411643;33;Gironde;Nouvelle-Aquitaine;0.943
+Catherine Guillouard;executive;1965.0;Cannes;43.555468;7.004585;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;0.955
+Catherine Lawson;executive;1940.0;Brooklyn;;;;;;
+Catherine Macgregor;executive;1972.0;Salé;46.962139;0.906435;37;Indre-et-Loire;Centre-Val de Loire;0.934
+Catherine Pariset;executive;1770.0;Grand et mort le 3 ju;;;;;;
+Charles Edelstenne;executive;1938.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Charles Edelstenne;executive;1938.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Charles Wiener-De-Croisset;executive;1943.0;New York;44.869736;-0.54963;33;Gironde;Nouvelle-Aquitaine;0.705
+Charles-eric Bauer;executive;1961.0;Paris 17;48.88784408569336;2.3070974349975586;75;Paris;Île-de-France;0.868
+Charlotte Bouygues;executive;1952.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;0.953
+Cherie Blair;executive;1954.0;Bury;47.468035;1.196237;41;Loir-et-Cher;Centre-Val de Loire;0.944
+Christel Heydemann;executive;1974.0;Clamart;47.574611;-2.357272;56;Morbihan;Bretagne;0.958
+Christel Heydemann;executive;1974.0;Clamart;47.574611;-2.357272;56;Morbihan;Bretagne;0.958
+Christian Mulliez;executive;1963.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;0.956
+Christian Scherer;executive;1947.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;0.957
+Christian Streiff;executive;1954.0;Sarrebourg;48.736347;7.053883;57;Moselle;Grand Est;0.947
+Christian Streiff;executive;1954.0;Sarrebourg;48.736347;7.053883;57;Moselle;Grand Est;0.947
+Christian Streiff;executive;1954.0;Sarrebourg;48.736347;7.053883;57;Moselle;Grand Est;0.947
+Christiane Lambert;executive;1961.0;Saint-Flour (Cantal);45.02387;3.07272;15;Cantal;Auvergne-Rhône-Alpes;0.516
+Christophe Aubert;executive;1948.0;Avenches;47.301825;5.005796;21;Côte-d'Or;Bourgogne-Franche-Comté;0.697
+Christophe Cuvillier;executive;1962.0;Etterbeek;48.855238;2.481777;94;Val-de-Marne;Île-de-France;0.684
+Christophe Le-Roy;executive;1957.0;Great Neck (New York);45.18383;5.714504;38;Isère;Auvergne-Rhône-Alpes;0.364
+Claire Waysand;executive;1969.0;Fontenay-aux-Roses;48.789528;2.288257;92;Hauts-de-Seine;Île-de-France;0.95
+Claude Lepage;executive;1848.0;Damvillers et mort le;49.342268;5.39888;55;Meuse;Grand Est;0.407
+Concetta Battaglia;executive;1935.0;Palerme;45.925563;3.224946;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;0.846
+Cyrille Bollore;executive;1985.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+David De-Rothschild;executive;1942.0;New York;44.869736;-0.54963;33;Gironde;Nouvelle-Aquitaine;0.705
+David Descamps;executive;1956.0;Mons;48.02217;-1.769761;35;Ille-et-Vilaine;Bretagne;0.966
+Delphine Arnault;executive;1975.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;0.956
+Delphine D'Amarzit;executive;1973.0;Saint-Mandé;48.841526;2.419441;94;Val-de-Marne;Île-de-France;0.949
+Delphine De-Sahuguet-D-Amarzit;executive;1973.0;Saint-Mandé;48.841526;2.419441;94;Val-de-Marne;Île-de-France;0.949
+Delphine De-Sahuguet-D'Amarzit;executive;1973.0;Saint-Mandé;48.841526;2.419441;94;Val-de-Marne;Île-de-France;0.949
+Delphine De-Sahuguet-D'Amarzit;executive;1973.0;Saint-Mandé;48.841526;2.419441;94;Val-de-Marne;Île-de-France;0.949
+Delphine De-Sahuguet-D'Amarzit;executive;1973.0;Saint-Mandé;48.841526;2.419441;94;Val-de-Marne;Île-de-France;0.949
+Delphine Stephann;executive;1966.0;Bayonne dans les années 1960;;;;;;
+Diego Della-Valle;executive;1953.0;Sant'Elpidio a Mare;;;;;;
+Dominique Delport;executive;1967.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;0.964
+Dominique Lefebvre;executive;1956.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;0.956
+Dominique Marcel;executive;1953.0;Rabat;14.465505;-60.842925;972;Martinique;;0.855
+Dominique Payen-De-La-Garanderie;executive;1943.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Dominique Senequier;executive;1953.0;Toulon;43.136379;5.933443;83;Var;Provence-Alpes-Côte d'Azur;0.959
+Edmond Alphandery;executive;1943.0;Avignon;48.390692;-1.759389;35;Ille-et-Vilaine;Bretagne;0.957
+Elena Salgado-Mendez;executive;1949.0;Orense;48.005425;-4.095223;29;Finistère;Bretagne;0.687
+Elisabeth Badinter;executive;1944.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Emmanuel Faber;executive;1964.0;Grenoble;45.182828;5.724369;38;Isère;Auvergne-Rhône-Alpes;0.958
+Emmanuel Moulin;executive;1968.0;Versailles;48.803019;2.131319;78;Yvelines;Île-de-France;0.956
+Emmanuel Theret;executive;1991.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Enrico Letta;executive;1966.0;Pise;43.667399;4.614228;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.695
+Eric Trappier;executive;1960.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Eric Trappier;executive;1960.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Eric Vial;executive;1958.0;Grenoble;45.182828;5.724369;38;Isère;Auvergne-Rhône-Alpes;0.958
+Estelle Brachlianoff;executive;1972.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Estelle Brachlianoff;executive;1972.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Fabrice Bregier;executive;1961.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;0.959
+Fabrice Bregier;executive;1961.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;0.959
+Fabrice Bregier;executive;1961.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;0.959
+Fabrice Bregier;executive;1961.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;0.959
+Felicie Burelle;executive;1949.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Fernanda Saraiva;executive;1936.0;Maputo;;;;;;
+Fernanda Saraiva;executive;1936.0;Maputo;;;;;;
+Florence Parly;executive;1963.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Florent Menegaux;executive;1962.0;Issy-les-Moulineaux;48.823903;2.262887;92;Hauts-de-Seine;Île-de-France;0.955
+Franck Cadoret;executive;1887.0;Riec-sur-Bélon;47.852994;-3.680678;29;Finistère;Bretagne;0.942
+Franck Riboud;executive;1955.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Franck Riboud;executive;1955.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+François Fay;executive;1974.0;Enghien-les-Bains;48.971047;2.305251;95;Val-d'Oise;Île-de-France;0.947
+François Riahi;executive;1973.0;Paris 8;48.87311553955078;2.310023307800293;75;Paris;Île-de-France;0.692
+François Thibault;executive;1835.0;Châtillon-sur-Cher et;47.293936;1.485155;41;Loir-et-Cher;Centre-Val de Loire;0.724
+Françoise Gri;executive;1957.0;Agen;44.202304;0.631041;47;Lot-et-Garonne;Nouvelle-Aquitaine;0.951
+Frederic Delpy;executive;1971.0;Orléans;47.873569;1.911358;45;Loiret;Centre-Val de Loire;0.957
+Frédéric Gagey;executive;1956.0;Vesoul;47.628692;6.157979;70;Haute-Saône;Bourgogne-Franche-Comté;0.948
+Frédéric Mazella;executive;1976.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;0.962
+Frédéric Mazzella;executive;1976.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;0.962
+Frederic Oudéa;executive;1963.0;Paris 15;48.84374237060547;2.2927637100219727;75;Paris;Île-de-France;0.869
+Frederic Saint-Geours;executive;1950.0;Clamart;47.574611;-2.357272;56;Morbihan;Bretagne;0.958
+Georges Pauget;executive;1947.0;Rumilly (Haute-Savoie);45.863624;5.95045;74;Haute-Savoie;Auvergne-Rhône-Alpes;0.459
+Gérard Hauser;executive;1941.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;0.961
+Gerard Mestrallet;executive;1949.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Gérard Mestrallet;executive;1949.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Gilles Grapinet;executive;1963.0;Aix-en-Provence;43.541369;5.406124;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.958
+Gilles Schnepp;executive;1958.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Giovanna Melandri;executive;1962.0;New York;44.869736;-0.54963;33;Gironde;Nouvelle-Aquitaine;0.705
+Giovanni Bisignani;executive;1946.0;Rome;49.687897;5.019168;8;Ardennes;Grand Est;0.948
+Giovanni Bisignani;executive;1946.0;Rome;49.687897;5.019168;8;Ardennes;Grand Est;0.948
+Guillaume Andre;executive;;Falaise;46.986148;0.632552;86;Vienne;Nouvelle-Aquitaine;0.948
+Guillaume Faury;executive;1968.0;Cherbourg;49.628684;-1.63324;50;Manche;Normandie;0.864
+Guillaume Faury;executive;1968.0;Cherbourg;49.628684;-1.63324;50;Manche;Normandie;0.864
+Henri De-La-Croix-De-Castries;executive;1954.0;Bayonne dans les années 1950;;;;;;
+Henri Poupart-Lafarge;executive;1969.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;0.957
+Henri Proglio;executive;1949.0;Antibes;43.582206;7.103245;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;0.955
+Henri Proglio;executive;1949.0;Antibes;43.582206;7.103245;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;0.955
+Henrietta Fore;executive;1948.0;Chicago;47.301281;5.063328;21;Côte-d'Or;Bourgogne-Franche-Comté;0.701
+Henrietta Holsman;executive;1948.0;Chicago;47.301281;5.063328;21;Côte-d'Or;Bourgogne-Franche-Comté;0.701
+Herve Chaillou;executive;1946.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;0.96
+Herve Chaillou;executive;1946.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;0.96
+Hubert Sagnieres;executive;1955.0;Vienne;45.802059;1.125658;87;Haute-Vienne;Nouvelle-Aquitaine;0.958
+Hubert Sagnieres;executive;1955.0;Vienne;45.802059;1.125658;87;Haute-Vienne;Nouvelle-Aquitaine;0.958
+Hubert Vedrine;executive;1947.0;Bellegarde-en-Marche;45.98203;2.297421;23;Creuse;Nouvelle-Aquitaine;0.931
+Hugues Brasseur;executive;1971.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Ian Gallienne;executive;1972.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Irène Dorner;executive;;Athènes;47.249584;-1.504589;44;Loire-Atlantique;Pays de la Loire;0.702
+Iris Knobloch;executive;1963.0;Munich;42.684734;2.852813;66;Pyrénées-Orientales;Occitanie;0.695
+Iris Knobloch;executive;1963.0;Munich;42.684734;2.852813;66;Pyrénées-Orientales;Occitanie;0.695
+Isabelle Kocher;executive;1966.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Isabelle Kocher;executive;1966.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Isabelle Simon;executive;1927.0;Nice;43.71273;7.25092;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;0.962
+Jacques Aschenbroich;executive;1954.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Jacques Aschenbroich;executive;1954.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Jacques Aschenbroich;executive;1954.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Jacques Granjon;executive;1962.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.966
+Jean Bailly;executive;1922.0;Saint-Germain-le-Châtelet;47.697707;6.957576;90;Territoire de Belfort;Bourgogne-Franche-Comté;0.934
+Jean Charest;executive;1958.0;Sherbrooke;49.12355;-0.372108;14;Calvados;Normandie;0.676
+Jean Clamadieu;executive;1958.0;Chambéry;47.165242;-1.034458;49;Maine-et-Loire;Pays de la Loire;0.958
+Jean Clamadieu;executive;1958.0;Chambéry;47.165242;-1.034458;49;Maine-et-Loire;Pays de la Loire;0.958
+Jean Folz;executive;1947.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;0.961
+Jean Forneri;executive;1959.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.966
+Jean Forneri;executive;1959.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.966
+Jean Janaillac;executive;1953.0;Saint-Sulpice-de-Roum;45.204581;0.394805;24;Dordogne;Nouvelle-Aquitaine;0.839
+Jean Lemierre;executive;1950.0;Sainte-Adresse;49.509498;0.078887;76;Seine-Maritime;Normandie;0.944
+Jean Lemierre;executive;1950.0;Sainte-Adresse;49.509498;0.078887;76;Seine-Maritime;Normandie;0.944
+Jean Meyers;executive;1986.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Jean Moreau;executive;1928.0;Paris 10;48.87582778930664;2.360285758972168;75;Paris;Île-de-France;0.694
+Jean Naouri;executive;1949.0;Annaba;47.745536;-3.387898;56;Morbihan;Bretagne;0.691
+Jean Roverato;executive;1944.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;0.959
+Jean Senard;executive;1953.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Jean Severino;executive;1957.0;Abidjan;43.13;5.896004;83;Var;Provence-Alpes-Côte d'Azur;0.694
+Jean Simon;executive;1912.0;Brest;48.406435;-4.497736;29;Finistère;Bretagne;0.958
+Jean-dominique Comolli;executive;1948.0;Béjaïa;;;;;;
+Jean-dominique Senard;executive;1953.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Jean-laurent Bonnafe;executive;1961.0;Albi;43.929864;2.149681;81;Tarn;Occitanie;0.953
+Jean-marc Chéry;executive;1960.0;Orléans;47.873569;1.911358;45;Loiret;Centre-Val de Loire;0.957
+Jean-michel Gras;executive;1946.0;Morlaix;48.595154;-3.820202;29;Finistère;Bretagne;0.948
+Jean-michel Severino;executive;1957.0;Abidjan;43.13;5.896004;83;Var;Provence-Alpes-Côte d'Azur;0.694
+Jean-paul Agon;executive;1956.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Jean-philippe Thierry;executive;1948.0;Paris 17;48.88784408569336;2.3070974349975586;75;Paris;Île-de-France;0.868
+Jean-pierre Gaillard;executive;1939.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Jean-victor Meyers;executive;1986.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Jeremy Chauveau;executive;1945.0;Bourg-en-Bresse;46.206576;5.241985;1;Ain;Auvergne-Rhône-Alpes;0.952
+Johan Praud;executive;1964.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;0.962
+John Harrison;executive;1693.0;Foulby dans le comté;47.98325;3.398376;89;Yonne;Bourgogne-Franche-Comté;0.35
+José Duran;executive;1964.0;Madrid;45.562042;-0.207448;16;Charente;Nouvelle-Aquitaine;0.937
+Jules Niel;executive;1967.0;Maisons-Alfort;48.801685;2.440318;94;Val-de-Marne;Île-de-France;0.954
+Julia Marton-Lefevre;executive;1946.0;Budapest;48.019789;0.206348;72;Sarthe;Pays de la Loire;0.702
+Julien Tanguy;executive;1825.0;Plédran en Bretagne;;;;;;
+Juliette Favre;executive;1836.0;Verberie;49.311862;2.742606;60;Oise;Hauts-de-France;0.942
+Juliette Favre;executive;1836.0;Verberie;49.311862;2.742606;60;Oise;Hauts-de-France;0.942
+Katherine Fleming;executive;1881.0;Darvel;;;;;;
+Lars Wagner;executive;1813.0;Leipzig;;;;;;
+Laurence Boone;executive;1969.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Laurence Danon;executive;1956.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;0.961
+Laurent Dassault;executive;1953.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Laurent Dupont;executive;1996.0;Lannemezan;43.124965;0.392453;65;Hautes-Pyrénées;Occitanie;0.943
+Laurent Mignon;executive;1963.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Laurent Mignon;executive;1963.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Laurent Mignon;executive;1963.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Laurent Mignon;executive;1963.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Laurent Pietraszewski;executive;1966.0;Saint-Denis;-20.909778;55.444588;974;La Réunion;;0.958
+Laurent Seyer;executive;1965.0;Montreuil (Seine-Saint-Denis);48.872323;2.455188;93;Seine-Saint-Denis;Île-de-France;0.615
+Legrand;executive;1952.0;Paris 17;48.88784408569336;2.3070974349975586;75;Paris;Île-de-France;0.868
+Leonardo Del-Vecchio;executive;1935.0;Milan;43.419298;4.977489;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.951
+Lionel Duparay;executive;1981.0;Châtenay-Malabry;48.769869;2.258651;92;Hauts-de-Seine;Île-de-France;0.952
+Lionel Zinsou-Derlin;executive;1954.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Loic Rocard;executive;1972.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Lorenzo Bini-Smaghi;executive;1956.0;Florence;44.84132;-0.411643;33;Gironde;Nouvelle-Aquitaine;0.943
+Lorenzo Rosso;executive;1494.0;Florence;44.84132;-0.411643;33;Gironde;Nouvelle-Aquitaine;0.943
+Louis Richard;executive;1795.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;0.96
+Louis Schweitzer;executive;1942.0;Genève;47.21202;-1.60215;44;Loire-Atlantique;Pays de la Loire;0.708
+Louise Frechette;executive;1946.0;Montréal;43.201178;2.129618;11;Aude;Occitanie;0.939
+Louise Frechette;executive;1946.0;Montréal;43.201178;2.129618;11;Aude;Occitanie;0.939
+Luc Remont;executive;1969.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;0.957
+Luca De-Meo;executive;1967.0;Milan;43.419298;4.977489;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.951
+Luca De-Meo;executive;1967.0;Milan;43.419298;4.977489;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.951
+Magali Vallee;executive;1966.0;Ajaccio;41.93368;8.715325;2A;Corse-du-Sud;Corse;0.955
+Mahkameh Brunel;executive;1956.0;Téhéran;48.876918;2.312637;75;Paris;Île-de-France;0.694
+Marc Aubry;executive;1966.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Marc Aubry;executive;1966.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Marc Ladreit-De-Lacharriere;executive;1940.0;Nice;43.71273;7.25092;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;0.962
+Marco Villa;executive;1969.0;Abbiategrasso;47.854727;5.330821;52;Haute-Marne;Grand Est;0.681
+Maria Erra;executive;1954.0;Sabadell;45.017799;4.034868;43;Haute-Loire;Auvergne-Rhône-Alpes;0.742
+Maria Van-Der-Hoeven;executive;1949.0;Meerssen;48.000342;1.358905;28;Eure-et-Loir;Centre-Val de Loire;0.479
+Marie Coisne;executive;1956.0;Maubeuge;50.284569;3.965341;59;Nord;Hauts-de-France;0.951
+Marie Mayer;executive;1777.0;Francfort-sur-le-Main;49.895736;2.26189;80;Somme;Hauts-de-France;0.36
+Marie Tschudin;executive;1934.0;Neuchâtel;47.379894;6.73069;25;Doubs;Bourgogne-Franche-Comté;0.837
+Marie-ange Debon;executive;1965.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Marie-christine Roquette;executive;1956.0;Maubeuge;50.284569;3.965341;59;Nord;Hauts-de-France;0.951
+Marie-josee Kravis;executive;1949.0;Ottawa;47.258008;-1.576178;44;Loire-Atlantique;Pays de la Loire;0.701
+Marie-josee Kravis;executive;1949.0;Ottawa;47.258008;-1.576178;44;Loire-Atlantique;Pays de la Loire;0.701
+Marie-laure Hannezo;executive;1961.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Marion Guillou;executive;1954.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.966
+Martin Bouygues;executive;1952.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;0.953
+Martin Bouygues;executive;1952.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;0.953
+Martin Vial;executive;1954.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Martin Vial;executive;1954.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Martin Vial;executive;1954.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Mary Harris;executive;1837.0;Cork au XIXe siècle;44.0441;1.103216;82;Tarn-et-Garonne;Occitanie;0.477
+Mathilde Godard;executive;1951.0;Dun-sur-Auron;46.892867;2.554566;18;Cher;Centre-Val de Loire;0.941
+Matthieu Dumas;executive;1753.0;Montpellier;43.610476;3.87048;34;Hérault;Occitanie;0.962
+Maud Fontenoy;executive;1977.0;Meaux;48.129978;-1.760489;35;Ille-et-Vilaine;Bretagne;0.956
+Maureen Cavanagh;executive;1963.0;Ottawa;47.258008;-1.576178;44;Loire-Atlantique;Pays de la Loire;0.701
+Maureen Cavanagh;executive;1963.0;Ottawa;47.258008;-1.576178;44;Loire-Atlantique;Pays de la Loire;0.701
+Maureen Chiquet;executive;1963.0;Saint-Louis (Missouri);47.496993;-1.31594;44;Loire-Atlantique;Pays de la Loire;0.478
+Maurice Levy;executive;1942.0;Oujda;;;;;;
+Maxime Saada;executive;1970.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Maxime Saada;executive;1970.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+May Gicquel;executive;1977.0;Tunis;44.05238;0.276355;47;Lot-et-Garonne;Nouvelle-Aquitaine;0.942
+Michel Cicurel;executive;1947.0;Cannes;43.555468;7.004585;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;0.955
+Michel Landel;executive;1951.0;Meknès;43.31365;5.454245;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.692
+Michele Reiser;executive;1941.0;Réhon en Meurthe-et-M;;;;;;
+Michelin Compagnie-Generale-Des-Etablissements;executive;1853.0;Paris 3;48.863365173339844;2.358234405517578;75;Paris;Île-de-France;0.86
+Michelle Baron;executive;1653.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Miriem Bensalah-Chaqroun;executive;1962.0;Casablanca;43.663279;-1.288498;40;Landes;Nouvelle-Aquitaine;0.948
+Monica Mondardini;executive;1960.0;Cesena;44.619114;4.377574;7;Ardèche;Auvergne-Rhône-Alpes;0.688
+Monique Cohen;executive;1944.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;0.964
+Monique Cohen;executive;1944.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;0.964
+Monique Cohen;executive;1944.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;0.964
+Natacha Valla;executive;1976.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.966
+Natacha Valla;executive;1976.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.966
+Nicolas Bazire;executive;1957.0;Fort-de-France;14.636435;-61.064096;972;Martinique;;0.955
+Nicolas Bellet-De-Tavernost;executive;1950.0;Villefranche-sur-Saône;45.985089;4.724382;69;Rhône;Auvergne-Rhône-Alpes;0.952
+Nicolas Hieronimus;executive;1964.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Nicolas Meyers;executive;1953.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Nicolas Namias;executive;1976.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Nicolas Sarkozy-De-Nagy-Bocsa;executive;1955.0;Paris 17;48.88784408569336;2.3070974349975586;75;Paris;Île-de-France;0.868
+Odile Basso;executive;1965.0;Saint-Étienne;45.430195;4.370045;42;Loire;Auvergne-Rhône-Alpes;0.959
+Olivier Bouygues;executive;1950.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;0.953
+Olivier Bouygues;executive;1950.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;0.953
+Olivier Chantal;executive;1948.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;0.956
+Olivier Dassault;executive;1951.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Olivier Roussat;executive;1964.0;Moulins (Allier);46.565328;3.333038;3;Allier;Auvergne-Rhône-Alpes;0.552
+Olivier Roussat;executive;1964.0;Moulins (Allier);46.565328;3.333038;3;Allier;Auvergne-Rhône-Alpes;0.552
+Olivier Roussat;executive;1964.0;Moulins (Allier);46.565328;3.333038;3;Allier;Auvergne-Rhône-Alpes;0.552
+Paolo Scaroni;executive;1946.0;Vicence;41.940202;8.745519;2A;Corse-du-Sud;Corse;0.694
+Pascal Cagni;executive;1961.0;Cernay;47.817609;1.56653;45;Loiret;Centre-Val de Loire;0.949
+Pascale Berger;executive;1989.0;Berthoud;45.06967;-0.589597;33;Gironde;Nouvelle-Aquitaine;0.728
+Pascale Sourisse;executive;1962.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;0.962
+Pascale Sourisse;executive;1962.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;0.962
+Pascale Sourisse;executive;1962.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;0.962
+Patrice Caine;executive;1970.0;Paris 15;48.84374237060547;2.2927637100219727;75;Paris;Île-de-France;0.869
+Patrice Caine;executive;1970.0;Paris 15;48.84374237060547;2.2927637100219727;75;Paris;Île-de-France;0.869
+Patrice Durand;executive;1952.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Patrick Artus;executive;1951.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;0.96
+Patrick Buffet;executive;1953.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Patrick Kron;executive;1953.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Patrick Thomas;executive;1947.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;0.959
+Patrick Vieu;executive;1947.0;Saint-Brieuc;48.508238;-2.766074;22;Côtes-d'Armor;Bretagne;0.953
+Paul Bulcke;executive;1954.0;Roulers;50.595824;2.82416;59;Nord;Hauts-de-France;0.674
+Paul Desmarais;executive;1927.0;Grand Sudbury;49.367295;2.421506;60;Oise;Hauts-de-France;0.369
+Paul Hermelin;executive;1952.0;Etterbeek;48.855238;2.481777;94;Val-de-Marne;Île-de-France;0.684
+Paul Hermelin;executive;1952.0;Etterbeek;48.855238;2.481777;94;Val-de-Marne;Île-de-France;0.684
+Peter Brabeck-Letmathe;executive;1944.0;Villach;45.188987;1.255944;24;Dordogne;Nouvelle-Aquitaine;0.703
+Peter Hartman;executive;1935.0;Aix-la-Chapelle;49.253191;4.063235;51;Marne;Grand Est;0.699
+Peter Ricketts;executive;1952.0;Royal Sutton Coldfield;;;;;;
+Philippe Benacin;executive;1959.0;Tunis le 15 janvier 1;;;;;;
+Philippe Boujut;executive;1940.0;Jarnac;45.690032;-0.169722;16;Charente;Nouvelle-Aquitaine;0.942
+Philippe Brassac;executive;1959.0;Nîmes;43.814652;4.356289;30;Gard;Occitanie;0.958
+Philippe Brassac;executive;1959.0;Nîmes;43.814652;4.356289;30;Gard;Occitanie;0.958
+Philippe Heim;executive;1968.0;Sarreguemines;49.110922;7.07705;57;Moselle;Grand Est;0.949
+Philippe Knoche;executive;1969.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;0.961
+Philippe Labro;executive;1936.0;Montauban;16.210225;-61.499535;971;Guadeloupe;;0.968
+Philippe Lagayette;executive;1943.0;Tulle;45.267177;1.764073;19;Corrèze;Nouvelle-Aquitaine;0.947
+Philippe Lepage;executive;1951.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Philippe Malet;executive;1909.0;Montpellier;43.610476;3.87048;34;Hérault;Occitanie;0.962
+Philippe Palazzi;executive;1971.0;Aix-en-Provence;43.541369;5.406124;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.958
+Philippe Petitcolin;executive;1952.0;Saint-Mihiel;48.891687;5.542342;55;Meuse;Grand Est;0.942
+Philippe Petitcolin;executive;1952.0;Saint-Mihiel;48.891687;5.542342;55;Meuse;Grand Est;0.942
+Philippe Petitcolin;executive;1952.0;Saint-Mihiel;48.891687;5.542342;55;Meuse;Grand Est;0.942
+Philippe Vidal;executive;1958.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;0.962
+Pierre Anjolras;executive;1966.0;Thonon-les-Bains;46.3759;6.478152;74;Haute-Savoie;Auvergne-Rhône-Alpes;0.952
+Pierre Gode;executive;1944.0;Abbeville;50.105799;1.828902;80;Somme;Hauts-de-France;0.95
+Pierre Louette;executive;1962.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Pierre Pauliac;executive;1912.0;Villeneuve-sur-Lot;44.416152;0.747052;47;Lot-et-Garonne;Nouvelle-Aquitaine;0.95
+Pierre Pringuet;executive;1950.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Pierre Pringuet;executive;1950.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Pierre Victoria;executive;1954.0;Carhaix;48.0611;-2.708256;56;Morbihan;Bretagne;0.952
+Qiong'er Jiang;executive;1976.0;Shanghai;43.407884;4.819784;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.681
+Rachel Picard;executive;1966.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Ramon Fernandez;executive;1894.0;Paris 17;48.88784408569336;2.3070974349975586;75;Paris;Île-de-France;0.868
+Ramon Fernandez;executive;1967.0;Paris 15;48.84374237060547;2.2927637100219727;75;Paris;Île-de-France;0.869
+Raoul Roth;executive;1924.0;Paris 4;48.854515075683594;2.3588101863861084;75;Paris;Île-de-France;0.86
+Ricard Societe-Paul;executive;1909.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.966
+Robert Hubbard;executive;1911.0;Tilden dans le Nebras;47.197809;-1.125191;49;Maine-et-Loire;Pays de la Loire;0.329
+Robert Peugeot;executive;1950.0;Belfort;14.647746;-61.004454;972;Martinique;;0.963
+Robert Peugeot;executive;1950.0;Belfort;14.647746;-61.004454;972;Martinique;;0.963
+Robert Peugeot;executive;1950.0;Belfort;14.647746;-61.004454;972;Martinique;;0.963
+Rodolphe Belmer;executive;1969.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;0.96
+Rodolphe Saade;executive;1970.0;Beyrouth;43.246632;5.401532;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.698
+Roger Andrieu;executive;1940.0;Saint-Vincent-de-Conn;46.305886;4.834482;71;Saône-et-Loire;Bourgogne-Franche-Comté;0.556
+Rose Van-Lerberghe;executive;1947.0;Aiserey;47.177527;5.162952;21;Côte-d'Or;Bourgogne-Franche-Comté;0.937
+Ross Innes;executive;1954.0;Calcutta;45.69604;-0.316374;16;Charente;Nouvelle-Aquitaine;0.691
+Ross Innes;executive;1954.0;Calcutta;45.69604;-0.316374;16;Charente;Nouvelle-Aquitaine;0.691
+Ross Mc-Innes;executive;1954.0;Calcutta;45.69604;-0.316374;16;Charente;Nouvelle-Aquitaine;0.691
+Ross Mc-Innes;executive;1954.0;Calcutta;45.69604;-0.316374;16;Charente;Nouvelle-Aquitaine;0.691
+Ross Mc-Innes;executive;1954.0;Calcutta;45.69604;-0.316374;16;Charente;Nouvelle-Aquitaine;0.691
+Sebastien Bazin;executive;1961.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Serge Dassault;executive;1925.0;Paris 4;48.854515075683594;2.3588101863861084;75;Paris;Île-de-France;0.86
+Serge Weinberg;executive;1951.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Simon Badinter;executive;1944.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Simon Gillham;executive;1956.0;Letchworth Garden Cit;;;;;;
+Simon Gillham;executive;1956.0;Letchworth Garden Cit;;;;;;
+Slawomir Krupa;executive;1974.0;Bourgas;43.975538;4.695383;30;Gard;Occitanie;0.683
+Sophie Badinter;executive;1928.0;Paris 16;48.86101150512695;2.2834136486053467;75;Paris;Île-de-France;0.868
+Sophie Bellon;executive;1961.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;0.966
+Stephane Pallez;executive;1959.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Stéphane Richard;executive;1961.0;Caudéran;44.845587;-0.613117;33;Gironde;Nouvelle-Aquitaine;0.714
+Stéphane Roussel;executive;1961.0;Paris 16;48.86101150512695;2.2834136486053467;75;Paris;Île-de-France;0.868
+Stéphane Roussel;executive;1961.0;Paris 16;48.86101150512695;2.2834136486053467;75;Paris;Île-de-France;0.868
+Stephanie Ferrier;executive;1971.0;Courbevoie;48.897974;2.257057;92;Hauts-de-Seine;Île-de-France;0.956
+Stephen King;executive;1947.0;Portland (Maine);47.995168;0.184436;72;Sarthe;Pays de la Loire;0.387
+Susana Gallardo-Torrededia;executive;1964.0;Barcelone;43.46806;5.827134;83;Var;Provence-Alpes-Côte d'Azur;0.954
+Tarak Ben-Ammar;executive;1949.0;Tunis;44.05238;0.276355;47;Lot-et-Garonne;Nouvelle-Aquitaine;0.942
+Thierry Breton;executive;1955.0;Paris 14;48.83161926269531;2.3244473934173584;75;Paris;Île-de-France;0.867
+Thierry Dassault;executive;1957.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Thierry Desmarest;executive;1945.0;Paris 12;48.836666107177734;2.403441905975342;75;Paris;Île-de-France;0.867
+Thomas Enders;executive;1958.0;Bruchertseifen;;;;;;
+Tidjane Thiam;executive;1962.0;Abidjan;43.13;5.896004;83;Var;Provence-Alpes-Côte d'Azur;0.694
+Tidjane Thiam;executive;1962.0;Abidjan;43.13;5.896004;83;Var;Provence-Alpes-Côte d'Azur;0.694
+Valérie Baudson;executive;1971.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Valérie Baudson;executive;1971.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Valerie Chapoulaud-Floquet;executive;1962.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Vanessa Schneider;executive;1969.0;Puteaux;48.884156;2.237199;92;Hauts-de-Seine;Île-de-France;0.953
+Vianney Du-Parc;executive;1786.0;Dardilly;45.81573;4.74933;69;Rhône;Auvergne-Rhône-Alpes;0.945
+Vincent Bollore;executive;1952.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Vincent Bolloré;executive;1952.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;0.957
+Vincent Dufour;executive;1968.0;Longjumeau;48.691415;2.3016;91;Essonne;Île-de-France;0.949
+Virginia Stallings;executive;1894.0;Macon (Géorgie);46.302564;4.810208;71;Saône-et-Loire;Bourgogne-Franche-Comté;0.378
+Virginie Fauvel;executive;1974.0;Firminy;45.386573;4.287403;42;Loire;Auvergne-Rhône-Alpes;0.948
+Virginie Morgon;executive;1969.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+Virginie Morgon;executive;1969.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;0.964
+William Gates;executive;1955.0;Seattle;47.220237;-1.516973;44;Loire-Atlantique;Pays de la Loire;0.694
+Xavier Beulin;executive;1958.0;Donnery;47.909314;2.103259;45;Loiret;Centre-Val de Loire;0.94
+Xavier Fontanet;executive;1948.0;Malestroit;47.8078;-2.38677;56;Morbihan;Bretagne;0.94
+Xavier Girre;executive;1969.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;0.96
+Xavier Musca;executive;1960.0;Bastia;42.687608;9.435179;2B;Haute-Corse;Corse;0.953
+Xavier Musca;executive;1960.0;Bastia;42.687608;9.435179;2B;Haute-Corse;Corse;0.953
+Xavier Niel;executive;1967.0;Maisons-Alfort;48.801685;2.440318;94;Val-de-Marne;Île-de-France;0.954
+Yannick Bolloré;executive;1980.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;0.954
+Yannick D'-Escatha;executive;1948.0;Paris;48.859;2.347;75;Paris;Île-de-France;0.97
+Yves De-Silguy;executive;1948.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;0.96
+Yves Rannou;executive;1897.0;Guingamp;48.560722;-3.153394;22;Côtes-d'Armor;Bretagne;0.944

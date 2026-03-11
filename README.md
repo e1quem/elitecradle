@@ -190,8 +190,8 @@ On utilise arr_replace. On obtient mn_clean.py après avoir vérifié manuelleme
 
 # 5. PDG CAC 40
 
-On liste les entreprises actuellement dans le cac40 ou ayant été dans le CAC40, étant encore en activité et ayant une activité d'une échelle suffisante : cac_list.txt
-On donne les liens pappers à un algorithme qui vient scrapper le nom et l'entreprise des administrateurs et directeurs généraux de ces entreprises : cac_fetch.py. Output : cac_staff.csv. 
+On liste les entreprises actuellement dans le cac40 ou ayant été dans le CAC40, étant encore en activité et ayant une activité d'une échelle suffisante : exec_list.txt
+On donne les liens pappers à un algorithme qui vient scrapper le nom et l'entreprise des administrateurs et directeurs généraux de ces entreprises : exec_fetch.py. Output : exec_staff.csv. 
 On recode les nom des firms pour que le nom de l'entreprise soit facilement identifiable.
 On a 1340 staff.
 

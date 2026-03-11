@@ -1,62 +1,18 @@
 from bs4 import BeautifulSoup
+import utils.utils as utils
 import pandas as pd
 import requests
 import socket
 import time
 import re
 
-# Config for connection issues
-def force_ipv4():
-    old_getaddrinfo = socket.getaddrinfo
-    def new_getaddrinfo(*args, **kwargs):
-        responses = old_getaddrinfo(*args, **kwargs)
-        return [r for r in responses if r[0] == socket.AF_INET]
-    socket.getaddrinfo = new_getaddrinfo
-force_ipv4()
+# Network config
+utils.force_ipv4()
 
 # URL config
 global_url = "https://fr.wikipedia.org/wiki/" # Using french wikipedia for french personalities
 headers = {'User-Agent': 'fetchFrenchPresidents'}
 presidents = []
-
-# Using  data.gouv.fr to obtain GPS localisation and administrative info of each city
-def get_geo_data(city_name):
-    if city_name == "N/A":
-        return None
-    
-    base_url = "https://api-adresse.data.gouv.fr/search/"
-    params = {'q': city_name, 'limit': 1}
-    
-    try:
-        response = requests.get(base_url, params=params, timeout=5)
-        if response.status_code == 200:
-            data = response.json()
-            if data['features']:
-                best_result = data['features'][0]
-                properties = best_result['properties']
-                score = properties.get('score', 0)
-                            
-                # Confidence threshold: a low score indicate foreign pob
-                if score < 0.6:
-                    return {
-                        "lon": None, "lat": None,
-                        "dep_num": "foreign", "dep_name": "foreign", "region": "foreign"
-                    }
-
-                geom = best_result['geometry']['coordinates']
-                context = properties.get('context', '')
-                parts = context.split(',')
-                            
-                return {
-                    "lon": geom[0],
-                    "lat": geom[1],
-                    "dep_num": parts[0] if len(parts) > 0 else None,
-                    "dep_name": parts[1].strip() if len(parts) > 1 else None,
-                    "region": parts[-1].strip() if len(parts) > 0 else None
-            }
-    except Exception:
-        pass
-    return None
 
 # Reading our list of presidents
 with open('/Users/eyquem/Desktop/LeadersMap/sources/presidents_list.txt', 'r', encoding='utf-8') as f:
@@ -117,7 +73,7 @@ for president in presidents_list:
             temp_dict["pob"] = pob
 
             # Geographic info
-            geo = get_geo_data(pob)
+            geo = utils.finding_geo(pob)
             if geo:
                 temp_dict.update({
                     "lat": geo["lat"],
