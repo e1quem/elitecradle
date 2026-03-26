@@ -15,7 +15,7 @@ def normalize_text(text):
     # Capitalize the first letter
     return text.capitalize()
 
-df_dp = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/deputees/processed/dp_clean.csv", sep=None, engine='python')
+df_dp = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/depute/processed/dp_clean.csv", sep=None, engine='python')
 df_mn = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/ministers/processed/mn_clean.csv", sep=None, engine='python')
 df_pr = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/presidents/processed/presidents_clean.csv", sep=None, engine='python')
 df_sn = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/senators/processed/sn_clean.csv", sep=None, engine='python')

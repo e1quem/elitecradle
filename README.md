@@ -24,6 +24,23 @@ On veut, pour chaque personne :
 - année de naissance
 - rôle (député, sénateur...)
 
+## Architecture et techniques principales
+
+- **Pipelines `fetch/*`** : chaque cohorte (député·es, sénateurs·trices, ministres, présidents, professeurs du Collège de France, exécutifs CAC40) dispose de son propre dossier `fetch/<cohorte>` avec `raw/` (sources brutes Excel / CSV / listes), `interim/` (fichiers enrichis, logs et résultats partiels) et `processed/` (nettoyés). La collecte repose sur des scripts Python qui lisent ces sources, récupèrent Wikipedia (ou Sycomore pour les députés) via des helpers communs puis géolocalisent les villes avec l’API `api-adresse.data.gouv.fr`.
+- **Dossier `utils/`** : `utils/utils.py` applique quelques tours malins : `force_ipv4()` contourne les problèmes DNS avec certains sites, `get_wikipedia_soup()` explore une palette de suffixes pour gérer les homonymes et les variations de nom, `extract_pob/dob/arrondissement()` scrutent infobox, catégories et paragraphes d’intro pour une robustesse maximale, et `finding_geo()` centralise la géolocalisation. Le module mémorise aussi les vérifications “est-ce que c’est en France” pour éviter de répéter les requêtes.
+- **Députés (pagination cassée)** : on contourne la limite de 500 résultats sur Sycomore en lisant la liste des départements et en lançant une requête par département, puis on scrappe chaque fiche individuelle (en respectant la cadence) et on traite à part les colonies anciennes et les arrondissements parisiens (extraction via Wikipedia + standardisation manuelle des coordonnées).
+- **Concurrence maîtrisée** : les scrapers utilisent `ThreadPoolExecutor` (10 threads pour la plupart, 1 pour les exécutifs faute d’être trop agressif) pour accélérer la recherche sur Wikipedia tout en limitant la charge. Le module fusion `analysis/merge.py` impose une hiérarchie de tags et déduplique sur `name+dob` avant d’exporter `merged_raw.csv`.
+- **Jointures socio-économiques** : `analysis/cross_sourcing.py` fusionne `merged_clean.csv` avec des tables de population, revenus et pauvreté (fournies dans `analysis/sources/` et retraitées dans `analysis/interim/`) ; il calcule des exposants démographiques pondérés par décennie (via `birth_decade`), utilise des correspondances floues `rapidfuzz` pour aligner les noms de villes, et produit les tables `analysis/processed/analysis_*.csv` prêtes pour les visualisations.
+- **Analyse finale** : `analysis/analyze.py` charge les tables traitées, crée classements, heatmaps (sauvegardées dans `analysis/outputs/`) et régressions log-linéaires avec repérage des sur- et sous-performeurs, de sorte qu’on peut reproduire les graphiques/insights à partir d’un seul script.
+
+## Trucs malins à mentionner dans le README
+
+- `utils.get_wikipedia_soup` tente des variantes autorisant `_(homme_politique)`, `_(personnalité_publique)` ou `_(PDG)` pour éviter d’échouer sur les pages à désambiguïser et affiche un log de réussite pour faciliter le debug.
+- Les arrondissements parisiens sont extraits via `extract_arrondissement` (hypothèses sur les catégories, l’infobox et le paragraphe d’intro) puis standardisés avec des coordonnées fixes pour éviter les points qui flottent dans Paris.
+- Les outils de géolocalisation `finding_geo` peuvent retourner `foreign` lorsqu’on détecte une naissance hors de France ; on complète ensuite à la main les DOM-TOM et anciennes colonies en s’appuyant sur des listes manuelles ou sur `geo_finding.py`/`mn_geo_*`.
+- `analysis/cross_sourcing.py` normalise les codes INSEE, remplace les noms mal orthographiés via `rapidfuzz`, pondère les populations par décennie issue du dataset historique et ajoute des métriques comme `expo_demog` ou `politics` pour chaque niveau géographique.
+- Les données intermédiaires (`fetch/*/interim`, `analysis/interim`) servent de checkpoints : elles sont le meilleur endroit pour inspecter les coupures (cities “Unknown”, `geo_missing`, arrondissements manquants) avant de procéder aux nettoyages finaux dans `processed/`.
+
 
 **Politiciens**
 - [x] l'ensemble des députés (tout se trouve sur le site de l'AN) (jaune)
