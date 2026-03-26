@@ -408,7 +408,6 @@ def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
 
-    #plt.colorbar(scatter, label='Residuals (Sur/Sous performance)')
     plt.xlabel('Population indicator (log scale)', fontsize=10)
     plt.ylabel('Personnalities count (log scale)', fontsize=10)
     plt.title(f'{level_name} : {y_col} vs {x_col}', fontsize=12, fontname='Helvetica')
@@ -426,54 +425,6 @@ plot_regression_outliers(df_city_merged, 'expo_demog', 'politics', 'City_Paris_M
 plot_regression_outliers(df_dept, 'expo_demog', 'global', 'Department', 'dept')
 plot_regression_outliers(df_dept, 'median', 'global', 'Department', 'dept')
 
-#def plot_expected_vs_observed(df_results, level_name, group_name):
-#    """
-#    Crée un graphique comparatif entre les valeurs attendues (modèle) 
-#    et observées (réel), classées par valeur attendue croissante.
-#    """
-#    import matplotlib.pyplot as plt
-#
-#    # 1. Préparation et tri par 'exp' croissant
-#    plot_df = df_results.sort_values('exp').reset_index(drop=True)
-#    
-#    plt.figure(figsize=(14, 7), facecolor='white')
-#    ax = plt.gca()
-#
-#    # 2. Tracé des points
-#    # On utilise l'index comme axe X (puisqu'on a trié par exp croissant)
-#    plt.scatter(plot_df.index, plot_df['exp'], color='#BBBBBB', s=10, 
-#                alpha=0.7, label='Expected (Model)', zorder=2)
-#    
-#    plt.scatter(plot_df.index, plot_df['obs'], color="#FF8C00", s=10, 
-#                alpha=0.6, label='Observed (Real)', zorder=3)
-#
-#    # 3. Tracé des lignes de liaison (optionnel mais très parlant pour voir le résidu)
-#    #for i in range(len(plot_df)):
-#    #    plt.vlines(i, min(plot_df['exp'][i], plot_df['obs'][i]), 
-#    #               max(plot_df['exp'][i], plot_df['obs'][i]), 
-#    #               color='#EEEEEE', linewidth=0.5, zorder=1)
-#
-#    # 4. Style épuré (équerre)
-#    ax.spines['top'].set_visible(False)
-#    ax.spines['right'].set_visible(False)
-#    ax.spines['left'].set_linewidth(0.6)
-#    ax.spines['bottom'].set_linewidth(0.6)
-#    
-#    plt.xlabel(f'{level_name} entities (ranked by expected count)', fontsize=10, alpha=0.7)
-#    plt.ylabel('Leader Count', fontsize=10, alpha=0.7)
-#    plt.title(f'Model Fit: Observed vs Expected — {level_name} ({group_name})', 
-#              fontsize=13, fontname='Helvetica', loc='left', pad=20)
-#    
-#    # On cache les labels de l'axe X (trop nombreux pour être lisibles)
-#    plt.xticks([])
-#    
-#    plt.legend(frameon=False, loc='upper left')
-#    plt.grid(axis='y', linestyle=':', alpha=0.3)
-#
-#    # Sauvegarde
-#    filename = os.path.join(OUTPUT_DIR, f"fit_{level_name.lower().replace(' ', '_')}_{group_name}.png")
-#    plt.savefig(filename, dpi=300, bbox_inches='tight')
-#    plt.close()
 
 def run_regressions(df, id_col, level_name, groups, eco_vars, log_transform = True):
     print(f"\n\033[1m  REGRESSIONS — {level_name.upper()}\033[0m")
@@ -514,9 +465,6 @@ def run_regressions(df, id_col, level_name, groups, eco_vars, log_transform = Tr
                     'obs': n_observed,
                     'exp': n_expected,
                     'resid_log': model.resid})
-                
-                #if g == 'global':
-                #    plot_expected_vs_observed(res_df, level_name, g)
 
                 label = f"log({g}) ~ multivariate" if log_transform else f"{g} ~ multivariate"
                 print(f"\n  \033[1m{level_name} - {label} (n={mask.sum()})\033[0m")
