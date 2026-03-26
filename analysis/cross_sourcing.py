@@ -34,7 +34,7 @@ mapping_regions = {
     28: "Normandie", 32: "Hauts-de-France", 44: "Grand Est",
     52: "Pays de la Loire", 53: "Bretagne", 75: "Nouvelle-Aquitaine",
     76: "Occitanie", 84: "Auvergne-Rhône-Alpes", 93: "Provence-Alpes-Côte d'Azur",
-    94: "Corse"
+    94: "Corse", 971: "Guadeloupe", 972: "Martinique", 973:"Guyane", 974:"La Réunion"
 }
 
 # And from department numbers to names
@@ -59,7 +59,7 @@ mapping_depts = {
     '85': "Vendée", '86': "Vienne", '87': "Haute-Vienne", '88': "Vosges", '89': "Yonne",
     '90': "Territoire de Belfort", '91': "Essonne", '92': "Hauts-de-Seine", '93': "Seine-Saint-Denis",
     '94': "Val-de-Marne", '95': "Val-d'Oise", '971': "Guadeloupe", '972': "Martinique", 
-    '973': "Guyane", '974': "La Réunion", '976': "Mayotte"
+    '973': "Guyane", '974': "La Réunion"
 }
 
 df_region['region'] = df_region['REG'].map(mapping_regions)
@@ -125,7 +125,14 @@ def categorize_decade(year):
 
 # Normalizing INSEE department code
 def extract_dept_from_insee(code):
-    return str(code).strip()[:-3]
+    if pd.isna(code):
+        return None
+    s = str(code).split('.')[0].strip()
+    if s.startswith('97'):
+        return s[:3]
+    if len(s) >= 5:
+        return s[:-3]
+    return s.zfill(2)
 
 def to_dept_type(val):
     try:
@@ -199,7 +206,7 @@ df_final_city = pd.merge(df_final_city, df_ecoc[['pob', 'dept', 'median']], on=[
 tag_columns = [c for c in df_ppl_count.columns if c not in ['pob', 'dept', 'global']]
 df_final_city[tag_columns + ['global']] = df_final_city[tag_columns + ['global']].fillna(0).astype(int)
 
-politics_tags = ['depute', 'senate', 'minister', 'president']
+politics_tags = ['depute', 'senat', 'ministre', 'president']
 politics_cols = [col for col in politics_tags if col in df_final_city.columns]
 df_final_city['politics'] = df_final_city[politics_cols].sum(axis=1)
 
@@ -234,13 +241,12 @@ df_final_department = df_popd.copy()
 
 # Merging personnalities count and economic data
 df_final_department = pd.merge(df_final_department, df_ppl_count, on='dept', how='left')
-df_eco_subset = df_ecod[['dept', 'median', 'poverty_rate']]
+df_eco_subset = df_ecod[['dept', 'dept_num', 'median', 'poverty_rate']]
 df_final_department = pd.merge(df_final_department, df_eco_subset, on='dept', how='left')
 
 tag_columns = [c for c in df_ppl_count.columns if c not in ['dept', 'global']]
 df_final_department[tag_columns + ['global']] = df_final_department[tag_columns + ['global']].fillna(0).astype(int)
 
-politics_tags = ['depute', 'senate', 'minister', 'president']
 politics_cols = [col for col in politics_tags if col in df_final_department.columns]
 df_final_department['politics'] = df_final_department[politics_cols].sum(axis=1)
 
@@ -258,9 +264,8 @@ for decade, weight in weights.items():
 
 # Cleaning
 df_final_department['global'] = df_final_department['global'].fillna(0).astype(int)
-ordered_cols = ['dept', 'global', 'politics'] + tag_columns + ['median', 'poverty_rate', 'expo_demog']
+ordered_cols = ['dept', 'dept_num', 'global', 'politics'] + tag_columns + ['median', 'poverty_rate', 'expo_demog']
 df_final_department = df_final_department[ordered_cols]
-
 df_final_department.to_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_department.csv", index=False, sep=";")
 
 
@@ -282,7 +287,6 @@ df_final_region = pd.merge(df_final_region, df_eco_subset, on='region', how='lef
 tag_columns = [c for c in df_ppl_count.columns if c not in ['region', 'global']]
 df_final_region[tag_columns + ['global']] = df_final_region[tag_columns + ['global']].fillna(0).astype(int)
 
-politics_tags = ['depute', 'senate', 'minister', 'president']
 politics_cols = [col for col in politics_tags if col in df_final_region.columns]
 df_final_region['politics'] = df_final_region[politics_cols].sum(axis=1)
 
