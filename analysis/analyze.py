@@ -1,15 +1,15 @@
 from matplotlib.ticker import MaxNLocator
+from shapely.geometry import Point
 import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
+import geopandas as gpd
 from scipy import stats
 import seaborn as sns
 import pandas as pd
 import numpy as np
 import warnings
 import os
-import geopandas as gpd
-from shapely.geometry import Point
 
 warnings.filterwarnings('ignore')
 
@@ -43,7 +43,6 @@ ECO_DEPT = ['expo_demog', 'median', 'poverty_rate']
 ECO_REGION = ['expo_demog', 'median_euro', 'poverty_rate']
 
 # Rankings and concentration
-
 #def print_ranking(df, id_col, level_name, groups, top_n=10, show_bottom = False):
 #    print(f"\n  \033[1mRANKING — {level_name.upper()}\033[0m")
 #    for g in groups:
@@ -95,14 +94,15 @@ print_concentration(df_city,   'pob',    'City',       GROUPS)
 print_concentration(df_city_merged, 'pob', 'City - Paris merged', GROUPS)
 print_concentration(df_arr, 'pob', 'Arrondissements', GROUPS)
 
-# Output
+
+# BAR CHARTS
 POLITICS_STACKS = ['depute', 'senat', 'ministre', 'president']
 GLOBAL_STACKS = ['depute', 'senat', 'ministre', 'executive', 'college_de_france', 'president']
 OUTPUT_DIR = "/Users/eyquem/Desktop/LeadersMap/analysis/outputs"
+REG_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "regressions")
 plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['Helvetica', 'Arial']
 
-# Style
 def apply_d3_style(ax, title, is_stacked=False):
     for spine in ax.spines.values():
         spine.set_visible(False)
@@ -118,9 +118,7 @@ def plot_simple_bar(ax, df, id_col, group, title):
     x_labels = top_df[id_col].astype(str).tolist()
     y_values = top_df[group].values
     x_pos = np.arange(len(x_labels))
-
     ax.bar(x_pos, y_values, color='steelblue', width=0.95)
-    
     ax.set_xticks(x_pos)
     ax.set_xticklabels(x_labels, rotation=45, ha='right')
     ax.set_xlim(-0.5, len(x_labels) - 0.5)
@@ -131,14 +129,11 @@ def plot_simple_bar(ax, df, id_col, group, title):
 def plot_stacked_bar(ax, df, id_col, group_total, stack_cols, title):
     total_n = int(df[group_total].sum())
     title = f"{title} (n = {total_n})"
-
     top_df = df.dropna(subset=[group_total]).sort_values(group_total, ascending=False).head(10)
-    
     x_labels = top_df[id_col].astype(str).tolist()
     x_pos = np.arange(len(x_labels))
-    
+
     valid_cols = [c for c in stack_cols if c in df.columns]
-    
     if not valid_cols:
         ax.bar(x_pos, top_df[group_total].values, color='#abdda4', width=0.95)
     else:
@@ -173,7 +168,7 @@ def export_level_charts(df, id_col, level_name):
     plot_simple_bar(axes[3], df, id_col, 'executive', 'Executives')
     plt.tight_layout()
     
-    filename = os.path.join(OUTPUT_DIR, f"top10_{level_name.lower().replace(' ', '_')}.png")
+    filename = os.path.join(OUTPUT_DIR, f"top_{level_name.lower().replace(' ', '_')}.png")
     plt.savefig(filename, dpi=300, bbox_inches='tight', transparent=False, facecolor='white')
     plt.close()
 
@@ -182,24 +177,15 @@ levels_to_export = [
     (df_dept,        'dept',   'Department'),
     (df_city_merged, 'pob',    'City_Merged'),
     (df_city,        'pob',    'City'),
-    (df_arr,         'pob',    'Arrondissements')
-]
+    (df_arr,         'pob',    'Arrondissements')]
 
 for df_level, id_col, level_name in levels_to_export:
     export_level_charts(df_level, id_col, level_name)
 
 
-# Plotting coordinates on map
+# BUBBLE MAPS
 MAP_CACHE = os.path.join(OUTPUT_DIR, "france_regions.geojson")
-
-GROUP_COLORS = {
-    "Global": "#A52A2A",
-    "Political": "#E63946",
-    "Collège de France": "#6D597A",
-    "Executives": "#F4A261"
-    
-}
-
+GROUP_COLORS = {"Global": "#A52A2A", "Political": "#E63946", "Collège de France": "#6D597A", "Executives": "#F4A261"}
 SCALE = 1.2 
 MAX_BUBBLE_SIZE = 2000 
 GLOBAL_MAX_POP = df.groupby(['lat', 'lon']).size().max()
@@ -217,9 +203,8 @@ def get_metropolitan_france():
 
 def prepare_bubble_data(df_subset):
     bubbles = df_subset.groupby(['lat', 'lon']).size().reset_index(name='population')
-    # Filtering
-    bubbles = bubbles[(bubbles['lon'] > -5.5) & (bubbles['lon'] < 10) & 
-                     (bubbles['lat'] > 41) & (bubbles['lat'] < 52)]
+    # Filtering coordinates
+    bubbles = bubbles[(bubbles['lon'] > -5.5) & (bubbles['lon'] < 10) & (bubbles['lat'] > 41) & (bubbles['lat'] < 52)]
     gdf = gpd.GeoDataFrame(bubbles, geometry=gpd.points_from_xy(bubbles.lon, bubbles.lat))
     return gdf.sort_values('population', ascending=False)
 
@@ -229,139 +214,118 @@ configs = [
     ("Global", df),
     ("Political", df[df['tag'].isin(['depute', 'senat', 'president', 'ministre'])]),
     ("Collège de France", df[df['tag'] == 'college_de_france']),
-    ("Executives", df[df['tag'] == 'executive']),
-]
+    ("Executives", df[df['tag'] == 'executive']),]
 
 fig, axes = plt.subplots(1, 4, figsize=(20, 6), facecolor='white')
 
 for i, (name, data_subset) in enumerate(configs):
     ax = axes[i]
     for spine in ax.spines.values(): spine.set_visible(False)
-    
     france_geo.plot(ax=ax, color='#eeeeee', edgecolor='white', linewidth=0.7)
-    
     gdf_bubbles = prepare_bubble_data(data_subset)
     total_n = len(data_subset)
     
     if not gdf_bubbles.empty:
         ratios = (gdf_bubbles['population'] / GLOBAL_MAX_POP) ** SCALE
         sizes = ratios * MAX_BUBBLE_SIZE
-        ax.scatter(gdf_bubbles.geometry.x, gdf_bubbles.geometry.y,
-                   s=sizes, color=GROUP_COLORS[name],
-                   alpha=0.5, edgecolors='white', linewidths=0.5, zorder=3)
+        ax.scatter(gdf_bubbles.geometry.x, gdf_bubbles.geometry.y, s=sizes, color=GROUP_COLORS[name], alpha=0.5, edgecolors='white', linewidths=0.5, zorder=3)
     
-    ax.set_title(f"{name} (n = {total_n})", x=0.06, loc='left', pad=10, 
-                 fontsize=12, color='#222222', fontweight='bold')
-    
+    ax.set_title(f"{name} (n = {total_n})", x=0.06, loc='left', pad=10, fontsize=12, color='#222222', fontweight='bold')
     ax.set_xlim(-5.5, 10)
     ax.set_ylim(41, 51.5)
     ax.axis('off')
 
 fig.suptitle(f"Bubble Map of Personnalities in Mainland France", fontsize=14, fontname='Helvetica')
-
 plt.tight_layout(rect=[0, 0.03, 1, 0.97])
 plt.savefig(os.path.join(OUTPUT_DIR, "bubble_map.png"), dpi=300, bbox_inches='tight')
 
 
-
-# URLs des fonds de carte
+# CHOROPLETH MAPS
 GEO_URLS = {
     'region': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions.geojson",
     'department': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements.geojson",
-    'city': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes.geojson" # Attention : fichier lourd
-}
+    'city': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes.geojson",
+    'arrondissements': "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arrondissements/exports/geojson"}
 
 def export_choropleths(df_data, id_col, level_name, geo_url):
-    print(f"Génération : {level_name}...")
+    print(f"Generating choropleth map: {level_name}...")
+
+    # Cache
+    local_filename = os.path.join(OUTPUT_DIR, f"cache_{level_name.lower()}.geojson")
+
+    if os.path.exists(local_filename):
+        print(f"  Using cached file: {local_filename}")
+        gdf_geo = gpd.read_file(local_filename)
+    else:
+        print(f"  Downloading from: {geo_url}")
+        try:
+            gdf_geo = gpd.read_file(geo_url)
+            gdf_geo.to_file(local_filename, driver='GeoJSON')
+        except Exception as e:
+            print(f"  Error downloading: {e}")
+            return
     
-    # 1. Chargement du fond de carte
+    # Adaptative size
+    h = 5 if level_name == 'Arrondissements' else 7
+    fig, axes = plt.subplots(1, 4, figsize=(24, h), facecolor='white')
+
     gdf_geo = gpd.read_file(geo_url)
     
-    # 2. Nettoyage et Préparation
     if level_name == 'Region':
         geo_key = 'nom'
     elif level_name == 'Department':
         geo_key = 'code'
         gdf_geo['code'] = gdf_geo['code'].astype(str).str.zfill(2)
         df_data[id_col] = df_data[id_col].astype(str).str.zfill(2)
-    elif level_name in ['City', 'Arrondissements']:
+    elif level_name == 'City':
         geo_key = 'nom'
-        # FIX : Filtrage des DOM via le code INSEE (commence par 97)
-        # On suppose que la colonne du code INSEE dans le GeoJSON s'appelle 'code'
         if 'code' in gdf_geo.columns:
             gdf_geo = gdf_geo[~gdf_geo['code'].str.startswith('97', na=False)]
-        
-        # Pour Paris, on restreint aux arrondissements
-        if level_name == 'Arrondissements':
-            gdf_geo = gdf_geo[gdf_geo['nom'].str.contains('Paris ', na=False) | (gdf_geo['nom'] == 'Paris')]
+    elif level_name == 'Arrondissements':
+        if 'c_ar' in gdf_geo.columns:
+            gdf_geo['match_key'] = gdf_geo['c_ar'].apply(lambda x: f"Paris {str(x)[-2:]}")
+        elif 'l_ar' in gdf_geo.columns:
+            gdf_geo['match_key'] = gdf_geo['l_ar'].str.extract(r'(\d+)').astype(str).str.zfill(2).apply(lambda x: f"Paris {x}")
+        geo_key = 'match_key'
 
-    # 3. Jointure
     gdf_merged = gdf_geo.merge(df_data, left_on=geo_key, right_on=id_col, how='left')
-    
-    # 4. Tracé
-    fig, axes = plt.subplots(1, 4, figsize=(24, 7), facecolor='white')
     
     groups = [
         ('global', 'Global', '#A52A2A'),
         ('politics', 'Political', '#E63946'),
         ('college_de_france', 'Collège de France', '#6D597A'),
-        ('executive', 'Executives', '#F4A261')
-    ]
+        ('executive', 'Executives', '#F4A261')]
     
     for i, (col, title, base_color) in enumerate(groups):
         ax = axes[i]
         gdf_merged[col] = gdf_merged[col].fillna(0)
-        
+
+        render_col = f"{col}_log"
+        # Log scale, otherwise Paris is too intense
+        gdf_merged[render_col] = np.log1p(gdf_merged[col])
         cmap = mcolors.LinearSegmentedColormap.from_list("custom", ["#eeeeee", base_color])
+        gdf_merged.plot(column=render_col, cmap=cmap, linewidth=0.1 if level_name == 'City' else 0.6, edgecolor='white',ax=ax)
         
-        # Dessin
-        gdf_merged.plot(
-            column=col,
-            cmap=cmap,
-            linewidth=0.1 if level_name == 'City' else 0.6,
-            edgecolor='white',
-            ax=ax
-        )
-        
-        # ZOOM automatique pour Paris
+        # Arrondissements zoom
         if level_name == 'Arrondissements':
-            # On définit les limites autour de Paris (approx lon 2.2 à 2.5, lat 48.8 à 48.9)
-            ax.set_xlim(2.22, 2.48)
-            ax.set_ylim(48.81, 48.91)
+                ax.set_xlim(2.22, 2.47)
+                ax.set_ylim(48.81, 48.91)
         
         ax.axis('off')
         total_n = int(df_data[col].sum())
-        ax.set_title(f"{title} (n = {total_n})", loc='left', x=0.06, 
-                     fontsize=12, fontweight='bold', color='#222222')
+        ax.set_title(f"{title} (n = {total_n})", loc='left', x=0.06, fontsize=12, fontweight='bold', color='#222222')
 
-    fig.suptitle(f"Choropleth Maps by {level_name}", fontsize=15, fontweight='bold', y=0.96)
+    fig.suptitle(f"Choropleth Maps by {level_name}",fontsize=14, fontname='Helvetica', y=0.96)
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
     
     filename = os.path.join(OUTPUT_DIR, f"choropleth_{level_name.lower()}.png")
-    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.savefig(filename, dpi=600, bbox_inches='tight')
     plt.close()
 
-
-# 1. Régions (Utilise les noms)
 export_choropleths(df_region, 'region', 'Region', GEO_URLS['region'])
-
-# Changer l'échelle, parce que là on ne voit rien d'autres que Paris
-# 2. Départements (Utilise dept_num)
 export_choropleths(df_dept, 'dept_num', 'Department', GEO_URLS['department'])
-
-# 3. Communes (Utilise pob de df_city_merged pour inclure Paris agrégé)
 export_choropleths(df_city_merged, 'pob', 'City', GEO_URLS['city'])
-
-# Ne fonctionne pas
-# 4. Paris Arrondissements (Utilise df_arr)
-# Note: On filtre le fond de carte 'city' pour ne garder que Paris
-export_choropleths(df_arr, 'pob', 'Arrondissements', GEO_URLS['city'])
-
-
-
-
-
-
+export_choropleths(df_arr, 'pob', 'Arrondissements', GEO_URLS['arrondissements'])
 
 
 #def print_correlation(df, level_name, groups, eco_vars):
@@ -376,6 +340,7 @@ export_choropleths(df_arr, 'pob', 'Arrondissements', GEO_URLS['city'])
 #print_correlation(df_city_merged, 'City - Paris merged', GROUPS, ECO_CITY)
 #print_correlation(df_arr, 'Arrondissements', GROUPS, ECO_CITY)
 
+# CORRELATION HEATMAP
 def heatmap_correlation(df, level_name, groups, eco_vars):
     cols = [c for c in groups + eco_vars if c in df.columns]
     corr = df[cols].apply(pd.to_numeric, errors='coerce').corr(method='pearson').round(3)
@@ -408,10 +373,108 @@ heatmap_correlation(df_city_merged, 'City - Paris merged', GROUPS, ECO_CITY)
 heatmap_correlation(df_arr,         'Arrondissements',     GROUPS, ECO_CITY)
 
 
-# II. Regressions
-# For each level : univariate (expo_demog, poverty_rate, median) then multivariate
+# REGRESSIONS
+def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
+    cols_to_keep = [x_col, y_col, id_col]
+    plot_df = df[cols_to_keep].copy()
+    
+    plot_df['x_val'] = pd.to_numeric(plot_df[x_col], errors='coerce')
+    plot_df['y_val'] = pd.to_numeric(plot_df[y_col], errors='coerce')
+    plot_df['x_log'] = np.log1p(plot_df['x_val'])
+    plot_df['y_log'] = np.log1p(plot_df['y_val'])
+    plot_df = plot_df.dropna(subset=['x_log', 'y_log'])
 
-# on transforme en logs
+    slope, intercept, r_value, p_value, std_err = stats.linregress(plot_df['x_log'], plot_df['y_log'])
+    plot_df['resid'] = plot_df['y_log'] - (slope * plot_df['x_log'] + intercept)
+    
+    plt.figure(figsize=(12, 8), facecolor='white')
+    limit = max(abs(plot_df['resid'].min()), abs(plot_df['resid'].max())) * 0.7
+    scatter = plt.scatter(plot_df['x_log'], plot_df['y_log'], c=plot_df['resid'], cmap='RdBu', alpha=0.8, edgecolors='none', s=50, vmin=-limit, vmax=limit)
+    
+    # Regression line
+    x_range = np.array([plot_df['x_log'].min(), plot_df['x_log'].max()])
+    plt.plot(x_range, slope * x_range + intercept, color='#333333', linestyle='--', linewidth=0.8, alpha=0.8, label=f'R2 = {r_value**2:.2f}, p-value = {p_value:.3f}')
+
+    # 4. Labels des 5 plus gros Over/Under performers
+    outliers = plot_df.sort_values('resid', ascending=False)
+    top_labels = outliers.head(5)
+    bottom_labels = outliers.tail(5)
+    
+    for _, row in pd.concat([top_labels, bottom_labels]).iterrows():
+        plt.text(row['x_log'], row['y_log'] + 0.06, str(row[id_col]), 
+                 fontsize=8, fontweight='bold', ha='center', va='bottom')
+        
+    ax = plt.gca()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+    #plt.colorbar(scatter, label='Residuals (Sur/Sous performance)')
+    plt.xlabel('Population indicator (log scale)', fontsize=10)
+    plt.ylabel('Personnalities count (log scale)', fontsize=10)
+    plt.title(f'{level_name} : {y_col} vs {x_col}', fontsize=12, fontname='Helvetica')
+    plt.legend(frameon=False)
+    plt.grid(False)
+
+    safe_y = y_col.replace(' ', '_')
+    safe_x = x_col.replace(' ', '_')
+    filename = os.path.join(OUTPUT_DIR, f"scatter_{level_name.lower()}_{safe_y}_vs_{safe_x}.png")
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.close()
+
+plot_regression_outliers(df_city, 'expo_demog', 'global', 'City', 'pob')
+plot_regression_outliers(df_city_merged, 'expo_demog', 'politics', 'City_Paris_Merged', 'pob')
+plot_regression_outliers(df_dept, 'expo_demog', 'global', 'Department', 'dept')
+plot_regression_outliers(df_dept, 'median', 'global', 'Department', 'dept')
+
+#def plot_expected_vs_observed(df_results, level_name, group_name):
+#    """
+#    Crée un graphique comparatif entre les valeurs attendues (modèle) 
+#    et observées (réel), classées par valeur attendue croissante.
+#    """
+#    import matplotlib.pyplot as plt
+#
+#    # 1. Préparation et tri par 'exp' croissant
+#    plot_df = df_results.sort_values('exp').reset_index(drop=True)
+#    
+#    plt.figure(figsize=(14, 7), facecolor='white')
+#    ax = plt.gca()
+#
+#    # 2. Tracé des points
+#    # On utilise l'index comme axe X (puisqu'on a trié par exp croissant)
+#    plt.scatter(plot_df.index, plot_df['exp'], color='#BBBBBB', s=10, 
+#                alpha=0.7, label='Expected (Model)', zorder=2)
+#    
+#    plt.scatter(plot_df.index, plot_df['obs'], color="#FF8C00", s=10, 
+#                alpha=0.6, label='Observed (Real)', zorder=3)
+#
+#    # 3. Tracé des lignes de liaison (optionnel mais très parlant pour voir le résidu)
+#    #for i in range(len(plot_df)):
+#    #    plt.vlines(i, min(plot_df['exp'][i], plot_df['obs'][i]), 
+#    #               max(plot_df['exp'][i], plot_df['obs'][i]), 
+#    #               color='#EEEEEE', linewidth=0.5, zorder=1)
+#
+#    # 4. Style épuré (équerre)
+#    ax.spines['top'].set_visible(False)
+#    ax.spines['right'].set_visible(False)
+#    ax.spines['left'].set_linewidth(0.6)
+#    ax.spines['bottom'].set_linewidth(0.6)
+#    
+#    plt.xlabel(f'{level_name} entities (ranked by expected count)', fontsize=10, alpha=0.7)
+#    plt.ylabel('Leader Count', fontsize=10, alpha=0.7)
+#    plt.title(f'Model Fit: Observed vs Expected — {level_name} ({group_name})', 
+#              fontsize=13, fontname='Helvetica', loc='left', pad=20)
+#    
+#    # On cache les labels de l'axe X (trop nombreux pour être lisibles)
+#    plt.xticks([])
+#    
+#    plt.legend(frameon=False, loc='upper left')
+#    plt.grid(axis='y', linestyle=':', alpha=0.3)
+#
+#    # Sauvegarde
+#    filename = os.path.join(OUTPUT_DIR, f"fit_{level_name.lower().replace(' ', '_')}_{group_name}.png")
+#    plt.savefig(filename, dpi=300, bbox_inches='tight')
+#    plt.close()
+
 def run_regressions(df, id_col, level_name, groups, eco_vars, log_transform = True):
     print(f"\n\033[1m  REGRESSIONS — {level_name.upper()}\033[0m")
     for g in groups:
@@ -431,22 +494,46 @@ def run_regressions(df, id_col, level_name, groups, eco_vars, log_transform = Tr
             if mask.sum() >= len(available_eco) + 1:
                 X = sm.add_constant(eco_df[mask])
                 model = sm.OLS(y[mask], X).fit()
-                label = f"log({g}) ~ {' + '.join([f'log({v})' for v in available_eco])}" if log_transform \
-                        else f"{g} ~ {' + '.join(available_eco)}"
+                label = f"log({g}) ~ {' + '.join([f'log({v})' for v in available_eco])}" if log_transform else f"{g} ~ {' + '.join(available_eco)}"
                 print(f"\n  \033[1m{level_name} - Multivariate: {label}  (n={mask.sum()})\033[0m")
                 print(model.summary().tables[0])
                 print(model.summary().tables[1])
 
-            # Residuals
-            residuals = model.resid
-            ids = df.loc[mask.values, id_col].values
-            resid_df = pd.DataFrame({'entity': ids, 'residual': residuals}).sort_values('residual', ascending=False)
-            print(f"\n\033[2m  Overperformers:\033[0m")
-            for _, row in resid_df.head(5).iterrows():
-                print(f"    {str(row['entity']):<35}  residual={row['residual']:+.3f}  ({(np.expm1(row['residual'])*100):+.1f}%)")
-            print(f"\033[2m  Underperformers:\033[0m")
-            for _, row in resid_df.tail(5).iloc[::-1].iterrows():
-                print(f"    {str(row['entity']):<35}  residual={row['residual']:+.3f}  ({(np.expm1(row['residual'])*100):+.1f}%)")
+                # Save
+                summary_path = os.path.join(REG_OUTPUT_DIR, f"summary_{level_name}_{g}.txt")
+                with open(summary_path, 'w') as f:
+                    f.write(model.summary().as_text())
+                
+                # Residuals, expected VS observed
+                log_fitted = model.predict(X)
+                n_observed = np.expm1(y[mask])
+                n_expected = np.expm1(log_fitted)
+
+                res_df = pd.DataFrame({
+                    'id': df.loc[mask, id_col],
+                    'obs': n_observed,
+                    'exp': n_expected,
+                    'resid_log': model.resid})
+                
+                #if g == 'global':
+                #    plot_expected_vs_observed(res_df, level_name, g)
+
+                label = f"log({g}) ~ multivariate" if log_transform else f"{g} ~ multivariate"
+                print(f"\n  \033[1m{level_name} - {label} (n={mask.sum()})\033[0m")
+
+                print(f"\n  \033[1mOverperformers ({g}):\033[0m")
+                over = res_df.sort_values('resid_log', ascending=False).head(5)
+                for _, row in over.iterrows():
+                    diff_abs = row['obs'] - row['exp']
+                    diff_pct = (diff_abs / row['exp'] * 100) if row['exp'] > 0 else 0
+                    print(f"    {str(row['id']):<25}  Expected: {row['exp']:>2.1f}     Observed: {int(row['obs']):>2}     Diff: {diff_abs:>+2.1f} ({diff_pct:>+2.1f}%)")
+
+                print(f"  \033[1mUnderperformers ({g}):\033[0m")
+                under = res_df.sort_values('resid_log', ascending=True).head(5)
+                for _, row in under.iterrows():
+                    diff_abs = row['obs'] - row['exp']
+                    diff_pct = (diff_abs / row['exp'] * 100) if row['exp'] > 0 else 0
+                    print(f"    {str(row['id']):<25}  Expected: {row['exp']:>5.1f}     Observed: {int(row['obs']):>3}     Diff: {diff_abs:>+5.1f} ({diff_pct:>+6.1f}%)")
 
 run_regressions(df_region, 'region', 'Region', GROUPS, ECO_REGION)
 run_regressions(df_dept, 'dept', 'Department', GROUPS, ECO_DEPT)

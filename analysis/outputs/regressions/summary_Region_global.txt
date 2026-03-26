@@ -1,0 +1,29 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 global   R-squared:                       0.961
+Model:                            OLS   Adj. R-squared:                  0.952
+Method:                 Least Squares   F-statistic:                     106.4
+Date:                Thu, 26 Mar 2026   Prob (F-statistic):           2.12e-09
+Time:                        22:12:35   Log-Likelihood:                 1.5754
+No. Observations:                  17   AIC:                             4.849
+Df Residuals:                      13   BIC:                             8.182
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const           -7.3635      8.662     -0.850      0.411     -26.078      11.351
+expo_demog       0.8477      0.081     10.474      0.000       0.673       1.023
+median_euro     -0.0538      0.814     -0.066      0.948      -1.813       1.705
+poverty_rate     0.4260      0.380      1.123      0.282      -0.394       1.246
+==============================================================================
+Omnibus:                        0.349   Durbin-Watson:                   2.050
+Prob(Omnibus):                  0.840   Jarque-Bera (JB):                0.231
+Skew:                           0.245   Prob(JB):                        0.891
+Kurtosis:                       2.707   Cond. No.                     2.51e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.51e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
