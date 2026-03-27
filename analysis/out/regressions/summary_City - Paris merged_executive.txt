@@ -1,0 +1,26 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              executive   R-squared:                       0.118
+Model:                            OLS   Adj. R-squared:                  0.117
+Method:                 Least Squares   F-statistic:                     125.2
+Date:                Thu, 26 Mar 2026   Prob (F-statistic):           9.77e-52
+Time:                        22:36:03   Log-Likelihood:                 337.73
+No. Observations:                1873   AIC:                            -669.5
+Df Residuals:                    1870   BIC:                            -652.8
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -2.7929      0.347     -8.044      0.000      -3.474      -2.112
+expo_demog     0.0491      0.003     15.236      0.000       0.043       0.055
+median         0.2446      0.034      7.167      0.000       0.178       0.312
+==============================================================================
+Omnibus:                     2122.154   Durbin-Watson:                   2.033
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           208757.946
+Skew:                           5.711   Prob(JB):                         0.00
+Kurtosis:                      53.443   Cond. No.                         958.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

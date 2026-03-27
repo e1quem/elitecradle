@@ -1,4 +1,4 @@
-import utils.utils as utils
+import utils as utils
 from urllib.parse import quote_plus
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -78,7 +78,7 @@ def get_depute_data_by_id(id):
     
 # 1. Obtaining the list of all departments
 # Use list of departments extracted from https://www2.assemblee-nationale.fr/sycomore/recherche
-with open("/Users/eyquem/Desktop/LeadersMap/fetch/depute/raw/departments_raw.txt", "r", encoding="utf-8") as f:
+with open("/Users/eyquem/Desktop/LeadersMap/fetch/depute/src/departments_raw.txt", "r", encoding="utf-8") as f:
     content = f.read()
 soup = BeautifulSoup(content, 'html.parser') 
 

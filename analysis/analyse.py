@@ -98,7 +98,7 @@ print_concentration(df_arr, 'pob', 'Arrondissements', GROUPS)
 # BAR CHARTS
 POLITICS_STACKS = ['depute', 'senat', 'ministre', 'president']
 GLOBAL_STACKS = ['depute', 'senat', 'ministre', 'executive', 'college_de_france', 'president']
-OUTPUT_DIR = "/Users/eyquem/Desktop/LeadersMap/analysis/outputs"
+OUTPUT_DIR = "/Users/eyquem/Desktop/LeadersMap/analysis/out"
 REG_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "regressions")
 plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['Helvetica', 'Arial']
@@ -361,7 +361,7 @@ def heatmap_correlation(df, level_name, groups, eco_vars):
     ax.tick_params(axis='both', length=0)
 
     plt.tight_layout()
-    path = f"/Users/eyquem/Desktop/LeadersMap/analysis/outputs/correlation_{level_name.lower().replace(' ', '_')}.png"
+    path = f"/Users/eyquem/Desktop/LeadersMap/analysis/out/correlation_{level_name.lower().replace(' ', '_')}.png"
     fig.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"  Saved: {path}")

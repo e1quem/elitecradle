@@ -2,7 +2,7 @@ from rapidfuzz import process, fuzz
 import pandas as pd
 import unicodedata
 
-df_source = pd.read_excel("/Users/eyquem/Desktop/LeadersMap/analysis/sources/base-pop-historiques-1876-2023.xlsx", header=5)
+df_source = pd.read_excel("/Users/eyquem/Desktop/LeadersMap/analysis/src/base-pop-historiques-1876-2023.xlsx", header=5)
 path_export = "/Users/eyquem/Desktop/LeadersMap/analysis/interim/"
 
 # REG and DEP give us the Region and Department number of each city

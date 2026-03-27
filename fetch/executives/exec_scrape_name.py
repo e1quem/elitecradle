@@ -3,7 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
-import utils.utils as utils
+import utils as utils
 import pandas as pd
 import requests
 import random
@@ -67,7 +67,7 @@ def extract_exec(driver, url):
 
 
 def main():
-    input_file = "/Users/eyquem/Desktop/LeadersMap/fetch/executives/raw/cac_list.txt"
+    input_file = "/Users/eyquem/Desktop/LeadersMap/fetch/executives/src/cac_list.txt"
     output_file = "/Users/eyquem/Desktop/LeadersMap/fetch/executives/interim/execs.csv"
     
     # Navigator config

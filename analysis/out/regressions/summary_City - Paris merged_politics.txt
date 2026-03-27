@@ -1,0 +1,26 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               politics   R-squared:                       0.443
+Model:                            OLS   Adj. R-squared:                  0.442
+Method:                 Least Squares   F-statistic:                     743.7
+Date:                Thu, 26 Mar 2026   Prob (F-statistic):          2.33e-238
+Time:                        22:36:03   Log-Likelihood:                -943.13
+No. Observations:                1873   AIC:                             1892.
+Df Residuals:                    1870   BIC:                             1909.
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -2.1680      0.688     -3.151      0.002      -3.517      -0.819
+expo_demog     0.2435      0.006     38.119      0.000       0.231       0.256
+median         0.1177      0.068      1.740      0.082      -0.015       0.250
+==============================================================================
+Omnibus:                      353.306   Durbin-Watson:                   2.019
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1084.217
+Skew:                           0.951   Prob(JB):                    3.68e-236
+Kurtosis:                       6.206   Cond. No.                         958.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

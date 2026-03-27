@@ -1,7 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import quote
 from bs4 import BeautifulSoup
-import utils.utils as utils
+import utils as utils
 import pandas as pd
 import unicodedata
 import requests
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     from concurrent.futures import ThreadPoolExecutor
 
     # Load data
-    input_file = "/Users/eyquem/Desktop/LeadersMap/sources/ministres_list.csv"
+    input_file = "/Users/eyquem/Desktop/LeadersMap/fetch/ministers/src/ministres_list.csv"
     df_raw = pd.read_csv(input_file, sep=None, engine='python')
     
     df = pd.DataFrame(columns=["name", "tag", "dob", "pob"])
@@ -60,7 +60,7 @@ if __name__ == "__main__":
             df.at[idx, 'dob'] = dob
             print(f"\r\033[K[{idx}/{total}] {df.at[idx, 'name']} : {pob}, {dob}", end="", flush=True)
 
-    output_file = "/Users/eyquem/Desktop/LeadersMap/outputs/geo_missing.csv"
+    output_file = "/Users/eyquem/Desktop/LeadersMap/fetch/ministers/interim/geo_missing.csv"
     df.to_csv(output_file, index=False)
     print(df.head())
     print(f"\nResults saved to {output_file}")

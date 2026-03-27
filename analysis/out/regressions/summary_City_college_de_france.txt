@@ -1,0 +1,26 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      college_de_france   R-squared:                       0.115
+Model:                            OLS   Adj. R-squared:                  0.114
+Method:                 Least Squares   F-statistic:                     122.9
+Date:                Thu, 26 Mar 2026   Prob (F-statistic):           6.77e-51
+Time:                        22:36:03   Log-Likelihood:                 472.35
+No. Observations:                1892   AIC:                            -938.7
+Df Residuals:                    1889   BIC:                            -922.1
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -2.7060      0.303     -8.918      0.000      -3.301      -2.111
+expo_demog     0.0410      0.003     14.278      0.000       0.035       0.047
+median         0.2424      0.030      8.085      0.000       0.184       0.301
+==============================================================================
+Omnibus:                     1598.907   Durbin-Watson:                   1.975
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            37129.751
+Skew:                           3.996   Prob(JB):                         0.00
+Kurtosis:                      23.177   Cond. No.                         904.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -1,7 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import quote
 from bs4 import BeautifulSoup
-import utils.utils as utils
+import utils as utils
 import pandas as pd
 import unicodedata
 import requests
