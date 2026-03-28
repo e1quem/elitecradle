@@ -3,8 +3,8 @@
 Dep. Variable:      college_de_france   R-squared:                       0.378
 Model:                            OLS   Adj. R-squared:                  0.301
 Method:                 Least Squares   F-statistic:                     4.869
-Date:                Thu, 26 Mar 2026   Prob (F-statistic):             0.0223
-Time:                        22:36:03   Log-Likelihood:                -13.570
+Date:                Sat, 28 Mar 2026   Prob (F-statistic):             0.0223
+Time:                        11:38:04   Log-Likelihood:                -13.570
 No. Observations:                  19   AIC:                             33.14
 Df Residuals:                      16   BIC:                             35.97
 Df Model:                           2                                         

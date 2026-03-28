@@ -206,7 +206,7 @@ df_final_city = pd.merge(df_final_city, df_ecoc[['pob', 'dept', 'median']], on=[
 tag_columns = [c for c in df_ppl_count.columns if c not in ['pob', 'dept', 'global']]
 df_final_city[tag_columns + ['global']] = df_final_city[tag_columns + ['global']].fillna(0).astype(int)
 
-politics_tags = ['depute', 'senat', 'ministre', 'president']
+politics_tags = ['depute', 'senat', 'minister', 'president']
 politics_cols = [col for col in politics_tags if col in df_final_city.columns]
 df_final_city['politics'] = df_final_city[politics_cols].sum(axis=1)
 

@@ -3,8 +3,8 @@
 Dep. Variable:                 global   R-squared:                       0.783
 Model:                            OLS   Adj. R-squared:                  0.776
 Method:                 Least Squares   F-statistic:                     115.3
-Date:                Thu, 26 Mar 2026   Prob (F-statistic):           1.03e-31
-Time:                        22:36:03   Log-Likelihood:                -18.181
+Date:                Sat, 28 Mar 2026   Prob (F-statistic):           1.03e-31
+Time:                        11:38:04   Log-Likelihood:                -18.181
 No. Observations:                 100   AIC:                             44.36
 Df Residuals:                      96   BIC:                             54.78
 Df Model:                           3                                         

@@ -14,7 +14,7 @@ utils.force_ipv4()
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
 
-keywords = ["ministre", "politique", "gouvernement", "femme politique", "homme politique"]
+keywords = ["minister", "politique", "gouvernement", "femme politique", "homme politique"]
 suffixes = ["", "_(homme_politique)", "_(femme_politique)", "_(PDG)", "_(dirigeant)", "_(personnalité_publique)"]
 
 def process(index, name, dob):
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     from concurrent.futures import ThreadPoolExecutor
 
     # Load data
-    input_file = "/Users/eyquem/Desktop/LeadersMap/fetch/ministers/src/ministres_list.csv"
+    input_file = "/Users/eyquem/Desktop/LeadersMap/fetch/ministers/src/ministers_list.csv"
     df_raw = pd.read_csv(input_file, sep=None, engine='python')
     
     df = pd.DataFrame(columns=["name", "tag", "dob", "pob"])
@@ -43,7 +43,7 @@ if __name__ == "__main__":
             name = str(df_raw.iloc[idx, 1]) + " " + str(df_raw.iloc[idx, 0])
             df = pd.concat([df, pd.DataFrame([{
                 "name": name,
-                "tag": "ministre",
+                "tag": "minister",
                 "dob": "",
                 "pob": ""
             }])], ignore_index=True)

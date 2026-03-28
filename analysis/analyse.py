@@ -421,6 +421,7 @@ def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
     plt.close()
 
 plot_regression_outliers(df_city, 'expo_demog', 'global', 'City', 'pob')
+plot_regression_outliers(df_city, 'median', 'global', 'City', 'pob')
 plot_regression_outliers(df_city_merged, 'expo_demog', 'politics', 'City_Paris_Merged', 'pob')
 plot_regression_outliers(df_dept, 'expo_demog', 'global', 'Department', 'dept')
 plot_regression_outliers(df_dept, 'median', 'global', 'Department', 'dept')

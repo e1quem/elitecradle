@@ -10,8 +10,8 @@ import re
 utils.force_ipv4()
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
 
-def get_depute_data_by_id(id):
-    # Using deputees ids to find their bio on the AN website and extract their pob/dob
+def get_parliament_data_by_id(id):
+    # Using parliamentes ids to find their bio on the AN website and extract their pob/dob
     url = f"https://www2.assemblee-nationale.fr/sycomore/fiche/{id}"
     
     try:
@@ -60,7 +60,7 @@ def get_depute_data_by_id(id):
 
         return {
             "name": name,
-            "tag": "depute",
+            "tag": "parliament",
             "dob": dob,
             "pob": geo_info["pob"] if geo_info else pob,
             "dept_num": geo_info["dep_num"] if geo_info else ("foreign" if pob == "foreign" else None),
@@ -78,11 +78,11 @@ def get_depute_data_by_id(id):
     
 # 1. Obtaining the list of all departments
 # Use list of departments extracted from https://www2.assemblee-nationale.fr/sycomore/recherche
-with open("/Users/eyquem/Desktop/LeadersMap/fetch/depute/src/departments_raw.txt", "r", encoding="utf-8") as f:
+with open("/Users/eyquem/Desktop/LeadersMap/fetch/parliament/src/departments_raw.txt", "r", encoding="utf-8") as f:
     content = f.read()
 soup = BeautifulSoup(content, 'html.parser') 
 
-# Removing departments that have only one historical deputees: the page has a different format.
+# Removing departments that have only one historical parliamentes: the page has a different format.
 wrong_format = [
     "Côte-d'Ivoire", 
     "Gabon", 
@@ -93,7 +93,7 @@ wrong_format = [
     "Oubangui-Chari-Tchad"
 ]
 
-# We manually keep the info of these deputees.
+# We manually keep the info of these parliamentes.
 manual_data = [
     {"name": "Félix Houphouët-Boigny", "dept": "Côte-d'Ivoire", "id": "3874", "pob": "foreign", "dept_ob": "foreign"},
     {"name": "Jean-Hilaire Aubame", "dept": "Gabon", "id": "226", "pob": "foreign", "dept_ob": "foreign"},
@@ -110,7 +110,7 @@ departments = sorted(list(set([li.get_text().strip() for li in soup.find_all('li
 print(f"{len(departments)} departments extracted")
 
 # 2. We need this list of departments because pagination is broken on the AN website. It doesn't properly display the right names after the 500 pagination limit.
-# Hence we cannot do a simple search for all deputees since the beginning of the Vth Républic
+# Hence we cannot do a simple search for all parliamentes since the beginning of the Vth Républic
 # Instead, we do one request for each departement in order to stay under the 500 results limit (even Paris only has 226 results)
 base_url = "https://www2.assemblee-nationale.fr/sycomore/resultats/"
 query_params = "?base=tous_departements&regle_nom=est&nom=&departement={dep_encoded}&choixdate=intervalle&debutmin=09/12/1958&finmin=&dateau=&legislature=&choixordre=chrono&submitbas=Lancer+la+recherche"
@@ -118,7 +118,7 @@ all_dp = []
 total_depts = len(departments)
 
 for i, dept in enumerate(departments, 1):
-    print(f"\r\033[K[{i}/{total_depts}] Obtaining list of deputees for {dept}...", end="", flush=True)
+    print(f"\r\033[K[{i}/{total_depts}] Obtaining list of parliamentes for {dept}...", end="", flush=True)
 
     dep_encoded = quote_plus(dept)
     url = f"{base_url}{query_params.format(dep_encoded=dep_encoded)}"
@@ -166,14 +166,14 @@ df.loc[df['name'] == 'André Godin', 'pob'] = 'Bourg-en-Bresse'
 # We consider an entry is a duplicate if the name and the id are identical
 df = df.drop_duplicates(subset=['name', 'id'], keep='first')
 
-print(f"\nFound {len(df)+7} deputees.")
+print(f"\nFound {len(df)+7} parliamentes.")
 new_results = []
 total_dp = len(df)
 
 # 3. Obtaining full geo info using their individual id and data.gouv API
 for index, row in df.iterrows():
     id = str(row['id'])
-    data = get_depute_data_by_id(id)
+    data = get_parliament_data_by_id(id)
     if data:
         print(f"\r\033[K[{index+1}/{total_dp}] {data['name']}...", end="", flush=True)
         new_results.append(data)
@@ -182,14 +182,14 @@ for index, row in df.iterrows():
 df_details = pd.DataFrame(new_results)
 manual_results = []
 
-# 3.bis Obtaining full geo info of manually extracted deputees
+# 3.bis Obtaining full geo info of manually extracted parliamentes
 for index, row in df_manual.iterrows():
     name, id, pob, dept_ob, dob = row['name'], row['id'], row['pob'], row['dept_ob'], "N/A"
     geo_info = utils.finding_geo(pob)
 
     manual_results.append({
             "name": name,
-            "tag": "depute",
+            "tag": "parliament",
             "dob": dob,
             "pob": pob,
             "dept_num": geo_info["dep_num"] if geo_info else ("foreign" if pob == "foreign" else None),
@@ -204,8 +204,8 @@ for index, row in df_manual.iterrows():
 df_manual = pd.DataFrame(manual_results)
 df = pd.concat([df_details, df_manual], ignore_index=True)
 
-# 4. Obtaining precise arrondissement for parisian deputees
-# Filtering parisian deputees
+# 4. Obtaining precise arrondissement for parisian parliamentes
+# Filtering parisian parliamentes
 df_paris = df[
     (df['dept_num'] == '75') |
     (df['pob'].str.contains(r'Paris', case=False, na=False))
@@ -240,5 +240,5 @@ print(f"\nFound {count} arr. out of {total} entries ({round(count/total*100, 2)}
 df = pd.update([df, df_paris_standardized], ignore_index=True)
 
 # Saving as CSV
-output_path = "/Users/eyquem/Desktop/LeadersMap/fetch/depute/interim/dp_geo_enrich.csv"
+output_path = "/Users/eyquem/Desktop/LeadersMap/fetch/parliament/interim/dp_geo_enrich.csv"
 df.to_csv(output_path, index=False, encoding='utf-8')

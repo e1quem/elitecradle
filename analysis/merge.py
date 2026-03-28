@@ -15,7 +15,7 @@ def normalize_text(text):
     # Capitalize the first letter
     return text.capitalize()
 
-df_dp = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/depute/processed/dp_clean.csv", sep=None, engine='python')
+df_dp = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/depute/processed/an_clean.csv", sep=None, engine='python')
 df_mn = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/ministers/processed/mn_clean.csv", sep=None, engine='python')
 df_pr = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/presidents/processed/presidents_clean.csv", sep=None, engine='python')
 df_sn = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/senators/processed/sn_clean.csv", sep=None, engine='python')
@@ -29,7 +29,7 @@ df['dob'] = pd.to_numeric(df['dob'], errors='coerce').astype('Int64')
 
 # We group lines sharing the same name and dob
 # Tag hierarchy
-hierarchy = ['president', 'ministre', 'college_de_france', 'executive', 'senat', 'depute']
+hierarchy = ['president', 'minister', 'college_de_france', 'executive', 'senat', 'depute']
 df['tag'] = pd.Categorical(df['tag'], categories=hierarchy, ordered=True)
 df = df.sort_values('tag')
 df = df.groupby(['name', 'dob'], as_index=False).first()

@@ -26,7 +26,7 @@ On veut, pour chaque personne :
 
 ## Architecture et techniques principales
 
-- **Pipelines `fetch/*`** : chaque cohorte (député·es, sénateurs·trices, ministres, présidents, professeurs du Collège de France, exécutifs CAC40) dispose de son propre dossier `fetch/<cohorte>` avec `raw/` (sources brutes Excel / CSV / listes), `interim/` (fichiers enrichis, logs et résultats partiels) et `processed/` (nettoyés). La collecte repose sur des scripts Python qui lisent ces sources, récupèrent Wikipedia (ou Sycomore pour les députés) via des helpers communs puis géolocalisent les villes avec l’API `api-adresse.data.gouv.fr`.
+- **Pipelines `fetch/*`** : chaque cohorte (député·es, sénateurs·trices, ministers, présidents, professeurs du Collège de France, exécutifs CAC40) dispose de son propre dossier `fetch/<cohorte>` avec `raw/` (sources brutes Excel / CSV / listes), `interim/` (fichiers enrichis, logs et résultats partiels) et `processed/` (nettoyés). La collecte repose sur des scripts Python qui lisent ces sources, récupèrent Wikipedia (ou Sycomore pour les députés) via des helpers communs puis géolocalisent les villes avec l’API `api-adresse.data.gouv.fr`.
 - **Dossier `utils/`** : `utils/utils.py` applique quelques tours malins : `force_ipv4()` contourne les problèmes DNS avec certains sites, `get_wikipedia_soup()` explore une palette de suffixes pour gérer les homonymes et les variations de nom, `extract_pob/dob/arrondissement()` scrutent infobox, catégories et paragraphes d’intro pour une robustesse maximale, et `finding_geo()` centralise la géolocalisation. Le module mémorise aussi les vérifications “est-ce que c’est en France” pour éviter de répéter les requêtes.
 - **Députés (pagination cassée)** : on contourne la limite de 500 résultats sur Sycomore en lisant la liste des départements et en lançant une requête par département, puis on scrappe chaque fiche individuelle (en respectant la cadence) et on traite à part les colonies anciennes et les arrondissements parisiens (extraction via Wikipedia + standardisation manuelle des coordonnées).
 - **Concurrence maîtrisée** : les scrapers utilisent `ThreadPoolExecutor` (10 threads pour la plupart, 1 pour les exécutifs faute d’être trop agressif) pour accélérer la recherche sur Wikipedia tout en limitant la charge. Le module fusion `analysis/merge.py` impose une hiérarchie de tags et déduplique sur `name+dob` avant d’exporter `merged_raw.csv`.
@@ -46,7 +46,7 @@ On veut, pour chaque personne :
 - [x] l'ensemble des députés (tout se trouve sur le site de l'AN) (jaune)
 - [x] l'ensemble des sénateurs (liste des  / prénoms / dob en excel, information de naissance à trouver sur wikipedia) (orange)
 - [x] l'ensemble des présidents (gérer les naissance à l'étranger) (violet)
-- [ ] l'ensemble des ministres des gouvernements de la Ve république : tout se fait sur wikipedia, il faut trouver la liste des gouvernements de la Ve République, puis travailler par indentation pour aller visiter les pages de chaque ministre de chaque gouvernement et en extraire leur nom, dob et pob (rouge)
+- [ ] l'ensemble des ministers des gouvernements de la Ve république : tout se fait sur wikipedia, il faut trouver la liste des gouvernements de la Ve République, puis travailler par indentation pour aller visiter les pages de chaque minister de chaque gouvernement et en extraire leur nom, dob et pob (rouge)
 
 **Entreprise**
 - PDG d'entreprises du CAC40 (vert)
@@ -121,14 +121,14 @@ Il faut qu'on utilise les pages par députés. Au lieu de les brute force toutes
 5. à partir de cette liste d'id, on scrappe le site de l'AN pour extraire nom, dob, pob et dept ob
 6. à partir de cette liste, on utilise la pob et le dept ob avec l'API geo gouv.fr pour obtenir le numéro du département, la localisation GPS de la ville et le nom de la région
 
-Nettoyage de deputes_data.csv:
+Nettoyage de parliaments_data.csv:
 - After running the code, we have a few connection errors. We manually clean up the results. On recode manuellement les noms de ville suivant différents orthographe, accents, ou conventions de tirets (Paris 16e becomes Paris 16 all the time), Aix les bains devient Aix-les-bains.
 - On recode André Godin comme né à Bourg-en-Bresse.
 - Pour tous les parisiens, il faudrait distinguer l'arrondissement.
 - On cherche manuellement les 12 N/A et empty pour pob. C'est un succès : notre code a trouvé un pob pour la quasi-totalité des députés. Il manque cependant les informations geo pour une partie d'entre eux : we populate using ``geo_finding.py``
 
 ```
-(base) eyquem@MacBook-Air-de-Eyquem LeadersMap % python3 fetch_deputes_data.py
+(base) eyquem@MacBook-Air-de-Eyquem LeadersMap % python3 fetch_parliaments_data.py
 [1242/4555] Jean-Noël Kerdraon...Error on 3620: HTTPSConnectionPool(host='www2.assemblee-nationale.fr', port=443): Max retries exceeded with url: /sycomore/fiche/3620 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x146ab2350>: Failed to resolve 'www2.assemblee-nationale.fr' ([Errno 8] nodename nor servname provided, or not known)"))
 [1243/4555] ID 3620 : Error fetching data.Error on 11050: HTTPSConnectionPool(host='www2.assemblee-nationale.fr', port=443): Max retries exceeded with url: /sycomore/fiche/11050 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x146ab1bd0>: Failed to resolve 'www2.assemblee-nationale.fr' ([Errno 8] nodename nor servname provided, or not known)"))
 [1244/4555] ID 11050 : Error fetching data.Error on 2061: HTTPSConnectionPool(host='www2.assemblee-nationale.fr', port=443): Max retries exceeded with url: /sycomore/fiche/2061 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x146ab1450>: Failed to resolve 'www2.assemblee-nationale.fr' ([Errno 8] nodename nor servname provided, or not known)"))
@@ -153,7 +153,7 @@ Lorsque les pages ne sont pas trouvées, on vérifie manuellement l'arrondisseme
 
 Found 233 arr. out of 365 entries (63.84%) (250 after manual inspection).
 
-pour lon et lat des arrondissements: filtrer et entrer la réelle lon et lat, pour l'instant c'est un peu partout les mêmes. On recode manuellement les coordonnées des GPS des arrondissements dans ``deputes_data_arr_enriched`` et de ``deputes_data_clean``. Dans ``deputes_data_clean``, on remplace les 365 pob "Paris" par celles de ``deputes_data_arr_enriched`` avec arrondissement.
+pour lon et lat des arrondissements: filtrer et entrer la réelle lon et lat, pour l'instant c'est un peu partout les mêmes. On recode manuellement les coordonnées des GPS des arrondissements dans ``parliaments_data_arr_enriched`` et de ``parliaments_data_clean``. Dans ``parliaments_data_clean``, on remplace les 365 pob "Paris" par celles de ``parliaments_data_arr_enriched`` avec arrondissement.
 
 On a maintenant une liste propre avec peu de trous, des arrondissements parisiens et des dob recodées.
 
@@ -194,9 +194,9 @@ arr_replace to obtain proper arr. localisation.
 manuellement: on vérifie les dept_num foreign qui ont un pob qui n'est pas foreign ni Not found ni Unknown. On repasse ça dans finding_geo, puis dans arr_replace, et on l'ajoute à cf_geo_enriched, qui devient cf_clean. 
 
 
-# 4. Ministres
+# 4. ministers
 
-Au lieu de faire du scrapping indenté dans wikipédia, on a direct trouvé une liste des ministres de la Ve et on fait le scrapping habituel.
+Au lieu de faire du scrapping indenté dans wikipédia, on a direct trouvé une liste des ministers de la Ve et on fait le scrapping habituel.
 
 On a notre code qui nous donne mn_geo_missing. On fait un micro nettoyage manuel.
 Ensuite, on utilise finding_geo.py pour l'enrichir avec des données GPS. On a 182 foreign. On a 32 dept_num foreign qui ont des pob correctes. On les extrait et on les réutilise dans finding_geo. On insère le résultat dans mn_geo_enriched.
@@ -231,8 +231,8 @@ https://www.data.gouv.fr
 **Liste historique des chaires du Collège de France**
 https://www.college-de-france.fr/fr/actualites/liste-historique-des-chaires-du-college-de-france
 
-**Ministres**
-http://www.histoire-france-web.fr/Documents/ministres.htm
+**ministers**
+http://www.histoire-france-web.fr/Documents/ministers.htm
 
 **Historique des entreprises du CAC40**
 https://www.bnains.org/archives/histocac/histocac.php
@@ -248,7 +248,7 @@ Biais : en cherchant sur wikipedia, on a uniquement les personnes suffisamment i
     geographic/demographic work, src/utils/ for shared helpers). This keeps the python scripts grouped logically instead of scattered at
     the top level.
   - Move raw inputs from sources/ into data/raw/ and ensure every script pulls from there; add data/interim/ for intermediate cleans
-    (e.g., dp_raw.csv), and data/processed/ for the final tables currently living in outputs/. Rename outputs/ to data/processed/
+    (e.g., an_raw.csv), and data/processed/ for the final tables currently living in outputs/. Rename outputs/ to data/processed/
     outcomes/ or similar so downstream consumers know it’s the DB output.
   - Create a db/ directory (or data/warehouse/) holding the schema/ETL for “the database” you’re assembling; expose a single
     populate_db.py that ingests the processed CSVs and writes to a sqlite/Postgres file or SQL scripts.
