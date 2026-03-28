@@ -49,5 +49,5 @@ order = ['name', 'dob', 'tag', 'pob', 'department', 'dept_num', 'region', 'lat',
 existing_cols = [c for c in order if c in df.columns]
 df = df[existing_cols]
 
-output_path = "/Users/eyquem/Desktop/LeadersMap/analysis/interim/merged_raw.csv"
+output_path = "/Users/eyquem/Desktop/LeadersMap/fetch/merging/interim/merged_raw.csv"
 df.to_csv(output_path, index=False, encoding='utf-8')

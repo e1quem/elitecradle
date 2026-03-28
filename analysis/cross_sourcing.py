@@ -109,7 +109,7 @@ df_popd = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/pop_dep
 df_popr = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/pop_region.csv", sep=None, engine='python')
 
 # Personnalities
-df_ppl = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/merged_clean.csv", sep=None, engine='python')
+df_ppl = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/merging/out/merged_clean.csv", sep=None, engine='python')
 
 # Turning dob into decades intervals
 def categorize_decade(year):
