@@ -1,37 +1,31 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:      college_de_france   R-squared:                       0.554
-Model:                            OLS   Adj. R-squared:                  0.498
-Method:                 Least Squares   F-statistic:                     9.939
-Date:                Sun, 29 Mar 2026   Prob (F-statistic):           1.76e-11
-Time:                        12:28:49   Log-Likelihood:                -67.617
-No. Observations:                 100   AIC:                             159.2
-Df Residuals:                      88   BIC:                             190.5
-Df Model:                          11                                         
+Dep. Variable:      college_de_france   R-squared:                       0.527
+Model:                            OLS   Adj. R-squared:                  0.502
+Method:                 Least Squares   F-statistic:                     20.94
+Date:                Sun, 29 Mar 2026   Prob (F-statistic):           5.20e-14
+Time:                        19:20:14   Log-Likelihood:                -70.565
+No. Observations:                 100   AIC:                             153.1
+Df Residuals:                      94   BIC:                             168.8
+Df Model:                           5                                         
 Covariance Type:            nonrobust                                         
 ==================================================================================
                      coef    std err          t      P>|t|      [0.025      0.975]
 ----------------------------------------------------------------------------------
-const            -50.7417     17.971     -2.824      0.006     -86.455     -15.028
-expo_demog         0.6255      0.141      4.445      0.000       0.346       0.905
-median             0.9262      0.990      0.936      0.352      -1.041       2.893
-poverty_rate       0.3306      0.413      0.800      0.426      -0.490       1.152
-cadres_and_pro    -0.1025      0.295     -0.348      0.729      -0.688       0.483
-activity_rate      4.9707      2.566      1.937      0.056      -0.129      10.070
-tertiaire          2.5663      1.483      1.730      0.087      -0.382       5.514
-colleges          -1.3564      2.526     -0.537      0.593      -6.376       3.664
-lycees_pro        -0.3214      0.437     -0.736      0.464      -1.189       0.547
-lycees_gt         -0.0638      0.857     -0.074      0.941      -1.767       1.639
-second_degre       1.5862      3.596      0.441      0.660      -5.560       8.732
-prepa_count        0.0421      0.052      0.816      0.417      -0.060       0.145
+const            -45.9904     15.087     -3.048      0.003     -75.947     -16.034
+expo_demog         0.6031      0.110      5.485      0.000       0.385       0.821
+cadres_and_pro    -0.1157      0.285     -0.406      0.686      -0.681       0.450
+activity_rate      6.0725      2.447      2.481      0.015       1.213      10.932
+tertiaire          2.9365      1.426      2.059      0.042       0.105       5.768
+prepa_count        0.0479      0.045      1.073      0.286      -0.041       0.136
 ==============================================================================
-Omnibus:                        1.585   Durbin-Watson:                   2.129
-Prob(Omnibus):                  0.453   Jarque-Bera (JB):                1.087
-Skew:                          -0.226   Prob(JB):                        0.581
-Kurtosis:                       3.238   Cond. No.                     6.93e+03
+Omnibus:                        0.224   Durbin-Watson:                   2.141
+Prob(Omnibus):                  0.894   Jarque-Bera (JB):                0.068
+Skew:                          -0.062   Prob(JB):                        0.966
+Kurtosis:                       3.031   Cond. No.                     4.44e+03
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 6.93e+03. This might indicate that there are
+[2] The condition number is large, 4.44e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.

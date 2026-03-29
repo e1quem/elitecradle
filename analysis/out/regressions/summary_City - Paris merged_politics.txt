@@ -4,7 +4,7 @@ Dep. Variable:               politics   R-squared:                       0.511
 Model:                            OLS   Adj. R-squared:                  0.511
 Method:                 Least Squares   F-statistic:                     3722.
 Date:                Sun, 29 Mar 2026   Prob (F-statistic):               0.00
-Time:                        12:28:50   Log-Likelihood:                 6983.2
+Time:                        19:20:15   Log-Likelihood:                 6983.2
 No. Observations:               28464   AIC:                        -1.395e+04
 Df Residuals:                   28455   BIC:                        -1.387e+04
 Df Model:                           8                                         

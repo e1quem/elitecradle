@@ -1,37 +1,26 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:               politics   R-squared:                       0.988
+Dep. Variable:               politics   R-squared:                       0.966
 Model:                            OLS   Adj. R-squared:                  0.961
-Method:                 Least Squares   F-statistic:                     36.53
-Date:                Sun, 29 Mar 2026   Prob (F-statistic):           0.000466
-Time:                        12:28:49   Log-Likelihood:                 11.836
-No. Observations:                  17   AIC:                            0.3270
-Df Residuals:                       5   BIC:                             10.33
-Df Model:                          11                                         
+Method:                 Least Squares   F-statistic:                     200.3
+Date:                Sun, 29 Mar 2026   Prob (F-statistic):           5.00e-11
+Time:                        19:32:34   Log-Likelihood:                 3.2464
+No. Observations:                  17   AIC:                           -0.4928
+Df Residuals:                      14   BIC:                             2.007
+Df Model:                           2                                         
 Covariance Type:            nonrobust                                         
-==================================================================================
-                     coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------
-const             -5.0617     42.696     -0.119      0.910    -114.814     104.691
-expo_demog         1.0154      0.475      2.136      0.086      -0.207       2.237
-median_euro       -0.4947      2.009     -0.246      0.815      -5.658       4.668
-poverty_rate       0.6959      1.122      0.621      0.562      -2.187       3.579
-cadres_and_pro     0.6112      1.276      0.479      0.652      -2.669       3.892
-activity_rate      0.3479      8.470      0.041      0.969     -21.424      22.120
-tertiaire         -0.6355      5.875     -0.108      0.918     -15.737      14.466
-colleges           2.1607      5.158      0.419      0.693     -11.099      15.420
-lycees_pro        -0.2905      0.737     -0.394      0.710      -2.184       1.603
-lycees_gt          0.2024      0.168      1.203      0.283      -0.230       0.635
-second_degre      -1.9876      5.903     -0.337      0.750     -17.162      13.187
-prepa_count       -0.2206      0.474     -0.466      0.661      -1.438       0.997
 ==============================================================================
-Omnibus:                        1.900   Durbin-Watson:                   2.118
-Prob(Omnibus):                  0.387   Jarque-Bera (JB):                0.698
-Skew:                           0.475   Prob(JB):                        0.705
-Kurtosis:                       3.287   Cond. No.                     1.78e+04
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -5.9049      0.676     -8.734      0.000      -7.355      -4.455
+expo_demog     0.7754      0.043     17.975      0.000       0.683       0.868
+prepa_rate     2.2104      1.007      2.194      0.046       0.050       4.371
+==============================================================================
+Omnibus:                        0.274   Durbin-Watson:                   1.735
+Prob(Omnibus):                  0.872   Jarque-Bera (JB):                0.164
+Skew:                           0.198   Prob(JB):                        0.921
+Kurtosis:                       2.727   Cond. No.                         299.
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 1.78e+04. This might indicate that there are
-strong multicollinearity or other numerical problems.

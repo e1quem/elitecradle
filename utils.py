@@ -45,8 +45,7 @@ def finding_geo(pob):
                     "lat": geom[1],
                     "dep_num": parts[0].strip() if len(parts) > 0 else None,
                     "dep_name": parts[1].strip() if len(parts) > 1 else None,
-                    "region": parts[-1].strip() if len(parts) > 2 else None,
-                    "confidence": round(properties.get('score', 0), 3)
+                    "region": parts[-1].strip() if len(parts) > 2 else None
                 }
     except Exception:
         pass
@@ -305,11 +304,11 @@ def extract_pob(soup):
                 if td:
                     # Paris : arr. logic
                     if "paris" in td.get_text().lower():
-                        return utils.extract_arrondissement(soup)
+                        return extract_arrondissement(soup)
                     # Check if it's french or foreign
                     link = td.find("a", href=True)
                     if link:
-                        if not utils.is_in_france(link['href']): return "foreign"
+                        if not is_in_france(link['href']): return "foreign"
                         city = link.get_text()
                     else:
                         city = td.get_text(separator=" ").split('(')[0].split('[')[0]
@@ -325,9 +324,9 @@ def extract_pob(soup):
             
             # Simple check for Paris in categories
             if "paris" in cat_text.lower():
-                return utils.extract_arrondissement(soup)
+                return extract_arrondissement(soup)
                 
-            if not utils.is_in_france(cat_link['href']): 
+            if not is_in_france(cat_link['href']): 
                 return "foreign"
                 
             return cat_text.replace("Naissance à ", "").strip()
@@ -345,9 +344,9 @@ def extract_pob(soup):
 
                 # Simple Paris check for the intro
                 if "paris" in city_name.lower():
-                    return utils.extract_arrondissement(soup)
+                    return extract_arrondissement(soup)
                 link = p.find("a", string=re.compile(re.escape(city_name)))
-                if link and not utils.is_in_france(link['href']): 
+                if link and not is_in_france(link['href']): 
                     return "foreign"
                 
                 return city_name

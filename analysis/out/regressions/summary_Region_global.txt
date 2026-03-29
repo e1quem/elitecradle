@@ -1,37 +1,26 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                 global   R-squared:                       0.989
-Model:                            OLS   Adj. R-squared:                  0.964
-Method:                 Least Squares   F-statistic:                     40.04
-Date:                Sun, 29 Mar 2026   Prob (F-statistic):           0.000373
-Time:                        12:28:49   Log-Likelihood:                 12.189
-No. Observations:                  17   AIC:                           -0.3789
-Df Residuals:                       5   BIC:                             9.620
-Df Model:                          11                                         
+Dep. Variable:                 global   R-squared:                       0.967
+Model:                            OLS   Adj. R-squared:                  0.962
+Method:                 Least Squares   F-statistic:                     203.8
+Date:                Sun, 29 Mar 2026   Prob (F-statistic):           4.45e-11
+Time:                        19:52:39   Log-Likelihood:                 2.9728
+No. Observations:                  17   AIC:                           0.05433
+Df Residuals:                      14   BIC:                             2.554
+Df Model:                           2                                         
 Covariance Type:            nonrobust                                         
-==================================================================================
-                     coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------
-const             -7.4191     41.818     -0.177      0.866    -114.916     100.078
-expo_demog         1.0050      0.466      2.158      0.083      -0.192       2.202
-median_euro       -0.4343      1.967     -0.221      0.834      -5.491       4.623
-poverty_rate       0.6497      1.099      0.591      0.580      -2.174       3.474
-cadres_and_pro     0.6012      1.250      0.481      0.651      -2.612       3.814
-activity_rate      0.4475      8.296      0.054      0.959     -20.877      21.772
-tertiaire         -0.2950      5.754     -0.051      0.961     -15.086      14.496
-colleges           2.2748      5.052      0.450      0.671     -10.712      15.262
-lycees_pro        -0.3531      0.721     -0.489      0.645      -2.208       1.502
-lycees_gt          0.2016      0.165      1.223      0.276      -0.222       0.625
-second_degre      -2.0373      5.782     -0.352      0.739     -16.900      12.825
-prepa_count       -0.2016      0.464     -0.435      0.682      -1.394       0.991
 ==============================================================================
-Omnibus:                        1.684   Durbin-Watson:                   2.190
-Prob(Omnibus):                  0.431   Jarque-Bera (JB):                0.465
-Skew:                           0.353   Prob(JB):                        0.793
-Kurtosis:                       3.396   Cond. No.                     1.78e+04
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.2232      0.687     -9.058      0.000      -7.697      -4.750
+expo_demog     0.7993      0.044     18.233      0.000       0.705       0.893
+prepa_rate     2.4999      1.024      2.442      0.028       0.304       4.696
+==============================================================================
+Omnibus:                        1.158   Durbin-Watson:                   1.689
+Prob(Omnibus):                  0.560   Jarque-Bera (JB):                0.412
+Skew:                           0.380   Prob(JB):                        0.814
+Kurtosis:                       3.062   Cond. No.                         299.
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 1.78e+04. This might indicate that there are
-strong multicollinearity or other numerical problems.

@@ -32,15 +32,19 @@ df_city_merged.loc[paris_idx, count_cols] += paris_arr_sum.values
 # Paris arrondissement only
 df_arr = df_city[paris_mask].copy()
 
+df_cities_q1 = df_city[df_city['expo_demog'] > df_city['expo_demog'].quantile(0.90)]
+df_cities_merged_q1 = df_city_merged[df_city_merged['expo_demog'] > df_city_merged['expo_demog'].quantile(0.90)]
+df_cities_else = df_city[df_city['expo_demog'] < df_city['expo_demog'].quantile(0.90)]
+
 # Groups on which we iterate
-GROUPS = ['global', 'politics', 'college_de_france', 'executive']
+GROUPS = ['global']#, 'politics', 'college_de_france', 'executive']
 
 # Variables for each level
-ECO_ARR = ['expo_demog', 'median', 'lycees_pro', 'lycees_gt', 'lycees', 'edu',  'prepa', 'prepa_count']
-ECO_CITY = ['expo_demog', 'median', 'lycees_pro', 'lycees_gt', 'lycees', 'edu',  'prepa', 'prepa_count']
-ECO_CITY_MERGED = ['expo_demog', 'median', 'lycees_pro', 'lycees_gt', 'lycees', 'edu',  'prepa', 'prepa_count']
-ECO_DEPT = ['expo_demog', 'median', 'poverty_rate', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'prepa_count']
-ECO_REGION = ['expo_demog', 'median_euro', 'poverty_rate',  'cadres_and_pro', 'activity_rate', 'tertiaire', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'prepa_count']
+ECO_ARR = ['expo_demog', 'lycees_pro', 'lycees_gt', 'lycees', 'edu', 'prepa', 'prepa_count', 'median']
+ECO_CITY = ['expo_demog', 'activity_rate', 'lycees_pro', 'lycees_gt', 'lycees', 'edu', 'prepa', 'prepa_count', 'cadres', 'median', 'tertiaire']
+ECO_DEPT = ['expo_demog', 'activity_rate', 'colleges', 'lycees_pro', 'lycees_gt', 'lycees', 'second_degre', 'prepa_count', 'cadres_and_pro', 'median', 'poverty_rate', 'tertiaire']
+ECO_REGION = ['expo_demog', 'activity_rate', 'colleges', 'lycees_pro', 'lycees_gt', 'lycees', 'second_degre', 'prepa_count', 'cadres_and_pro', 'median', 'poverty_rate', 'tertiaire']
+
 
 # Rankings and concentration
 #def print_ranking(df, id_col, level_name, groups, top_n=10, show_bottom = False):
@@ -69,175 +73,175 @@ ECO_REGION = ['expo_demog', 'median_euro', 'poverty_rate',  'cadres_and_pro', 'a
 #print_ranking(df_city_merged,   id_col='pob',    level_name='City - Paris merged', groups=GROUPS, top_n=10, show_bottom = False)
 #print_ranking(df_arr,   id_col='pob',    level_name='Arrondissements', groups=GROUPS, top_n=10, show_bottom = False)
 
-def print_concentration(df, id_col, level_name, groups):
-    print(f"\n  \033[1mCONCENTRATION — {level_name.upper()}\033[0m")
-    for g in groups:
-        if g not in df.columns:
-            continue
-        s = df[g].dropna().sort_values(ascending=False)
-        total = s.sum()
-        if total == 0:
-            continue
-        top1_pct  = s.iloc[0] / total * 100 if len(s) >= 1 else 0
-        top3_pct  = s.iloc[:3].sum() / total * 100 if len(s) >= 3 else 0
-        top5_pct  = s.iloc[:5].sum() / total * 100 if len(s) >= 5 else 0
-        top10_pct = s.iloc[:10].sum() / total * 100 if len(s) >= 10 else 0
-
-        print(f"\n  \033[1m{g}\033[0m  total={int(total)}, n entities={len(s)}")
-        print(f"    Top 3  : {top3_pct:.1f}%")
-        print(f"    Top 5  : {top5_pct:.1f}%")
-        print(f"    Top 10 : {top10_pct:.1f}%")
-
-print_concentration(df_region, 'region', 'Region',      GROUPS)
-print_concentration(df_dept,   'dept',   'Department', GROUPS)
-print_concentration(df_city,   'pob',    'City',       GROUPS)
-print_concentration(df_city_merged, 'pob', 'City - Paris merged', GROUPS)
-print_concentration(df_arr, 'pob', 'Arrondissements', GROUPS)
-
-
-# BAR CHARTS
+#def print_concentration(df, id_col, level_name, groups):
+#    print(f"\n  \033[1mCONCENTRATION — {level_name.upper()}\033[0m")
+#    for g in groups:
+#        if g not in df.columns:
+#            continue
+#        s = df[g].dropna().sort_values(ascending=False)
+#        total = s.sum()
+#        if total == 0:
+#            continue
+#        top1_pct  = s.iloc[0] / total * 100 if len(s) >= 1 else 0
+#        top3_pct  = s.iloc[:3].sum() / total * 100 if len(s) >= 3 else 0
+#        top5_pct  = s.iloc[:5].sum() / total * 100 if len(s) >= 5 else 0
+#        top10_pct = s.iloc[:10].sum() / total * 100 if len(s) >= 10 else 0
+#
+#        print(f"\n  \033[1m{g}\033[0m  total={int(total)}, n entities={len(s)}")
+#        print(f"    Top 3  : {top3_pct:.1f}%")
+#        print(f"    Top 5  : {top5_pct:.1f}%")
+#        print(f"    Top 10 : {top10_pct:.1f}%")
+#
+#print_concentration(df_region, 'region', 'Region',      GROUPS)
+#print_concentration(df_dept,   'dept',   'Department', GROUPS)
+#print_concentration(df_city,   'pob',    'City',       GROUPS)
+#print_concentration(df_city_merged, 'pob', 'City - Paris merged', GROUPS)
+#print_concentration(df_arr, 'pob', 'Arrondissements', GROUPS)
+#
+#
+## BAR CHARTS
 POLITICS_STACKS = ['parliament', 'senat', 'minister', 'president']
 GLOBAL_STACKS = ['parliament', 'senat', 'minister', 'executive', 'college_de_france', 'president']
 OUTPUT_DIR = "/Users/eyquem/Desktop/LeadersMap/analysis/out"
 REG_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "regressions")
-plt.rcParams['font.family'] = 'sans-serif'
-plt.rcParams['font.sans-serif'] = ['Helvetica', 'Arial']
-
-def apply_d3_style(ax, title, is_stacked=False):
-    for spine in ax.spines.values():
-        spine.set_visible(False)
-    ax.yaxis.set_major_locator(MaxNLocator(integer=True))
-    ax.tick_params(axis='both', which='major', labelsize=9, colors='#444444')
-    ax.set_title(title, loc='left', pad=20, color='#222222')
-
-# Simple bar chart for college_de_france and executive
-def plot_simple_bar(ax, df, id_col, group, title):
-    total_n = int(df[group].sum())
-    title = f"{title} (n = {total_n})"
-    top_df = df.dropna(subset=[group]).sort_values(group, ascending=False).head(10)
-    x_labels = top_df[id_col].astype(str).tolist()
-    y_values = top_df[group].values
-    x_pos = np.arange(len(x_labels))
-    ax.bar(x_pos, y_values, color='steelblue', width=0.95)
-    ax.set_xticks(x_pos)
-    ax.set_xticklabels(x_labels, rotation=45, ha='right')
-    ax.set_xlim(-0.5, len(x_labels) - 0.5)
-    
-    apply_d3_style(ax, title)
-
-# Stacked bar chart for global and political
-def plot_stacked_bar(ax, df, id_col, group_total, stack_cols, title):
-    total_n = int(df[group_total].sum())
-    title = f"{title} (n = {total_n})"
-    top_df = df.dropna(subset=[group_total]).sort_values(group_total, ascending=False).head(10)
-    x_labels = top_df[id_col].astype(str).tolist()
-    x_pos = np.arange(len(x_labels))
-
-    valid_cols = [c for c in stack_cols if c in df.columns]
-    if not valid_cols:
-        ax.bar(x_pos, top_df[group_total].values, color='#abdda4', width=0.95)
-    else:
-        bottom = np.zeros(len(top_df))
-        for col in valid_cols:
-            values = top_df[col].fillna(0).values
-        cmap = plt.get_cmap('Spectral')
-        colors = cmap(np.linspace(0.1, 0.9, len(valid_cols)))
-        
-        for i, col in enumerate(valid_cols):
-            values = top_df[col].fillna(0).values
-            ax.bar(x_pos, values, bottom=bottom, label=col.capitalize(), color=colors[i], width=0.95)
-            bottom += values
-            
-        ax.legend(frameon=False, fontsize='small', loc='upper right', prop={'family': 'sans-serif', 'size': 9})
-
-    ax.set_xticks(x_pos)
-    ax.set_xticklabels(x_labels, rotation=45, ha='right')
-    ax.set_xlim(-0.5, len(x_labels) - 0.5)
-    apply_d3_style(ax, title, is_stacked=True)
-
-def export_level_charts(df, id_col, level_name):
-    fig, axes = plt.subplots(1, 4, figsize=(24, 6))
-    n_entities = len(df)
-    display_name = level_name.replace('_', ' ')
-
-    fig.suptitle(f"{display_name} ({n_entities} entities)", fontsize=14, fontname='Helvetica')
-
-    plot_stacked_bar(axes[0], df, id_col, 'global', GLOBAL_STACKS, 'Global')
-    plot_stacked_bar(axes[1], df, id_col, 'politics', POLITICS_STACKS, 'Political')
-    plot_simple_bar(axes[2], df, id_col, 'college_de_france', 'Collège de France')
-    plot_simple_bar(axes[3], df, id_col, 'executive', 'Executives')
-    plt.tight_layout()
-    
-    filename = os.path.join(OUTPUT_DIR, f"top_{level_name.lower().replace(' ', '_')}.png")
-    plt.savefig(filename, dpi=300, bbox_inches='tight', transparent=False, facecolor='white')
-    plt.close()
-
-levels_to_export = [
-    (df_region,      'region', 'Region'),
-    (df_dept,        'dept',   'Department'),
-    (df_city_merged, 'pob',    'City_Merged'),
-    (df_city,        'pob',    'City'),
-    (df_arr,         'pob',    'Arrondissements')]
-
-for df_level, id_col, level_name in levels_to_export:
-    export_level_charts(df_level, id_col, level_name)
-
-
-# BUBBLE MAPS
-MAP_CACHE = os.path.join(OUTPUT_DIR, "france_regions.geojson")
-GROUP_COLORS = {"Global": "#A52A2A", "Political": "#E63946", "Collège de France": "#6D597A", "Executives": "#F4A261"}
-SCALE = 1.2 
-MAX_BUBBLE_SIZE = 2000 
-GLOBAL_MAX_POP = df.groupby(['lat', 'lon']).size().max()
-
-def get_metropolitan_france():
-    if not os.path.exists(MAP_CACHE):
-        import requests
-        url = "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions.geojson"
-        r = requests.get(url)
-        with open(MAP_CACHE, 'wb') as f: f.write(r.content)
-    france = gpd.read_file(MAP_CACHE)
-    # Need to figure out a clean render of DOMs (without Mayotte, not included in INSEE data)
-    france = france[~france['nom'].isin(['Guadeloupe', 'Martinique', 'Guyane', 'La Réunion'])]
-    return france
-
-def prepare_bubble_data(df_subset):
-    bubbles = df_subset.groupby(['lat', 'lon']).size().reset_index(name='population')
-    # Filtering coordinates
-    bubbles = bubbles[(bubbles['lon'] > -5.5) & (bubbles['lon'] < 10) & (bubbles['lat'] > 41) & (bubbles['lat'] < 52)]
-    gdf = gpd.GeoDataFrame(bubbles, geometry=gpd.points_from_xy(bubbles.lon, bubbles.lat))
-    return gdf.sort_values('population', ascending=False)
-
-france_geo = get_metropolitan_france()
-
-configs = [
-    ("Global", df),
-    ("Political", df[df['tag'].isin(['parliament', 'senat', 'president', 'minister'])]),
-    ("Collège de France", df[df['tag'] == 'college_de_france']),
-    ("Executives", df[df['tag'] == 'executive']),]
-
-fig, axes = plt.subplots(1, 4, figsize=(20, 6), facecolor='white')
-
-for i, (name, data_subset) in enumerate(configs):
-    ax = axes[i]
-    for spine in ax.spines.values(): spine.set_visible(False)
-    france_geo.plot(ax=ax, color='#eeeeee', edgecolor='white', linewidth=0.7)
-    gdf_bubbles = prepare_bubble_data(data_subset)
-    total_n = len(data_subset)
-    
-    if not gdf_bubbles.empty:
-        ratios = (gdf_bubbles['population'] / GLOBAL_MAX_POP) ** SCALE
-        sizes = ratios * MAX_BUBBLE_SIZE
-        ax.scatter(gdf_bubbles.geometry.x, gdf_bubbles.geometry.y, s=sizes, color=GROUP_COLORS[name], alpha=0.5, edgecolors='white', linewidths=0.5, zorder=3)
-    
-    ax.set_title(f"{name} (n = {total_n})", x=0.06, loc='left', pad=10, fontsize=12, color='#222222', fontweight='bold')
-    ax.set_xlim(-5.5, 10)
-    ax.set_ylim(41, 51.5)
-    ax.axis('off')
-
-fig.suptitle(f"Bubble Map of Personnalities in Mainland France", fontsize=14, fontname='Helvetica')
-plt.tight_layout(rect=[0, 0.03, 1, 0.97])
-plt.savefig(os.path.join(OUTPUT_DIR, "bubble_map.png"), dpi=300, bbox_inches='tight')
+#plt.rcParams['font.family'] = 'sans-serif'
+#plt.rcParams['font.sans-serif'] = ['Helvetica', 'Arial']
+#
+#def apply_d3_style(ax, title, is_stacked=False):
+#    for spine in ax.spines.values():
+#        spine.set_visible(False)
+#    ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+#    ax.tick_params(axis='both', which='major', labelsize=9, colors='#444444')
+#    ax.set_title(title, loc='left', pad=20, color='#222222')
+#
+## Simple bar chart for college_de_france and executive
+#def plot_simple_bar(ax, df, id_col, group, title):
+#    total_n = int(df[group].sum())
+#    title = f"{title} (n = {total_n})"
+#    top_df = df.dropna(subset=[group]).sort_values(group, ascending=False).head(10)
+#    x_labels = top_df[id_col].astype(str).tolist()
+#    y_values = top_df[group].values
+#    x_pos = np.arange(len(x_labels))
+#    ax.bar(x_pos, y_values, color='steelblue', width=0.95)
+#    ax.set_xticks(x_pos)
+#    ax.set_xticklabels(x_labels, rotation=45, ha='right')
+#    ax.set_xlim(-0.5, len(x_labels) - 0.5)
+#    
+#    apply_d3_style(ax, title)
+#
+## Stacked bar chart for global and political
+#def plot_stacked_bar(ax, df, id_col, group_total, stack_cols, title):
+#    total_n = int(df[group_total].sum())
+#    title = f"{title} (n = {total_n})"
+#    top_df = df.dropna(subset=[group_total]).sort_values(group_total, ascending=False).head(10)
+#    x_labels = top_df[id_col].astype(str).tolist()
+#    x_pos = np.arange(len(x_labels))
+#
+#    valid_cols = [c for c in stack_cols if c in df.columns]
+#    if not valid_cols:
+#        ax.bar(x_pos, top_df[group_total].values, color='#abdda4', width=0.95)
+#    else:
+#        bottom = np.zeros(len(top_df))
+#        for col in valid_cols:
+#            values = top_df[col].fillna(0).values
+#        cmap = plt.get_cmap('Spectral')
+#        colors = cmap(np.linspace(0.1, 0.9, len(valid_cols)))
+#        
+#        for i, col in enumerate(valid_cols):
+#            values = top_df[col].fillna(0).values
+#            ax.bar(x_pos, values, bottom=bottom, label=col.capitalize(), color=colors[i], width=0.95)
+#            bottom += values
+#            
+#        ax.legend(frameon=False, fontsize='small', loc='upper right', prop={'family': 'sans-serif', 'size': 9})
+#
+#    ax.set_xticks(x_pos)
+#    ax.set_xticklabels(x_labels, rotation=45, ha='right')
+#    ax.set_xlim(-0.5, len(x_labels) - 0.5)
+#    apply_d3_style(ax, title, is_stacked=True)
+#
+#def export_level_charts(df, id_col, level_name):
+#    fig, axes = plt.subplots(1, 4, figsize=(24, 6))
+#    n_entities = len(df)
+#    display_name = level_name.replace('_', ' ')
+#
+#    fig.suptitle(f"{display_name} ({n_entities} entities)", fontsize=14, fontname='Helvetica')
+#
+#    plot_stacked_bar(axes[0], df, id_col, 'global', GLOBAL_STACKS, 'Global')
+#    plot_stacked_bar(axes[1], df, id_col, 'politics', POLITICS_STACKS, 'Political')
+#    plot_simple_bar(axes[2], df, id_col, 'college_de_france', 'Collège de France')
+#    plot_simple_bar(axes[3], df, id_col, 'executive', 'Executives')
+#    plt.tight_layout()
+#    
+#    filename = os.path.join(OUTPUT_DIR, f"top_{level_name.lower().replace(' ', '_')}.png")
+#    plt.savefig(filename, dpi=300, bbox_inches='tight', transparent=False, facecolor='white')
+#    plt.close()
+#
+#levels_to_export = [
+#    (df_region,      'region', 'Region'),
+#    (df_dept,        'dept',   'Department'),
+#    (df_city_merged, 'pob',    'City_Merged'),
+#    (df_city,        'pob',    'City'),
+#    (df_arr,         'pob',    'Arrondissements')]
+#
+#for df_level, id_col, level_name in levels_to_export:
+#    export_level_charts(df_level, id_col, level_name)
+#
+#
+## BUBBLE MAPS
+#MAP_CACHE = os.path.join(OUTPUT_DIR, "france_regions.geojson")
+#GROUP_COLORS = {"Global": "#A52A2A", "Political": "#E63946", "Collège de France": "#6D597A", "Executives": "#F4A261"}
+#SCALE = 1.2 
+#MAX_BUBBLE_SIZE = 2000 
+#GLOBAL_MAX_POP = df.groupby(['lat', 'lon']).size().max()
+#
+#def get_metropolitan_france():
+#    if not os.path.exists(MAP_CACHE):
+#        import requests
+#        url = "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions.geojson"
+#        r = requests.get(url)
+#        with open(MAP_CACHE, 'wb') as f: f.write(r.content)
+#    france = gpd.read_file(MAP_CACHE)
+#    # Need to figure out a clean render of DOMs (without Mayotte, not included in INSEE data)
+#    france = france[~france['nom'].isin(['Guadeloupe', 'Martinique', 'Guyane', 'La Réunion'])]
+#    return france
+#
+#def prepare_bubble_data(df_subset):
+#    bubbles = df_subset.groupby(['lat', 'lon']).size().reset_index(name='population')
+#    # Filtering coordinates
+#    bubbles = bubbles[(bubbles['lon'] > -5.5) & (bubbles['lon'] < 10) & (bubbles['lat'] > 41) & (bubbles['lat'] < 52)]
+#    gdf = gpd.GeoDataFrame(bubbles, geometry=gpd.points_from_xy(bubbles.lon, bubbles.lat))
+#    return gdf.sort_values('population', ascending=False)
+#
+#france_geo = get_metropolitan_france()
+#
+#configs = [
+#    ("Global", df),
+#    ("Political", df[df['tag'].isin(['parliament', 'senat', 'president', 'minister'])]),
+#    ("Collège de France", df[df['tag'] == 'college_de_france']),
+#    ("Executives", df[df['tag'] == 'executive']),]
+#
+#fig, axes = plt.subplots(1, 4, figsize=(20, 6), facecolor='white')
+#
+#for i, (name, data_subset) in enumerate(configs):
+#    ax = axes[i]
+#    for spine in ax.spines.values(): spine.set_visible(False)
+#    france_geo.plot(ax=ax, color='#eeeeee', edgecolor='white', linewidth=0.7)
+#    gdf_bubbles = prepare_bubble_data(data_subset)
+#    total_n = len(data_subset)
+#    
+#    if not gdf_bubbles.empty:
+#        ratios = (gdf_bubbles['population'] / GLOBAL_MAX_POP) ** SCALE
+#        sizes = ratios * MAX_BUBBLE_SIZE
+#        ax.scatter(gdf_bubbles.geometry.x, gdf_bubbles.geometry.y, s=sizes, color=GROUP_COLORS[name], alpha=0.5, edgecolors='white', linewidths=0.5, zorder=3)
+#    
+#    ax.set_title(f"{name} (n = {total_n})", x=0.06, loc='left', pad=10, fontsize=12, color='#222222', fontweight='bold')
+#    ax.set_xlim(-5.5, 10)
+#    ax.set_ylim(41, 51.5)
+#    ax.axis('off')
+#
+#fig.suptitle(f"Bubble Map of Personnalities in Mainland France", fontsize=14, fontname='Helvetica')
+#plt.tight_layout(rect=[0, 0.03, 1, 0.97])
+#plt.savefig(os.path.join(OUTPUT_DIR, "bubble_map.png"), dpi=300, bbox_inches='tight')
 
 
 # CHOROPLETH MAPS
@@ -340,89 +344,96 @@ plt.savefig(os.path.join(OUTPUT_DIR, "bubble_map.png"), dpi=300, bbox_inches='ti
 #print_correlation(df_city_merged, 'City - Paris merged', GROUPS, ECO_CITY)
 #print_correlation(df_arr, 'Arrondissements', GROUPS, ECO_CITY)
 
-# CORRELATION HEATMAP
-def heatmap_correlation(df, level_name, groups, eco_vars):
-    cols = [c for c in groups + eco_vars if c in df.columns]
-    corr = df[cols].apply(pd.to_numeric, errors='coerce').corr(method='pearson').round(3)
-    
-    fig, ax = plt.subplots(figsize=(7, 5))
-    sns.heatmap(
-        corr,
-        ax=ax,
-        cmap='RdBu',
-        vmin=-1, vmax=1, center=0,
-        annot=True, fmt='.2f', annot_kws={'size': 8},
-        linewidths=0.5, linecolor='white',
-        cbar_kws={'ticks': [-1, 0, 1]},
-    )
-    ax.set_title(f'{level_name} Correlation Matrix', pad=12, fontname='Helvetica')
-    ax.set_xticklabels(ax.get_xticklabels(), fontsize=10, fontname='Helvetica')
-    ax.set_yticklabels(ax.get_yticklabels(), fontsize=10, fontname='Helvetica')
-    ax.tick_params(axis='both', length=0)
+## CORRELATION HEATMAP
+#def heatmap_correlation(df, level_name, groups, eco_vars):
+#    cols = [c for c in groups + eco_vars if c in df.columns]
+#    corr = df[cols].apply(pd.to_numeric, errors='coerce').corr(method='pearson').round(3)
+#    
+#    fig, ax = plt.subplots(figsize=(7, 5))
+#    sns.heatmap(
+#        corr,
+#        ax=ax,
+#        cmap='RdBu',
+#        vmin=-1, vmax=1, center=0,
+#        annot=True, fmt='.2f', annot_kws={'size': 6},
+#        linewidths=0.5, linecolor='white',
+#        cbar_kws={'ticks': [-1, 0, 1]},
+#    )
+#    ax.set_title(f'{level_name} Correlation Matrix', pad=12, fontname='Helvetica')
+#    ax.set_xticklabels(ax.get_xticklabels(), fontsize=9, fontname='Helvetica')
+#    ax.set_yticklabels(ax.get_yticklabels(), fontsize=9, fontname='Helvetica')
+#    ax.tick_params(axis='both', length=0)
+#
+#    plt.tight_layout()
+#    path = f"/Users/eyquem/Desktop/LeadersMap/analysis/out/correlation_{level_name.lower().replace(' ', '_')}.png"
+#    fig.savefig(path, dpi=300, bbox_inches='tight')
+#    plt.close()
+#    print(f"  Saved: {path}")
+#
+#heatmap_correlation(df_region,      'Region',              GROUPS, ECO_REGION)
+#heatmap_correlation(df_dept,        'Department',          GROUPS, ECO_DEPT)
+#heatmap_correlation(df_city,        'City',                GROUPS, ECO_CITY)
+#heatmap_correlation(df_city_merged, 'City - Paris merged', GROUPS, ECO_CITY)
+#heatmap_correlation(df_arr,         'Arrondissements',     GROUPS, ECO_ARR)
+#
+#
+## REGRESSIONS
+#def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
+#    cols_to_keep = [x_col, y_col, id_col]
+#    plot_df = df[cols_to_keep].copy()
+#    
+#    plot_df['x_val'] = pd.to_numeric(plot_df[x_col], errors='coerce')
+#    plot_df['y_val'] = pd.to_numeric(plot_df[y_col], errors='coerce')
+#    plot_df['x_log'] = np.log1p(plot_df['x_val'])
+#    plot_df['y_log'] = np.log1p(plot_df['y_val'])
+#    plot_df = plot_df.dropna(subset=['x_log', 'y_log'])
+#
+#    slope, intercept, r_value, p_value, std_err = stats.linregress(plot_df['x_log'], plot_df['y_log'])
+#    plot_df['resid'] = plot_df['y_log'] - (slope * plot_df['x_log'] + intercept)
+#    
+#    plt.figure(figsize=(12, 8), facecolor='white')
+#    limit = max(abs(plot_df['resid'].min()), abs(plot_df['resid'].max())) * 0.7
+#    scatter = plt.scatter(plot_df['x_log'], plot_df['y_log'], c=plot_df['resid'], cmap='RdBu', alpha=0.8, edgecolors='none', s=50, vmin=-limit, vmax=limit)
+#    
+#    # Regression line
+#    x_range = np.array([plot_df['x_log'].min(), plot_df['x_log'].max()])
+#    plt.plot(x_range, slope * x_range + intercept, color='#333333', linestyle='--', linewidth=0.8, alpha=0.8, label=f'R2 = {r_value**2:.2f}, p-value = {p_value:.3f}')
+#
+#    # 4. Labels des 5 plus gros Over/Under performers
+#    outliers = plot_df.sort_values('resid', ascending=False)
+#    top_labels = outliers.head(5)
+#    bottom_labels = outliers.tail(5)
+#    
+#    for _, row in pd.concat([top_labels, bottom_labels]).iterrows():
+#        plt.text(row['x_log'], row['y_log'] + 0.06, str(row[id_col]), 
+#                 fontsize=8, fontweight='bold', ha='center', va='bottom')
+#        
+#    ax = plt.gca()
+#    ax.spines['top'].set_visible(False)
+#    ax.spines['right'].set_visible(False)
+#
+#    plt.xlabel(f'log({x_col})', fontsize=10)
+#    plt.ylabel(f'log({y_col})', fontsize=10)
+#    plt.title(f'{level_name} : {y_col} vs {x_col}', fontsize=12, fontname='Helvetica')
+#    plt.grid(False)
+#
+#    safe_y = y_col.replace(' ', '_')
+#    safe_x = x_col.replace(' ', '_')
+#    filename = os.path.join(OUTPUT_DIR, f"scatter_{level_name.lower()}_{safe_y}_vs_{safe_x}.png")
+#    plt.savefig(filename, dpi=300, bbox_inches='tight')
+#    plt.close()
+#
+#plot_regression_outliers(df_city, 'expo_demog', 'global', 'City', 'pob')
+#plot_regression_outliers(df_city_merged, 'expo_demog', 'politics', 'City_Paris_Merged', 'pob')
+#plot_regression_outliers(df_dept, 'expo_demog', 'global', 'Department', 'dept')
+#plot_regression_outliers(df_dept, 'median', 'global', 'Department', 'dept')
 
-    plt.tight_layout()
-    path = f"/Users/eyquem/Desktop/LeadersMap/analysis/out/correlation_{level_name.lower().replace(' ', '_')}.png"
-    fig.savefig(path, dpi=300, bbox_inches='tight')
-    plt.close()
-    print(f"  Saved: {path}")
 
-heatmap_correlation(df_region,      'Region',              GROUPS, ECO_REGION)
-heatmap_correlation(df_dept,        'Department',          GROUPS, ECO_DEPT)
-heatmap_correlation(df_city,        'City',                GROUPS, ECO_CITY)
-heatmap_correlation(df_city_merged, 'City - Paris merged', GROUPS, ECO_CITY)
-heatmap_correlation(df_arr,         'Arrondissements',     GROUPS, ECO_CITY)
-
-
-# REGRESSIONS
-def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
-    cols_to_keep = [x_col, y_col, id_col]
-    plot_df = df[cols_to_keep].copy()
-    
-    plot_df['x_val'] = pd.to_numeric(plot_df[x_col], errors='coerce')
-    plot_df['y_val'] = pd.to_numeric(plot_df[y_col], errors='coerce')
-    plot_df['x_log'] = np.log1p(plot_df['x_val'])
-    plot_df['y_log'] = np.log1p(plot_df['y_val'])
-    plot_df = plot_df.dropna(subset=['x_log', 'y_log'])
-
-    slope, intercept, r_value, p_value, std_err = stats.linregress(plot_df['x_log'], plot_df['y_log'])
-    plot_df['resid'] = plot_df['y_log'] - (slope * plot_df['x_log'] + intercept)
-    
-    plt.figure(figsize=(12, 8), facecolor='white')
-    limit = max(abs(plot_df['resid'].min()), abs(plot_df['resid'].max())) * 0.7
-    scatter = plt.scatter(plot_df['x_log'], plot_df['y_log'], c=plot_df['resid'], cmap='RdBu', alpha=0.8, edgecolors='none', s=50, vmin=-limit, vmax=limit)
-    
-    # Regression line
-    x_range = np.array([plot_df['x_log'].min(), plot_df['x_log'].max()])
-    plt.plot(x_range, slope * x_range + intercept, color='#333333', linestyle='--', linewidth=0.8, alpha=0.8, label=f'R2 = {r_value**2:.2f}, p-value = {p_value:.3f}')
-
-    # 4. Labels des 5 plus gros Over/Under performers
-    outliers = plot_df.sort_values('resid', ascending=False)
-    top_labels = outliers.head(5)
-    bottom_labels = outliers.tail(5)
-    
-    for _, row in pd.concat([top_labels, bottom_labels]).iterrows():
-        plt.text(row['x_log'], row['y_log'] + 0.06, str(row[id_col]), 
-                 fontsize=8, fontweight='bold', ha='center', va='bottom')
-        
-    ax = plt.gca()
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-
-    plt.xlabel(f'log({x_col})', fontsize=10)
-    plt.ylabel(f'log({y_col})', fontsize=10)
-    plt.title(f'{level_name} : {y_col} vs {x_col}', fontsize=12, fontname='Helvetica')
-    plt.grid(False)
-
-    safe_y = y_col.replace(' ', '_')
-    safe_x = x_col.replace(' ', '_')
-    filename = os.path.join(OUTPUT_DIR, f"scatter_{level_name.lower()}_{safe_y}_vs_{safe_x}.png")
-    plt.savefig(filename, dpi=300, bbox_inches='tight')
-    plt.close()
-
-plot_regression_outliers(df_city, 'expo_demog', 'global', 'City', 'pob')
-plot_regression_outliers(df_city_merged, 'expo_demog', 'politics', 'City_Paris_Merged', 'pob')
-plot_regression_outliers(df_dept, 'expo_demog', 'global', 'Department', 'dept')
-plot_regression_outliers(df_dept, 'median', 'global', 'Department', 'dept')
+VAR_ARR = ['expo_demog', 'median', 'prepa_count']
+VAR_CITIES_ELSE = ['expo_demog', 'cadres', 'edu', 'prepa']
+VAR_CITY = ['expo_demog', 'tertiaire', 'lycees_gt', 'prepa_count']
+VAR_DEPT = ['expo_demog', 'prepa_rate', 'cadres_and_pro', 'poverty_rate']
+VAR_REGION = ['expo_demog', 'prepa_rate']
 
 
 def run_regressions(df, id_col, level_name, groups, eco_vars, log_transform = True):
@@ -482,8 +493,9 @@ def run_regressions(df, id_col, level_name, groups, eco_vars, log_transform = Tr
                     diff_pct = (diff_abs / row['exp'] * 100) if row['exp'] > 0 else 0
                     print(f"    {str(row['id']):<25}  Expected: {row['exp']:>5.1f}     Observed: {int(row['obs']):>3}     Diff: {diff_abs:>+5.1f} ({diff_pct:>+6.1f}%)")
 
-run_regressions(df_region, 'region', 'Region', GROUPS, ECO_REGION)
-run_regressions(df_dept, 'dept', 'Department', GROUPS, ECO_DEPT)
-run_regressions(df_city, 'pob', 'City', GROUPS, ECO_CITY)
-run_regressions(df_city_merged, 'pob', 'City - Paris merged', GROUPS, ECO_CITY_MERGED)
-run_regressions(df_arr, 'pob', 'Arr.', GROUPS, ECO_ARR)
+run_regressions(df_region, 'region', 'Region', GROUPS, VAR_REGION) # bivariate because onnly 17 entities
+run_regressions(df_dept, 'dept', 'Department', GROUPS, VAR_DEPT)
+run_regressions(df_cities_else, 'pob', 'City', GROUPS, VAR_CITIES_ELSE)
+run_regressions(df_cities_q1, 'pob', 'City', GROUPS, VAR_CITY)
+run_regressions(df_cities_merged_q1, 'pob', 'City - Paris merged', GROUPS, VAR_CITY)
+run_regressions(df_arr, 'pob', 'Arr.', GROUPS, VAR_ARR)

@@ -231,6 +231,14 @@ if not unmatched_prepa.empty:
 # Start from the demographic base and merge personalities and economic data
 df_final_city = df_popc.copy()
 
+def extract_dept_from_commune(code):
+    if pd.isna(code): return None
+    s = str(code).split('.')[0].strip().zfill(5) 
+    return s[:3] if s.startswith('97') else s[:2]
+
+df_datac['dept'] = df_datac['dept_num'].apply(extract_dept_from_commune).apply(to_dept_type)
+
+df_final_city = pd.merge(df_final_city, df_datac[['pob', 'dept', 'cadres', 'activity_rate', 'tertiaire']], on=['pob', 'dept'], how='left')
 df_final_city = pd.merge(df_final_city, df_ppl_count, on=['pob', 'dept'], how='left')
 df_final_city = pd.merge(df_final_city, df_ecoc[['pob', 'dept', 'median']], on=['pob', 'dept'], how='left')
 df_final_city = pd.merge(df_final_city, df_edu_counts, on=['pob', 'dept'], how='left')
@@ -254,9 +262,12 @@ for decade, weight in weights.items():
     if decade in df_final_city.columns:
         df_final_city['expo_demog'] += df_final_city[decade] * weight
 
+# Prepa rate is the amount of preparatory classes per 1000 people in the demographic exposure index
+df_final_city['prepa_rate'] = df_final_city['prepa_count'] / df_final_city['expo_demog'] * 1000
+
 # We retain all cities, even those without elites
 df_final_city['global'] = df_final_city['global'].fillna(0).astype(int)
-ordered_cols = ['pob', 'dept', 'global', 'politics'] + tag_columns + ['median', 'expo_demog', 'lycees_pro', 'lycees_gt', 'lycees', 'edu', 'prepa', 'prepa_count']
+ordered_cols = ['pob', 'dept', 'global', 'politics'] + tag_columns + ['median', 'cadres', 'activity_rate', 'tertiaire', 'expo_demog', 'lycees_pro', 'lycees_gt', 'lycees', 'edu', 'prepa', 'prepa_count', 'prepa_rate']
 df_final_city = df_final_city[ordered_cols]
 
 df_final_city.to_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_city.csv", index=False, sep=";")
@@ -299,9 +310,12 @@ for decade, weight in weights.items():
     if decade in df_final_department.columns:
         df_final_department['expo_demog'] += df_final_department[decade] * weight
 
+# Prepa rate is the amount of preparatory classes per 1000 people in the demographic exposure index
+df_final_department['prepa_rate'] = df_final_department['prepa_count'] / df_final_department['expo_demog'] * 1000
+
 # Cleaning
 df_final_department['global'] = df_final_department['global'].fillna(0).astype(int)
-ordered_cols = ['dept', 'dept_num', 'global', 'politics'] + tag_columns + ['median', 'poverty_rate', 'expo_demog', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'prepa_count']
+ordered_cols = ['dept', 'dept_num', 'global', 'politics'] + tag_columns + ['median', 'poverty_rate', 'expo_demog', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'prepa_count', 'prepa_rate']
 df_final_department = df_final_department[ordered_cols]
 df_final_department.to_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_department.csv", index=False, sep=";")
 
@@ -340,8 +354,11 @@ for decade, weight in weights.items():
     if decade in df_final_region.columns:
         df_final_region['expo_demog'] += df_final_region[decade] * weight
 
+# Prepa rate is the amount of preparatory classes per 1000 people in the demographic exposure index
+df_final_region['prepa_rate'] = df_final_region['prepa_count'] / df_final_region['expo_demog'] * 1000
+
 # Cleaning
 df_final_region['global'] = df_final_region['global'].fillna(0).astype(int)
-ordered_cols = ['region', 'global', 'politics'] + tag_columns + ['median_euro', 'poverty_rate', 'expo_demog', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'prepa_count']
+ordered_cols = ['region', 'global', 'politics'] + tag_columns + ['median_euro', 'poverty_rate', 'expo_demog', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'prepa_count', 'prepa_rate']
 df_final_region = df_final_region[ordered_cols]
 df_final_region.to_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_region.csv", index=False, sep=";")
