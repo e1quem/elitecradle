@@ -1,28 +1,34 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:              executive   R-squared:                       0.257
-Model:                            OLS   Adj. R-squared:                  0.164
-Method:                 Least Squares   F-statistic:                     2.769
-Date:                Sat, 28 Mar 2026   Prob (F-statistic):             0.0927
-Time:                        11:38:04   Log-Likelihood:                -16.023
-No. Observations:                  19   AIC:                             38.05
-Df Residuals:                      16   BIC:                             40.88
-Df Model:                           2                                         
+Dep. Variable:              executive   R-squared:                       0.630
+Model:                            OLS   Adj. R-squared:                  0.361
+Method:                 Least Squares   F-statistic:                     2.339
+Date:                Sun, 29 Mar 2026   Prob (F-statistic):             0.0961
+Time:                        12:28:51   Log-Likelihood:                -9.6701
+No. Observations:                  20   AIC:                             37.34
+Df Residuals:                      11   BIC:                             46.30
+Df Model:                           8                                         
 Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const         -21.4308     11.280     -1.900      0.084     -46.257       3.396
+expo_demog      1.1757      0.463      2.542      0.027       0.158       2.194
+median          0.8516      0.874      0.975      0.351      -1.071       2.775
+lycees_pro     -2.9223      1.600     -1.826      0.095      -6.445       0.600
+lycees_gt      -3.3632      1.380     -2.438      0.033      -6.399      -0.327
+lycees          4.3071      2.640      1.632      0.131      -1.503      10.117
+edu            -2.0040      1.913     -1.047      0.317      -6.215       2.207
+prepa          -0.8325      0.958     -0.869      0.403      -2.941       1.275
+prepa_count     0.6414      0.287      2.234      0.047       0.010       1.273
 ==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
-------------------------------------------------------------------------------
-const        -23.6399     11.153     -2.120      0.050     -47.284       0.004
-expo_demog     0.7749      0.346      2.238      0.040       0.041       1.509
-median         1.4454      0.820      1.763      0.097      -0.293       3.184
-==============================================================================
-Omnibus:                        1.245   Durbin-Watson:                   2.175
-Prob(Omnibus):                  0.537   Jarque-Bera (JB):                1.098
-Skew:                           0.445   Prob(JB):                        0.578
-Kurtosis:                       2.228   Cond. No.                     1.25e+03
+Omnibus:                        0.261   Durbin-Watson:                   3.324
+Prob(Omnibus):                  0.878   Jarque-Bera (JB):                0.444
+Skew:                          -0.118   Prob(JB):                        0.801
+Kurtosis:                       2.310   Cond. No.                     1.56e+03
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 1.25e+03. This might indicate that there are
+[2] The condition number is large, 1.56e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.

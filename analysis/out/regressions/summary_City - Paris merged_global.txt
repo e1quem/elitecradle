@@ -1,25 +1,31 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                 global   R-squared:                       0.466
-Model:                            OLS   Adj. R-squared:                  0.466
-Method:                 Least Squares   F-statistic:                     817.1
-Date:                Sat, 28 Mar 2026   Prob (F-statistic):          9.38e-256
-Time:                        11:38:04   Log-Likelihood:                -921.02
-No. Observations:                1873   AIC:                             1848.
-Df Residuals:                    1870   BIC:                             1865.
-Df Model:                           2                                         
+Dep. Variable:                 global   R-squared:                       0.518
+Model:                            OLS   Adj. R-squared:                  0.518
+Method:                 Least Squares   F-statistic:                     3822.
+Date:                Sun, 29 Mar 2026   Prob (F-statistic):               0.00
+Time:                        12:28:50   Log-Likelihood:                 6450.8
+No. Observations:               28464   AIC:                        -1.288e+04
+Df Residuals:                   28455   BIC:                        -1.281e+04
+Df Model:                           8                                         
 Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.1487      0.093      1.604      0.109      -0.033       0.330
+expo_demog      0.0602      0.001     46.070      0.000       0.058       0.063
+median         -0.0485      0.009     -5.352      0.000      -0.066      -0.031
+lycees_pro      0.1468      0.036      4.135      0.000       0.077       0.216
+lycees_gt       0.2834      0.029      9.611      0.000       0.226       0.341
+lycees          0.4822      0.055      8.772      0.000       0.374       0.590
+edu            -0.7579      0.042    -17.910      0.000      -0.841      -0.675
+prepa          -0.1525      0.060     -2.558      0.011      -0.269      -0.036
+prepa_count     0.1877      0.018     10.334      0.000       0.152       0.223
 ==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
-------------------------------------------------------------------------------
-const         -3.3146      0.680     -4.875      0.000      -4.648      -1.981
-expo_demog     0.2536      0.006     40.167      0.000       0.241       0.266
-median         0.2273      0.067      3.401      0.001       0.096       0.358
-==============================================================================
-Omnibus:                      492.683   Durbin-Watson:                   2.039
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1714.968
-Skew:                           1.274   Prob(JB):                         0.00
-Kurtosis:                       6.935   Cond. No.                         958.
+Omnibus:                    18914.370   Durbin-Watson:                   1.964
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           438891.330
+Skew:                           2.859   Prob(JB):                         0.00
+Kurtosis:                      21.368   Cond. No.                         971.
 ==============================================================================
 
 Notes:

@@ -14,7 +14,7 @@ import os
 warnings.filterwarnings('ignore')
 
 # Clean df
-df = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/merged_clean.csv", sep=None, engine='python')
+df = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/merging/out/merged_clean.csv", sep=None, engine='python')
 
 # Demographic and economic sources
 df_city   = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_city.csv",       sep=None, engine='python')
@@ -23,7 +23,7 @@ df_region = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/ana
 
 # Creating df_city_merged : summing all Paris personalities in the Paris line
 paris_mask = df_city['pob'].str.match(r'^Paris \d+', na=False)
-count_cols = ['global', 'politics', 'college_de_france', 'depute', 'executive', 'ministre', 'president', 'senat']
+count_cols = ['global', 'politics', 'college_de_france', 'parliament', 'executive', 'minister', 'president', 'senat']
 paris_arr_sum = df_city[paris_mask][count_cols].sum()
 df_city_merged = df_city[~paris_mask].copy()
 paris_idx = df_city_merged[df_city_merged['pob'] == 'Paris'].index
@@ -36,11 +36,11 @@ df_arr = df_city[paris_mask].copy()
 GROUPS = ['global', 'politics', 'college_de_france', 'executive']
 
 # Variables for each level
-ECO_ARR = ['expo_demog', 'median']
-ECO_CITY = ['expo_demog', 'median']
-ECO_CITY_MERGED = ['expo_demog', 'median']
-ECO_DEPT = ['expo_demog', 'median', 'poverty_rate']
-ECO_REGION = ['expo_demog', 'median_euro', 'poverty_rate']
+ECO_ARR = ['expo_demog', 'median', 'lycees_pro', 'lycees_gt', 'lycees', 'edu',  'prepa', 'prepa_count']
+ECO_CITY = ['expo_demog', 'median', 'lycees_pro', 'lycees_gt', 'lycees', 'edu',  'prepa', 'prepa_count']
+ECO_CITY_MERGED = ['expo_demog', 'median', 'lycees_pro', 'lycees_gt', 'lycees', 'edu',  'prepa', 'prepa_count']
+ECO_DEPT = ['expo_demog', 'median', 'poverty_rate', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'prepa_count']
+ECO_REGION = ['expo_demog', 'median_euro', 'poverty_rate',  'cadres_and_pro', 'activity_rate', 'tertiaire', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'prepa_count']
 
 # Rankings and concentration
 #def print_ranking(df, id_col, level_name, groups, top_n=10, show_bottom = False):
@@ -96,8 +96,8 @@ print_concentration(df_arr, 'pob', 'Arrondissements', GROUPS)
 
 
 # BAR CHARTS
-POLITICS_STACKS = ['depute', 'senat', 'ministre', 'president']
-GLOBAL_STACKS = ['depute', 'senat', 'ministre', 'executive', 'college_de_france', 'president']
+POLITICS_STACKS = ['parliament', 'senat', 'minister', 'president']
+GLOBAL_STACKS = ['parliament', 'senat', 'minister', 'executive', 'college_de_france', 'president']
 OUTPUT_DIR = "/Users/eyquem/Desktop/LeadersMap/analysis/out"
 REG_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "regressions")
 plt.rcParams['font.family'] = 'sans-serif'
@@ -212,7 +212,7 @@ france_geo = get_metropolitan_france()
 
 configs = [
     ("Global", df),
-    ("Political", df[df['tag'].isin(['depute', 'senat', 'president', 'ministre'])]),
+    ("Political", df[df['tag'].isin(['parliament', 'senat', 'president', 'minister'])]),
     ("Collège de France", df[df['tag'] == 'college_de_france']),
     ("Executives", df[df['tag'] == 'executive']),]
 
@@ -241,91 +241,91 @@ plt.savefig(os.path.join(OUTPUT_DIR, "bubble_map.png"), dpi=300, bbox_inches='ti
 
 
 # CHOROPLETH MAPS
-GEO_URLS = {
-    'region': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions.geojson",
-    'department': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements.geojson",
-    'city': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes.geojson",
-    'arrondissements': "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arrondissements/exports/geojson"}
-
-def export_choropleths(df_data, id_col, level_name, geo_url):
-    print(f"Generating choropleth map: {level_name}...")
-
-    # Cache
-    local_filename = os.path.join(OUTPUT_DIR, f"cache_{level_name.lower()}.geojson")
-
-    if os.path.exists(local_filename):
-        print(f"  Using cached file: {local_filename}")
-        gdf_geo = gpd.read_file(local_filename)
-    else:
-        print(f"  Downloading from: {geo_url}")
-        try:
-            gdf_geo = gpd.read_file(geo_url)
-            gdf_geo.to_file(local_filename, driver='GeoJSON')
-        except Exception as e:
-            print(f"  Error downloading: {e}")
-            return
-    
-    # Adaptative size
-    h = 5 if level_name == 'Arrondissements' else 7
-    fig, axes = plt.subplots(1, 4, figsize=(24, h), facecolor='white')
-
-    gdf_geo = gpd.read_file(geo_url)
-    
-    if level_name == 'Region':
-        geo_key = 'nom'
-    elif level_name == 'Department':
-        geo_key = 'code'
-        gdf_geo['code'] = gdf_geo['code'].astype(str).str.zfill(2)
-        df_data[id_col] = df_data[id_col].astype(str).str.zfill(2)
-    elif level_name == 'City':
-        geo_key = 'nom'
-        if 'code' in gdf_geo.columns:
-            gdf_geo = gdf_geo[~gdf_geo['code'].str.startswith('97', na=False)]
-    elif level_name == 'Arrondissements':
-        if 'c_ar' in gdf_geo.columns:
-            gdf_geo['match_key'] = gdf_geo['c_ar'].apply(lambda x: f"Paris {str(x)[-2:]}")
-        elif 'l_ar' in gdf_geo.columns:
-            gdf_geo['match_key'] = gdf_geo['l_ar'].str.extract(r'(\d+)').astype(str).str.zfill(2).apply(lambda x: f"Paris {x}")
-        geo_key = 'match_key'
-
-    gdf_merged = gdf_geo.merge(df_data, left_on=geo_key, right_on=id_col, how='left')
-    
-    groups = [
-        ('global', 'Global', '#A52A2A'),
-        ('politics', 'Political', '#E63946'),
-        ('college_de_france', 'Collège de France', '#6D597A'),
-        ('executive', 'Executives', '#F4A261')]
-    
-    for i, (col, title, base_color) in enumerate(groups):
-        ax = axes[i]
-        gdf_merged[col] = gdf_merged[col].fillna(0)
-
-        render_col = f"{col}_log"
-        # Log scale, otherwise Paris is too intense
-        gdf_merged[render_col] = np.log1p(gdf_merged[col])
-        cmap = mcolors.LinearSegmentedColormap.from_list("custom", ["#eeeeee", base_color])
-        gdf_merged.plot(column=render_col, cmap=cmap, linewidth=0.1 if level_name == 'City' else 0.6, edgecolor='white',ax=ax)
-        
-        # Arrondissements zoom
-        if level_name == 'Arrondissements':
-                ax.set_xlim(2.22, 2.47)
-                ax.set_ylim(48.81, 48.91)
-        
-        ax.axis('off')
-        total_n = int(df_data[col].sum())
-        ax.set_title(f"{title} (n = {total_n})", loc='left', x=0.06, fontsize=12, fontweight='bold', color='#222222')
-
-    fig.suptitle(f"Choropleth Maps by {level_name}",fontsize=14, fontname='Helvetica', y=0.96)
-    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-    
-    filename = os.path.join(OUTPUT_DIR, f"choropleth_{level_name.lower()}.png")
-    plt.savefig(filename, dpi=600, bbox_inches='tight')
-    plt.close()
-
-export_choropleths(df_region, 'region', 'Region', GEO_URLS['region'])
-export_choropleths(df_dept, 'dept_num', 'Department', GEO_URLS['department'])
-export_choropleths(df_city_merged, 'pob', 'City', GEO_URLS['city'])
-export_choropleths(df_arr, 'pob', 'Arrondissements', GEO_URLS['arrondissements'])
+#GEO_URLS = {
+#    'region': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions.geojson",
+#    'department': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements.geojson",
+#    'city': "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes.geojson",
+#    'arrondissements': "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/arrondissements/exports/geojson"}
+#
+#def export_choropleths(df_data, id_col, level_name, geo_url):
+#    print(f"Generating choropleth map: {level_name}...")
+#
+#    # Cache
+#    local_filename = os.path.join(OUTPUT_DIR, f"cache_{level_name.lower()}.geojson")
+#
+#    if os.path.exists(local_filename):
+#        print(f"  Using cached file: {local_filename}")
+#        gdf_geo = gpd.read_file(local_filename)
+#    else:
+#        print(f"  Downloading from: {geo_url}")
+#        try:
+#            gdf_geo = gpd.read_file(geo_url)
+#            gdf_geo.to_file(local_filename, driver='GeoJSON')
+#        except Exception as e:
+#            print(f"  Error downloading: {e}")
+#            return
+#    
+#    # Adaptative size
+#    h = 5 if level_name == 'Arrondissements' else 7
+#    fig, axes = plt.subplots(1, 4, figsize=(24, h), facecolor='white')
+#
+#    gdf_geo = gpd.read_file(geo_url)
+#    
+#    if level_name == 'Region':
+#        geo_key = 'nom'
+#    elif level_name == 'Department':
+#        geo_key = 'code'
+#        gdf_geo['code'] = gdf_geo['code'].astype(str).str.zfill(2)
+#        df_data[id_col] = df_data[id_col].astype(str).str.zfill(2)
+#    elif level_name == 'City':
+#        geo_key = 'nom'
+#        if 'code' in gdf_geo.columns:
+#            gdf_geo = gdf_geo[~gdf_geo['code'].str.startswith('97', na=False)]
+#    elif level_name == 'Arrondissements':
+#        if 'c_ar' in gdf_geo.columns:
+#            gdf_geo['match_key'] = gdf_geo['c_ar'].apply(lambda x: f"Paris {str(x)[-2:]}")
+#        elif 'l_ar' in gdf_geo.columns:
+#            gdf_geo['match_key'] = gdf_geo['l_ar'].str.extract(r'(\d+)').astype(str).str.zfill(2).apply(lambda x: f"Paris {x}")
+#        geo_key = 'match_key'
+#
+#    gdf_merged = gdf_geo.merge(df_data, left_on=geo_key, right_on=id_col, how='left')
+#    
+#    groups = [
+#        ('global', 'Global', '#A52A2A'),
+#        ('politics', 'Political', '#E63946'),
+#        ('college_de_france', 'Collège de France', '#6D597A'),
+#        ('executive', 'Executives', '#F4A261')]
+#    
+#    for i, (col, title, base_color) in enumerate(groups):
+#        ax = axes[i]
+#        gdf_merged[col] = gdf_merged[col].fillna(0)
+#
+#        render_col = f"{col}_log"
+#        # Log scale, otherwise Paris is too intense
+#        gdf_merged[render_col] = np.log1p(gdf_merged[col])
+#        cmap = mcolors.LinearSegmentedColormap.from_list("custom", ["#eeeeee", base_color])
+#        gdf_merged.plot(column=render_col, cmap=cmap, linewidth=0.1 if level_name == 'City' else 0.6, edgecolor='white',ax=ax)
+#        
+#        # Arrondissements zoom
+#        if level_name == 'Arrondissements':
+#                ax.set_xlim(2.22, 2.47)
+#                ax.set_ylim(48.81, 48.91)
+#        
+#        ax.axis('off')
+#        total_n = int(df_data[col].sum())
+#        ax.set_title(f"{title} (n = {total_n})", loc='left', x=0.06, fontsize=12, fontweight='bold', color='#222222')
+#
+#    fig.suptitle(f"Choropleth Maps by {level_name}",fontsize=14, fontname='Helvetica', y=0.96)
+#    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+#    
+#    filename = os.path.join(OUTPUT_DIR, f"choropleth_{level_name.lower()}.png")
+#    plt.savefig(filename, dpi=600, bbox_inches='tight')
+#    plt.close()
+#
+#export_choropleths(df_region, 'region', 'Region', GEO_URLS['region'])
+#export_choropleths(df_dept, 'dept_num', 'Department', GEO_URLS['department'])
+#export_choropleths(df_city_merged, 'pob', 'City', GEO_URLS['city'])
+#export_choropleths(df_arr, 'pob', 'Arrondissements', GEO_URLS['arrondissements'])
 
 
 #def print_correlation(df, level_name, groups, eco_vars):
@@ -351,7 +351,7 @@ def heatmap_correlation(df, level_name, groups, eco_vars):
         ax=ax,
         cmap='RdBu',
         vmin=-1, vmax=1, center=0,
-        annot=True, fmt='.2f', annot_kws={'size': 11},
+        annot=True, fmt='.2f', annot_kws={'size': 8},
         linewidths=0.5, linecolor='white',
         cbar_kws={'ticks': [-1, 0, 1]},
     )
@@ -408,10 +408,9 @@ def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
 
-    plt.xlabel('Population indicator (log scale)', fontsize=10)
-    plt.ylabel('Personnalities count (log scale)', fontsize=10)
+    plt.xlabel(f'log({x_col})', fontsize=10)
+    plt.ylabel(f'log({y_col})', fontsize=10)
     plt.title(f'{level_name} : {y_col} vs {x_col}', fontsize=12, fontname='Helvetica')
-    plt.legend(frameon=False)
     plt.grid(False)
 
     safe_y = y_col.replace(' ', '_')
@@ -421,7 +420,6 @@ def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
     plt.close()
 
 plot_regression_outliers(df_city, 'expo_demog', 'global', 'City', 'pob')
-plot_regression_outliers(df_city, 'median', 'global', 'City', 'pob')
 plot_regression_outliers(df_city_merged, 'expo_demog', 'politics', 'City_Paris_Merged', 'pob')
 plot_regression_outliers(df_dept, 'expo_demog', 'global', 'Department', 'dept')
 plot_regression_outliers(df_dept, 'median', 'global', 'Department', 'dept')

@@ -102,11 +102,16 @@ print("Successful population export")
 df_ecoc = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/eco_city.csv", sep=None, engine='python')
 df_ecod = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/eco_dept.csv", sep=None, engine='python')
 df_ecor = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/eco_region.csv", sep=None, engine='python')
+df_datac = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/data_city.csv", sep=None, engine='python')
 
 # Demographic indicators
 df_popc = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/pop_city.csv", sep=None, engine='python')
 df_popd = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/pop_dept.csv", sep=None, engine='python')
 df_popr = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/pop_region.csv", sep=None, engine='python')
+
+# Educational indicators
+df_edu = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/edu_city.csv", sep=None, engine='python')
+df_prepa = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/interim/cpge.csv", sep=None, engine='python')
 
 # Personnalities
 df_ppl = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/merging/out/merged_clean.csv", sep=None, engine='python')
@@ -199,14 +204,44 @@ df_ppl_count = df_ppl_count.pivot_table(
 ).reset_index()
 df_ppl_count['global'] = df_ppl_count.select_dtypes(include=['number']).sum(axis=1)
 
+# Edu
+df_edu['dept'] = df_edu['dept'].str.split(' - ').str[0].apply(to_dept_type)
+
+df_edu_counts = df_edu.groupby(['pob', 'dept', 'type']).size().unstack(fill_value=0).reset_index()
+df_edu_counts = df_edu_counts.rename(columns={'PRO': 'lycees_pro', 'GT': 'lycees_gt'})
+df_edu_counts['lycees'] = df_edu_counts['lycees_pro'] + df_edu_counts['lycees_gt']
+df_edu_counts['edu'] = 1 
+
+unmatched_edu = df_edu_counts[~df_edu_counts.set_index(['pob', 'dept']).index.isin(df_popc.set_index(['pob', 'dept']).index)]
+if not unmatched_edu.empty:
+    print(f"{len(unmatched_edu)} educational localities not found in demographic base:")
+    print(unmatched_edu[['pob', 'dept']].to_string())
+
+# CPGE
+df_prepa = df_prepa.rename(columns={'commune': 'pob'})
+df_prepa['dept'] = df_prepa['dept_id'].str.replace('D', '').str.lstrip('0').apply(to_dept_type)
+df_prepa_counts = df_prepa.groupby(['pob', 'dept']).size().reset_index(name='prepa_count')
+df_prepa_counts['prepa'] = 1  # Binary indicator
+
+unmatched_prepa = df_prepa_counts[~df_prepa_counts.set_index(['pob', 'dept']).index.isin(df_popc.set_index(['pob', 'dept']).index)]
+if not unmatched_prepa.empty:
+    print(f"{len(unmatched_prepa)} CPGE localities not found in demographic base:")
+    print(unmatched_prepa[['pob', 'dept']].to_string())
+
 # Start from the demographic base and merge personalities and economic data
 df_final_city = df_popc.copy()
+
 df_final_city = pd.merge(df_final_city, df_ppl_count, on=['pob', 'dept'], how='left')
 df_final_city = pd.merge(df_final_city, df_ecoc[['pob', 'dept', 'median']], on=['pob', 'dept'], how='left')
-tag_columns = [c for c in df_ppl_count.columns if c not in ['pob', 'dept', 'global']]
-df_final_city[tag_columns + ['global']] = df_final_city[tag_columns + ['global']].fillna(0).astype(int)
+df_final_city = pd.merge(df_final_city, df_edu_counts, on=['pob', 'dept'], how='left')
+df_final_city = pd.merge(df_final_city, df_prepa_counts, on=['pob', 'dept'], how='left')
 
-politics_tags = ['depute', 'senat', 'minister', 'president']
+tag_columns = [c for c in df_ppl_count.columns if c not in ['pob', 'dept', 'global']]
+edu_cols = ['lycees_pro', 'lycees_gt', 'lycees', 'edu']
+prepa_cols = ['prepa', 'prepa_count']
+df_final_city[tag_columns + ['global'] + edu_cols + prepa_cols] = df_final_city[tag_columns + ['global'] + edu_cols + prepa_cols].fillna(0).astype(int)
+
+politics_tags = ['parliament', 'senat', 'minister', 'president']
 politics_cols = [col for col in politics_tags if col in df_final_city.columns]
 df_final_city['politics'] = df_final_city[politics_cols].sum(axis=1)
 
@@ -219,10 +254,9 @@ for decade, weight in weights.items():
     if decade in df_final_city.columns:
         df_final_city['expo_demog'] += df_final_city[decade] * weight
 
-# Retain only cities that produced at least one personality
-df_final_city = df_final_city[df_final_city['global'] > 0].copy()
+# We retain all cities, even those without elites
 df_final_city['global'] = df_final_city['global'].fillna(0).astype(int)
-ordered_cols = ['pob', 'dept', 'global', 'politics'] + tag_columns + ['median', 'expo_demog']
+ordered_cols = ['pob', 'dept', 'global', 'politics'] + tag_columns + ['median', 'expo_demog', 'lycees_pro', 'lycees_gt', 'lycees', 'edu', 'prepa', 'prepa_count']
 df_final_city = df_final_city[ordered_cols]
 
 df_final_city.to_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_city.csv", index=False, sep=";")
@@ -235,17 +269,22 @@ df_ppl_count = df_ppl_count.pivot_table(index='department', columns='tag', value
 df_ppl_count.columns.name = None
 df_ppl_count['global'] = df_ppl_count.select_dtypes(include=['number']).sum(axis=1)
 df_ppl_count = df_ppl_count.rename(columns={'department': 'dept'})
+df_prepa_dept = df_prepa.groupby('dept').size().reset_index(name='prepa_count')
+df_prepa_dept = df_prepa_dept.rename(columns={'dept': 'DEP'})
 
 # Obtaining departmental population per decade
 df_final_department = df_popd.copy()
 
 # Merging personnalities count and economic data
 df_final_department = pd.merge(df_final_department, df_ppl_count, on='dept', how='left')
-df_eco_subset = df_ecod[['dept', 'dept_num', 'median', 'poverty_rate']]
+df_final_department['DEP'] = df_final_department['DEP'].apply(to_dept_type)
+df_final_department = pd.merge(df_final_department, df_prepa_dept, on='DEP', how='left')
+df_eco_subset = df_ecod[['dept', 'dept_num', 'median', 'poverty_rate', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire']]
 df_final_department = pd.merge(df_final_department, df_eco_subset, on='dept', how='left')
 
 tag_columns = [c for c in df_ppl_count.columns if c not in ['dept', 'global']]
 df_final_department[tag_columns + ['global']] = df_final_department[tag_columns + ['global']].fillna(0).astype(int)
+df_final_department['prepa_count'] = df_final_department['prepa_count'].fillna(0).astype(int)
 
 politics_cols = [col for col in politics_tags if col in df_final_department.columns]
 df_final_department['politics'] = df_final_department[politics_cols].sum(axis=1)
@@ -253,8 +292,6 @@ df_final_department['politics'] = df_final_department[politics_cols].sum(axis=1)
 # Which department produces the most leaders compared to their demographic weight when these Leaders were born ?
 # Calculating demographic exposition of the department
 df_final_department['expo_demog'] = 0
-
-# Avoiding TypeError
 cols_to_fix = [c for c in weights.index if c in df_final_department.columns]
 df_final_department[cols_to_fix] = df_final_department[cols_to_fix].apply(pd.to_numeric, errors='coerce').fillna(0)
 
@@ -264,7 +301,7 @@ for decade, weight in weights.items():
 
 # Cleaning
 df_final_department['global'] = df_final_department['global'].fillna(0).astype(int)
-ordered_cols = ['dept', 'dept_num', 'global', 'politics'] + tag_columns + ['median', 'poverty_rate', 'expo_demog']
+ordered_cols = ['dept', 'dept_num', 'global', 'politics'] + tag_columns + ['median', 'poverty_rate', 'expo_demog', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'prepa_count']
 df_final_department = df_final_department[ordered_cols]
 df_final_department.to_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_department.csv", index=False, sep=";")
 
@@ -275,25 +312,27 @@ df_ppl_count = df_ppl.groupby(['region', 'tag']).size().reset_index(name='count'
 df_ppl_count = df_ppl_count.pivot_table(index='region', columns='tag', values='count', fill_value=0).reset_index()
 df_ppl_count.columns.name = None
 df_ppl_count['global'] = df_ppl_count.select_dtypes(include=['number']).sum(axis=1)
+df_prepa_reg = df_prepa.groupby('region').size().reset_index(name='prepa_count')
 
 # Obtaining regional population per decade
 df_final_region = df_popr.copy()
 
 # Merging personnalities count and economic data
 df_final_region = pd.merge(df_final_region, df_ppl_count, on='region', how='left')
-df_eco_subset = df_ecor[['region', 'median_euro', 'poverty_rate']]
+df_final_region = pd.merge(df_final_region, df_prepa_reg, on='region', how='left')
+df_eco_subset = df_ecor[['region', 'median_euro', 'poverty_rate', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire']]
+
 df_eco_subset['median_euro'] = (df_eco_subset['median_euro'].astype(str).str.replace('\u202f', '', regex=False).str.replace(',', '.', regex=False).pipe(pd.to_numeric, errors='coerce'))
 df_final_region = pd.merge(df_final_region, df_eco_subset, on='region', how='left')
 tag_columns = [c for c in df_ppl_count.columns if c not in ['region', 'global']]
 df_final_region[tag_columns + ['global']] = df_final_region[tag_columns + ['global']].fillna(0).astype(int)
+df_final_region['prepa_count'] = df_final_region['prepa_count'].fillna(0).astype(int)
 
 politics_cols = [col for col in politics_tags if col in df_final_region.columns]
 df_final_region['politics'] = df_final_region[politics_cols].sum(axis=1)
 
 # Calculating demographic exposition of the region
 df_final_region['expo_demog'] = 0
-
-# Avoiding TypeError
 cols_to_fix = [c for c in weights.index if c in df_final_region.columns]
 df_final_region[cols_to_fix] = df_final_region[cols_to_fix].apply(pd.to_numeric, errors='coerce').fillna(0)
 
@@ -303,7 +342,6 @@ for decade, weight in weights.items():
 
 # Cleaning
 df_final_region['global'] = df_final_region['global'].fillna(0).astype(int)
-ordered_cols = ['region', 'global', 'politics'] + tag_columns + ['median_euro', 'poverty_rate', 'expo_demog']
+ordered_cols = ['region', 'global', 'politics'] + tag_columns + ['median_euro', 'poverty_rate', 'expo_demog', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'prepa_count']
 df_final_region = df_final_region[ordered_cols]
-
 df_final_region.to_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_region.csv", index=False, sep=";")
