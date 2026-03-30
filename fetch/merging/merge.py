@@ -15,12 +15,12 @@ def normalize_text(text):
     # Capitalize the first letter
     return text.capitalize()
 
-df_dp = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/parliament/processed/an_clean.csv", sep=None, engine='python')
-df_mn = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/ministers/processed/mn_clean.csv", sep=None, engine='python')
-df_pr = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/presidents/processed/presidents_clean.csv", sep=None, engine='python')
-df_sn = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/senators/processed/sn_clean.csv", sep=None, engine='python')
-df_cf = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/scholars/processed/cf_clean.csv", sep=None, engine='python')
-df_executives = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/executives/processed/exec_clean.csv", sep=None, engine='python')
+df_dp = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/parliament/processed/an_clean.csv", sep=None, engine='python')
+df_mn = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/ministers/processed/mn_clean.csv", sep=None, engine='python')
+df_pr = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/presidents/processed/presidents_clean.csv", sep=None, engine='python')
+df_sn = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/senators/processed/sn_clean.csv", sep=None, engine='python')
+df_cf = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/scholars/processed/cf_clean.csv", sep=None, engine='python')
+df_executives = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/processed/exec_clean.csv", sep=None, engine='python')
 
 df = pd.concat([df_dp, df_mn, df_pr, df_sn, df_cf, df_executives], ignore_index=True)
 
@@ -49,5 +49,5 @@ order = ['name', 'dob', 'tag', 'pob', 'department', 'dept_num', 'region', 'lat',
 existing_cols = [c for c in order if c in df.columns]
 df = df[existing_cols]
 
-output_path = "/Users/eyquem/Desktop/LeadersMap/fetch/merging/interim/merged_raw.csv"
+output_path = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/merged_raw.csv"
 df.to_csv(output_path, index=False, encoding='utf-8')

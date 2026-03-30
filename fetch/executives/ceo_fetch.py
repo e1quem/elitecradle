@@ -95,7 +95,7 @@ if __name__ == "__main__":
     final_cols = [c for c in cols_order if c in df.columns] + [c for c in df.columns if c not in cols_order]
     df = df[final_cols]
     
-    output_file = "/Users/eyquem/Desktop/LeadersMap/fetch/executives/interim/CEOs.csv"
+    output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/CEOs.csv"
     
     df.to_csv(output_file, index=False)
     print(f"\n\nOpération terminée ! Données sauvegardées dans {output_file}")

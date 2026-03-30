@@ -31,7 +31,7 @@ def process(index, name, dob):
 # Main
 if __name__ == "__main__":
     # Load data and creating df
-    input_file = "/Users/eyquem/Desktop/LeadersMap/fetch/senators/src/data.senat_Informations_generales_sur_les_senateurs.xls"
+    input_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/senators/src/data.senat_Informations_generales_sur_les_senateurs.xls"
     df_raw = pd.read_excel(input_file)
     
     df = pd.DataFrame()
@@ -51,7 +51,7 @@ if __name__ == "__main__":
             df.at[idx, 'pob'] = res
             print(f"\r\033[K[{idx+1}/{total}] {df.at[idx, 'name']} : {res}", end="", flush=True)
 
-    output_file = "/Users/eyquem/Desktop/LeadersMap/fetch/senators/interim/sn_geo_missing.csv"
+    output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/senators/interim/sn_geo_missing.csv"
     df.to_csv(output_file, index=False)
     print(df.head())
     print(f"\nResults saved to {output_file}")

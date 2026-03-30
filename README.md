@@ -1,4 +1,4 @@
-# LeadersMap
+# EliteGeoCradle
 
 **Visualiser la ville de naissance des puissants de la Ve République**. 
 
@@ -128,7 +128,7 @@ Nettoyage de parliaments_data.csv:
 - On cherche manuellement les 12 N/A et empty pour pob. C'est un succès : notre code a trouvé un pob pour la quasi-totalité des députés. Il manque cependant les informations geo pour une partie d'entre eux : we populate using ``geo_finding.py``
 
 ```
-(base) eyquem@MacBook-Air-de-Eyquem LeadersMap % python3 fetch_parliaments_data.py
+(base) eyquem@MacBook-Air-de-Eyquem EliteGeoCradle % python3 fetch_parliaments_data.py
 [1242/4555] Jean-Noël Kerdraon...Error on 3620: HTTPSConnectionPool(host='www2.assemblee-nationale.fr', port=443): Max retries exceeded with url: /sycomore/fiche/3620 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x146ab2350>: Failed to resolve 'www2.assemblee-nationale.fr' ([Errno 8] nodename nor servname provided, or not known)"))
 [1243/4555] ID 3620 : Error fetching data.Error on 11050: HTTPSConnectionPool(host='www2.assemblee-nationale.fr', port=443): Max retries exceeded with url: /sycomore/fiche/11050 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x146ab1bd0>: Failed to resolve 'www2.assemblee-nationale.fr' ([Errno 8] nodename nor servname provided, or not known)"))
 [1244/4555] ID 11050 : Error fetching data.Error on 2061: HTTPSConnectionPool(host='www2.assemblee-nationale.fr', port=443): Max retries exceeded with url: /sycomore/fiche/2061 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x146ab1450>: Failed to resolve 'www2.assemblee-nationale.fr' ([Errno 8] nodename nor servname provided, or not known)"))

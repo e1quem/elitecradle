@@ -46,7 +46,7 @@ if __name__ == "__main__":
     from concurrent.futures import ThreadPoolExecutor
 
     # Load data
-    input_file = "/Users/eyquem/Desktop/LeadersMap/fetch/executives/interim/execs.csv"
+    input_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/execs.csv"
     df_raw = pd.read_csv(input_file, sep=None, engine='python')
     
     df = pd.DataFrame(columns=["name", "tag", "dob", "pob"])
@@ -78,7 +78,7 @@ if __name__ == "__main__":
             
             print(f"\r\033[K[{idx}/{total}] {df.at[idx, 'name']} : {result.get('pob')}, {result.get('dob')}", end="", flush=True)
 
-    output_file = "/Users/eyquem/Desktop/LeadersMap/fetch/executives/interim/exec_geo_enriched.csv"
+    output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/exec_geo_enriched.csv"
     df.to_csv(output_file, index=False)
     print(df.head())
     print(f"\nResults saved to {output_file}")

@@ -14,12 +14,12 @@ import os
 warnings.filterwarnings('ignore')
 
 # Clean df
-df = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/fetch/merging/out/merged_clean.csv", sep=None, engine='python')
+df = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/out/merged_clean.csv", sep=None, engine='python')
 
 # Demographic and economic sources
-df_city   = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_city.csv",       sep=None, engine='python')
-df_dept   = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_department.csv", sep=None, engine='python')
-df_region = pd.read_csv("/Users/eyquem/Desktop/LeadersMap/analysis/processed/analysis_region.csv",     sep=None, engine='python')
+df_city   = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/processed/analysis_city.csv",       sep=None, engine='python')
+df_dept   = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/processed/analysis_department.csv", sep=None, engine='python')
+df_region = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/processed/analysis_region.csv",     sep=None, engine='python')
 
 # Creating df_city_merged : summing all Paris personalities in the Paris line
 paris_mask = df_city['pob'].str.match(r'^Paris \d+', na=False)
@@ -102,7 +102,7 @@ ECO_REGION = ['expo_demog', 'activity_rate', 'colleges', 'lycees_pro', 'lycees_g
 ## BAR CHARTS
 POLITICS_STACKS = ['parliament', 'senat', 'minister', 'president']
 GLOBAL_STACKS = ['parliament', 'senat', 'minister', 'executive', 'college_de_france', 'president']
-OUTPUT_DIR = "/Users/eyquem/Desktop/LeadersMap/analysis/out"
+OUTPUT_DIR = "/Users/eyquem/Desktop/EliteGeoCradle/analysis/out"
 REG_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "regressions")
 #plt.rcParams['font.family'] = 'sans-serif'
 #plt.rcParams['font.sans-serif'] = ['Helvetica', 'Arial']
@@ -365,7 +365,7 @@ REG_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "regressions")
 #    ax.tick_params(axis='both', length=0)
 #
 #    plt.tight_layout()
-#    path = f"/Users/eyquem/Desktop/LeadersMap/analysis/out/correlation_{level_name.lower().replace(' ', '_')}.png"
+#    path = f"/Users/eyquem/Desktop/EliteGeoCradle/analysis/out/correlation_{level_name.lower().replace(' ', '_')}.png"
 #    fig.savefig(path, dpi=300, bbox_inches='tight')
 #    plt.close()
 #    print(f"  Saved: {path}")
