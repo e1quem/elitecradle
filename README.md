@@ -85,10 +85,6 @@ Where:
 
 $\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth.
 
-$\text{Weight}_{\text{decade}} = \frac{n_{\text{born in decade}}}{N_{\text{total}}}$
-
-$\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth.
-
 $\text{Weight}\_{\text{decade}} = \frac{n_{\text{born in decade}}}{N_{\text{total}}}$
 
 
