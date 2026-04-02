@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This working paper analyses the geographical origins of French political, corporate and academic prominent figures under the Fifth Republic. Using web-scraping to construct and enrich a comprehensive biographical database of 6500 individuals, we quantify geographical hubs by cross-referencing our data with demographic and socio-economic factors. Our scope ranges from aggregated regions to Parisian arrondissements. Our results highlight a Parisian dominance and identify significant geographical outliers (overperformers like Neuilly-sur-Seine and Boulogne-Billancourt) through multivariate OLS regressions.
+This working paper analyses the geographical origins of French political, corporate and academic prominent figures under the Fifth Republic. Using web-scraping to construct and enrich a comprehensive biographical database of 6 500 individuals, we quantify geographical hubs by cross-referencing our data with demographic and socio-economic factors. Our scope ranges from aggregated regions to Parisian arrondissements. Our results highlight a Parisian dominance and identify significant geographical outliers (overperformers like Neuilly-sur-Seine and Boulogne-Billancourt) through multivariate OLS regressions.
 
 ## Introduction
 
@@ -26,16 +26,16 @@ The ```fetch``` folder is dedicated to data acquisition, following a strict ```s
 
 No database of all Parliament Members of the Fifth Republic is publicly downloadable [3]. The main reference is the [National Assembly Sycomore](https://www2.assemblee-nationale.fr/sycomore/recherche) whose search engine outdated pagination only displays the first 500 results of a query. To bypass this, we extract the HTML encoding of departments of the search engine (```src/departments_raw.txt```) and implement a department-by-department recursive query so as never to exceed the functional pagination limit.
 
-From this list of ids, we scrape 4539 standardised biographical profiles on the National Assembly websites. Using multithreading, we enrich this data using [geo.api.gouv.fr](https://geo.api.gouv.fr) for geographical information. For Parisian Parliament members, we use a Wikipedia scraping system with a cascading fallback mechanism to find their arrondissement of birth, achieving a 68.4% recovery rate. 
+From this list of ids, we scrape 4 539 standardised biographical profiles on the National Assembly websites. Using multithreading, we enrich this data using [geo.api.gouv.fr](https://geo.api.gouv.fr) for geographical information. For Parisian Parliament members, we use a Wikipedia scraping system with a cascading fallback mechanism to find their arrondissement of birth, achieving a 68.4% recovery rate. 
 
-After manual cleaning, ```out/an_clean.csv``` contains a clean dataset of 4539 National Assembly members.
+After manual cleaning, ```out/an_clean.csv``` contains a clean dataset of 4 539 National Assembly members.
 
-[3] *This [data.gouv.fr dataset](https://www.data.gouv.fr/datasets/fichier-historique-des-deputes-et-de-leurs-mandats) produced by the National Assembly only goes back to 1997.  We don't use the [BRÉF database](https://zenodo.org/records/14628510) : while it contains data for 3266 senate members, it only has data for 2500 National Assembly Members.*
+[3] *This [data.gouv.fr dataset](https://www.data.gouv.fr/datasets/fichier-historique-des-deputes-et-de-leurs-mandats) produced by the National Assembly only goes back to 1997.  We don't use the [BRÉF database](https://zenodo.org/records/14628510) : while it contains data for 3266 senate members, it only has data for 2 500 National Assembly Members.*
 
 
 #### ```fetch/senators```
 
-We use the [General Information on Senators](https://data.senat.fr/les-senateurs/) database published by the French Senate as a starting point for Wikipedia scraping. We try various thematic URL suffixes and different arrangements of compound names to ensure high match rates, and check for specific keywords on the page before extracting any data. After arrondissement checking and geographical enrichment, ```out/sn_clean.csv``` contains a dataset of 1477 senators.
+We use the [General Information on Senators](https://data.senat.fr/les-senateurs/) database published by the French Senate as a starting point for Wikipedia scraping. We try various thematic URL suffixes and different arrangements of compound names to ensure high match rates, and check for specific keywords on the page before extracting any data. After arrondissement checking and geographical enrichment, ```out/sn_clean.csv``` contains a dataset of 1 477 senators.
 
 #### ```fetch/ministers```
 
@@ -51,7 +51,7 @@ To counter this issue, we scrape Wikipedia's [French Scholars](https://fr.wikipe
 
 #### ```fetch/executives```
 
-There isn't any official list of CEOs and top executives of CAC40 companies. We use this [amateur list of historical CAC40 companies](https://www.bnains.org/archives/histocac/histocac.php) as a source of [Pappers](https://www.pappers.fr) URLs, from which our Selenium Chrome scraper extracts names of administrators of these firms. We only find biographical data for 406 out of the 1340 names that were extracted. Accounting for those born abroad, this method has a low success rate, with full data for only 232 individuals.
+There isn't any official list of CEOs and top executives of CAC40 companies. We use this [amateur list of historical CAC40 companies](https://www.bnains.org/archives/histocac/histocac.php) as a source of [Pappers](https://www.pappers.fr) URLs, from which our Selenium Chrome scraper extracts names of administrators of these firms. We only find biographical data for 406 out of the 1 340 names that were extracted. Accounting for those born abroad, this method has a low success rate, with full data for only 232 individuals.
 
 To further populate this category, we scrape Wikipedia's [French CEOs](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Chef_d%27entreprise_fran%C3%A7ais) and [French Business Personalities](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Personnalit%C3%A9_fran%C3%A7aise_du_monde_des_affaires_du_XXIe_si%C3%A8cle) categories. This raises the total of executives to 603.
 
@@ -63,13 +63,13 @@ Before manual cleaning, ```interim/merged_raw.csv``` contains 7745 individuals. 
 
 | Category    | Sub-category     | Headcount | % of the total | Sources                      |
 | ----------- | ---------------- | --------- | -------------- | ---------------------------- |
-| *Political* | ```parliament``` | 3590      | 55.23%         | Sycomore, Wikipédia          |
-| *Political* | ```senat```      | 1280      | 19.69%         | Senate, Wikipedia             |
-| *Political* | ```ministers```  | 430       | 6.61%          | Other, Wikipedia             |
+| *Political* | ```parliament``` | 3 590      | 55.23%         | Sycomore, Wikipédia          |
+| *Political* | ```senat```      | 1 280      | 19.69%         | Senate, Wikipedia             |
+| *Political* | ```ministers```  | 4 30       | 6.61%          | Other, Wikipedia             |
 | *Political* | ```president```  | 8         | 0.1%           | Wikipedia                    |
 | *Academic*  | ```scholar```    | 589       | 9.06%          | Collège de France, Wikipedia |
 | *Corporate* | ```executive```  | 603       | 9.27%          | Pappers, Wikipedia           |
-| **Global**  |                  | **6500**  | **100%**       |                              |
+| **Global**  |                  | **6 500**  | **100%**       |                              |
 
 
 ### Exogenous data sources
@@ -82,9 +82,16 @@ For demographic data, we use INSEE's [History of municipal populations - 1876 - 
 $$\text{expo}\_\text{demog} = \sum (\text{Population}_{\text{decade}} \times \text{Weight}_{\text{decade}})$$
 
 Where: 
-- $\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth.
 
-- $$\text{Weight}_{\text{decade}} = \frac{n_{\text{born in decade}}}{N_{\text{total}}}$$
+$\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth.
+
+$\text{Weight}_{\text{decade}} = \frac{n_{\text{born in decade}}}{N_{\text{total}}}$
+
+$\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth.
+
+$\text{Weight}\_{\text{decade}} = \frac{n_{\text{born in decade}}}{N_{\text{total}}}$
+
+
 
 $\quad$
 
@@ -189,7 +196,7 @@ On a regional scale [Figure 11], most categories of figures are highly positivel
 
 We run log-linear multivariate regressions modeling the observed count of elite individuals by place of birth.
 
-On a regional scale and for the global cohort [Appendix 1], we use two explanatory variables for this small quantity of observations (17):  our demographic exposition metric and the rate of preparatory classes per ten thousand inhabitants. We obtain significant results ($***$ and $*$) and a high R-squared value (0.961) - which might indicate overfit given the small sample size. An increase of 1% in our demographic exposure index is correlated with a 0.83% increase in elite individuals count. The presence of preparatory classes is associated with a much larger increase of 2.64% in elite count. According to this model, Île-de-France (1405 observed, 1192.8 expected), Occitanie (563 observed, 486.6 expected) and Nouvelle-Aquitaine (606 observed, 531.3 expected) are among the overperforming regions [Figure 16]. Pays de la Loire (277 observed, 355 expected), Normandie (262 observed, 330.3 expected) and La Réunion (60 observed, 74.5 expected) are among the underperformers.
+On a regional scale and for the global cohort [Appendix 1], we use two explanatory variables for this small quantity of observations (17):  our demographic exposition metric and the rate of preparatory classes per ten thousand inhabitants. We obtain significant results ($***$ and $*$) and a high R-squared value (0.961) - which might indicate overfit given the small sample size. An increase of 1% in our demographic exposure index is correlated with a 0.83% increase in elite individuals count. The presence of preparatory classes is associated with a much larger increase of 2.64% in elite count. According to this model, Île-de-France (1 405 observed, 1 192.8 expected), Occitanie (563 observed, 486.6 expected) and Nouvelle-Aquitaine (606 observed, 531.3 expected) are among the overperforming regions [Figure 16]. Pays de la Loire (277 observed, 355 expected), Normandie (262 observed, 330.3 expected) and La Réunion (60 observed, 74.5 expected) are among the underperformers.
 
 **Figure 16: Regional plot of observed values, global cohort**
 ![Observed values - region](analysis/out/regression_multi_regions.png)
@@ -201,9 +208,9 @@ On a global basis [Figure 17], overperforming departments include Hauts-de-Seine
 **Figure 17: Departmental plot of observed values, global cohort**
 ![Observed values - department](analysis/out/regression_multi_departments.png)
 
-At the city scale, analysing 34868 French cities at once reveals to be challenging: they share highly different socio-economic situation, and uneven elite production. There is a huge number of small municipalities that have no secondary schools, no preparatory classes, and few managers and intellectual professions. In fact, only 2232 cities produced an elite, and only a hundred of them produced more than 10. These highly concentrated origins mask the statistical relationships that we observed at the departmental level. To ensure that socio-economic variables are meaningful along elite production, we must therefore compare like with like. Hence, we begin by analysing the first quantile of cities in terms of our demographic index.
+At the city scale, analysing 34 868 French cities at once reveals to be challenging: they share highly different socio-economic situation, and uneven elite production. There is a huge number of small municipalities that have no secondary schools, no preparatory classes, and few managers and intellectual professions. In fact, only 2 232 cities produced an elite, and only a hundred of them produced more than 10. These highly concentrated origins mask the statistical relationships that we observed at the departmental level. To ensure that socio-economic variables are meaningful along elite production, we must therefore compare like with like. Hence, we begin by analysing the first quantile of cities in terms of our demographic index.
 
-For this Q1 set of 3468 cities  [Appendix 3], we use our demographic exposure index, the rate of tertiary employment, the number of high schools (general path), and the number of preparatory classes. We obtain a 0.619 R-squared, with meaningful variables ($***$ and $*$). The coefficient of demographic exposure is only 0.43, that of tertiary is 0.08, that of high schools is 0.26 and that of preparatory classes is 0.18. Overperforming cities [Figure 18] include Boulogne-Billancourt (87 observed, 10.6 expected) and Neuilly-sur-Seine (105 observed, 13.3 expected). We observed highly similar results when using the *Paris merged* dataset. 
+For this Q1 set of 3 468 cities  [Appendix 3], we use our demographic exposure index, the rate of tertiary employment, the number of high schools (general path), and the number of preparatory classes. We obtain a 0.619 R-squared, with meaningful variables ($***$ and $*$). The coefficient of demographic exposure is only 0.43, that of tertiary is 0.08, that of high schools is 0.26 and that of preparatory classes is 0.18. Overperforming cities [Figure 18] include Boulogne-Billancourt (87 observed, 10.6 expected) and Neuilly-sur-Seine (105 observed, 13.3 expected). We observed highly similar results when using the *Paris merged* dataset. 
 
 **Figure 17: Departmental plot of observed values, global cohort**
 ![Observed value - city](analysis/out/regression_multi_city.png)
