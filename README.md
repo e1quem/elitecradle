@@ -18,7 +18,7 @@ In order to ensure that socio-economic and demographic characteristics remain br
 [2] *Bourdieu, P., & Passeron, J.-C. (1994). Les héritiers: Les étudiants et la culture. ; Bourdieu, P., & Passeron, J.-C. (2005). La reproduction: Éléments pour une théorie du système d’enseignement.*
 
 
-## Data Acquisition and Methodology
+## Data acquisition and methodology
 
 The ```fetch``` folder is dedicated to data acquisition, following a strict ```src```, ```interim```, ```out``` data pipeline. ```utils``` shares heuristics for Wikipedia scraping, geolocation and arrondissement finding. Each cohort presented different data acquisition challenges, that had to be overcome with dedicated methods.
 
