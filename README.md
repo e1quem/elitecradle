@@ -1,4 +1,4 @@
-# A Prosopographical Study of French Elites Geographical Origins
+# A prosopographical study of French elites geographical origins
 
 ## Abstract
 
