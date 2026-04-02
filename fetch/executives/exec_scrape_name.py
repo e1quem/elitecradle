@@ -67,8 +67,8 @@ def extract_exec(driver, url):
 
 
 def main():
-    input_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/src/cac_list.txt"
-    output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/execs.csv"
+    input_file = "/Users/eyquem/Desktop/EliteCradle/fetch/executives/src/cac_list.txt"
+    output_file = "/Users/eyquem/Desktop/EliteCradle/fetch/executives/interim/execs.csv"
     
     # Navigator config
     options = uc.ChromeOptions()

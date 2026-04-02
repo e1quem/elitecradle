@@ -15,7 +15,7 @@ headers = {'User-Agent': 'fetchFrenchPresidents'}
 presidents = []
 
 # Reading our list of presidents
-with open('/Users/eyquem/Desktop/EliteGeoCradle/fetch/presidents/src/presidents_list.txt', 'r', encoding='utf-8') as f:
+with open('/Users/eyquem/Desktop/EliteCradle/fetch/presidents/src/presidents_list.txt', 'r', encoding='utf-8') as f:
     raw_list = [line.strip() for line in f if line.strip()]
     presidents_list = list(dict.fromkeys(raw_list)) # Removing duplicates before scrapping
 
@@ -95,4 +95,4 @@ df = df[['name', 'tag', 'dob', 'pob', 'dep_name', 'dep_num', 'region', 'lat', 'l
 
 print(df)
 
-df.to_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/presidents/interim/presidents_data.csv", index=False)
+df.to_csv("/Users/eyquem/Desktop/EliteCradle/fetch/presidents/interim/presidents_data.csv", index=False)

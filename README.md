@@ -81,7 +81,7 @@ For demographic data, we use INSEE's [History of municipal populations - 1876 - 
 $$\text{expo}\_\text{demog} = \sum (\text{Population}_{\text{decade}} \times \text{Weight}_{\text{decade}})$$
 
 Where: 
-- $\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth
+- $\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth.
 - $\text{Weight}_{\text{decade}}=\frac{n_\text{born in decade}}{N_\text{total}}$
 
 $\quad$

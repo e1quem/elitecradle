@@ -78,7 +78,7 @@ def get_parliament_data_by_id(id):
     
 # 1. Obtaining the list of all departments
 # Use list of departments extracted from https://www2.assemblee-nationale.fr/sycomore/recherche
-with open("/Users/eyquem/Desktop/EliteGeoCradle/fetch/parliament/src/departments_raw.txt", "r", encoding="utf-8") as f:
+with open("/Users/eyquem/Desktop/EliteCradle/fetch/parliament/src/departments_raw.txt", "r", encoding="utf-8") as f:
     content = f.read()
 soup = BeautifulSoup(content, 'html.parser') 
 
@@ -240,5 +240,5 @@ print(f"\nFound {count} arr. out of {total} entries ({round(count/total*100, 2)}
 df = pd.update([df, df_paris_standardized], ignore_index=True)
 
 # Saving as CSV
-output_path = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/parliament/interim/dp_geo_enrich.csv"
+output_path = "/Users/eyquem/Desktop/EliteCradle/fetch/parliament/interim/dp_geo_enrich.csv"
 df.to_csv(output_path, index=False, encoding='utf-8')

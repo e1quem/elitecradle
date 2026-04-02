@@ -2,8 +2,8 @@ from rapidfuzz import process, fuzz
 import pandas as pd
 import unicodedata
 
-df_source = pd.read_excel("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/src/base-pop-historiques-1876-2023.xlsx", header=5)
-path_export = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/"
+df_source = pd.read_excel("/Users/eyquem/Desktop/EliteCradle/fetch/merging/src/base-pop-historiques-1876-2023.xlsx", header=5)
+path_export = "/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/"
 
 # REG and DEP give us the Region and Department number of each city
 df = df_source.iloc[:, [1, 2]].copy()
@@ -99,22 +99,22 @@ print("Successful population export")
 
 
 # Economic indicators
-df_ecoc = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/eco_city.csv", sep=None, engine='python')
-df_ecod = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/eco_dept.csv", sep=None, engine='python')
-df_ecor = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/eco_region.csv", sep=None, engine='python')
-df_datac = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/data_city.csv", sep=None, engine='python')
+df_ecoc = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/eco_city.csv", sep=None, engine='python')
+df_ecod = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/eco_dept.csv", sep=None, engine='python')
+df_ecor = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/eco_region.csv", sep=None, engine='python')
+df_datac = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/data_city.csv", sep=None, engine='python')
 
 # Demographic indicators
-df_popc = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/pop_city.csv", sep=None, engine='python')
-df_popd = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/pop_dept.csv", sep=None, engine='python')
-df_popr = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/pop_region.csv", sep=None, engine='python')
+df_popc = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/pop_city.csv", sep=None, engine='python')
+df_popd = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/pop_dept.csv", sep=None, engine='python')
+df_popr = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/pop_region.csv", sep=None, engine='python')
 
 # Educational indicators
-df_edu = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/edu_city.csv", sep=None, engine='python')
-df_prepa = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/cpge.csv", sep=None, engine='python')
+df_edu = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/edu_city.csv", sep=None, engine='python')
+df_prepa = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/cpge.csv", sep=None, engine='python')
 
 # Personnalities
-df_ppl = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/out/merged_clean.csv", sep=None, engine='python')
+df_ppl = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/merging/out/merged_clean.csv", sep=None, engine='python')
 
 # Turning dob into decades intervals
 def categorize_decade(year):
@@ -270,7 +270,7 @@ df_final_city['global'] = df_final_city['global'].fillna(0).astype(int)
 ordered_cols = ['pob', 'dept', 'global', 'politics'] + tag_columns + ['median', 'cadres', 'activity_rate', 'tertiaire', 'expo_demog', 'lycees_pro', 'lycees_gt', 'lycees', 'edu', 'prepa', 'prepa_count', 'prepa_rate']
 df_final_city = df_final_city[ordered_cols]
 
-df_final_city.to_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/processed/analysis_city.csv", index=False, sep=";")
+df_final_city.to_csv("/Users/eyquem/Desktop/EliteCradle/analysis/processed/analysis_city.csv", index=False, sep=";")
 
 
 # Creating the Department dataframe with economic and demographic data
@@ -317,7 +317,7 @@ df_final_department['prepa_rate'] = df_final_department['prepa_count'] / df_fina
 df_final_department['global'] = df_final_department['global'].fillna(0).astype(int)
 ordered_cols = ['dept', 'dept_num', 'global', 'politics'] + tag_columns + ['median', 'poverty_rate', 'expo_demog', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'prepa_count', 'prepa_rate']
 df_final_department = df_final_department[ordered_cols]
-df_final_department.to_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/processed/analysis_department.csv", index=False, sep=";")
+df_final_department.to_csv("/Users/eyquem/Desktop/EliteCradle/analysis/processed/analysis_department.csv", index=False, sep=";")
 
 
 # Creating the Region dataframe with economic and demographic data
@@ -361,4 +361,4 @@ df_final_region['prepa_rate'] = df_final_region['prepa_count'] / df_final_region
 df_final_region['global'] = df_final_region['global'].fillna(0).astype(int)
 ordered_cols = ['region', 'global', 'politics'] + tag_columns + ['median_euro', 'poverty_rate', 'expo_demog', 'colleges', 'lycees_pro', 'lycees_gt', 'second_degre', 'cadres_and_pro', 'activity_rate', 'tertiaire', 'prepa_count', 'prepa_rate']
 df_final_region = df_final_region[ordered_cols]
-df_final_region.to_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/processed/analysis_region.csv", index=False, sep=";")
+df_final_region.to_csv("/Users/eyquem/Desktop/EliteCradle/analysis/processed/analysis_region.csv", index=False, sep=";")

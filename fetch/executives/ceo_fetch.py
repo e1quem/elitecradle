@@ -93,9 +93,9 @@ if __name__ == "__main__":
     final_cols = [c for c in cols_order if c in df.columns] + [c for c in df.columns if c not in cols_order]
     df = df[final_cols]
     
-    #output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/CEOs.csv"
-    #output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/business_person.csv"
-    output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/scholars/interim/scholars_raw.csv"
+    #output_file = "/Users/eyquem/Desktop/EliteCradle/fetch/executives/interim/CEOs.csv"
+    #output_file = "/Users/eyquem/Desktop/EliteCradle/fetch/executives/interim/business_person.csv"
+    output_file = "/Users/eyquem/Desktop/EliteCradle/fetch/scholars/interim/scholars_raw.csv"
 
     df.to_csv(output_file, index=False)
     print(f"\nOver: {output_file}")
