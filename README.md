@@ -3,8 +3,7 @@
 ## Abstract
 
 This working paper analyses the geographical origins of French political, corporate and academic prominent figures under the Fifth Republic. Using web-scraping to construct and enrich a comprehensive biographical database of 6 500 individuals, we quantify geographical hubs by cross-referencing our data with demographic and socio-economic factors. Our scope ranges from aggregated regions to Parisian arrondissements. Our results highlight a Parisian dominance and identify significant geographical outliers (overperformers like Neuilly-sur-Seine and Boulogne-Billancourt) through multivariate OLS regressions.
-
-$\quad$
+<br><br>
 
 ## Introduction
 
@@ -18,8 +17,7 @@ In order to ensure that socio-economic and demographic characteristics remain br
 [1] *Benveniste, S. (2026). Noble Lineage and Inequalities in Access to Elite Education. ; Benveniste, S., & Pavie, A. (2025). Elites: Origin, education, destination. ; Birnbaum, P., Barucq, C., Bellaiche, M., & Marié, A. (1978). La Classe dirigeante française: Dissociation, interpénétration, intégration. ; Bourdieu, P. (2002). La noblesse d’état: Grandes écoles et esprit de corps. ; Gavras, J. (2017). Les Bonnes Conditions.* 
 
 [2] *Bourdieu, P., & Passeron, J.-C. (1994). Les héritiers: Les étudiants et la culture. ; Bourdieu, P., & Passeron, J.-C. (2005). La reproduction: Éléments pour une théorie du système d’enseignement.*
-
-$\quad$
+<br><br>
 
 ## Data acquisition and methodology
 
@@ -73,9 +71,7 @@ Before manual cleaning, ```interim/merged_raw.csv``` contains 7745 individuals. 
 | *Academic*  | ```scholar```    | 589       | 9.06%          | Collège de France, Wikipedia |
 | *Corporate* | ```executive```  | 603       | 9.27%          | Pappers, Wikipedia           |
 | **Global**  |                  | **6 500**  | **100%**       |                              |
-
-
-$\quad$
+<br><br>
 
 ### Exogenous data sources
 
@@ -102,15 +98,12 @@ For various social data at each scale (population density, share of diploma hold
 For educational data at the departmental and regional scale, we use INSEE's [Secondary schools at the start of the 2024 academic year](https://www.insee.fr/fr/statistiques/2012787#tableau-TCRD_061_tab1_regions2016) list. For municipal count, we use the [2024 Ministry of Higher Education enrolment figures for higher education](https://data.enseignementsup-recherche.gouv.fr/explore/assets/fr-esr-atlas_regional-effectifs-d-etudiants-inscrits/). For preparatory classes, we rely on the [Ministry of Higher Education count of students enrolled in preparatory classes](https://data.enseignementsup-recherche.gouv.fr/explore/assets/fr-esr-atlas_regional-effectifs-d-etudiants-inscrits-detail_etablissements/export/) dataset. 
 
 We use ```cross_sourcing.py``` to combine our biographical dataset with demographic and socio-economic data per geographical aggregation. Cities with similar names are distinguished by verifying their department number. We use a 85% threshold fuzzy matching to allow matches despite minor differences with the official INSEE nomenclature. 
-
-
-$\quad$
+<br><br>
 
 ## Analysis
 
 In ```/analysis```, we describe our dataset using maps and rankings before analysing it with multivariate regressions using socio-economic factors.
-
-$\quad$
+<br><br>
 
 ### Rankings
 
@@ -122,7 +115,6 @@ For the departmental ranking [Figure 2], Paris has a pronounced lead across all 
 
 **Figure 1: Ranking of personalities count per region** 
 ![Regional ranking](analysis/out/top_region.png)
-
 
 **Figure 2: Ranking of personalities count per department**
 ![Departmental ranking](analysis/out/top_department.png)
@@ -141,9 +133,7 @@ This over-representation of affluent western Parisian suburbs questions the role
 ![Arrondissement ranking](analysis/out/top_arrondissements.png)
 
 These descriptive rankings underline peculiar cases like that of Neuilly-sur-Seine and Boulogne-Billancourt and justify the use of socio-economic variables for a thorough analysis of these observations. 
-
-
-$\quad$
+<br><br>
 
 ### Maps
 
@@ -165,9 +155,7 @@ On a regional choropleth map [Figure 7], the weight of Île-de-France is particu
 
 **Figure 10: Choropleth map of elites origins per category for Parisian arrondissements**
 ![Arrondissements choropleth](analysis/out/choropleth_arrondissements.png)
-
-
-$\quad$
+<br><br>
 
 ### Correlations
 
@@ -191,8 +179,7 @@ On a regional scale [Figure 11], most categories of figures are highly positivel
 <p align="center">
   <img src=analysis/out/correlation_arrondissements.png width="500">
 </p>
-
-$\quad$
+<br><br>
 
 ### Regressions
 
@@ -224,19 +211,15 @@ For this Q1 set of 3 468 cities  [Appendix 3], we use our demographic exposure 
 </p>
 
 For the remaining cities of the dataset, regardless of how we arrange our explanatory variables, our model never explains more than 20% of the observations. This is significant in itself: it seems that in small towns, the emergence of a leader is unexplained by our variables, or is linked to factors not captured by INSEE’s socio-economic metrics, such as a particular family or an exceptional teacher. The statistical laws governing geographical wealth and educational infrastructure only apply once a certain critical mass is reached, as shown with our Q1 model.
-
-
-$\quad$
+<br><br>
 
 ## Conclusion
-
-$\quad$
+<br><br>
 
 ### Results
 
 Our study confirms that while France is an ["indivisible, secular, democratic and social Republic"](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019240997/2022-01-22), the origin of its elites is geographically concentrated. The distribution of publicly visible French elites is amassed in urban and economically dense areas. Prominent figures originating from Paris highlight the significance of geographical and social factors such as the concentration of *Grandes Écoles*, political institutions, [symbolic, social and cultural capital](https://books.openedition.org/psorbonne/868) of the capital. We observe a strong overrepresentation of affluent Paris suburbs such as the Hauts-de-Seine department, and more specifically cities such as Neuilly-sur-Seine and Boulogne-Billancourt. Underperforming departments include Seine-Saint-Denis, Essonne and Orne among others. This concentration of elites origin is largely explained by demographic dynamics and educational infrastructure at macro territorial levels, but become weakly predictable for municipalities producing few elites, suggesting the presence of non-structural or idiosyncratic mechanisms in elite production for smaller localities.
-
-$\quad$
+<br><br>
 
 ### Limits
 Our study has a number of limitations. First, 44.7% of the biographical data we analyse (all categories except for Parliament members) is fetched from Wikipedia. This part of the dataset is by definition biased: instead of reflecting pure elite origins, it induces a significant notoriety effect. We do not focus on elites in the broadest sense, but rather on elites having a visible digital footprint. Hence, our research question might be closer to "*What is the geographical origin of French elites referenced on Wikipedia?*" for almost half of the individuals we study. 
@@ -244,9 +227,7 @@ Our study has a number of limitations. First, 44.7% of the biographical data we 
 Secondly, due to our imperfect scraping methods, our dataset is likely missing a significant number of individuals. We are for example missing the place of birth of over a thousand National Assembly members, and we cannot draw any meaningful conclusions from incomplete data. 
 
 Third, studying the *place of birth* is a fragile proxy that reflects administrative and infrastructural constraints biased towards major cities and urban areas: the presence of maternity wards and hospitals. The data we analyse is influenced by infrastructures and administrative geography. However, the place of birth remains a clear and recorded set of administrative information that is easy to analyse. It would be almost impossible to identify the exact city in which these individuals were born, or would further reinforce the notoriety bias by retaining only extremely popular individuals whose biographical background is clearly documented.
-
-
-$\quad$
+<br><br>
 
 ## Appendix
 
