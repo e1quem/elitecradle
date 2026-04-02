@@ -213,7 +213,6 @@ For the remaining cities of the dataset, regardless of how we arrange our explan
 <br><br>
 
 ## Conclusion
-<br><br>
 
 ### Results
 
