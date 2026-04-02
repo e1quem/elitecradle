@@ -106,7 +106,7 @@ In ```/analysis```, we describe our dataset using maps and rankings before analy
 
 ### Rankings
 
-On a regional scale [Figure 1], there is a clear predominance of Île-de-France across all categories in terms of personalities count. It is also the most populated French region, counting 12.38 million inhabitants in 2025, whereas the second most populous region, Auverge-Rhône-Alpes, had a population of 8.16 million according to [INSEE](https://www.insee.fr/fr/statistiques/8290644?sommaire=8290669). This ranking mostly follows the demographic ranking of regions, as most of them are similarly sized except.
+On a regional scale [Figure 1], there is a clear predominance of Île-de-France across all categories in terms of personalities count. It is also the most populated French region, counting 12.38 million inhabitants in 2025, whereas the second most populous region, Auverge-Rhône-Alpes, had a population of 8.16 million according to [INSEE](https://www.insee.fr/fr/statistiques/8290644?sommaire=8290669). This ranking mostly follows the demographic ranking of regions, as most of them are similarly sized.
 
 The global top three regions accounts for 42.2% of all prominent figures while the top five account for 59.9%. This dominancy of the podium is emphasized for executives and scholars, representing respectively 49.9% and 61.2% of the total count.
 
