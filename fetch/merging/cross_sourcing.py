@@ -2,8 +2,8 @@ from rapidfuzz import process, fuzz
 import pandas as pd
 import unicodedata
 
-df_source = pd.read_excel("/Users/eyquem/Desktop/EliteGeoCradle/analysis/src/base-pop-historiques-1876-2023.xlsx", header=5)
-path_export = "/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/"
+df_source = pd.read_excel("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/src/base-pop-historiques-1876-2023.xlsx", header=5)
+path_export = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/"
 
 # REG and DEP give us the Region and Department number of each city
 df = df_source.iloc[:, [1, 2]].copy()
@@ -99,19 +99,19 @@ print("Successful population export")
 
 
 # Economic indicators
-df_ecoc = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/eco_city.csv", sep=None, engine='python')
-df_ecod = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/eco_dept.csv", sep=None, engine='python')
-df_ecor = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/eco_region.csv", sep=None, engine='python')
-df_datac = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/data_city.csv", sep=None, engine='python')
+df_ecoc = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/eco_city.csv", sep=None, engine='python')
+df_ecod = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/eco_dept.csv", sep=None, engine='python')
+df_ecor = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/eco_region.csv", sep=None, engine='python')
+df_datac = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/data_city.csv", sep=None, engine='python')
 
 # Demographic indicators
-df_popc = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/pop_city.csv", sep=None, engine='python')
-df_popd = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/pop_dept.csv", sep=None, engine='python')
-df_popr = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/pop_region.csv", sep=None, engine='python')
+df_popc = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/pop_city.csv", sep=None, engine='python')
+df_popd = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/pop_dept.csv", sep=None, engine='python')
+df_popr = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/pop_region.csv", sep=None, engine='python')
 
 # Educational indicators
-df_edu = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/edu_city.csv", sep=None, engine='python')
-df_prepa = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/cpge.csv", sep=None, engine='python')
+df_edu = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/edu_city.csv", sep=None, engine='python')
+df_prepa = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/interim/cpge.csv", sep=None, engine='python')
 
 # Personnalities
 df_ppl = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/out/merged_clean.csv", sep=None, engine='python')

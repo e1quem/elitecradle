@@ -168,7 +168,7 @@ def export_level_charts(df, id_col, level_name):
 
     plot_stacked_bar(axes[0], df, id_col, 'global', GLOBAL_STACKS, 'Global')
     plot_stacked_bar(axes[1], df, id_col, 'politics', POLITICS_STACKS, 'Political')
-    plot_simple_bar(axes[2], df, id_col, 'scholar', 'Collège de France')
+    plot_simple_bar(axes[2], df, id_col, 'scholar', 'Scholars')
     plot_simple_bar(axes[3], df, id_col, 'executive', 'Executives')
     plt.tight_layout()
     
@@ -378,56 +378,55 @@ heatmap_correlation(df_arr,         'Arrondissements',     GROUPS, ECO_ARR)
 
 
 # REGRESSIONS
-def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
-    cols_to_keep = [x_col, y_col, id_col]
-    plot_df = df[cols_to_keep].copy()
-    
-    plot_df['x_val'] = pd.to_numeric(plot_df[x_col], errors='coerce')
-    plot_df['y_val'] = pd.to_numeric(plot_df[y_col], errors='coerce')
-    plot_df['x_log'] = np.log1p(plot_df['x_val'])
-    plot_df['y_log'] = np.log1p(plot_df['y_val'])
-    plot_df = plot_df.dropna(subset=['x_log', 'y_log'])
-
-    slope, intercept, r_value, p_value, std_err = stats.linregress(plot_df['x_log'], plot_df['y_log'])
-    plot_df['resid'] = plot_df['y_log'] - (slope * plot_df['x_log'] + intercept)
-    
-    plt.figure(figsize=(12, 8), facecolor='white')
-    limit = max(abs(plot_df['resid'].min()), abs(plot_df['resid'].max())) * 0.7
-    scatter = plt.scatter(plot_df['x_log'], plot_df['y_log'], c=plot_df['resid'], cmap='RdBu', alpha=0.8, edgecolors='none', s=50, vmin=-limit, vmax=limit)
-    
-    # Regression line
-    x_range = np.array([plot_df['x_log'].min(), plot_df['x_log'].max()])
-    plt.plot(x_range, slope * x_range + intercept, color='#333333', linestyle='--', linewidth=0.8, alpha=0.8, label=f'R2 = {r_value**2:.2f}, p-value = {p_value:.3f}')
-
-    # 4. Labels des 5 plus gros Over/Under performers
-    outliers = plot_df.sort_values('resid', ascending=False)
-    top_labels = outliers.head(5)
-    bottom_labels = outliers.tail(5)
-    
-    for _, row in pd.concat([top_labels, bottom_labels]).iterrows():
-        plt.text(row['x_log'], row['y_log'] + 0.06, str(row[id_col]), 
-                 fontsize=8, fontweight='bold', ha='center', va='bottom')
-        
-    ax = plt.gca()
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-
-    plt.xlabel(f'log({x_col})', fontsize=10)
-    plt.ylabel(f'log({y_col})', fontsize=10)
-    plt.title(f'{level_name} : {y_col} vs {x_col}', fontsize=12, fontname='Helvetica')
-    plt.grid(False)
-
-    safe_y = y_col.replace(' ', '_')
-    safe_x = x_col.replace(' ', '_')
-    filename = os.path.join(OUTPUT_DIR, f"scatter_{level_name.lower()}_{safe_y}_vs_{safe_x}.png")
-    plt.savefig(filename, dpi=300, bbox_inches='tight')
-    plt.close()
-
-plot_regression_outliers(df_city, 'expo_demog', 'global', 'City', 'pob')
-plot_regression_outliers(df_city_merged, 'expo_demog', 'politics', 'City_Paris_Merged', 'pob')
-plot_regression_outliers(df_dept, 'expo_demog', 'global', 'Department', 'dept')
-plot_regression_outliers(df_dept, 'median', 'global', 'Department', 'dept')
-
+#def plot_regression_outliers(df, x_col, y_col, level_name, id_col):
+#    cols_to_keep = [x_col, y_col, id_col]
+#    plot_df = df[cols_to_keep].copy()
+#    
+#    plot_df['x_val'] = pd.to_numeric(plot_df[x_col], errors='coerce')
+#    plot_df['y_val'] = pd.to_numeric(plot_df[y_col], errors='coerce')
+#    plot_df['x_log'] = np.log1p(plot_df['x_val'])
+#    plot_df['y_log'] = np.log1p(plot_df['y_val'])
+#    plot_df = plot_df.dropna(subset=['x_log', 'y_log'])
+#
+#    slope, intercept, r_value, p_value, std_err = stats.linregress(plot_df['x_log'], plot_df['y_log'])
+#    plot_df['resid'] = plot_df['y_log'] - (slope * plot_df['x_log'] + intercept)
+#    
+#    plt.figure(figsize=(12, 8), facecolor='white')
+#    limit = max(abs(plot_df['resid'].min()), abs(plot_df['resid'].max())) * 0.7
+#    scatter = plt.scatter(plot_df['x_log'], plot_df['y_log'], c=plot_df['resid'], cmap='RdBu', alpha=0.8, edgecolors='none', s=50, vmin=-limit, vmax=limit)
+#    
+#    # Regression line
+#    x_range = np.array([plot_df['x_log'].min(), plot_df['x_log'].max()])
+#    plt.plot(x_range, slope * x_range + intercept, color='#333333', linestyle='--', linewidth=0.8, alpha=0.8, label=f'R2 = {r_value**2:.2f}, p-value = {p_value:.3f}')
+#
+#    # 4. Labels des 5 plus gros Over/Under performers
+#    outliers = plot_df.sort_values('resid', ascending=False)
+#    top_labels = outliers.head(5)
+#    bottom_labels = outliers.tail(5)
+#    
+#    for _, row in pd.concat([top_labels, bottom_labels]).iterrows():
+#        plt.text(row['x_log'], row['y_log'] + 0.06, str(row[id_col]), 
+#                 fontsize=8, fontweight='bold', ha='center', va='bottom')
+#        
+#    ax = plt.gca()
+#    ax.spines['top'].set_visible(False)
+#    ax.spines['right'].set_visible(False)
+#
+#    plt.xlabel(f'log({x_col})', fontsize=10)
+#    plt.ylabel(f'log({y_col})', fontsize=10)
+#    plt.title(f'{level_name} : {y_col} vs {x_col}', fontsize=12, fontname='Helvetica')
+#    plt.grid(False)
+#
+#    safe_y = y_col.replace(' ', '_')
+#    safe_x = x_col.replace(' ', '_')
+#    filename = os.path.join(OUTPUT_DIR, f"scatter_{level_name.lower()}_{safe_y}_vs_{safe_x}.png")
+#    plt.savefig(filename, dpi=300, bbox_inches='tight')
+#    plt.close()
+#
+#plot_regression_outliers(df_city, 'expo_demog', 'global', 'City', 'pob')
+#plot_regression_outliers(df_city_merged, 'expo_demog', 'politics', 'City_Paris_Merged', 'pob')
+#plot_regression_outliers(df_dept, 'expo_demog', 'global', 'Department', 'dept')
+#plot_regression_outliers(df_dept, 'median', 'global', 'Department', 'dept')
 
 VAR_ARR = ['expo_demog', 'median', 'prepa_count']
 VAR_CITIES_ELSE = ['expo_demog', 'cadres', 'edu', 'prepa']
@@ -499,3 +498,88 @@ run_regressions(df_cities_else, 'pob', 'City', GROUPS, VAR_CITIES_ELSE)
 run_regressions(df_cities_q1, 'pob', 'City', GROUPS, VAR_CITY)
 run_regressions(df_cities_merged_q1, 'pob', 'City - Paris merged', GROUPS, VAR_CITY)
 run_regressions(df_arr, 'pob', 'Arr.', GROUPS, VAR_ARR)
+
+def plot_multivariate_outliers(df, x_cols, y_col, level_name, id_col):
+    """
+    x_cols : liste des variables explicatives (ex: ['expo_demog', 'median'])
+    """
+    # 1. Préparation des données
+    cols_to_keep = x_cols + [y_col, id_col]
+    plot_df = df[cols_to_keep].copy()
+    
+    # Conversion numérique et passage au log1p
+    for col in x_cols + [y_col]:
+        plot_df[col] = pd.to_numeric(plot_df[col], errors='coerce')
+        plot_df[f'{col}_log'] = np.log1p(plot_df[col])
+        
+    # Suppression des NaN sur les colonnes log
+    log_cols = [f'{col}_log' for col in x_cols] + [f'{y_col}_log']
+    plot_df = plot_df.dropna(subset=log_cols)
+    
+    if len(plot_df) == 0:
+        print(f"Pas assez de données valides pour {y_col}.")
+        return
+
+    # 2. Modèle Multivarié avec statsmodels
+    Y = plot_df[f'{y_col}_log']
+    X = plot_df[[f'{col}_log' for col in x_cols]]
+    X = sm.add_constant(X) # Ajout de la constante
+    
+    model = sm.OLS(Y, X).fit()
+    
+    # Récupération des valeurs prédites et des résidus
+    plot_df['fitted_log'] = model.fittedvalues
+    plot_df['resid'] = model.resid
+    
+    # 3. Paramétrage du Plot
+    plt.figure(figsize=(12, 8), facecolor='white')
+    limit = max(abs(plot_df['resid'].min()), abs(plot_df['resid'].max())) * 0.7
+    
+    # L'axe X devient les valeurs attendues (fitted), l'axe Y reste les valeurs observées
+    plt.scatter(plot_df['fitted_log'], plot_df[f'{y_col}_log'], 
+                c=plot_df['resid'], cmap='RdBu', alpha=0.8, 
+                edgecolors='none', s=50, vmin=-limit, vmax=limit)
+    
+    # 4. Ligne de perfection (y = x)
+    # Sur un plot expected vs observed, la perfection est la diagonale parfaite
+    val_min = min(plot_df['fitted_log'].min(), plot_df[f'{y_col}_log'].min())
+    val_max = max(plot_df['fitted_log'].max(), plot_df[f'{y_col}_log'].max())
+    line_range = np.array([val_min, val_max])
+    
+    plt.plot(line_range, line_range, color='#333333', linestyle='--', 
+             linewidth=0.8, alpha=0.8, 
+             label=f'R2 = {model.rsquared:.2f}, p-value = {model.f_pvalue:.3f}')
+
+    # 5. Labels des 5 plus gros Over/Under performers
+    outliers = plot_df.sort_values('resid', ascending=False)
+    top_labels = outliers.head(5)
+    bottom_labels = outliers.tail(5)
+    
+    for _, row in pd.concat([top_labels, bottom_labels]).iterrows():
+        plt.text(row['fitted_log'], row[f'{y_col}_log'] + 0.06, str(row[id_col]), 
+                 fontsize=8, fontweight='bold', ha='center', va='bottom')
+        
+    # 6. Cosmétique et Sauvegarde
+    ax = plt.gca()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+    # Mise à jour des labels pour refléter la nature du plot
+    plt.xlabel(f'Expected log({y_col}) [Multivariate]', fontsize=10)
+    plt.ylabel(f'Observed log({y_col})', fontsize=10)
+    plt.title(f'{level_name} : {y_col} (Modèle Multivarié à {len(x_cols)} variables)', fontsize=12, fontname='Helvetica')
+    
+    plt.legend(frameon=False) # Ajout de la légende pour que ton R2 s'affiche !
+    plt.grid(False)
+
+    safe_y = y_col.replace(' ', '_')
+    # On nomme le fichier en fonction du nombre de variables X
+    filename = os.path.join(OUTPUT_DIR, f"scatter_multi_{level_name.lower()}_{safe_y}.png")
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.close()
+
+# Exemple d'appel (en remplaçant par tes vraies listes de variables si besoin)
+plot_multivariate_outliers(df_region, ['expo_demog', 'prepa_rate'], 'global', 'Region', 'region')
+
+# Si tu veux quand même tester sur 3 ou 4 variables en même temps :
+plot_multivariate_outliers(df_city, VAR_CITY, 'global', 'City', 'pob')

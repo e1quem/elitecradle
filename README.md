@@ -2,20 +2,20 @@
 
 ## Abstract
 
-This projet analyses the geographical origins of French political, corporate and academic figures under the Fifth Republic. Using web-scraping to construct and enrich a comprehensive biographical database of 6500 individuals, we quantify geographical hubs by cross-referencing our data with demographic and socio-economic factors from INSEE. Our scope ranges from aggregated regions to Parisian arrondissements. Our results highlight a Parisian dominancy and identify significant geographical outliers (overperformers like Neuilly-sur-Seine and underperformers like Colombes) through multivariate OLS regressions.
+This project analyses the geographical origins of French political, corporate and academic prominent figures under the Fifth Republic. Using web-scraping to construct and enrich a comprehensive biographical database of 6500 individuals, we quantify geographical hubs by cross-referencing our data with demographic and socio-economic factors. Our scope ranges from aggregated regions to Parisian arrondissements. Our results highlight a Parisian dominance and identify significant geographical outliers (overperformers like Neuilly-sur-Seine and Boulogne-Billancourt) through multivariate OLS regressions.
 
 ## Introduction
 
-While the role of social origin and education in the making of elites is a well documented theme in French sociology, the geographical origin of these individuals is often treated as a secondary variable. This project seeks to find which parts of the french territory produces the most elites, and understand the way demographic, economic and social factors drive this production.
+While the role of social origin [1] and education [2] in the making of elites is a well documented theme in French sociology, the geographical origin of these individuals is often treated as a secondary variable. This project seeks to find which parts of the French territory produces the most elites, and understand the way demographic, economic and social factors drive this production.
 
 This project was conceived as a way to master automated internet scraping, and was driven out of curiosity to settle a familial debate. Using public sources, we build a dataset using the place of birth (```pob```) as a common variable. We focus on three clusters of individuals: political (including presidents, ministers, Parliament members and senators), scholars (professors of the Collège de France, relevant academic figures) and corporate (CEOs, executives, administrators and board members of large companies). 
 
-In order to ensure that socio-economic and demographic characteristics remain broadly in line with the contemporary picture, we limit the scope of our study to the Fifth Frepublic. Geographically, we analyse mainland France and all DOMs except for Mayotte. This choice stems from data availability constraints from INSEE. 
+In order to ensure that socio-economic and demographic characteristics remain broadly in line with the contemporary picture, we limit the scope of our study to the Fifth Republic. Geographically, we analyse mainland France and all DOMs except for Mayotte. This choice stems from data availability constraints from INSEE. 
 
 
 ## Data Acquisition and Methodology
 
-The ```fetch``` folder is dedicated to data acquisition, following a ```src```, ```interim```, ```out``` data pipeline. ```utils``` shares heuristics for Wikipedia scraping, geolocation and arrondissement finding. Each cohort presented different data obtention challenges, that had to be overcome with dedicated methods.
+The ```fetch``` folder is dedicated to data acquisition, following a strict ```src```, ```interim```, ```out``` data pipeline. ```utils``` shares heuristics for Wikipedia scraping, geolocation and arrondissement finding. Each cohort presented different data acquisition challenges, that had to be overcome with dedicated methods.
 
 #### ```fetch/parliament```
 
@@ -37,7 +37,7 @@ We use the [General Informations on Senator](https://data.senat.fr/les-senateurs
 Instead of navigating within the tree structure of Wikipedia's [List of French Governments](https://fr.wikipedia.org/wiki/Liste_des_gouvernements_de_la_France), we use this [unofficial but unified list of all ministers of the Fifth Republic](http://www.histoire-france-web.fr/Documents/ministres.htm) as a source. ```out/mn_clean.csv``` contains a dataset of 430 ministers. 
 
 
-### ```fetch/scholars```
+#### ```fetch/scholars```
 
 Our first source is the [Historical List of Chairs at the Collège de France](https://www.college-de-france.fr/fr/actualites/liste-historique-des-chaires-du-college-de-france) maintained by the Collège de France, from which we extract all chairs that were ongoing during the Fifth Republic. Many professors at the Collège de France were born abroad: we find full data for only 182 scholars. 
 
@@ -48,7 +48,7 @@ To counter this issue, we scrape Wikipedia's [French Scholars](https://fr.wikipe
 
 There isn't any official list of CEOs and top executives of all CAC40 companies. We use this [amateur list of CAC40 companies](https://www.bnains.org/archives/histocac/histocac.php) as a source of [Pappers](https://www.pappers.fr) URLs, from which our Selenium Chrome scraper extracts names of administrators of these firms. From the 1340 names we found on Pappers, we could only find biographical information for 406 of them. Accounting for those born abroad, this method has a low success rate, with full data for only 232 individuals.
 
-To further populate this category, we scrap Wikipedia's [French CEOs](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Chef_d%27entreprise_fran%C3%A7ais) and [French Business Personalities](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Personnalit%C3%A9_fran%C3%A7aise_du_monde_des_affaires_du_XXIe_si%C3%A8cle) categories. This raises the total of executives to 603.
+To further populate this category, we scrape Wikipedia's [French CEOs](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Chef_d%27entreprise_fran%C3%A7ais) and [French Business Personalities](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Personnalit%C3%A9_fran%C3%A7aise_du_monde_des_affaires_du_XXIe_si%C3%A8cle) categories. This raises the total of executives to 603.
 
 #### ```fetch/merging```
 
@@ -67,11 +67,6 @@ When merging all those datasets, we handle career progression by applying a stri
 | **Global**  |                  | **6500**  | **100%**       |                              |
 
 
-## Analysis
-
-In ```/analysis```, we analyse our clean dataset with rankings, maps and multivariate regressions using INSEE data.
-
-
 ### Exogenous data sources
 
 Our analysis is based on demographic, economic and social data.
@@ -83,7 +78,9 @@ $$\text{expo}\_\text{demog} = \sum (\text{Population}_{\text{decade}} \times \te
 
 Where: 
 - $\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth
-- $\text{Weight}_{\text{decade}}=\frac{n_\text{born in decade}}{N_\text{total}}$ (share of elites in our dataset born during that period)
+- $\text{Weight}_{\text{decade}}=\frac{n_\text{born in decade}}{N_\text{total}}$
+
+$\quad$
 
 For economic data at the departmental and regional scale, we use INSEE's [Standard of living and poverty by region](https://www.insee.fr/fr/statistiques/7941411?sommaire=7941491) dataset (```src/RPM2024-F21.xlsx```) and DREES's [2023 Statistical Overview](https://data.drees.solidarites-sante.gouv.fr/explore/dataset/panorama-statistique-toutes-thematiques/information/) (```Panorama_statistique_2024.xlsx```) to obtain median income and poverty rate. For municipalities, we can only obtain the median income from Geoptis's 2021 [Income of the French at the municipal scale](https://www.data.gouv.fr/datasets/revenu-des-francais-a-la-commune). 
 
@@ -94,13 +91,17 @@ For educational data, we use INSEE's [Secondary schools at the start of the 2024
 We use ```cross_sourcing.py``` to combine our biographical dataset with demographic and socio-economic data for each geographical scale. Cities with the same name are distinguished by verifying their department number. We use fuzzy matching with a 85% threshold to allow matches despite minor differences with official INSEE nomenclature. 
 
 
+## Analysis
+
+In ```/analysis```, we describe our dataset using maps and rankings before analysing it with multivariate regressions using socio-economic factors.
+
 ### Rankings
 
-When observing our dataset on the regional scale (Figure 1), we notice that the region Île de France is by far leading the personalities count. This region is by far the most populated of the country, counting 12.38 million inhabitants in 2025 whereas Auvergne-Rhône-Alpes, the second most populous region, had a population of just 8.16 million according to [INSEE](https://www.insee.fr/fr/statistiques/8290644?sommaire=8290669). In fact, this ranking mostly follows the population ranking of regions for the global cohort. The only notable exception is Hauts-de-France: ranked 5th in terms of population, it comes 3rd on the global ranking. Even tough the 3rd, 4th and 5th regions of the demographic ranking have similar populations (less than 100 000 inhabitants distinguish them), this result indicates that the correlation between population and the number of prominent figures isn't 1.
+On a regional scale [Figure 1], there is a clear predominance of Île-de-France across all categories in terms of personalities count. It is also the most populated French region, counting 12.38 million inhabitants in 2025, whereas the second most populous region, Auverge-Rhône-Alpes, had a population of 8.16 million according to [INSEE](https://www.insee.fr/fr/statistiques/8290644?sommaire=8290669). This ranking mostly follows the demographic ranking of regions, as most of them are similarly sized except for the first one.
 
-On the global scale, the top 3 regions accounts for 40.8% of all personalities, and the top 5 for 59.3%. This dominancy of the top 3 is more emphasized for executives and scholars, representing respectively 57.1% and 64.4% of the total count.
+The global top 3 regions accounts for 42.2% of all prominent figures, and the top 5 for 59.9%. This dominancy of the top 3 is more emphasized for executives and scholars, representing respectively 49.9% and 61.2% of the total count.
 
-For the ranking of departments (Figure 2), the lead of Paris is even more pronounced across all categories. On the global scale, the top 3 departments account for 19.3% of the total count, while the top 10 accounts for 33.9%, a noticeable share out of 100 departments.
+For the departmental ranking [Figure 2], Paris has a pronounced lead across all categories. The three first global departments account for 21% of the personalities, while the ten first account for 35.5% - a noticeable share out of 100 departements. The top 3 lead is most pronounced for executives, at 40.6%, and least of politics, at 17.7%.
 
 **Figure 1: Ranking of personalities count per region** 
 ![Regional ranking](analysis/out/top_region.png)
@@ -109,11 +110,9 @@ For the ranking of departments (Figure 2), the lead of Paris is even more pronou
 **Figure 2: Ranking of personalities count per department**
 ![Departmental ranking](analysis/out/top_department.png)
 
-When ranking cities (Figure 3), the podium is to be expected: Paris, Lyon and Marseille are the three most important cities of the country. However, it is surprising to find Neuilly-sur-Seine on the fourth step of the global ranking. Despite being almost ten times smaller than Toulouse (in 2022, the latter had [511 684 inhabitants]((https://www.insee.fr/fr/statistiques/2011101?geo=COM-31555) while Neuilly-sur-Seine only had [59 200](https://www.insee.fr/fr/statistiques/2011101?geo=COM-92051)), it produces more elites on a global basis. 
+Figure 3 further underlines the Parisian lead. The top ranking cities - Paris, Lyon and Marseille - are the three major cities of the country. However, it is suprising to find Neuilly-sur-Seine ([59200 inhabitants](https://www.insee.fr/fr/statistiques/2011101?geo=COM-92051)) on the fourth step of the global podium, followed by Boulogne-Billancourt ([120205 inhabitants](https://www.insee.fr/fr/statistiques/2011101?geo=COM-92012)and Paris 16 in front of Toulouse, the [fourth largest city of the country](https://www.insee.fr/fr/statistiques/2011101?geo=COM-31555). This is especially pronounced for scholars and executives, where Neuilly-sur-Seine and Boulogne-Billancourt produces more individuals than Marseille, or even Lyon.
 
-Toulouse, with its median income of €22,140 and 63 prominent figures, offers the best ratio of wealth to elite production. Gérard Bailly, a senator for Jura from 2001 to 2017, was born in Uxelles in 1940 when the town had a population of just 75; he is the elected representative from the smallest town in our sample. At the other end of the spectrum is Colombes, which has only one elected representative despite having 91,053 inhabitants in 2023.
-
-For executives, the over-representation of affluent western Parisian suburbs questions the role played by the geographical concentration of economic capital. Merging all arrondissements as "Paris" (Figure 4) highlights the impressive ranking of the country's capital, [a well studied historical case](https://books.openedition.org/psorbonne/868#anchor-resume). The ranking of Parisian arrondissements (Figure 5) shows that over half (51.6%) of the global personalities come from five arrondissements out of twenty.
+This over-representation of affluent western Parisian suburbs questions the role played by the geographical concentration of economic capital in elite production. Merging all arrondissements under "Paris" [Figure 4] further highlights the high ranking of the capital, [a well studied historical case](https://books.openedition.org/psorbonne/868#anchor-resume). The ranking of Parisian arrondissements [Figure 5] shows that over half (51.1%) of the global personalities come from five arrondissements out of twenty.
 
 **Figure 3: Ranking of personalities count per city** 
 ![Municipal ranking](analysis/out/top_city.png)
@@ -124,17 +123,17 @@ For executives, the over-representation of affluent western Parisian suburbs que
 **Figure 5: Ranking of personalities count per arrondissement**
 ![Arrondissement ranking](analysis/out/top_arrondissements.png)
 
-These rankings, with peculiar cases like that of Neuilly-sur-Seine, questions the weight of demographic factors in elite production and underlines the need for other factors (economics) for a thorough analysis.
+These descriptive rankings, underlining peculiar cases like that of Neully-sur-Seine and Boulogne-Billancourt, justify the use of socio-economic variables for a thorough analysis of these results. 
 
 
 ### Maps
 
-A bubble map per category (Figure 6) gives a macro perspective of elites origins in mainland territories. DOMs aren't included at the moment. Visually, we notice a high concentration around Paris and it's peripheral municipalities. Contrary to others, the Nord department distinguishes itself by having multiple mid-size clusters instead of one large city from which many elites come from. We recognise the weight of large cities : Paris, Lyon, Marseille, Toulouse, Strasbourg. We also notice a high concentration along the south-east coastline of the country.
+A bubble map per category [Figure 6] gives a macro perspective of elites origins in mainland France. Visually, we notice a high concentration around Paris and its peripheral municipalities. The Nord department distinguishes itself by having multiple mid-size clusters instead of a unique large one. The weight of large cities is clearly distinguisable: Paris, Lyon, Marseille, etc. A high concentration along the south-east coastline of the country is clearly underlined.
 
 **Figure 6: Bubble map of elites origins per category in mainland France**
 ![Bubble map](analysis/out/bubble_map.png)
 
-On a regional choropleth map (Figure 7), the influence of the Île-de-France region is particularly evident. On a departmental scale (Figure 8), highlighted departments are those that include major cities: Nord (Lille), Rhône (Lyon), Bouches-du-Rhône (Marseille). At the municipal level (Figure 8), is is apparent that cities of origin are distributed evenly across the territory when intensity is disregarded. Finally, plotting a map per Parisian arrondissement shows the intensity of the West and South of Paris, whereas the North-East is less represented in the dataset.
+On a regional choropleth map [Figure 7], the weight of Île-de-France is particularly evident. On a departmental scale [Figure 8], highlighted departments are those containing major cities, such as Nord (Lille), Rhône (Lyon) and Bouches-du-Rhône (Marseille). At the municipal level [Figure 8], is is apparent that origin cities are distributed evenly across the territory when intensity is disregarded. Finally, plotting a map per Parisian arrondissement [Figure 10] shows the high count of elites coming from the West and South of Paris whereas the North-East is less represented in our dataset.
 
 **Figure 7: Choropleth map of elites origins per category on a regional scale in mainland France**
 ![Regional choropleth](analysis/out/choropleth_region.png)
@@ -151,44 +150,54 @@ On a regional choropleth map (Figure 7), the influence of the Île-de-France reg
 
 ### Regressions
 
-In order to go beyond a simple visual analysis, we use multivariate linear regressions to examine the role of demographic and economic factors in the origins of elites. First of all, we check the correlations between our variables.
+To go beyond a basic visual analysis, we use multivariate linear regressions to examine the role of demographic and socio-economic factors in the origins of elites. 
 
-On a regional scale (Figure 11), most categories of personalities are highly positively correlated together, and poverty rate show a negative correlation across all variables. This negative effect of the poverty rate is significantly reduced at the departmental scale (Figure 12), albeit the correlation remains neutral or slightly negative. Between the city dataset (Figure 13) and the paris merged dataset (Figure 14), correlation increases across all categories, and the correlation with median income goes from slightly positive to neutral and negative. For Paris arrondissements (Figure 15), our demographic exposure index is negatively correlated to the median income: we except the income the decrease as the population increase. 
+On a regional scale [Figure 11], most categories of figures are highly positively correlated together, and poverty rate show a negative correlation across all variables. This negative effect of the poverty rate is significantly reduced at the departmental scale [Figure 12], albeit the correlation remains neutral or slightly negative. Between the city dataset [Figure 13] and the paris merged dataset [Figure 14], correlations are similar across all categories. For Paris arrondissements [Figure 15], our demographic exposure index is negatively correlated to the median income: we expect the income to decrease as the population increase. 
 
 **Figure 11: Correlation matrix heatmap for factors at the regional scale**
-![Regional correlations](analysis/out/correlation_region.png)
+<p align="center">
+  <img src=analysis/out/correlation_region.png width="600">
+</p>
 
 **Figure 12: Correlation matrix heatmap for factors at the departmental scale**
-![Departmental correlations](analysis/out/correlation_department.png)
+<p align="center">
+  <img src=analysis/out/correlation_department.png width="600">
+</p>
 
 **Figure 13: Correlation matrix heatmap for factors at the city scale**
-![Municipal correlations](analysis/out/correlation_city.png)
+<p align="center">
+  <img src=analysis/out/correlation_city.png width="600">
+</p>
 
 **Figure 14: Correlation matrix heatmap for factors at the city scale (Paris merged)**
-![Municipal correlations - Paris merged](analysis/out/correlation_city_-_paris_merged.png)
+<p align="center">
+  <img src=analysis/out/correlation_city_-_paris_merged.png width="600">
+</p>
 
 **Figure 15: Correlation matrix heatmap for factors per Parisian arrondissement**
-![Arrondissement correlations](analysis/out/correlation_arrondissements.png)
+<p align="center">
+  <img src=analysis/out/correlation_arrondissements.png width="600">
+</p>
 
-We run log-linear multivariate regressions modeling the probability of producing an elite member base on geographical median income, poverty rate, and demographic exposure index. 
+We run log-linear multivariate regressions modeling the probability of producing an elite figure.
 
-On a regional scale and for the global cohort (Appendix 1), our model as a high R-squared (0.961), but most variables are insignificant and the small sample size (17) carries a risk of overfitting. Only the demographic index is significant ($***$), with a positive coefficient (0.8477) : an increase in population increases the probability of producing elites. Because of the poor performance of this regional model across all categories, we cannot define expected counts, underperformers and overperformers with confidence.
+On a regional scale and for the global cohort [Appendix 1], we use two explanatory variables for this small quantity of observations (17):  our demographic exposition metric and the rate of preparatory classes per ten thousand inhabitants. We obtain a high R-squared (0.961) and significant variables ($***$ and $*$). An increase of 1% in our demographic exposure index leads to a 0.83% increase in elite individuals count. But the rate of preparatory classes has a much stronger influence, increase elite count by 2.64%. According to this model, Île-de-France (1405 observed, 1192.8 expected), Occitanie (563 observed, 486.6 expected) and Nouvelle-Aquitaine (606 observed, 531.3 expected) are mong the overperformers. Pays de la Loire (277 observed, 355 expected), Normandie (262 observed, 330.3 expected) and La Réunion (60 observed, 74.5 expected) are among the underperformers. 
 
-The departmental scale, with its 100 entities, offers a perfect trad-off between the case-by-case nature of municipal data and the over-aggregated aspect of regional data. For the global regression (Appendix 1), all factors are significant ($*** \quad \text{and}\quad *$ ) with a R-squared of 0.783. The demographic index has the same 0.8 coefficient, and the median income is even more correlated to elite production (1.3) (Figure 16). However, the poverty rate also has a 0.92 significant coefficient. This is a paradoxal result: the more elites come from a department the higher the median income, but also the higher the poverty rate. This could arise from high inequalities in richer departments, since areas of wealth production (Paris, Lyon) are also those that attract or create high levels of poverty, leading to a certain degree of social polarisation. The coefficient of median income increases for scholars (2.14) and executives (5.12).
+The departmental scale, with its 100 observations,  allows us to use more variables in our model [Appendix 2]. We keep these two previous variables, and add the rate of managers and intellectual professions among the population as well as the poverty rate as supplementary variables. Our model obtains a 0.838 R-squared, with significant variables ($***$ and $*$). The demographic index and the rate of preparatory classes keep a strong coefficient, respectively 0.77 and 2.06. The rate of managers and poverty are less decisive, with respective coefficients of 0.25 each. The positive coefficient of the poverty rate is a paradoxal result: the more elites come from a department the higher the median income, but also the higher the poverty rate. This could arise from high inequalities in richer departments, since areas of wealth production (Paris, Lyon) are also those that attract or create high levels of poverty, leading to a certain degree of social polarisation. 
 
 **Figure 16: Departmental scatter plot, global category, median variable**
 
-On a global basis, overperformers include Guyane (21 observed, 8.1 expected), Hauts-de-Saine (239 observed, 124.9 expected) and Paris (596 observed, 343.9 expected), but also Corse-du-Sud and Doubs. Underperformers include departments such as Seine-Saint-Denis (58 observed, 120.1 expected), Orne (17 observed, 35.5 expected), Jura, Ardèche and Aube (Figure 17). In fact, Seine-Saint-Denis is the first underperformer in three out of four categories. Despite the low R-squared of our executives models (0.514), the Hauts-de-Seine departments is an impressive outlier: 55 executives were observed when only 9.3 were expected.
+On a global basis, overperformers include Hauts-de-Seine (305 observed, 148.9 expected), Corse-du-Sud and Haute-Corse (36 and 31 observed, 15.7 and 19.1 expected) and Meurthe-et-Moselle (112 observed, 72.1 expected). The close-knit power network of Corse and the rich industrial legacy of Meurthe-et-Moselle can explain these results.  The fact that Paris is not among the overperformers underline that elite production of this peculiar department is in line with the explanatory factors we use. Underperformers include Seine-Saint-Denis (64 observed, 110.4 expected), Orne (18 observed, 33.4 expected), Essonne, Aube and Seine-et-Marne (Figure 17). For the executives model, Hauts-de-Seine is an especially pronounced outlier: 100 executives were observed, when our model was expecting only 14.7 individuals according to socio-economic factors.
 
 **Figure 17: Departmental scatter plot, global category, expo_demog variable**
 
-At the city scale (Appendix 3), both the demographic index and the median income are significant ($***$) but the R-squared , at around 0.5 for global and politics and 0.1 for scholars and executives. We observe this limited explanatory power with Paris being merged and for arrondissements. This can be explained by the wide variety of entities observed, but also due to the absence of the poverty rate variable in this dataset. With Paris merged, in over-performing cities on the global scale, we find Neuilly-sur-Seine (78 observed, 5.8 expected), Boulogne-Billancourt (62 observed, 6 expected), but also Toulouse, Strasbourg and Nantes. 
+At the city scale, analysing the 34868 french cities at once is a challenge: they share highly different socio-economic situation, and uneven elite production. There is a huge number of small municipalities that have no secondary schools, no preparatory classes, no managers. In fact, only 2232 produced an elite, and only 100 of them produced more than 10. This is a highly concentrated dataset, which masks the statistical relationships that we observed at the departmental level. To ensure that socio-economic variables are meaningful along elite production, we must therefore compare like with like, municipalities following similar dynamics. Hence, we analyse the first quantile of cities in terms of global elite production.
 
-At the city scale, We divide our dataset into the first quantile and the remaining nine quantiles. Out of 34,000 municipalities, there is a huge number of ‘small’ municipalities that have no sixth-form colleges, no preparatory classes, no senior managers, and no leaders. This ‘masks’ the statistical relationships that we would observe at departmental level. To ensure that these socio-economic variables (managers, median, activity_rate) retain their meaning, we must therefore compare like with like. A village of 200 inhabitants does not follow the same rules as a town of 50,000.
+For this Q1 set on 3468 cities  [Appendix 3], we use our demographic exposure index, the rate of tertiary employment, the number of high schools (general path), and the number of preparatory classes. We obtain a 0.619 R-squared, with meaningful variables ($***$ and $*$). The coefficient of demographic exposure is only 0.43, that of tertiary is 0.08, that of high schools is 0.26 and that of preparatory classes is 0.18. Overperforming cities include Boulogne-Billancourt (87 observed, 10.6 expected) and Neuilly-sur-Seine (105 observed, 13.3 expected). 
 
-{analyse du Q1}
+We observed highly similar results when using the Paris merged dataset. 
 
-For the rest of the dataset, regardless of how we arrange our explanatory variables, our model never explains more than 20% of the observations. This is significant in itself: it seems that in small towns, the emergence of a leader is a random phenomenon, or is linked to factors not captured by INSEE’s socio-economic metrics: for example a particular family or an exceptional teacher. The statistical laws governing geographical wealth and educational infrastructure only apply once a certain critical mass is reached, as analysed via the first quantile.
+For the rest of the dataset, regardless of how we arrange our explanatory variables, our model never explains more than 20% of the observations. This is significant in itself: it seems that in small towns, the emergence of a leader is a random phenomenon, or is linked to factors not captured by INSEE’s socio-economic metrics: a particular family or an exceptional teacher. The statistical laws governing geographical wealth and educational infrastructure only apply once a certain critical mass is reached, as analysed via the Q1 model.
 
 
 **Figure 18: City scatter plot, global category, expo_demog variable**
@@ -199,10 +208,11 @@ For the rest of the dataset, regardless of how we arrange our explanatory variab
 
 ### Results
 
-Our study confirms that while France is a an ["indivisible, secular, democratic and social Republic"](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019240997/2022-01-22), the origin of its elites is geographically concentrated. Paris exceeds the level of elite production expected given its population and economy, highlighting the significance of other factors such as the concentration of *Grandes Écoles*, political power, [symbolic, social and cultural capital](https://books.openedition.org/psorbonne/868). The role of economic capital is underlined by the results found with the Hauts-de-Seine department, and cities such as Neuilly-sur-Seine and Boulogne-Billancourt. Underperforming departments in elites origins, such as Jura, Haute-Marne or Orne, seems to reflect the "peripheral France" concept described by [Christophe Guilluy](https://shs.cairn.info/la-france-peripherique-comment-on-a-sacrifie-les-classes-populaires--9782081347519?lang=fr). However, our study does not support this dichotomous view of France. There are, of course, disparities and inequalities across the country, with extreme and peculiar cases, but geographical origin is not an insurmountable barrier, given the wide variety of cases observed. It is therefore easier to understand why geographical origin is a secondary factor in the analysis of the French elite. Other factors, such as social background, appear to be of greater significance.
+Our study confirms that while France is a an ["indivisible, secular, democratic and social Republic"](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019240997/2022-01-22), the origin of its elites is geographically concentrated. Prominent figures originating from Paris highlight the significance of geographical and social factors such as the concentration of *Grandes Écoles*, political power concentration, [symbolic, social and cultural capital](https://books.openedition.org/psorbonne/868) of the capital. The role of economic capital is underlined by the results of Hauts-de-Seine, and cities such as Neuilly-sur-Seine and Boulogne-Billancourt. Underperforming departments in elites origins, such as Seine-Saint-Denis, Essonne or Orne, seems to reflect the "peripheral France" concept described by [Christophe Guilluy](https://shs.cairn.info/la-france-peripherique-comment-on-a-sacrifie-les-classes-populaires--9782081347519?lang=fr). However, our study does not support this dichotomous view of France. There are, of course, disparities and inequalities across the country, with extreme and peculiar cases, but geographical origin is not an insurmountable barrier, given the wide variety of cases observed. It is therefore easier to understand why geographical origin is a secondary factor in the analysis of the French elite. Other factors, such as social background, appears to be of greater significance.
+
 
 ### Limits
-Our study has a number of limitations. Firstly, we only perform regressions for departments and towns for which we have data on individuals. Whilst this allows us to identify overperforming areas, the model training is biased and cannot actually identify underperforming areas, as it is unaware of the characteristics of geographical entities that haven't produced elites yet. Furthermore, the biographical data we obtain from Wikipedia is highly biased. There is a significant ‘notoriety effect’: our study does not focus on elites in the broadest sense, but on elites who have a public digital footprint. Due to our imperfect scraping methods, our dataset is likely missing a significant number of people (for example, we do not have the place of birth for over 1,000 National Assembly member) and we cannot draw any meaningful conclusions from incomplete data. The same problem arises with executives and academics: our definition of this category is too narrow, we struggle to find the information we’re looking for, and we’re unable to carry out a proper analysis of this data.
+Our study has a number of limitations. First, a major part of our dataset comes from Wikipedia data. Instead of reflecting pure elite origins, this induces a significant notoriety effect: we do not focus on elites in the broadest sense, but rather on elites having a public digital footpring. Secondly, due to our imperfect scraping methods, our dataset is likely missing a significant number of people: we are for example missing the place of birth of over a thousand National Assembly members, and we cannot draw any meaningful conclusions from incomplete data. 
 
 ### Sources
 
