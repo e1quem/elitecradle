@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
+from pathlib import Path
 import utils as utils
 import pandas as pd
 import requests
@@ -12,6 +13,7 @@ import time
 
 # Network config
 utils.force_ipv4()
+base_path = Path("~/EliteCradle").expanduser()
 
 def format_name(name):
     # Deleting parenthesis
@@ -67,9 +69,9 @@ def extract_exec(driver, url):
 
 
 def main():
-    input_file = "/Users/eyquem/Desktop/EliteCradle/fetch/executives/src/cac_list.txt"
-    output_file = "/Users/eyquem/Desktop/EliteCradle/fetch/executives/interim/execs.csv"
-    
+    input_file = base_path / "fetch/executives/src/cac_list.txt"
+    output_file = base_path / "fetch/executives/interim/execs.csv"
+
     # Navigator config
     options = uc.ChromeOptions()
     options.add_argument('--no-sandbox')

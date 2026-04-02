@@ -1,6 +1,9 @@
+from pathlib import Path
 import pandas as pd
 import unicodedata
 import re
+
+base_path = Path("~/EliteCradle").expanduser()
 
 def normalize_text(text):
     if pd.isna(text):
@@ -15,15 +18,15 @@ def normalize_text(text):
     # Capitalize the first letter
     return text.capitalize()
 
-df_dp = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/parliament/out/an_clean.csv", sep=None, engine='python')
-df_mn = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/ministers/out/mn_clean.csv", sep=None, engine='python')
-df_pr = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/presidents/out/presidents_clean.csv", sep=None, engine='python')
-df_sn = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/senators/out/sn_clean.csv", sep=None, engine='python')
-df_cf = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/scholars/out/cf_clean.csv", sep=None, engine='python')
-df_cfBIS = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/scholars/out/scholars_clean.csv", sep=None, engine='python')
-df_executives = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/executives/out/exec_clean.csv", sep=None, engine='python')
-df_executivesBIS = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/executives/out/CEOs_clean.csv", sep=None, engine='python')
-df_executivesTER = pd.read_csv("/Users/eyquem/Desktop/EliteCradle/fetch/executives/out/business_person_clean.csv", sep=None, engine='python')
+df_dp = pd.read_csv(base_path / "fetch/parliament/out/an_clean.csv", sep=None, engine='python')
+df_mn = pd.read_csv(base_path / "fetch/ministers/out/mn_clean.csv", sep=None, engine='python')
+df_pr = pd.read_csv(base_path / "fetch/presidents/out/presidents_clean.csv", sep=None, engine='python')
+df_sn = pd.read_csv(base_path / "fetch/senators/out/sn_clean.csv", sep=None, engine='python')
+df_cf = pd.read_csv(base_path / "fetch/scholars/out/cf_clean.csv", sep=None, engine='python')
+df_cfBIS = pd.read_csv(base_path / "fetch/scholars/out/scholars_clean.csv", sep=None, engine='python')
+df_executives = pd.read_csv(base_path / "fetch/executives/out/exec_clean.csv", sep=None, engine='python')
+df_executivesBIS = pd.read_csv(base_path / "fetch/executives/out/CEOs_clean.csv", sep=None, engine='python')
+df_executivesTER = pd.read_csv(base_path / "fetch/executives/out/business_person_clean.csv", sep=None, engine='python')
 
 df = pd.concat([df_dp, df_mn, df_pr, df_sn, df_cf, df_cfBIS, df_executives, df_executivesBIS, df_executivesTER], ignore_index=True)
 
@@ -52,5 +55,5 @@ order = ['name', 'dob', 'tag', 'pob', 'department', 'dept_num', 'region', 'lat',
 existing_cols = [c for c in order if c in df.columns]
 df = df[existing_cols]
 
-output_path = "/Users/eyquem/Desktop/EliteCradle/fetch/merging/interim/merged_raw.csv"
+output_path = base_path / "fetch/merging/interim/merged_raw.csv"
 df.to_csv(output_path, index=False, encoding='utf-8')

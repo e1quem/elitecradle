@@ -1,14 +1,15 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from bs4 import BeautifulSoup
+from pathlib import Path
+import utils as utils
 import pandas as pd
 import requests
-import utils as utils
 
 # Network config
 utils.force_ipv4()
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
 DOMAIN = "https://fr.wikipedia.org"
-
+base_path = Path("~/EliteCradle").expanduser()
 
 def get_category_links(start_url):
     persons = []
@@ -93,9 +94,9 @@ if __name__ == "__main__":
     final_cols = [c for c in cols_order if c in df.columns] + [c for c in df.columns if c not in cols_order]
     df = df[final_cols]
     
-    #output_file = "/Users/eyquem/Desktop/EliteCradle/fetch/executives/interim/CEOs.csv"
-    #output_file = "/Users/eyquem/Desktop/EliteCradle/fetch/executives/interim/business_person.csv"
-    output_file = "/Users/eyquem/Desktop/EliteCradle/fetch/scholars/interim/scholars_raw.csv"
+    #output_file = base_path / "fetch/executives/interim/CEOs.csv"
+    #output_file = base_path / "fetch/executives/interim/business_person.csv"
+    output_file = base_path / "fetch/scholars/interim/scholars_raw.csv"
 
     df.to_csv(output_file, index=False)
     print(f"\nOver: {output_file}")
