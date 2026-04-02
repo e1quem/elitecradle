@@ -63,7 +63,7 @@ if __name__ == "__main__":
     print(f"Scraping wikipedia for dob and pob of {len(df)} executives...")
     total = len(df)
 
-    with ThreadPoolExecutor(max_workers=1) as executor:
+    with ThreadPoolExecutor(max_workers=4) as executor:
         futures = [executor.submit(process, i, row['name'], row['dob']) for i, row in df.iterrows()]
         
         for future in futures:

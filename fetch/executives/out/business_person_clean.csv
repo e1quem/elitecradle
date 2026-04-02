@@ -1,0 +1,21 @@
+name;tag;dob;pob;lat;lon;dep_num;dep_name;region;url
+Bernard Arnault;executiveTER;1949.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Bernard_Arnault
+Xavier Azalbert;executiveTER;1964.0;Revel;43.57276;1.495175;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Xavier_Azalbert
+Karim Beguir;executiveTER;1976.0;Échirolles;45.146125;5.715042;38;Isère;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Karim_Beguir
+Vincent Bolloré;executiveTER;1952.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Vincent_Bollor%C3%A9
+Marie Cheval;executiveTER;1974.0;Paris 15;48.84162;2.295289;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marie_Cheval
+Antoine Duboscq;executiveTER;1968.0;Rouen;49.349295;0.811661;27;Eure;Normandie;https://fr.wikipedia.org/wiki/Antoine_Duboscq
+Ariane Daguin;executiveTER;1958.0;Auch;43.656961;0.57082;32;Gers;Occitanie;https://fr.wikipedia.org/wiki/Ariane_Daguin
+Jean-Baptiste Descroix-Vernier;executiveTER;1970.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jean-Baptiste_Descroix-Vernier
+Meziane Idjerouidene;executiveTER;1980.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Meziane_Idjerouidene
+Alain Minc;executiveTER;1949.0;Paris 19;48.888949;2.396993;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Alain_Minc
+Maguelone Pontier;executiveTER;1985.0;Montpellier;43.610476;3.87048;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Maguelone_Pontier
+Matthieu Courtecuisse;executiveTER;1973.0;Valenciennes;50.358552;3.510438;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Matthieu_Courtecuisse
+Arnaud de Puyfontaine;executiveTER;1964.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Arnaud_de_Puyfontaine
+Emmanuel Perrotin;executiveTER;1968.0;Montreuil;48.872323;2.455188;93;Seine-Saint-Denis;Île-de-France;https://fr.wikipedia.org/wiki/Emmanuel_Perrotin
+Patrick Puy;executiveTER;1955.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Patrick_Puy
+Fanny Reyre-Ménard;executiveTER;1964.0;Saint-Cloud;44.353645;2.553125;12;Aveyron;Occitanie;https://fr.wikipedia.org/wiki/Fanny_Reyre-M%C3%A9nard
+Michel Terestchenko (homme d'affaires);executiveTER;1954.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Michel_Terestchenko_(homme_d%27affaires)
+Bruno Voland;executiveTER;1966.0;Saint-Nazaire;47.275247;-2.242494;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Bruno_Voland
+Marie-Cécile Zinsou;executiveTER;1982.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marie-C%C3%A9cile_Zinsou
+Philippe Zaouati;executiveTER;1966.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Philippe_Zaouati

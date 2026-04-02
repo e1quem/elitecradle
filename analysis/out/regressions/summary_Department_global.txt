@@ -1,27 +1,27 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                 global   R-squared:                       0.835
-Model:                            OLS   Adj. R-squared:                  0.828
-Method:                 Least Squares   F-statistic:                     120.2
-Date:                Sun, 29 Mar 2026   Prob (F-statistic):           2.73e-36
-Time:                        20:10:07   Log-Likelihood:                -4.4332
-No. Observations:                 100   AIC:                             18.87
-Df Residuals:                      95   BIC:                             31.89
+Dep. Variable:                 global   R-squared:                       0.838
+Model:                            OLS   Adj. R-squared:                  0.831
+Method:                 Least Squares   F-statistic:                     122.6
+Date:                Thu, 02 Apr 2026   Prob (F-statistic):           1.27e-36
+Time:                        11:32:27   Log-Likelihood:                -5.9039
+No. Observations:                 100   AIC:                             21.81
+Df Residuals:                      95   BIC:                             34.83
 Df Model:                           4                                         
 Covariance Type:            nonrobust                                         
 ==================================================================================
                      coef    std err          t      P>|t|      [0.025      0.975]
 ----------------------------------------------------------------------------------
-const             -7.4870      0.779     -9.616      0.000      -9.033      -5.941
-expo_demog         0.7647      0.046     16.486      0.000       0.673       0.857
-prepa_rate         1.9878      0.479      4.152      0.000       1.037       2.938
-cadres_and_pro     0.2383      0.080      2.996      0.003       0.080       0.396
-poverty_rate       0.3213      0.114      2.826      0.006       0.096       0.547
+const             -7.4193      0.790     -9.391      0.000      -8.988      -5.851
+expo_demog         0.7798      0.047     16.568      0.000       0.686       0.873
+prepa_rate         2.0663      0.484      4.273      0.000       1.106       3.026
+cadres_and_pro     0.2504      0.081      3.103      0.003       0.090       0.411
+poverty_rate       0.2547      0.115      2.207      0.030       0.026       0.484
 ==============================================================================
-Omnibus:                        1.772   Durbin-Watson:                   2.297
-Prob(Omnibus):                  0.412   Jarque-Bera (JB):                1.288
-Skew:                          -0.059   Prob(JB):                        0.525
-Kurtosis:                       3.543   Cond. No.                         425.
+Omnibus:                        3.209   Durbin-Watson:                   2.266
+Prob(Omnibus):                  0.201   Jarque-Bera (JB):                3.262
+Skew:                           0.091   Prob(JB):                        0.196
+Kurtosis:                       3.866   Cond. No.                         425.
 ==============================================================================
 
 Notes:

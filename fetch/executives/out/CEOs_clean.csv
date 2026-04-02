@@ -1,0 +1,400 @@
+name;tag;dob;pob;lat;lon;dep_num;dep_name;region;url
+Michel Pecqueur;executiveBIS;1931;Paris 14;48.830108;2.323026;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Michel_Pecqueur
+Émile-Maurice Hermès;executiveBIS;1871.0;Paris 9;48.87727;2.33371;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/%C3%89mile-Maurice_Herm%C3%A8s
+Joseph Zamanski;executiveBIS;1874.0;Parthenay;46.644061;-0.240067;79;Deux-Sèvres;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Joseph_Zamanski
+François Coty;executiveBIS;1874.0;Ajaccio;41.93368;8.715325;2A;Corse-du-Sud;Corse;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Coty
+Émile Tony;executiveBIS;1874.0;Wissembourg;49.01481;7.953222;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/%C3%89mile_Tony
+Aimé Bourbonnaud;executiveBIS;1874.0;Limoges;45.856159;1.221254;87;Haute-Vienne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Aim%C3%A9_Bourbonnaud
+Léon Givaudan;executiveBIS;1875.0;Caluire-et-Cuire;45.797623;4.848745;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/L%C3%A9on_Givaudan
+Jacques Taffanel;executiveBIS;1875.0;Paris 2;48.867669;2.341157;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Taffanel
+André Defline;executiveBIS;1876.0;Bruay-sur-l'Escaut;50.398197;3.540327;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Andr%C3%A9_Defline
+Louis Renault;executiveBIS;1877.0;Paris 8;48.873998;2.31129;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Louis_Renault_(industriel)
+Jean Bouloumié;executiveBIS;1878.0;Vittel;48.201324;5.949794;88;Vosges;Grand Est;https://fr.wikipedia.org/wiki/Jean_Bouloumi%C3%A9
+Émile Maechling;executiveBIS;1878.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/%C3%89mile_Maechling
+Alexis Aron;executiveBIS;1879.0;Nîmes;43.814652;4.356289;30;Gard;Occitanie;https://fr.wikipedia.org/wiki/Alexis_Aron
+Jules Aubrun;executiveBIS;1881.0;Montluçon;46.342307;2.604952;3;Allier;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jules_Aubrun
+Jean Balas;executiveBIS;1881.0;Vésinet;48.89482;2.130379;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Balas
+Édouard Cadier;executiveBIS;1881.0;Osse-en-Aspe;42.995852;-0.620249;64;Pyrénées-Atlantiques;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/%C3%89douard_Cadier
+Raoul Nanty;executiveBIS;1882.0;Avignon;48.390692;-1.759389;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Raoul_Nanty
+Louis Escallier;executiveBIS;1883.0;Malesherbes dans le L;50.624159;3.092048;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Louis_Escallier
+Gervaise;executiveBIS;1883.0;Nice;43.71273;7.25092;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Gervaise_(Louis_Gervais)
+Henry Cravoisier;executiveBIS;1884.0;Melun;48.541332;2.655743;77;Seine-et-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Henry_Cravoisier
+Abel Poyaud;executiveBIS;1884.0;Charente-Inférieure;45.653862;0.513553;16;Charente;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Abel_Poyaud
+Germaine Bouloumié;executiveBIS;1885.0;Vittel;48.201324;5.949794;88;Vosges;Grand Est;https://fr.wikipedia.org/wiki/Germaine_Bouloumi%C3%A9
+Jean Dupuis;executiveBIS;1886.0;Saint-Mandé;48.841526;2.419441;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Dupuis_(industriel)
+Pierre Taittinger;executiveBIS;1887.0;Paris 18;48.896214;2.362997;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_Taittinger
+Raymond Berr;executiveBIS;1888.0;Paris 7;48.853954;2.312864;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Raymond_Berr
+Antoine Aymar;executiveBIS;1888.0;Saint-Marsal;42.536308;2.619124;66;Pyrénées-Orientales;Occitanie;https://fr.wikipedia.org/wiki/Antoine_Aymar
+Léon Debouverie;executiveBIS;1889.0;Lannoy;50.232652;2.090666;62;Pas-de-Calais;Hauts-de-France;https://fr.wikipedia.org/wiki/L%C3%A9on_Debouverie
+Émile Taudière;executiveBIS;1890.0;L'Absie;46.636252;-0.561076;79;Deux-Sèvres;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/%C3%89mile_Taudi%C3%A8re
+Robert Puiseux;executiveBIS;1892.0;Paris 5;48.845277;2.350554;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Robert_Puiseux
+Raoul Meyer;executiveBIS;1892.0;Villefranche-sur-Saône;45.985089;4.724382;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Raoul_Meyer
+Gustave Anduze-Faris;executiveBIS;1892.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Gustave_Anduze-Faris
+Robert Lemaignen;executiveBIS;1893.0;Blois;47.581228;1.316533;41;Loir-et-Cher;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Robert_Lemaignen
+Jean Fraissinet;executiveBIS;1894.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Fraissinet
+Henri Marie Joseph Allard;executiveBIS;1894.0;Douai;50.379896;3.094897;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Henri_Marie_Joseph_Allard
+Jean Le Duc;executiveBIS;1896.0;Ville-d’Avray;48.823916;2.18236;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Le_Duc_(homme_d%E2%80%99affaires)
+Georges Estienne;executiveBIS;1896.0;Nice;43.71273;7.25092;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Georges_Estienne
+Émile Decré;executiveBIS;1897.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/%C3%89mile_Decr%C3%A9
+Bernard Kuhn de Chizelle;executiveBIS;1897.0;Tunis;44.05238;0.276355;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Bernard_Kuhn_de_Chizelle
+Jacques Lacroix;executiveBIS;1898.0;Gagny;48.881906;2.545651;93;Seine-Saint-Denis;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_et_Jean_Lacroix
+Jacques Baratte;executiveBIS;1898.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Baratte
+Georges Laederich;executiveBIS;1898.0;Épinal;48.170226;6.484892;88;Vosges;Grand Est;https://fr.wikipedia.org/wiki/Georges_Laederich
+Robert Aylé;executiveBIS;1899.0;Paris 17;48.887702;2.304844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Robert_Ayl%C3%A9
+Maurice Jordan;executiveBIS;1899.0;Orléans;47.873569;1.911358;45;Loiret;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Maurice_Jordan
+Léon Leblanc;executiveBIS;1900.0;La Couture-Boussey;48.901863;1.396544;27;Eure;Normandie;https://fr.wikipedia.org/wiki/L%C3%A9on_Leblanc
+Jean d'Aulan;executiveBIS;1900.0;Savasse;44.608759;4.772904;26;Drôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jean_d%27Aulan
+Louis Charvet;executiveBIS;1901.0;Chambéry;47.165242;-1.034458;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Louis_Charvet
+Jacques Warnier;executiveBIS;1901.0;Reims;49.250948;4.055595;51;Marne;Grand Est;https://fr.wikipedia.org/wiki/Jacques_Warnier
+Albert Dehen;executiveBIS;1901.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Albert_Dehen
+Wilfrid Baumgartner;executiveBIS;1902.0;Paris 7;48.853954;2.312864;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Wilfrid_Baumgartner
+Victor de Metz;executiveBIS;1902.0;Vesoul;47.628692;6.157979;70;Haute-Saône;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Victor_de_Metz
+Robert Blum;executiveBIS;1902.0;Paris 6;48.849268;2.330883;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Robert_Blum_(dirigeant_d%27entreprises)
+Jean Benedetti;executiveBIS;1902.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Benedetti
+Pierre Michelin;executiveBIS;1903.0;Royat;45.758891;3.045271;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Pierre_Michelin
+Jean Renaudin;executiveBIS;1903.0;Charleville;47.712416;1.331499;41;Loir-et-Cher;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Jean_Renaudin
+Georges Badosa;executiveBIS;1903.0;Perpignan;42.701507;2.902811;66;Pyrénées-Orientales;Occitanie;https://fr.wikipedia.org/wiki/Georges_Badosa
+Charles Piot ;executiveBIS;1904.0;Grenoble;45.182828;5.724369;38;Isère;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Charles_Piot_
+Roger Bellon;executiveBIS;1905.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Roger_Bellon_(1905-1974)
+Oscar Ghez;executiveBIS;1905.0;Sousse;49.266923;4.052814;51;Marne;Grand Est;https://fr.wikipedia.org/wiki/Oscar_Ghez
+Jean René Guerrand;executiveBIS;1905.0;Rolleville;49.578969;0.214553;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/Jean_Ren%C3%A9_Guerrand
+Gilbert Devaux;executiveBIS;1906.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Gilbert_Devaux
+François Gautier;executiveBIS;1906.0;Sète;43.40682;3.687298;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Gautier_(industriel)
+Armand Josse;executiveBIS;1906.0;Paris 9;43.093241;-0.02298;65;Hautes-Pyrénées;Occitanie;https://fr.wikipedia.org/wiki/Armand_Josse
+Kilian Hennessy;executiveBIS;1907.0;Paris 8;48.873998;2.31129;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Kilian_Hennessy_(1907)
+Christian de Waldner;executiveBIS;1908.0;Paris 8;48.873998;2.31129;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Christian_de_Waldner
+Jean Clerfeuille;executiveBIS;1909.0;Auxerre;47.791247;3.579905;89;Yonne;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Jean_Clerfeuille
+Roger Carour;executiveBIS;1910.0;Lorient;47.750364;-3.378025;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Roger_Carour
+André Pelabon;executiveBIS;1910.0;Vieux-Condé;50.474001;3.567392;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Andr%C3%A9_Pelabon
+André Decelle;executiveBIS;1910.0;Meurthe-et-Moselle;49.204714;5.930193;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Andr%C3%A9_Decelle
+Pierre de Calan;executiveBIS;1911.0;Paris 7;48.853954;2.312864;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_de_Calan
+Pierre Couillard;executiveBIS;1911.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Pierre_Couillard
+Jean Mersch;executiveBIS;1911.0;Gentilly;48.81641;2.348146;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Mersch
+Jacques-Henry Gros;executiveBIS;1911.0;Gassin;43.416613;5.512099;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jacques-Henry_Gros
+Colonel Passy;executiveBIS;1911.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Colonel_Passy
+André Puget;executiveBIS;1911.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Andr%C3%A9_Puget_(militaire)
+Robert Hirsch;executiveBIS;1912.0;Paris 17;48.887702;2.304844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Robert_Hirsch_(haut_fonctionnaire)
+Jacques Poch;executiveBIS;1912.0;Paris 18;48.896214;2.362997;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Poch
+Renaud Gillet;executiveBIS;1913.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Renaud_Gillet
+Pierre Chaussade;executiveBIS;1913.0;Bergerac;44.85304;0.482291;24;Dordogne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Pierre_Chaussade
+François-Henri Raymond;executiveBIS;1914.0;Paris 14;48.830108;2.323026;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois-Henri_Raymond
+Jean Forgeot;executiveBIS;1915.0;Paris 18;48.896214;2.362997;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Forgeot
+François Rollier;executiveBIS;1915.0;Paris 7;48.853954;2.312864;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Rollier
+André Mentzelopoulos;executiveBIS;1915.0;Patras;44.486592;0.196007;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Andr%C3%A9_Mentzelopoulos
+Michel de Boissieu;executiveBIS;1917.0;Paris 17;48.887702;2.304844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Michel_de_Boissieu
+Jean Doise;executiveBIS;1917.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Doise
+Jean Bertin;executiveBIS;1917.0;Druyes-les-Belles-Fon;47.546524;3.419423;89;Yonne;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Jean_Bertin_(ing%C3%A9nieur)
+Philippe Thomas;executiveBIS;1918.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Thomas_(industriel)
+Paul Berliet;executiveBIS;1918.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Paul_Berliet
+Guy Taittinger;executiveBIS;1918.0;Saintes;45.748804;-0.647217;17;Charente-Maritime;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Guy_Taittinger
+Bernard Vernier-Palliez;executiveBIS;1918.0;Tours;47.395476;0.695848;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Bernard_Vernier-Palliez
+Jean Chéreau;executiveBIS;1919.0;Petit-Quevilly;49.431846;1.059492;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/Jean_Ch%C3%A9reau
+Henri Desjoyeaux;executiveBIS;1919.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Henri_Desjoyeaux
+Simon Nora;executiveBIS;1921.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Simon_Nora
+Raoul-Louis Mattei;executiveBIS;1921.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Raoul-Louis_Mattei
+Pierre Alby;executiveBIS;1921.0;Louveciennes;48.862477;2.118824;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_Alby
+Yves Delorme;executiveBIS;1922.0;Roanne;46.043412;4.072015;42;Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Yves_Delorme
+Jean-Marc Vernes;executiveBIS;1922.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Marc_Vernes
+André Bénard;executiveBIS;1922.0;Draveil;48.677829;2.412138;91;Essonne;Île-de-France;https://fr.wikipedia.org/wiki/Andr%C3%A9_B%C3%A9nard
+Jean-René Sautier;executiveBIS;1923.0;Périgueux;45.193072;0.711299;24;Dordogne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Ren%C3%A9_Sautier
+Jean-Dominique Fratoni;executiveBIS;1923.0;Cuttoli-Corticchiato;41.708523;9.158245;2A;Corse-du-Sud;Corse;https://fr.wikipedia.org/wiki/Jean-Dominique_Fratoni
+André Chardonnet;executiveBIS;1923.0;Paris 15;48.84162;2.295289;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Andr%C3%A9_Chardonnet
+Paul Reverdy;executiveBIS;1924.0;Paris 14;48.830108;2.323026;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Paul_Reverdy
+Henry Hermand;executiveBIS;1924.0;Clermont;49.37814;2.413758;60;Oise;Hauts-de-France;https://fr.wikipedia.org/wiki/Henry_Hermand
+Roland Wagner;executiveBIS;1925.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Roland_Wagner_(brasseur)
+May-Éliane de Lencquesaing;executiveBIS;1925.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/May-%C3%89liane_de_Lencquesaing
+Gilbert May;executiveBIS;1925.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Gilbert_May
+Gabriel Pallez;executiveBIS;1925.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Gabriel_Pallez
+Claude Foussier;executiveBIS;1925.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Claude_Foussier
+Antoine Guichard;executiveBIS;1926.0;Saint-Étienne;45.430195;4.370045;42;Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Antoine_Guichard
+Maurice Opinel;executiveBIS;1927.0;Savoie;44.617348;0.181972;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Maurice_Opinel
+Lucien Rebuffel;executiveBIS;1927.0;Cannes;43.555468;7.004585;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Lucien_Rebuffel
+Georges Besse;executiveBIS;1927.0;Clermont-Ferrand;45.786671;3.107055;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Georges_Besse
+Claude Taittinger;executiveBIS;1927.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Claude_Taittinger
+Pierre Delaporte;executiveBIS;1928.0;Paris 13;48.830193;2.365001;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_Delaporte
+Olivier Lecerf;executiveBIS;1929.0;Merville-Franceville;49.269069;-0.192608;14;Calvados;Normandie;https://fr.wikipedia.org/wiki/Olivier_Lecerf
+Georges Tranchant;executiveBIS;1929.0;Château-Porcien;49.530711;4.24987;8;Ardennes;Grand Est;https://fr.wikipedia.org/wiki/Georges_Tranchant
+Édouard Salustro;executiveBIS;1929.0;Paris 18;48.896214;2.362997;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/%C3%89douard_Salustro
+Bernard Capillon;executiveBIS;1929.0;Bizerte;49.268286;4.05334;51;Marne;Grand Est;https://fr.wikipedia.org/wiki/Bernard_Capillon
+Jean-Pierre Prouteau;executiveBIS;1930.0;Paris 13;48.830193;2.365001;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Pierre_Prouteau
+Jean-Paul Jauffret;executiveBIS;1930.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Paul_Jauffret
+Georges Meyer;executiveBIS;1930.0;Coteau;45.882999;1.032178;87;Haute-Vienne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Georges_Meyer
+Nicolas d'Andoque;executiveBIS;1931.0;Narbonne;47.310907;0.648608;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Nicolas_d%27Andoque
+Michel Cosson;executiveBIS;1931.0;Mans;47.993378;0.191169;72;Sarthe;Pays de la Loire;https://fr.wikipedia.org/wiki/Michel_Cosson
+Jacques Calvet;executiveBIS;1931.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Calvet
+Pierre Peugeot;executiveBIS;1932.0;Valentigney;47.465945;6.829692;25;Doubs;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Pierre_Peugeot
+Charles Bigot;executiveBIS;1932.0;Angers;47.467471;-0.561615;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Charles_Bigot_(ing%C3%A9nieur)
+Bernard Hanon;executiveBIS;1932.0;Bois-Colombes;48.915331;2.268837;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Bernard_Hanon
+Philippe Essig;executiveBIS;1933.0;Paris 8;48.873998;2.31129;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Essig
+Paul Glotin;executiveBIS;1933.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Paul_Glotin_(1933-2011)
+Bruno Roger;executiveBIS;1933.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Bruno_Roger
+Alain Pelletier;executiveBIS;1933.0;Lapalisse;46.266476;3.641815;3;Allier;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Alain_Pelletier
+Pierre-Yves Cossé;executiveBIS;1934.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Pierre-Yves_Coss%C3%A9
+Robert Salmon;executiveBIS;1935.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Robert_Salmon_(chef_d%27entreprise)
+René Zingraff;executiveBIS;1936.0;Créhange;49.060453;6.579597;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Ren%C3%A9_Zingraff
+Maurice de Kervenoaël;executiveBIS;1936.0;Versailles;48.803019;2.131319;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Maurice_de_Kervenoa%C3%ABl
+Gérard Worms;executiveBIS;1936.0;Paris 11;48.860162;2.381844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/G%C3%A9rard_Worms_(banquier)
+Jean-Pierre Savare;executiveBIS;1937.0;Paris 14;48.830108;2.323026;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Pierre_Savare
+Jean-Paul Parayre;executiveBIS;1937.0;Lorient;47.750364;-3.378025;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Jean-Paul_Parayre
+Ernest-Antoine Seillière;executiveBIS;1937.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Ernest-Antoine_Seilli%C3%A8re
+Emmanuel d'André;executiveBIS;1937.0;Uzès;44.021276;4.415586;30;Gard;Occitanie;https://fr.wikipedia.org/wiki/Emmanuel_d%27Andr%C3%A9
+Philippe Glotin;executiveBIS;1938.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Philippe_Glotin
+Jean-Louis Dumas;executiveBIS;1938.0;Paris 12;48.833494;2.415411;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Louis_Dumas
+Henri Lachmann;executiveBIS;1938.0;Colmar;48.081779;7.352569;68;Haut-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Henri_Lachmann
+Georges de Buffévent;executiveBIS;1938.0;Versailles;48.803019;2.131319;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Georges_de_Buff%C3%A9vent
+Daniel Eymery;executiveBIS;1938.0;Gap;46.3192;-0.471067;79;Deux-Sèvres;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Daniel_Eymery
+Michel Leclerc ;executiveBIS;1939.0;Landerneau;48.450764;-4.26042;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Michel_Leclerc_
+Laurent Spanghero;executiveBIS;1939.0;Bram;43.249204;2.102677;11;Aude;Occitanie;https://fr.wikipedia.org/wiki/Laurent_Spanghero
+René de La Serre;executiveBIS;1940.0;Lancieux;48.603874;-2.148088;22;Côtes-d'Armor;Bretagne;https://fr.wikipedia.org/wiki/Ren%C3%A9_de_La_Serre
+Pierre Bilger;executiveBIS;1940.0;Colmar;48.081779;7.352569;68;Haut-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Pierre_Bilger
+Pierre Chassigneux;executiveBIS;1941.0;Neuilly-sur-Seine;48.864899;2.537373;93;Seine-Saint-Denis;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_Chassigneux
+Jacqueline Aglietta;executiveBIS;1941.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jacqueline_Aglietta
+Yvon Jacob;executiveBIS;1942.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Yvon_Jacob
+Jean-Paul Béchat;executiveBIS;1942.0;Seine-et-Oise;49.003436;2.080953;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Paul_B%C3%A9chat
+Guy Dollé;executiveBIS;1942.0;Roye-sur-Matz;49.592953;2.768526;60;Oise;Hauts-de-France;https://fr.wikipedia.org/wiki/Guy_Doll%C3%A9
+Alain Juillet;executiveBIS;1942.0;Vichy;46.131168;3.428025;3;Allier;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Alain_Juillet
+Victor Scherrer;executiveBIS;1943.0;Liège;44.848888;-0.628281;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Victor_Scherrer
+Michel Bernard;executiveBIS;1943.0;Bourges;42.962755;1.861999;9;Ariège;Occitanie;https://fr.wikipedia.org/wiki/Michel_Bernard_(dirigeant_d%27entreprises)
+Loïk Le Floch-Prigent;executiveBIS;1943.0;Brest;48.406435;-4.497736;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Lo%C3%AFk_Le_Floch-Prigent
+Jean-Michel Dubois;executiveBIS;1943.0;Seine-et-Oise;49.003436;2.080953;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Michel_Dubois
+Guy Scherrer;executiveBIS;1943.0;Mulhouse;47.749509;7.36973;68;Haut-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Guy_Scherrer
+Gérard de La Martinière;executiveBIS;1943.0;Angers;47.467471;-0.561615;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/G%C3%A9rard_de_La_Martini%C3%A8re
+Bernard Tapie;executiveBIS;1943.0;Paris 20;48.863367;2.397152;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Bernard_Tapie
+Maurice Forget;executiveBIS;1944.0;Ambrières-les-Vallées;48.426329;-0.619444;53;Mayenne;Pays de la Loire;https://fr.wikipedia.org/wiki/Maurice_Forget
+Jean-François Zobrist;executiveBIS;1944.0;Gap;44.563233;6.076778;5;Hautes-Alpes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Zobrist
+Jean Monville;executiveBIS;1944.0;Orléans;47.873569;1.911358;45;Loiret;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Jean_Monville
+Adrien Galet;executiveBIS;1944.0;Châtillon-sur-Chalaro;46.128374;4.95847;1;Ain;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Adrien_Galet
+Thierry Desmarest;executiveBIS;1945.0;Paris 12;48.833494;2.415411;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Thierry_Desmarest
+Serge Biechlin;executiveBIS;1945.0;Buncey;47.82289;4.563727;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Serge_Biechlin
+Philippe Jaffré;executiveBIS;1945.0;Charenton-le-Pont;48.823948;2.407129;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Jaffr%C3%A9
+Serge Babary;executiveBIS;1946.0;Tours;47.395476;0.695848;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Serge_Babary
+Jean Duforest;executiveBIS;1946.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Jean_Duforest
+Didier Truchot;executiveBIS;1946.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Didier_Truchot
+Alain Lévy;executiveBIS;1946.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Alain_L%C3%A9vy_(chef_d%27entreprise)
+Philippe Houzé;executiveBIS;1947.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Houz%C3%A9
+Patrick Thomas;executiveBIS;1947.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Patrick_Thomas
+Jean-Noël Thorel;executiveBIS;1947.0;Châtillon;47.304291;-1.770298;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Jean-No%C3%ABl_Thorel
+Jean-Martin Folz;executiveBIS;1947.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Jean-Martin_Folz
+Jean-François Fortin;executiveBIS;1947.0;Coulonges-sur-l'Autiz;46.479024;-0.603051;79;Deux-Sèvres;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Fortin_(chef_d%27entreprise)
+Hervé de La Martinière;executiveBIS;1947.0;Courbevoie;48.897974;2.257057;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Herv%C3%A9_de_La_Martini%C3%A8re
+Antoine Gallimard;executiveBIS;1947.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Antoine_Gallimard
+Xavier Fontanet;executiveBIS;1948.0;Malestroit;47.8078;-2.38677;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Xavier_Fontanet
+Franck Nivault;executiveBIS;1948.0;Pordic;48.570186;-2.821804;22;Côtes-d'Armor;Bretagne;https://fr.wikipedia.org/wiki/Franck_Nivault
+Alain Taravella;executiveBIS;1948.0;Falaise;49.169212;-0.352257;14;Calvados;Normandie;https://fr.wikipedia.org/wiki/Alain_Taravella
+Laurent Burelle;executiveBIS;1949.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Laurent_Burelle
+Georges Vanderchmitt;executiveBIS;1949.0;Ustaritz;49.005366;-0.390065;14;Calvados;Normandie;https://fr.wikipedia.org/wiki/Georges_Vanderchmitt
+François Jaclot;executiveBIS;1949.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Jaclot
+Bernard Arnault;executiveBIS;1949.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Bernard_Arnault
+Philippe Redon;executiveBIS;1950.0;Gorron;48.420028;-0.803042;53;Mayenne;Pays de la Loire;https://fr.wikipedia.org/wiki/Philippe_Redon
+Patrick Le Seyec;executiveBIS;1950.0;Saint-Doulchard;47.108769;2.363377;18;Cher;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Patrick_Le_Seyec
+Jean-Louis Costes;executiveBIS;1950.0;Saint-Amans-des-Cots;44.68967;2.662177;12;Aveyron;Occitanie;https://fr.wikipedia.org/wiki/Jean-Louis_Costes_(restaurateur)
+Frédéric Tiberghien;executiveBIS;1950.0;Tourcoing;50.720797;3.157799;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Tiberghien
+Évelyne Renaud-Garabedian;executiveBIS;1950.0;Créteil;48.784506;2.452976;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/%C3%89velyne_Renaud-Garabedian
+Bernard Bouley;executiveBIS;1950.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Bernard_Bouley
+Benoît Prot;executiveBIS;1950.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Beno%C3%AEt_Prot
+Jean-François Fountaine;executiveBIS;1951.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Fountaine
+Isabelle Gallimard;executiveBIS;1951.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Isabelle_Gallimard
+Christophe de Margerie;executiveBIS;1951.0;Mareuil-sur-Lay-Dissais;46.536867;-1.235402;85;Vendée;Pays de la Loire;https://fr.wikipedia.org/wiki/Christophe_de_Margerie
+Baudouin Prot;executiveBIS;1951.0;Paris 17;48.887702;2.304844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Baudouin_Prot
+Alain Dinin;executiveBIS;1951.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Alain_Dinin
+Vincent Bolloré;executiveBIS;1952.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Vincent_Bollor%C3%A9
+Philippe Varin;executiveBIS;1952.0;Reims;49.250948;4.055595;51;Marne;Grand Est;https://fr.wikipedia.org/wiki/Philippe_Varin
+Philippe Petitcolin;executiveBIS;1952.0;Saint-Mihiel;48.891687;5.542342;55;Meuse;Grand Est;https://fr.wikipedia.org/wiki/Philippe_Petitcolin
+Daniel Julien;executiveBIS;1952.0;Paris 10;48.88143;2.366774;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Daniel_Julien
+Claude Czechowski;executiveBIS;1952.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Claude_Czechowski
+Arnaud Gobet;executiveBIS;1952.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Arnaud_Gobet
+Jean-Marc Janaillac;executiveBIS;1953.0;Dordogne;43.629253;1.454635;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Jean-Marc_Janaillac
+Jean-Dominique Senard;executiveBIS;1953.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Dominique_Senard
+Hervé Icovic;executiveBIS;1953.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Herv%C3%A9_Icovic
+Dominique Loiseau;executiveBIS;1953.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Dominique_Loiseau_(restauratrice)
+Christophe Blanchard-Dignac;executiveBIS;1953.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Christophe_Blanchard-Dignac
+Thierry de La Tour d'Artaise;executiveBIS;1954.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Thierry_de_La_Tour_d%27Artaise
+Pascal Markowsky;executiveBIS;1954.0;Valenciennes;50.358552;3.510438;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Pascal_Markowsky
+Guy Mathiolon;executiveBIS;1954.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Guy_Mathiolon
+Christian Streiff;executiveBIS;1954.0;Sarrebourg;48.736347;7.053883;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Christian_Streiff
+Bernard Blanc;executiveBIS;1954.0;Vesoul;47.628692;6.157979;70;Haute-Saône;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Bernard_Blanc
+Arnaud Vaissié;executiveBIS;1954.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Arnaud_Vaissi%C3%A9
+Thierry de La Brosse;executiveBIS;1955.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Thierry_de_La_Brosse
+Pierre-Antoine Gailly;executiveBIS;1955.0;Charleville;47.712416;1.331499;41;Loir-et-Cher;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Pierre-Antoine_Gailly
+Jean-Yves Haby;executiveBIS;1955.0;Dombasle-sur-Meurthe;48.618581;6.357492;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Jean-Yves_Haby
+Jacques Richier;executiveBIS;1955.0;Maroc;48.246969;-1.994383;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Jacques_Richier
+Hugues Souparis;executiveBIS;1955.0;Saint-Céré;44.854274;1.904821;46;Lot;Occitanie;https://fr.wikipedia.org/wiki/Hugues_Souparis
+Hubert Sagnières;executiveBIS;1955.0;Vienne;45.802059;1.125658;87;Haute-Vienne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Hubert_Sagni%C3%A8res
+Thierry Schoen;executiveBIS;1956.0;Châteauroux;45.960056;-0.890924;17;Charente-Maritime;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Thierry_Schoen
+Jean-Paul Agon;executiveBIS;1956.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Paul_Agon
+François Brottes;executiveBIS;1956.0;Valence;44.580095;4.753405;26;Drôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Brottes
+Eddy Zdziech;executiveBIS;1956.0;Raismes;50.397739;3.493164;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Eddy_Zdziech
+Bernard Hours;executiveBIS;1956.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Bernard_Hours_(homme_d%27affaires)
+Thierry Pilenko;executiveBIS;1957.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Thierry_Pilenko
+Rémy Weber;executiveBIS;1957.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/R%C3%A9my_Weber
+Patrick Diter;executiveBIS;1957.0;Montreuil;48.872323;2.455188;93;Seine-Saint-Denis;Île-de-France;https://fr.wikipedia.org/wiki/Patrick_Diter
+Olivier Klein;executiveBIS;1957.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Olivier_Klein_(dirigeant)
+Jean-Claude Puerto-Salavert;executiveBIS;1957.0;Lot-et-Garonne;47.795789;7.176422;68;Haut-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Jean-Claude_Puerto-Salavert
+Patrick Molis;executiveBIS;1958.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Patrick_Molis
+Jean-Julien Baronnet;executiveBIS;1958.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Julien_Baronnet
+Guy Delcourt;executiveBIS;1958.0;Versailles;48.803019;2.131319;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Guy_Delcourt_(%C3%A9diteur)
+Denis Dumont;executiveBIS;1958.0;Lorgies;50.567712;2.784489;62;Pas-de-Calais;Hauts-de-France;https://fr.wikipedia.org/wiki/Denis_Dumont
+Bruno Mettling;executiveBIS;1958.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Bruno_Mettling
+Pierre Nanterme;executiveBIS;1959.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Pierre_Nanterme
+Pierre Gattaz;executiveBIS;1959.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_Gattaz
+Philippe Brassac;executiveBIS;1959.0;Nîmes;43.814652;4.356289;30;Gard;Occitanie;https://fr.wikipedia.org/wiki/Philippe_Brassac
+Maryse François-Xausa;executiveBIS;1959.0;Briançon;44.896187;6.637231;5;Hautes-Alpes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Maryse_Fran%C3%A7ois-Xausa
+Marie-Laure Pochon;executiveBIS;1959.0;Tours;47.395476;0.695848;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Marie-Laure_Pochon
+Marc Fiorentino;executiveBIS;1959.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marc_Fiorentino
+Luc Oursel;executiveBIS;1959.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Luc_Oursel
+Jean-Marc Miton;executiveBIS;1959.0;Pontivy;48.065625;-2.975174;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Jean-Marc_Miton
+Jean-Loïc Galle;executiveBIS;1959.0;Fougères;47.950339;-3.881992;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Jean-Lo%C3%AFc_Galle
+Hubert Joly;executiveBIS;1959.0;Laxou;48.688106;6.141298;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Hubert_Joly
+Denis Troch;executiveBIS;1959.0;Blanc-Mesnil;48.942858;2.456843;93;Seine-Saint-Denis;Île-de-France;https://fr.wikipedia.org/wiki/Denis_Troch
+Daniel Lafranche;executiveBIS;1959.0;Suresnes;48.870298;2.230159;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Daniel_Lafranche
+Thierry Blandinières;executiveBIS;1960.0;Brive-la-Gaillarde;45.148038;1.517353;19;Corrèze;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Thierry_Blandini%C3%A8res
+Stéphane Fouks;executiveBIS;1960.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/St%C3%A9phane_Fouks
+Philippe Donnet;executiveBIS;1960.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Donnet_(chef_d%27entreprise)
+Jean-Marc Chéry;executiveBIS;1960.0;Orléans;47.873569;1.911358;45;Loiret;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Jean-Marc_Ch%C3%A9ry
+Jacques de Peretti;executiveBIS;1960.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jacques_de_Peretti
+Francis Dagnan;executiveBIS;1960.0;Auch;43.656961;0.57082;32;Gers;Occitanie;https://fr.wikipedia.org/wiki/Francis_Dagnan
+Christian Aghroum;executiveBIS;1960.0;Mans;47.993378;0.191169;72;Sarthe;Pays de la Loire;https://fr.wikipedia.org/wiki/Christian_Aghroum
+Stéphane Roussel;executiveBIS;1961.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/St%C3%A9phane_Roussel
+Philippe Journo;executiveBIS;1961.0;Tunis;44.05238;0.276355;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Philippe_Journo
+Olivier François;executiveBIS;1961.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Olivier_Fran%C3%A7ois
+Marie Meynadier;executiveBIS;1961.0;Tlemcen;48.864894;2.388007;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marie_Meynadier
+Marc Palanques;executiveBIS;1961.0;Carcassonne;43.206781;2.349415;11;Aude;Occitanie;https://fr.wikipedia.org/wiki/Marc_Palanques
+Jean-Bernard Lafonta;executiveBIS;1961.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Bernard_Lafonta
+Guy Tisserant;executiveBIS;1961.0;Charmes;45.615475;4.773084;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Guy_Tisserant
+Éric Labaye;executiveBIS;1961.0;Argenton-sur-Creuse;46.580769;1.496044;36;Indre;Centre-Val de Loire;https://fr.wikipedia.org/wiki/%C3%89ric_Labaye
+Dominique Lefebvre;executiveBIS;1961.0;Eure-et-Loir;48.435568;1.48376;28;Eure-et-Loir;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Dominique_Lefebvre_(banquier)
+André Coisne;executiveBIS;1961.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Andr%C3%A9_Coisne
+Valérie Chapoulaud-Floquet;executiveBIS;1962.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Val%C3%A9rie_Chapoulaud-Floquet
+Thierry Ehrmann;executiveBIS;1962.0;Avignon;48.390692;-1.759389;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Thierry_Ehrmann
+Pascal Roché;executiveBIS;1962.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pascal_Roch%C3%A9
+Michel Combes;executiveBIS;1962.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Michel_Combes_(dirigeant)
+Matthias Leridon;executiveBIS;1962.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Matthias_Leridon
+Laurent Freixe;executiveBIS;1962.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Laurent_Freixe
+Jean-François Baril;executiveBIS;1962.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Baril_(homme_d%27affaires)
+Alexandre de Juniac;executiveBIS;1962.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Alexandre_de_Juniac
+Victoire de Margerie;executiveBIS;1963.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Victoire_de_Margerie
+Valérie Hermann;executiveBIS;1963.0;Concarneau;47.891735;-3.896018;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Val%C3%A9rie_Hermann
+Thierry Le Hénaff;executiveBIS;1963.0;Savigny-sur-Orge;48.685402;2.349213;91;Essonne;Île-de-France;https://fr.wikipedia.org/wiki/Thierry_Le_H%C3%A9naff
+Patricia Langrand;executiveBIS;1963.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Patricia_Langrand
+Laurence Piketty;executiveBIS;1963.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Laurence_Piketty
+Jean-Pascal Tricoire;executiveBIS;1963.0;Beaupréau;46.315928;-0.971038;17;Charente-Maritime;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Pascal_Tricoire
+Gilles Grapinet;executiveBIS;1963.0;Aix-en-Provence;43.541369;5.406124;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Gilles_Grapinet
+Bernard Sananès;executiveBIS;1963.0;Nice;43.71273;7.25092;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Bernard_Sanan%C3%A8s
+Yves Cordier;executiveBIS;1964.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Yves_Cordier
+Pierre-Noël Luiggi;executiveBIS;1964.0;Bastia;48.153065;7.319335;68;Haut-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Pierre-No%C3%ABl_Luiggi
+Marc Darmon;executiveBIS;1964.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marc_Darmon
+Hubert de Boisredon;executiveBIS;1964.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Hubert_de_Boisredon
+Frédéric Motte;executiveBIS;1964.0;Armentières;50.692113;2.879124;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Motte
+Frédéric Mériot;executiveBIS;1964.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_M%C3%A9riot
+François Rivière;executiveBIS;1964.0;Chambéry;47.165242;-1.034458;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Rivi%C3%A8re_(homme_d%27affaires)
+François Morinière;executiveBIS;1964.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Morini%C3%A8re
+François Asselin;executiveBIS;1964.0;Thouars;46.981613;-0.233224;79;Deux-Sèvres;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Asselin
+Didier Lupfer;executiveBIS;1964.0;Lunéville;48.593492;6.497808;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Didier_Lupfer
+Bertrand Mabille;executiveBIS;1964.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Bertrand_Mabille
+Béatrice Foucher;executiveBIS;1964.0;Saintes;45.748804;-0.647217;17;Charente-Maritime;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/B%C3%A9atrice_Foucher
+Arnaud de Puyfontaine;executiveBIS;1964.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Arnaud_de_Puyfontaine
+Antoine Bernard de Saint-Affrique;executiveBIS;1964.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Antoine_Bernard_de_Saint-Affrique
+Philippe Royer;executiveBIS;1965.0;Argentan;48.729955;-0.013024;61;Orne;Normandie;https://fr.wikipedia.org/wiki/Philippe_Royer
+Olivier Brousse;executiveBIS;1965.0;Brive-la-Gaillarde;45.148038;1.517353;19;Corrèze;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Olivier_Brousse
+Nicolas Théry;executiveBIS;1965.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Nicolas_Th%C3%A9ry
+Nicolas Schimel;executiveBIS;1965.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Nicolas_Schimel
+Nicolas Rousselet;executiveBIS;1965.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Nicolas_Rousselet
+Nicolas Moreau;executiveBIS;1965.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Nicolas_Moreau_(chef_d%27entreprise)
+Marie Cau;executiveBIS;1965.0;Roubaix;50.688454;3.183662;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Marie_Cau
+Hassen Rachedi;executiveBIS;1965.0;Grenoble;45.182828;5.724369;38;Isère;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Hassen_Rachedi
+Gabriella Cortese;executiveBIS;1965.0;Turin;45.879242;4.25004;42;Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Gabriella_Cortese
+Catherine Guillouard;executiveBIS;1965.0;Cannes;43.555468;7.004585;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Catherine_Guillouard
+Benoît Soury;executiveBIS;1965.0;Rouen;49.349295;0.811661;27;Eure;Normandie;https://fr.wikipedia.org/wiki/Beno%C3%AEt_Soury
+André Ségura;executiveBIS;1965.0;Grenoble;45.182828;5.724369;38;Isère;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Andr%C3%A9_S%C3%A9gura
+Pascal Jenft;executiveBIS;1966.0;Sarreguemines;49.110922;7.07705;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Pascal_Jenft
+Olivier Bonnassies;executiveBIS;1966.0;Fontenay-aux-Roses;48.789528;2.288257;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Olivier_Bonnassies
+Jean-Philippe Imparato;executiveBIS;1966.0;Sète;43.40682;3.687298;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Jean-Philippe_Imparato
+Guillaume Cerutti;executiveBIS;1966.0;La Ciotat;43.189161;5.626161;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Guillaume_Cerutti
+Didier Maïsto;executiveBIS;1966.0;Toulon;43.136379;5.933443;83;Var;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Didier_Ma%C3%AFsto
+Denis Courtiade;executiveBIS;1966.0;Suresnes;48.870985;2.218087;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Denis_Courtiade
+Damien Regnard;executiveBIS;1966.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Damien_Regnard
+Bruno Voland;executiveBIS;1966.0;Saint-Nazaire;47.275247;-2.242494;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Bruno_Voland
+Alexandre Meyer;executiveBIS;1966.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Alexandre_Meyer
+Xavier Niel;executiveBIS;1967.0;Maisons-Alfort;48.801685;2.440318;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Xavier_Niel
+Stéphane Simon;executiveBIS;1967.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/St%C3%A9phane_Simon
+Sidonie Dumas;executiveBIS;1967.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Sidonie_Dumas
+Nathalie Balla;executiveBIS;1967.0;Saint-Germain-en-Laye;48.923869;2.111227;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Nathalie_Balla
+Karine Arabian;executiveBIS;1967.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Karine_Arabian
+Jean-Michel Noir;executiveBIS;1967.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jean-Michel_Noir
+Dominique Delport;executiveBIS;1967.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Dominique_Delport
+Dominique Ceolin;executiveBIS;1967.0;La Rochelle;47.984627;-1.65389;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Dominique_Ceolin
+Christophe Fanichet;executiveBIS;1967.0;Perreux-sur-Marne;48.842833;2.50403;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Christophe_Fanichet
+Jérôme Darnaudet;executiveBIS;1968.0;Pontoise;49.047592;2.099968;95;Val-d'Oise;Île-de-France;https://fr.wikipedia.org/wiki/J%C3%A9r%C3%B4me_Darnaudet
+Jean-Louis Girodolle;executiveBIS;1968.0;Limoges;45.856159;1.221254;87;Haute-Vienne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Louis_Girodolle
+Jean-David Bénichou;executiveBIS;1968.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean-David_B%C3%A9nichou
+Jacques-Henri Eyraud;executiveBIS;1968.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jacques-Henri_Eyraud
+Jacques Reboh;executiveBIS;1968.0;Grenoble;45.182828;5.724369;38;Isère;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jacques_Reboh
+François Provost;executiveBIS;1968.0;Paris;47.925801;-1.900942;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Provost
+Benoit Bazin;executiveBIS;1968.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Benoit_Bazin
+Axel Dauchez;executiveBIS;1968.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Axel_Dauchez
+Antoine Duboscq;executiveBIS;1968.0;Rouen;49.349295;0.811661;27;Eure;Normandie;https://fr.wikipedia.org/wiki/Antoine_Duboscq
+Xavier Piechaczyk;executiveBIS;1969.0;Saint-Maur-des-Fossés;48.799943;2.491801;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Xavier_Piechaczyk
+Xavier Girre;executiveBIS;1969.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Xavier_Girre
+Sabrina Soussan;executiveBIS;1969.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Sabrina_Soussan
+Olivier Duha;executiveBIS;1969.0;Dax;43.700723;-1.06016;40;Landes;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Olivier_Duha
+Nicolas Chabanne;executiveBIS;1969.0;Moulins;46.559515;3.327763;3;Allier;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Nicolas_Chabanne
+Henri Poupart-Lafarge;executiveBIS;1969.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Henri_Poupart-Lafarge
+Frédéric Sausset;executiveBIS;1969.0;Blois;47.581228;1.316533;41;Loir-et-Cher;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Sausset
+Djamel Agaoua;executiveBIS;1969.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Djamel_Agaoua
+Camille Putois;executiveBIS;1969.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Camille_Putois
+Anne Rigail;executiveBIS;1969.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Anne_Rigail
+Yves Bonnefont;executiveBIS;1970.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Yves_Bonnefont
+Sophie Boissard;executiveBIS;1970.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Sophie_Boissard
+Patrice Caine;executiveBIS;1970.0;Paris 15;48.84162;2.295289;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Patrice_Caine
+Agnès Evren;executiveBIS;1970.0;Paris 12;48.833494;2.415411;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Agn%C3%A8s_Evren
+Lionel Prat;executiveBIS;1971.0;Quimperlé;47.861737;-3.559902;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Lionel_Prat
+Bertrand Dumazy;executiveBIS;1971.0;Tourcoing;50.720797;3.157799;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Bertrand_Dumazy
+Benoit Maurice;executiveBIS;1971.0;Toulon;43.136379;5.933443;83;Var;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Benoit_Maurice
+Pascal Lorne;executiveBIS;1972.0;Valence;44.920925;4.92297;26;Drôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Pascal_Lorne
+Loïc Rocard;executiveBIS;1972.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Lo%C3%AFc_Rocard
+Joseph Oughourlian;executiveBIS;1972.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Joseph_Oughourlian
+Catherine MacGregor;executiveBIS;1972.0;Salé;46.962139;0.906435;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Catherine_MacGregor
+Bastien Millot;executiveBIS;1972.0;Saint-Quentin;49.847398;3.28745;2;Aisne;Hauts-de-France;https://fr.wikipedia.org/wiki/Bastien_Millot
+Antoine Lemarchand;executiveBIS;1972.0;Champigny-sur-Marne;48.817209;2.521265;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Antoine_Lemarchand
+Alexandre Ricard;executiveBIS;1972.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Alexandre_Ricard
+Thierry Petit ;executiveBIS;1973.0;Nevers;46.988535;3.160778;58;Nièvre;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Thierry_Petit_
+Raphael Melki;executiveBIS;1973.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Raphael_Melki
+Laurent Redon;executiveBIS;1973.0;Saint-Chamond;45.470463;4.505748;42;Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Laurent_Redon
+Guillaume Cairou;executiveBIS;1973.0;Meulan;49.00784;1.917929;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Guillaume_Cairou
+Emmanuel Mounier;executiveBIS;1973.0;Guéret;46.176096;1.878279;23;Creuse;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Emmanuel_Mounier_(entrepreneur_et_%C3%A9diteur)
+Arnaud Molinié;executiveBIS;1973.0;Argenteuil;48.962384;2.276478;95;Val-d'Oise;Île-de-France;https://fr.wikipedia.org/wiki/Arnaud_Molini%C3%A9
+Pierre-Édouard Stérin;executiveBIS;1974.0;Évreux;49.020599;1.146898;27;Eure;Normandie;https://fr.wikipedia.org/wiki/Pierre-%C3%89douard_St%C3%A9rin
+Pascal Monfort;executiveBIS;1974.0;Briey;49.256168;6.023892;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Pascal_Monfort
+Olivier Goy;executiveBIS;1974.0;Annemasse;46.189327;6.243054;74;Haute-Savoie;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Olivier_Goy
+Maxime Picat;executiveBIS;1974.0;Schiltigheim;48.611161;7.739943;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Maxime_Picat
+Christel Heydemann;executiveBIS;1974.0;Clamart;47.574611;-2.357272;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Christel_Heydemann
+Alexandre Mérieux;executiveBIS;1974.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Alexandre_M%C3%A9rieux
+Antoine Jouteau;executiveBIS;1975.0;Cholet;47.036408;-0.875399;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Antoine_Jouteau
+Alex Goude;executiveBIS;1975.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Alex_Goude
+Philippe Corrot;executiveBIS;1976.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Corrot
+Mathieu Gallet;executiveBIS;1977.0;Villeneuve-sur-Lot;44.416152;0.747052;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Mathieu_Gallet
+Maëlle Gavet;executiveBIS;1978.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Ma%C3%ABlle_Gavet
+Jean Robin;executiveBIS;1978.0;Clermont-Ferrand;45.786671;3.107055;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jean_Robin_(%C3%A9diteur)
+Elie Girard;executiveBIS;1978.0;Arles;43.596721;4.645086;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Elie_Girard
+Charles-César d'Amat;executiveBIS;1978.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Charles-C%C3%A9sar_d%27Amat
+Thibaud Elzière;executiveBIS;1979.0;Aix-en-Provence;43.541369;5.406124;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Thibaud_Elzi%C3%A8re
+Nicolas de Villiers;executiveBIS;1979.0;La Roche-sur-Yon;46.670848;-1.412533;85;Vendée;Pays de la Loire;https://fr.wikipedia.org/wiki/Nicolas_de_Villiers
+Mathieu Serradori;executiveBIS;1979.0;Fréjus;43.445657;6.770515;83;Var;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Mathieu_Serradori
+Stanislas Guerini;executiveBIS;1982.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Stanislas_Guerini
+Morgan Hermand-Waiche;executiveBIS;1982.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Morgan_Hermand-Waiche
+Mason Ewing;executiveBIS;1982.0;Douala;48.143227;-1.813778;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Mason_Ewing
+Aurélie Jean;executiveBIS;1982.0;Clamart;47.574611;-2.357272;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Aur%C3%A9lie_Jean
+Maïlys Grau;executiveBIS;1983.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Ma%C3%AFlys_Grau
+Grégoire Leclercq;executiveBIS;1983.0;Valence;44.580095;4.753405;26;Drôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Gr%C3%A9goire_Leclercq
+Danièle Carteron;executiveBIS;1984.0;Annecy;45.901584;6.125296;74;Haute-Savoie;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Dani%C3%A8le_Carteron
+Alice Zagury;executiveBIS;1984.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Alice_Zagury
+Barbara Belvisi;executiveBIS;1985.0;Paris 19;48.888949;2.396993;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Barbara_Belvisi
+Paola Audrey Ndengue;executiveBIS;1989.0;Douala;48.143227;-1.813778;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Paola_Audrey_Ndengue
+Mounir Laggoune;executiveBIS;1990.0;Chambéry;47.165242;-1.034458;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Mounir_Laggoune
+Clémence Franc;executiveBIS;1990.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Cl%C3%A9mence_Franc
+Lucie Basch;executiveBIS;1992.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Lucie_Basch
+Arthur Mensch;executiveBIS;1992.0;Sèvres;48.819588;2.212003;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Arthur_Mensch
+Anaïs Barut;executiveBIS;1992.0;Revin;48.574528;-3.944976;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Ana%C3%AFs_Barut
+Justine Hutteau;executiveBIS;1994.0;Sucy-en-Brie;48.77067;2.528396;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Justine_Hutteau
+Soraya Jaber;executiveBIS;1995.0;Bondy;48.903653;2.48526;93;Seine-Saint-Denis;Île-de-France;https://fr.wikipedia.org/wiki/Soraya_Jaber
+Jean-Lou Blachier;executiveBIS;;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jean-Lou_Blachier

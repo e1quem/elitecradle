@@ -9,17 +9,14 @@ utils.force_ipv4()
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
 DOMAIN = "https://fr.wikipedia.org"
 
-# Source : https://fr.wikipedia.org/w/index.php?title=Catégorie:Chef_d%27entreprise_français&pagefrom=Niel%2C+Xavier%0AXavier+Niel#mw-pages
-# Ça ne marche pas quand c'est genre 7ème arrondissement de Paris.
 
 def get_category_links(start_url):
-    print("Obtaining links...")
     persons = []
     current_url = start_url
     page_count = 1
     
     while current_url:
-        print(f"\rPage {page_count}...", end="", flush=True)
+        print(f"\rObtaining page {page_count}...", end="", flush=True)
         resp = requests.get(current_url, headers=HEADERS, timeout=10)
         soup = BeautifulSoup(resp.content, 'html.parser')
         
@@ -30,7 +27,9 @@ def get_category_links(start_url):
                 persons.append({
                     "name": link.get("title"),
                     "url": DOMAIN + link["href"],
-                    "tag": "ceo"
+                    #"tag": "executiveBIS"
+                    #"tag": "executiveTER"
+                    "tag": "scholar"
                 })
                 
         # Next page
@@ -51,52 +50,53 @@ def process_person(person):
             return person
             
         soup = BeautifulSoup(resp.content, 'html.parser')
-        pob = utils.extract_pob(soup)
+        raw_pob = utils.extract_pob(soup)
         person["dob"] = utils.extract_dob(soup)
-        person["pob_raw"] = pob 
+        person["pob_raw"] = raw_pob 
         
-        if pob and pob not in ["Unknown", "foreign", "Not found"]:
-            geo_data = utils.finding_geo(pob)
+        if raw_pob and raw_pob not in ["Unknown", "foreign", "Not found"]:
+            geo_data = utils.finding_geo(raw_pob)
             if geo_data:
+                geo_data.pop('pop', None)
                 person.update(geo_data) 
-            else:
-                person["pob"] = pob
-        else:
-            person["pob"] = pob
-
-    except Exception as e:
-        person["error"] = str(e)
+    except Exception:
+        pass
         
     return person
 
 if __name__ == "__main__":
-    category_url = "https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Chef_d%27entreprise_fran%C3%A7ais"
+    #category_url = "https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Chef_d%27entreprise_fran%C3%A7ais"
+    #category_url = "https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Personnalit%C3%A9_fran%C3%A7aise_du_monde_des_affaires_du_XXIe_si%C3%A8cle"
+    category_url = "https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Universitaire_fran%C3%A7ais_du_XXe_si%C3%A8cle"
 
     persons_list = get_category_links(category_url)
     print("\nScraping profiles and Geo API calls...")
     total = len(persons_list)
     results = []
     
-    with ThreadPoolExecutor(max_workers=2) as executor:
+    with ThreadPoolExecutor(max_workers=4) as executor:
         futures = {executor.submit(process_person, p): p for p in persons_list}
         
-        count = 0
-        for future in as_completed(futures):
-            count += 1
-            result = future.result()
-            results.append(result)
-            
-            name = result.get("name", "Unknown")
-            pob = result.get("pob", "N/A")
-            print(f"\r\033[K[{count}/{total}] {name} : {pob}", end="", flush=True)
+        for i, future in enumerate(as_completed(futures), 1):
+            res = future.result()
+            results.append(res)
+            print(f"\r\033[K[{i}/{len(persons_list)}] {res.get('name')} : {res.get('pob_raw')}", end="", flush=True)
 
     df = pd.DataFrame(results)
-    cols_order = ['name', 'tag', 'dob', 'pob_raw', 'lat', 'lon', 'dep_num', 'dep_name', 'region']
+    to_drop = ['pob', 'error']
+    df = df.drop(columns=[c for c in to_drop if c in df.columns], errors='ignore')
+
+    if 'pob_raw' in df.columns:
+        df = df.rename(columns={'pob_raw': 'pob'})
+
+    cols_order = ['name', 'tag', 'dob', 'pob', 'lat', 'lon', 'dep_num', 'dep_name', 'region']
     final_cols = [c for c in cols_order if c in df.columns] + [c for c in df.columns if c not in cols_order]
     df = df[final_cols]
     
-    output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/CEOs.csv"
-    
+    #output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/CEOs.csv"
+    #output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/interim/business_person.csv"
+    output_file = "/Users/eyquem/Desktop/EliteGeoCradle/fetch/scholars/interim/scholars_raw.csv"
+
     df.to_csv(output_file, index=False)
-    print(f"\n\nOpération terminée ! Données sauvegardées dans {output_file}")
+    print(f"\nOver: {output_file}")
     print(df.head())

@@ -1,0 +1,462 @@
+name;tag;dob;pob;lat;lon;dep_num;dep_name;region;url
+Irène Sokologorsky;scholar;1936.0;Saint-Denis;-20.909778;55.444588;974;La Réunion;La Réunion;https://fr.wikipedia.org/wiki/Ir%C3%A8ne_Sokologorsky
+Nicole Gnesotto;scholar;1954.0;Fort-de-France;14.636435;-61.064096;972;Martinique;Martinique;https://fr.wikipedia.org/wiki/Nicole_Gnesotto
+Piotr Kowalski;scholar;1927.0;Lviv;14.844837;-61.087033;972;Martinique;Martinique;https://fr.wikipedia.org/wiki/Piotr_Kowalski
+Jacques Igalens;scholar;1950.0;Montauban;16.210225;-61.499535;971;Guadeloupe;Guadeloupe;https://fr.wikipedia.org/wiki/Jacques_Igalens
+Noëlle Châtelet;scholar;1944.0;Meudon;16.260195;-61.274559;971;Guadeloupe;Guadeloupe;https://fr.wikipedia.org/wiki/No%C3%ABlle_Ch%C3%A2telet
+Paul Arrighi;scholar;1895.0;Renno;41.708523;9.158245;2A;Corse-du-Sud;Corse;https://fr.wikipedia.org/wiki/Paul_Arrighi
+Jean-Claude Casanova;scholar;1934.0;Ajaccio;41.93368;8.715325;2A;Corse-du-Sud;Corse;https://fr.wikipedia.org/wiki/Jean-Claude_Casanova
+Pierre Fouché;scholar;1891.0;Ille-sur-Têt;42.672938;2.629795;66;Pyrénées-Orientales;Occitanie;https://fr.wikipedia.org/wiki/Pierre_Fouch%C3%A9
+Claude Combes;scholar;1935.0;Perpignan;42.701507;2.902811;66;Pyrénées-Orientales;Occitanie;https://fr.wikipedia.org/wiki/Claude_Combes
+Gérard Gouiran;scholar;1945.0;Rove;42.72124;9.453569;2B;Haute-Corse;Corse;https://fr.wikipedia.org/wiki/G%C3%A9rard_Gouiran
+Vladimir Jankélévitch;scholar;1903.0;Bourges;42.962755;1.861999;9;Ariège;Occitanie;https://fr.wikipedia.org/wiki/Vladimir_Jank%C3%A9l%C3%A9vitch
+Marc Ancel;scholar;1902.0;Izeste;43.090694;-0.426825;64;Pyrénées-Atlantiques;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Marc_Ancel
+Marcel Morabito;scholar;1951.0;Hyères;43.116731;6.20255;83;Var;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Marcel_Morabito
+Fañch Roudaut;scholar;1942.0;Toulon;43.136379;5.933443;83;Var;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Fa%C3%B1ch_Roudaut
+Jacques Le Goff;scholar;1924.0;Toulon;43.136379;5.933443;83;Var;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jacques_Le_Goff
+Alain Séguy-Duclot;scholar;1961.0;Carcassonne;43.206781;2.349415;11;Aude;Occitanie;https://fr.wikipedia.org/wiki/Alain_S%C3%A9guy-Duclot
+Christian Thibon;scholar;1952.0;Carcassonne;43.206781;2.349415;11;Aude;Occitanie;https://fr.wikipedia.org/wiki/Christian_Thibon
+Raymonde Carasco;scholar;1939.0;Carcassonne;43.206781;2.349415;11;Aude;Occitanie;https://fr.wikipedia.org/wiki/Raymonde_Carasco
+Jean Abadie;scholar;1873.0;Tarbes;43.239349;0.06402;65;Hautes-Pyrénées;Occitanie;https://fr.wikipedia.org/wiki/Jean_Abadie
+Pierre Laurens;scholar;1931.0;Tarbes;43.239349;0.06402;65;Hautes-Pyrénées;Occitanie;https://fr.wikipedia.org/wiki/Pierre_Laurens
+Charles Foulon;scholar;1912.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Charles_Foulon
+Charles Pietri;scholar;1932.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Charles_Pietri
+Gilles Pécout;scholar;1961.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Gilles_P%C3%A9cout
+Henri-Irénée Marrou;scholar;1977.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Henri-Ir%C3%A9n%C3%A9e_Marrou
+Jean Wahl;scholar;1888.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Wahl
+Jean-Pierre Cometti;scholar;1944.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean-Pierre_Cometti
+Jean-Pierre Giran;scholar;1947.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean-Pierre_Giran
+Jean-Robert Armogathe;scholar;1947.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean-Robert_Armogathe
+Joëlle Gardes;scholar;1945.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jo%C3%ABlle_Gardes
+Luce Pietri;scholar;1931.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Luce_Pietri
+Marc Fumaroli;scholar;1932.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Marc_Fumaroli
+Paul Mattei;scholar;1953.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Paul_Mattei
+Philippe Mongin;scholar;1950.0;Marseille;43.282;5.405;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Philippe_Mongin
+Louis Favoreu;scholar;1936.0;Lucq-de-Béarn;43.292186;-0.637884;64;Pyrénées-Atlantiques;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Louis_Favoreu
+Robert Ferras;scholar;1935.0;Capestang;43.319273;3.071682;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Robert_Ferras
+Pierre Bourdieu;scholar;1930.0;Denguin;43.366099;-0.506644;64;Pyrénées-Atlantiques;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Pierre_Bourdieu
+André Miquel;scholar;1929.0;Mèze;43.435562;3.584267;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Andr%C3%A9_Miquel
+Michel Christol;scholar;1942.0;Castelnau-de-Guers;43.437431;3.438623;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Michel_Christol
+Jacques Garello;scholar;1934.0;Puget-sur-Argens;43.470449;6.685531;83;Var;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jacques_Garello
+Jean-Éric Branaa;scholar;1963.0;Orthez;43.493121;-0.773351;64;Pyrénées-Atlantiques;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-%C3%89ric_Branaa
+Alfred Jauffret;scholar;1900.0;Aix-en-Provence;43.541369;5.406124;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Alfred_Jauffret
+Paul Veyne;scholar;1930.0;Aix-en-Provence;43.541369;5.406124;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Paul_Veyne
+Henri Bourguinat;scholar;1933.0;Tadousse-Ussau;43.544547;-0.192004;64;Pyrénées-Atlantiques;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Henri_Bourguinat
+Paul-Albert Février;scholar;1931.0;Cannes;43.555468;7.004585;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Paul-Albert_F%C3%A9vrier
+Boško Bojović;scholar;1948.0;Belgrade;43.570462;1.409628;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Bo%C5%A1ko_Bojovi%C4%87
+Adhémar Esmein;scholar;1913.0;Charente;43.583418;1.408267;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Adh%C3%A9mar_Esmein
+Jean Deschamps (professeur);scholar;1925.0;Charente;43.583418;1.408267;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Jean_Deschamps_(professeur)
+Maurice Aymard;scholar;1936.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Maurice_Aymard
+Michel Herland;scholar;1945.0;Toulouse;43.604082;1.433805;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Michel_Herland
+Georges Kuhnholtz-Lordat;scholar;1888.0;Montpellier;43.610476;3.87048;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Georges_Kuhnholtz-Lordat
+Jean-Pierre Picot;scholar;1946.0;Montpellier;43.610476;3.87048;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Jean-Pierre_Picot
+Raymonde Foreville;scholar;1904.0;Montpellier;43.610476;3.87048;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Raymonde_Foreville
+Catherine Abadie-Reynal;scholar;1955.0;Grèce;43.614253;1.437337;31;Haute-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Catherine_Abadie-Reynal
+Dominique Garcia;scholar;1962.0;Clermont-l'Hérault;43.625912;3.434565;34;Hérault;Occitanie;https://fr.wikipedia.org/wiki/Dominique_Garcia
+Pierre Maraval;scholar;1936.0;Roquecourbe;43.663669;2.292144;81;Tarn;Occitanie;https://fr.wikipedia.org/wiki/Pierre_Maraval
+William Seston;scholar;1900.0;Lasalle;43.692079;0.084108;32;Gers;Occitanie;https://fr.wikipedia.org/wiki/William_Seston
+Jean Antoine Gili;scholar;1938.0;Nice;43.71273;7.25092;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Antoine_Gili
+Jean Chatelain;scholar;1916.0;Nice;43.71273;7.25092;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Chatelain
+Jean-Claude Passeron;scholar;1930.0;Nice;43.71273;7.25092;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean-Claude_Passeron
+Jean Boutière;scholar;1898.0;Mallemort;43.722795;5.178247;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Bouti%C3%A8re
+Claude Lauriol;scholar;1932.0;Nîmes;43.814652;4.356289;30;Gard;Occitanie;https://fr.wikipedia.org/wiki/Claude_Lauriol
+Henri Donnedieu de Vabres;scholar;1880.0;Nîmes;43.814652;4.356289;30;Gard;Occitanie;https://fr.wikipedia.org/wiki/Henri_Donnedieu_de_Vabres
+Jean Emelina;scholar;1934.0;Malaussène;43.927319;7.115851;6;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Emelina
+Émile Borel;scholar;1871.0;Saint-Affrique;43.961458;2.854273;12;Aveyron;Occitanie;https://fr.wikipedia.org/wiki/%C3%89mile_Borel
+Jean Roche (recteur);scholar;1901.0;Sorgues (Vaucluse);44.009794;4.877015;84;Vaucluse;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jean_Roche_(recteur)
+Maurice Agulhon;scholar;1926.0;Uzès;44.021276;4.415586;30;Gard;Occitanie;https://fr.wikipedia.org/wiki/Maurice_Agulhon
+Émile Mireaux;scholar;1885.0;Mont-de-Marsan;44.0441;1.103216;40;Landes;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/%C3%89mile_Mireaux
+Georges Mailhos;scholar;1932.0;Mont-de-Marsan;44.0441;1.103216;40;Landes;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Georges_Mailhos
+Paul Delmas-Marsalet;scholar;1898.0;Dax;44.0441;1.103216;82;Tarn-et-Garonne;Occitanie;https://fr.wikipedia.org/wiki/Paul_Delmas-Marsalet
+Jacques Gonnet;scholar;1945.0;Carpentras;44.062749;5.057038;84;Vaucluse;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Jacques_Gonnet
+Serge Vincent-Vidal;scholar;1924.0;Catalogne;44.114796;0.227375;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Serge_Vincent-Vidal
+Alain Aspect;scholar;1947.0;Agen;44.202304;0.631041;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Alain_Aspect
+Jean Brun (philosophe);scholar;1919.0;Agen;44.202304;0.631041;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean_Brun_(philosophe)
+Michel Serres;scholar;1930.0;Agen;44.202304;0.631041;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Michel_Serres
+Pierre Delvolvé;scholar;1940.0;Tarn-et-Garonne;44.218708;-1.290292;40;Landes;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Pierre_Delvolv%C3%A9
+Serge Regourd;scholar;1948.0;Tarn-et-Garonne;44.218708;-1.290292;40;Landes;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Serge_Regourd
+Dominique Roux;scholar;1943.0;Gap;44.563233;6.076778;5;Hautes-Alpes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Dominique_Roux
+André Boucherle;scholar;1924.0;Valence;44.580095;4.753405;26;Drôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Andr%C3%A9_Boucherle
+Paul Ricœur;scholar;1913.0;Valence;44.580095;4.753405;26;Drôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Paul_Ric%C5%93ur
+Henri Laugier;scholar;1888.0;Mane;44.59619;6.08892;5;Hautes-Alpes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Henri_Laugier
+François Jullien;scholar;1951.0;Embrun;44.602963;6.519088;5;Hautes-Alpes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Jullien
+Pierre Grégory;scholar;1945.0;Figeac;44.609226;2.02419;46;Lot;Occitanie;https://fr.wikipedia.org/wiki/Pierre_Gr%C3%A9gory
+Simone Vierne;scholar;1930.0;Savoie;44.617348;0.181972;47;Lot-et-Garonne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Simone_Vierne
+Yves-Marie Bercé;scholar;1936.0;Mesterrieux;44.645885;-0.012921;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Yves-Marie_Berc%C3%A9
+Pierre Laborie;scholar;1936.0;Bagnac-sur-Célé;44.662987;2.148639;46;Lot;Occitanie;https://fr.wikipedia.org/wiki/Pierre_Laborie
+Francis Vian;scholar;1917.0;Privas;44.726042;4.594919;7;Ardèche;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Francis_Vian
+Philippe Presles;scholar;1957.0;Talence;44.80642;-0.592018;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Philippe_Presles
+Alain Bonnet (chercheur);scholar;1945.0;Caudéran;44.845587;-0.613117;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Alain_Bonnet_(chercheur)
+Jean-Luc Nancy;scholar;1940.0;Caudéran;44.845587;-0.613117;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Luc_Nancy
+Edmond Jouve;scholar;1937.0;Nadaillac-de-Rouge;44.850169;1.43119;46;Lot;Occitanie;https://fr.wikipedia.org/wiki/Edmond_Jouve
+Alain Barrère;scholar;1910.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Alain_Barr%C3%A8re
+André Mandouze;scholar;1916.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Andr%C3%A9_Mandouze
+Jacques-Olivier Boudon;scholar;1962.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jacques-Olivier_Boudon
+Jean Delabroy;scholar;1947.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean_Delabroy
+Jean-Luc Fournet;scholar;1965.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Luc_Fournet
+Pierre Clarac;scholar;1894.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Pierre_Clarac
+Yves Daudet;scholar;1940.0;Bordeaux;44.851897;-0.587877;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Yves_Daudet
+Suzanne Daveau;scholar;1925.0;Ribeiro;44.85582;1.882273;46;Lot;Occitanie;https://fr.wikipedia.org/wiki/Suzanne_Daveau
+Bernard Francou;scholar;1948.0;Briançon;44.896187;6.637231;5;Hautes-Alpes;Provence-Alpes-Côte d'Azur;https://fr.wikipedia.org/wiki/Bernard_Francou
+Jean-Benoît Puech;scholar;1947.0;Aurillac;44.918771;2.435053;15;Cantal;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jean-Beno%C3%AEt_Puech
+Nicolas Grimal;scholar;1948.0;Libourne;44.920384;-0.226836;33;Gironde;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Nicolas_Grimal
+André Laronde;scholar;1940.0;Grenoble;45.182828;5.724369;38;Isère;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Andr%C3%A9_Laronde
+Jacques Solé;scholar;1932.0;Grenoble;45.182828;5.724369;38;Isère;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jacques_Sol%C3%A9
+Jean-Louis Dessalles;scholar;1956.0;Périgueux;45.193072;0.711299;24;Dordogne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Louis_Dessalles
+Gérard Conac;scholar;1930.0;Vorey;45.193122;3.91346;43;Haute-Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/G%C3%A9rard_Conac
+Jean-Pierre Poulain;scholar;1956.0;Tulle;45.267177;1.764073;19;Corrèze;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Pierre_Poulain
+Louis Glangeaud;scholar;1903.0;Tulle;45.267177;1.764073;19;Corrèze;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Louis_Glangeaud
+René de Lacharrière;scholar;1915.0;Coux;45.321639;-0.409436;7;Ardèche;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Ren%C3%A9_de_Lacharri%C3%A8re
+Marcel Conche;scholar;1922.0;Corrèze;45.365038;1.862942;19;Corrèze;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Marcel_Conche
+Bernard Pouderon;scholar;1951.0;Saint-Étienne;45.430195;4.370045;42;Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Bernard_Pouderon
+Claude Longeon;scholar;1941.0;Saint-Étienne;45.430195;4.370045;42;Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Claude_Longeon
+Thierry Poyet (auteur);scholar;1968.0;Saint-Étienne;45.430195;4.370045;42;Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Thierry_Poyet_(auteur)
+Henri Metzger;scholar;2007.0;La Tronche;45.469885;1.754407;19;Corrèze;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Henri_Metzger
+Guy Bégué;scholar;1932.0;Angoulême;45.644105;0.148008;16;Charente;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Guy_B%C3%A9gu%C3%A9
+Maurice Duverger;scholar;1917.0;Angoulême;45.644105;0.148008;16;Charente;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Maurice_Duverger
+François Hartog;scholar;1946.0;Albertville;45.671004;6.396774;73;Savoie;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Hartog
+Alain Montandon;scholar;1945.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Alain_Montandon
+Bruno Benoit;scholar;1949.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Bruno_Benoit
+Christiane Chauviré;scholar;1945.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Christiane_Chauvir%C3%A9
+Françoise Briquel-Chatonnet;scholar;1956.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Fran%C3%A7oise_Briquel-Chatonnet
+Françoise Dastur;scholar;1942.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Fran%C3%A7oise_Dastur
+Isabelle Huault;scholar;1967.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Isabelle_Huault
+Jacques Duraffourg;scholar;2008.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Jacques_Duraffourg
+Maurice Sartre;scholar;1944.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Maurice_Sartre
+Philippe Greffet;scholar;1924.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Philippe_Greffet
+René Chamussy;scholar;1936.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Ren%C3%A9_Chamussy
+Savitri Devi;scholar;1905.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Savitri_Devi
+Simone Bertière;scholar;1926.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Simone_Berti%C3%A8re
+Vincent Mangematin;scholar;1965.0;Lyon;45.758;4.835;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Vincent_Mangematin
+Yves Bréchet;scholar;1961.0;Chamalières;45.774269;3.060492;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Yves_Br%C3%A9chet
+Georges Nivat;scholar;1935.0;Clermont-Ferrand;45.786671;3.107055;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Georges_Nivat
+Guy Perrier (géophysicien);scholar;1939.0;Clermont-Ferrand;45.786671;3.107055;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Guy_Perrier_(g%C3%A9ophysicien)
+Laurent Jaffro;scholar;1963.0;Clermont-Ferrand;45.786671;3.107055;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Laurent_Jaffro
+Constantin Levaditi;scholar;1874.0;Galați;45.801003;4.818863;69;Rhône;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Constantin_Levaditi
+Daniel Dahan;scholar;1969.0;Annecy;45.901584;6.125296;74;Haute-Savoie;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Daniel_Dahan
+Eugène Cottard;scholar;1873.0;Annecy;45.901584;6.125296;74;Haute-Savoie;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Eug%C3%A8ne_Cottard
+Michel Machebœuf;scholar;1900.0;Châtel-Guyon;45.921997;3.060949;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Michel_Macheb%C5%93uf
+Bertrand Tillier;scholar;1968.0;Châteauroux;45.960056;-0.890924;17;Charente-Maritime;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Bertrand_Tillier
+Hubert Védrine;scholar;1947.0;Bellegarde-en-Marche;45.98203;2.297421;23;Creuse;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Hubert_V%C3%A9drine
+Marcel Freydefont;scholar;1948.0;Randan;46.017438;3.353131;63;Puy-de-Dôme;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Marcel_Freydefont
+Myriam Revault d'Allonnes;scholar;1942.0;Roanne;46.043412;4.072015;42;Loire;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Myriam_Revault_d%27Allonnes
+Pierre Mesnard;scholar;1900.0;Surgères;46.103571;-0.756848;17;Charente-Maritime;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Pierre_Mesnard
+Paul Larivaille;scholar;1932.0;Saint-Étienne-de-Furs;46.119924;1.508762;23;Creuse;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Paul_Larivaille
+Martine Joly;scholar;1943.0;Vichy;46.131168;3.428025;3;Allier;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Martine_Joly
+Léon Cristiani;scholar;1879.0;Escurolles;46.142478;3.272838;3;Allier;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/L%C3%A9on_Cristiani
+Jacques Guigou;scholar;1941.0;Guéret;46.171794;1.874985;23;Creuse;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jacques_Guigou
+Michèle Laforest;scholar;1927.0;Guéret;46.171794;1.874985;23;Creuse;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Mich%C3%A8le_Laforest
+Pierre Chuvin;scholar;1943.0;Saint-Angel;46.355329;2.694897;3;Allier;Auvergne-Rhône-Alpes;https://fr.wikipedia.org/wiki/Pierre_Chuvin
+Jean Cavaillès;scholar;1903.0;Saint-Maixent-l'École;46.412912;-0.206888;79;Deux-Sèvres;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean_Cavaill%C3%A8s
+Paul Darbois;scholar;1873.0;Charolles;46.443772;4.30193;71;Saône-et-Loire;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Paul_Darbois
+Marie-Joseph Nicolas;scholar;1906.0;Fontenay-le-Comte;46.459821;-0.794159;85;Vendée;Pays de la Loire;https://fr.wikipedia.org/wiki/Marie-Joseph_Nicolas
+Bernard Bourgeois;scholar;1929.0;Varennes-Saint-Sauveur;46.57947;4.975229;71;Saône-et-Loire;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Bernard_Bourgeois
+Bernard Gorceix;scholar;1937.0;Poitiers;46.586578;0.35668;86;Vienne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Bernard_Gorceix
+Colette Pétonnet;scholar;1929.0;Poitiers;46.586578;0.35668;86;Vienne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Colette_P%C3%A9tonnet
+Jacques Fontaine;scholar;1922.0;Lilas;46.652696;0.36838;86;Vienne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jacques_Fontaine
+Marcel Courthiade;scholar;1953.0;Montceau-les-Mines;46.676942;4.358337;71;Saône-et-Loire;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Marcel_Courthiade
+Antoine Prost;scholar;1933.0;Lons-le-Saunier;46.677499;5.559875;39;Jura;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Antoine_Prost
+René Rémond;scholar;1918.0;Lons-le-Saunier;46.677499;5.559875;39;Jura;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Ren%C3%A9_R%C3%A9mond
+Marc Crépon;scholar;1962.0;Decize;46.809753;3.473532;58;Nièvre;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Marc_Cr%C3%A9pon
+Jean Pradel;scholar;1933.0;Châtellerault;46.8162;0.551;86;Vienne;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean_Pradel
+Albert Michel-Lévy;scholar;1877.0;Autun;46.938842;4.304399;71;Saône-et-Loire;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Albert_Michel-L%C3%A9vy
+Jean-Clément Martin;scholar;1948.0;Thouars;46.981613;-0.233224;79;Deux-Sèvres;Nouvelle-Aquitaine;https://fr.wikipedia.org/wiki/Jean-Cl%C3%A9ment_Martin
+Bruno Latour;scholar;1947.0;Beaune;47.025352;4.840893;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Bruno_Latour
+Eugène Gaudemet;scholar;1872.0;Vosne-Romanée;47.157389;4.959948;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Eug%C3%A8ne_Gaudemet
+Henri Chambre;scholar;1908.0;Chambéry;47.165242;-1.034458;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Henri_Chambre
+Jean-Noël Vuarnet;scholar;1945.0;Chambéry;47.165242;-1.034458;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Jean-No%C3%ABl_Vuarnet
+François Jacques (historien);scholar;1946.0;Fussy;47.186788;3.664458;58;Nièvre;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Jacques_(historien)
+David Feuerwerker;scholar;1912.0;Genève;47.21202;-1.60215;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/David_Feuerwerker
+Frédéric Jenny;scholar;1943.0;Genève;47.21202;-1.60215;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Jenny
+Georges-Henri Soutou;scholar;1943.0;Genève;47.21202;-1.60215;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Georges-Henri_Soutou
+Jules Vuillemin;scholar;1920.0;Pierrefontaine-les-Va;47.214176;6.541457;25;Doubs;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Jules_Vuillemin
+Jean Delumeau;scholar;1923.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Jean_Delumeau
+Jehan Desanges;scholar;1929.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Jehan_Desanges
+Michel Crouzet;scholar;1928.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Michel_Crouzet
+Michel Provost;scholar;1945.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Michel_Provost
+Yves Bottineau;scholar;1925.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Yves_Bottineau
+Yves Guchet;scholar;1938.0;Nantes;47.239367;-1.555335;44;Loire-Atlantique;Pays de la Loire;https://fr.wikipedia.org/wiki/Yves_Guchet
+Gustave Rudler;scholar;1872.0;Besançon;47.251938;6.001699;25;Doubs;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Gustave_Rudler
+Jacques Gagey (universitaire);scholar;1923.0;Besançon;47.251938;6.001699;25;Doubs;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Jacques_Gagey_(universitaire)
+Laurent Pernot (helléniste);scholar;1955.0;Saumur;47.261814;-0.082764;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Laurent_Pernot_(hell%C3%A9niste)
+Marcel Merle;scholar;1923.0;Saumur;47.261814;-0.082764;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Marcel_Merle
+Alain Pigeard;scholar;1948.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Alain_Pigeard
+Jean Gaudemet;scholar;1908.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Jean_Gaudemet
+Jean-Jacques Friboulet;scholar;1949.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Jean-Jacques_Friboulet
+Jean-Marc Berlière;scholar;1948.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Jean-Marc_Berli%C3%A8re
+Paul Marie Gaudemet;scholar;1914.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Paul_Marie_Gaudemet
+Raymond Oursel;scholar;1921.0;Dijon;47.331848;5.033601;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Raymond_Oursel
+Colette Beaune;scholar;1943.0;Loir-et-Cher;47.362207;0.674311;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Colette_Beaune
+Jean-Pierre Bois;scholar;1945.0;Tours;47.395476;0.695848;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Jean-Pierre_Bois
+Olivier Faron;scholar;1959.0;Tours;47.395476;0.695848;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Olivier_Faron
+Pascal Jan;scholar;1967.0;Tours;47.395476;0.695848;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Pascal_Jan
+Yves Bonnefoy;scholar;1923.0;Tours;47.395476;0.695848;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Yves_Bonnefoy
+Stéphanie Vincent;scholar;1977.0;Amboise;47.397272;0.987649;37;Indre-et-Loire;Centre-Val de Loire;https://fr.wikipedia.org/wiki/St%C3%A9phanie_Vincent
+Alain Colas;scholar;1943.0;Clamecy;47.455864;3.505066;58;Nièvre;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Alain_Colas
+Pierre Donzelot;scholar;1901.0;Valentigney;47.465945;6.829692;25;Doubs;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Pierre_Donzelot
+Charles Berjole;scholar;1884.0;Angers;47.467471;-0.561615;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Charles_Berjole
+Claude Alzon;scholar;1931.0;Angers;47.467471;-0.561615;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Claude_Alzon
+François Dolbeau;scholar;1947.0;Angers;47.467471;-0.561615;49;Maine-et-Loire;Pays de la Loire;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Dolbeau
+Fernand Baldensperger;scholar;1871.0;Saint-Dié;47.4702;1.71704;41;Loir-et-Cher;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Fernand_Baldensperger
+Claude-Edmonde Magny;scholar;1913.0;Belfahy;47.473904;5.379161;70;Haute-Saône;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Claude-Edmonde_Magny
+Gustave Ribaud;scholar;1884.0;Conflans-sur-Lanterne;47.473904;5.379161;70;Haute-Saône;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Gustave_Ribaud
+Michel Bur;scholar;1933.0;Gray;47.473904;5.379161;70;Haute-Saône;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Michel_Bur
+Pierre Rosanvallon;scholar;1948.0;Blois;47.581228;1.316533;41;Loir-et-Cher;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Pierre_Rosanvallon
+Jean-Paul Goux;scholar;1948.0;Vesoul;47.628692;6.157979;70;Haute-Saône;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Jean-Paul_Goux
+Denise Pumain;scholar;1946.0;Montbard;47.638944;4.335193;21;Côte-d'Or;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Denise_Pumain
+Christian Amphoux;scholar;1943.0;Vannes;47.659971;-2.752192;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Christian_Amphoux
+Yves Coppens;scholar;1934.0;Vannes;47.659971;-2.752192;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Yves_Coppens
+Geneviève Rodis-Lewis;scholar;1918.0;Lure;47.684098;6.497007;70;Haute-Saône;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Genevi%C3%A8ve_Rodis-Lewis
+André Rouillé;scholar;1948.0;Deux Rivières;47.686079;3.698674;89;Yonne;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Andr%C3%A9_Rouill%C3%A9
+Denis Fadda;scholar;1943.0;Annaba;47.745536;-3.387898;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Denis_Fadda
+Jacques Ehrmann;scholar;1931.0;Mulhouse;47.749509;7.36973;68;Haut-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Jacques_Ehrmann
+Juliette de La Genière;scholar;1927.0;Mulhouse;47.749509;7.36973;68;Haut-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Juliette_de_La_Geni%C3%A8re
+Jean-Yves Le Drian;scholar;1947.0;Lorient;47.750364;-3.378025;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Jean-Yves_Le_Drian
+Nicole Le Douarin;scholar;1930.0;Lorient;47.750364;-3.378025;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Nicole_Le_Douarin
+Étienne Wolff;scholar;1904.0;Auxerre;47.791247;3.579905;89;Yonne;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/%C3%89tienne_Wolff
+Henri Gouhier;scholar;1898.0;Auxerre;47.791247;3.579905;89;Yonne;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Henri_Gouhier
+Jean Goulemot;scholar;1937.0;Granville;47.799428;-2.15447;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Jean_Goulemot
+Jean-Louis Ferrary;scholar;1948.0;Orléans;47.873569;1.911358;45;Loiret;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Jean-Louis_Ferrary
+Marc Le Bot;scholar;1921.0;Combrit;47.885708;-4.17194;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Marc_Le_Bot
+Jean-Pierre Montier;scholar;1956.0;Saint-Malo;47.93902;-2.41155;56;Morbihan;Bretagne;https://fr.wikipedia.org/wiki/Jean-Pierre_Montier
+Étienne Balibar;scholar;1942.0;Avallon;47.946724;3.016988;45;Loiret;Centre-Val de Loire;https://fr.wikipedia.org/wiki/%C3%89tienne_Balibar
+Jacques Monférier;scholar;1933.0;Fougères;47.950339;-3.881992;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Jacques_Monf%C3%A9rier
+Pascal Ory;scholar;1948.0;Fougères;47.950339;-3.881992;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Pascal_Ory
+François Luchaire;scholar;1919.0;La Rochelle;47.984627;-1.65389;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Luchaire
+Olivier Roy;scholar;1949.0;La Rochelle;47.984627;-1.65389;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Olivier_Roy
+Bertrand Lançon;scholar;1952.0;Mans;47.993378;0.191169;72;Sarthe;Pays de la Loire;https://fr.wikipedia.org/wiki/Bertrand_Lan%C3%A7on
+Jean-Yves Empereur;scholar;1952.0;Mans;47.993378;0.191169;72;Sarthe;Pays de la Loire;https://fr.wikipedia.org/wiki/Jean-Yves_Empereur
+Patrick Rambourg;scholar;1965.0;Mans;47.993378;0.191169;72;Sarthe;Pays de la Loire;https://fr.wikipedia.org/wiki/Patrick_Rambourg
+André Raymond;scholar;1925.0;Montargis;47.998342;2.735445;45;Loiret;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Andr%C3%A9_Raymond
+Jean-Jacques Hublin;scholar;1953.0;Mostaganem;48.012277;0.228402;72;Sarthe;Pays de la Loire;https://fr.wikipedia.org/wiki/Jean-Jacques_Hublin
+Alain Malissard;scholar;1936.0;Châlette-sur-Loing;48.019121;2.720474;45;Loiret;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Alain_Malissard
+Jean-François Bach;scholar;1940.0;Yvré-l'Évêque;48.026286;0.271411;72;Sarthe;Pays de la Loire;https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Bach
+Ellen Constans;scholar;1930.0;Arnhem;48.085445;-1.658426;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Ellen_Constans
+Bruno Dagens;scholar;1935.0;Nimègue;48.085726;-1.659625;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Bruno_Dagens
+Georges Marçais;scholar;1876.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Georges_Mar%C3%A7ais
+Lucien Musset;scholar;1922.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Lucien_Musset
+Maurice Testard;scholar;1921.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Maurice_Testard
+René Piedelièvre;scholar;1891.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Ren%C3%A9_Piedeli%C3%A8vre
+William Marçais;scholar;1872.0;Rennes;48.110899;-1.68365;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/William_Mar%C3%A7ais
+Jean Plattard;scholar;1873.0;Saint-Georges-de-Rene;48.111845;-1.67625;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Jean_Plattard
+Pierre-André Liégé;scholar;1921.0;Haute-Marne;48.113146;7.416151;68;Haut-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Pierre-Andr%C3%A9_Li%C3%A9g%C3%A9
+André Tunc;scholar;1917.0;Meaux;48.129978;-1.760489;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Andr%C3%A9_Tunc
+Frédéric Grolleau;scholar;1969.0;Épinal;48.170226;6.484892;88;Vosges;Grand Est;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Grolleau
+Christian Robin;scholar;1943.0;Chaumont;48.186036;5.109231;52;Haute-Marne;Grand Est;https://fr.wikipedia.org/wiki/Christian_Robin
+Roger Guesnerie;scholar;1943.0;Sainte-Gemmes-le-Robe;48.202085;-0.370122;53;Mayenne;Pays de la Loire;https://fr.wikipedia.org/wiki/Roger_Guesnerie
+Cécile Morrisson;scholar;1940.0;Dinan;48.234562;-4.548457;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/C%C3%A9cile_Morrisson
+Ivan Gobry;scholar;1927.0;Saint-André-les-Verge;48.277223;4.050881;10;Aube;Grand Est;https://fr.wikipedia.org/wiki/Ivan_Gobry
+Emmanuèle Baumgartner;scholar;1940.0;Nogent-le-Rotrou;48.317471;0.808165;28;Eure-et-Loir;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Emmanu%C3%A8le_Baumgartner
+Jacques Aumont;scholar;1942.0;Avignon;48.390692;-1.759389;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Jacques_Aumont
+Marie-France Brive;scholar;1945.0;Avignon;48.390692;-1.759389;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Marie-France_Brive
+Bertrand Saint-Sernin;scholar;1931.0;Brest;48.406435;-4.497736;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Bertrand_Saint-Sernin
+Gilles Lebreton;scholar;1958.0;Brest;48.406435;-4.497736;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Gilles_Lebreton
+Pierre Grappin;scholar;1915.0;Coussey;48.407498;5.685805;88;Vosges;Grand Est;https://fr.wikipedia.org/wiki/Pierre_Grappin
+Jean Métral;scholar;1933.0;Haute-Savoie;48.43355;-4.627666;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Jean_M%C3%A9tral
+François Farges;scholar;1962.0;Eure-et-Loir;48.435568;1.48376;28;Eure-et-Loir;Centre-Val de Loire;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Farges
+Raymond-François Le Bris;scholar;1935.0;Gouesnou;48.443343;-4.462844;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Raymond-Fran%C3%A7ois_Le_Bris
+Joseph Lefftz;scholar;1888.0;Obernai;48.462885;7.468147;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Joseph_Lefftz
+Simone Goyard-Fabre;scholar;1927.0;Montier-en-Der;48.482019;4.772065;52;Haute-Marne;Grand Est;https://fr.wikipedia.org/wiki/Simone_Goyard-Fabre
+Jean-Pierre Vernant;scholar;1914.0;Provins;48.558668;3.2981;77;Seine-et-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Pierre_Vernant
+Colette Weil;scholar;1926.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Colette_Weil
+Francis Rapp;scholar;1926.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Francis_Rapp
+Françoise Thom;scholar;1951.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Fran%C3%A7oise_Thom
+Jean-Marie Dentzer;scholar;1935.0;Strasbourg;48.579831;7.761454;67;Bas-Rhin;Grand Est;https://fr.wikipedia.org/wiki/Jean-Marie_Dentzer
+Léon Fleuriot;scholar;1923.0;Morlaix;48.595154;-3.820202;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/L%C3%A9on_Fleuriot
+Henri Breuil;scholar;1877.0;Mortain;48.611003;-0.940307;50;Manche;Normandie;https://fr.wikipedia.org/wiki/Henri_Breuil
+Marcel Gauchet;scholar;1946.0;Poilley;48.618714;-1.319372;50;Manche;Normandie;https://fr.wikipedia.org/wiki/Marcel_Gauchet
+Armand Rébillon;scholar;1879.0;Ille-et-Vilaine;48.657991;-1.974617;35;Ille-et-Vilaine;Bretagne;https://fr.wikipedia.org/wiki/Armand_R%C3%A9billon
+Nicole Bériou;scholar;1948.0;Saint-Pol-de-Léon;48.674443;-3.988221;29;Finistère;Bretagne;https://fr.wikipedia.org/wiki/Nicole_B%C3%A9riou
+Michel Deguy;scholar;1930.0;Draveil;48.677829;2.412138;91;Essonne;Île-de-France;https://fr.wikipedia.org/wiki/Michel_Deguy
+Alain Tallon;scholar;1967.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Alain_Tallon
+Gérard Noiriel;scholar;1950.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/G%C3%A9rard_Noiriel
+Jacques Jouanna;scholar;1935.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Jacques_Jouanna
+Jean Borella;scholar;1930.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Jean_Borella
+Lucien Febvre;scholar;1878.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Lucien_Febvre
+Xavier Galmiche;scholar;1963.0;Nancy;48.688135;6.171263;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Xavier_Galmiche
+Georges Tate;scholar;1943.0;Vigneux-sur-Seine;48.705366;2.426026;91;Essonne;Île-de-France;https://fr.wikipedia.org/wiki/Georges_Tate
+Georges Le Gentil;scholar;1875.0;Fère-Champenoise;48.758005;3.9976;51;Marne;Grand Est;https://fr.wikipedia.org/wiki/Georges_Le_Gentil
+Hubert Girault;scholar;1957.0;Saint-Maur-des-Fossés;48.799943;2.491801;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Hubert_Girault
+Jean-François Lyotard;scholar;1924.0;Versailles;48.803019;2.131319;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Lyotard
+Jean Richard (historien);scholar;1921.0;Kremlin-Bicêtre;48.811421;2.362089;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Richard_(historien)
+Michel Zink;scholar;1945.0;Issy-les-Moulineaux;48.823903;2.262887;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Michel_Zink
+Claude Lepelley;scholar;1934.0;Charenton-le-Pont;48.823948;2.407129;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Claude_Lepelley
+Jean Caune;scholar;1938.0;Charenton-le-Pont;48.823948;2.407129;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Caune
+Noël Duval;scholar;1929.0;Chesnay-Rocquencourt;48.82791;2.116501;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/No%C3%ABl_Duval
+Claude B. Levenson;scholar;1938.0;Paris 14;48.830108;2.323026;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Claude_B._Levenson
+Daniel Roche;scholar;1935.0;Paris 14;48.830108;2.323026;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Daniel_Roche
+Jean Leclant;scholar;1920.0;Paris 14;48.830108;2.323026;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Leclant
+Marc Philonenko;scholar;1930.0;Paris 14;48.830108;2.323026;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marc_Philonenko
+Christelle Taraud;scholar;1969.0;Paris 13;48.830193;2.365001;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Christelle_Taraud
+Alexis Philonenko;scholar;1932.0;Paris 12;48.833494;2.415411;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Alexis_Philonenko
+Georges Dumézil;scholar;1898.0;Paris 12;48.833494;2.415411;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Georges_Dum%C3%A9zil
+Robert Misrahi;scholar;1926.0;Paris 12;48.833494;2.415411;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Robert_Misrahi
+Barbara Cassin;scholar;1947.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Barbara_Cassin
+Didier Maus;scholar;1947.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Didier_Maus
+François Ewald;scholar;1946.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Ewald
+Frédéric Worms;scholar;1964.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Worms
+Guillaume Sainteny;scholar;1958.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Guillaume_Sainteny
+Hubert Julien-Laferrière;scholar;1966.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Hubert_Julien-Laferri%C3%A8re
+Jacques Dalarun;scholar;1952.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Dalarun
+Jean-Marie Martin (historien);scholar;1938.0;Boulogne-Billancourt;48.837799;2.243202;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Marie_Martin_(historien)
+Yves Ternon;scholar;1932.0;Saint-Mandé;48.841526;2.419441;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Yves_Ternon
+Franck Évrard;scholar;1960.0;Paris 15;48.84162;2.295289;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Franck_%C3%89vrard
+Jean de Palacio;scholar;1931.0;Paris 15;48.84162;2.295289;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean_de_Palacio
+Marc Jimenez;scholar;1943.0;Paris 15;48.84162;2.295289;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marc_Jimenez
+Pierre Grimal;scholar;1912.0;Paris 15;48.84162;2.295289;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_Grimal
+Yves Gaudemet;scholar;1946.0;Paris 15;48.84162;2.295289;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Yves_Gaudemet
+Gabriel Désert;scholar;1924.0;Condé-sur-Noireau;48.84479;-0.555088;14;Calvados;Normandie;https://fr.wikipedia.org/wiki/Gabriel_D%C3%A9sert
+Christian Warolin;scholar;1921.0;Vincennes;48.847279;2.437785;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Christian_Warolin
+Dominique Chateau;scholar;1948.0;Vincennes;48.847279;2.437785;94;Val-de-Marne;Île-de-France;https://fr.wikipedia.org/wiki/Dominique_Chateau
+Raymond Aron;scholar;1905.0;Paris 6;48.849268;2.330883;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Raymond_Aron
+René David (juriste);scholar;1906.0;Paris 6;48.849268;2.330883;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Ren%C3%A9_David_(juriste)
+François Terré;scholar;1930.0;Paris 7;48.853954;2.312864;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Terr%C3%A9
+Gilles Ferry;scholar;1917.0;Paris 7;48.853954;2.312864;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Gilles_Ferry
+Henry Corbin;scholar;1903.0;Paris 7;48.853954;2.312864;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Henry_Corbin
+René Huchon;scholar;1872.0;Paris 7;48.853954;2.312864;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Ren%C3%A9_Huchon
+François Baratte;scholar;1947.0;Paris 4;48.854042;2.356841;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Baratte
+Jean Richer (universitaire);scholar;1915.0;Paris 4;48.854042;2.356841;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Richer_(universitaire)
+Bernard Pottier (linguiste);scholar;1924.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Bernard_Pottier_(linguiste)
+Claude Frioux;scholar;1932.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Claude_Frioux
+François Châtelet (philosophe);scholar;1925.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Ch%C3%A2telet_(philosophe)
+François Chazel;scholar;1937.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Chazel
+Hélène Carrère d'Encausse;scholar;1929.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_Carr%C3%A8re_d%27Encausse
+Jacqueline de Proyart;scholar;1927.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jacqueline_de_Proyart
+Marcel Abraham;scholar;1898.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marcel_Abraham
+Pierre Pachet;scholar;1937.0;Paris 16;48.856305;2.267032;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_Pachet
+Alain Pellet;scholar;1947.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Alain_Pellet
+Alain Vaillant;scholar;1958.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Alain_Vaillant
+Anne Cheng;scholar;1955.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Anne_Cheng
+Annette Wieviorka;scholar;1948.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Annette_Wieviorka
+Bertrand Badie;scholar;1950.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Bertrand_Badie
+Catherine Paradeise;scholar;1946.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Catherine_Paradeise
+Denis Crouzet;scholar;1953.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Denis_Crouzet
+Dominique Barthélemy (historien);scholar;1953.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Dominique_Barth%C3%A9lemy_(historien)
+Emmanuel de Waresquiel;scholar;1957.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Emmanuel_de_Waresquiel
+François Weil;scholar;1961.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Weil
+Françoise Armengaud;scholar;1942.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7oise_Armengaud
+Françoise Gaill;scholar;1948.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7oise_Gaill
+Frédéric Fréry;scholar;1966.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Fr%C3%A9ry
+Ghislaine Chartron;scholar;1961.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Ghislaine_Chartron
+Gilles Kepel;scholar;1955.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Gilles_Kepel
+Hugues Moutouh;scholar;1967.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Hugues_Moutouh
+Ivar Ekeland;scholar;1944.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Ivar_Ekeland
+Jean Sgard;scholar;1928.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Sgard
+Jean Tulard;scholar;1933.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Tulard
+Jean-François Ternay;scholar;1955.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Ternay
+Jean-Noël Robert;scholar;1949.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-No%C3%ABl_Robert
+Jean-Pierre Mahé;scholar;1944.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Pierre_Mah%C3%A9
+Jean-Pierre Nadal;scholar;1957.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Pierre_Nadal
+Jean-Robert Pitte;scholar;1949.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Robert_Pitte
+Jocelyn Benoist;scholar;1968.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jocelyn_Benoist
+Loïck Roche;scholar;1961.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Lo%C3%AFck_Roche
+Marc-Louis Bourgeois;scholar;1934.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marc-Louis_Bourgeois
+Marie-Dominique Popelard;scholar;1949.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marie-Dominique_Popelard
+Marie-Jeanne Coutagne;scholar;1950.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marie-Jeanne_Coutagne
+Michel Devoret;scholar;1953.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Michel_Devoret
+Nicole El Karoui;scholar;1944.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Nicole_El_Karoui
+Olivier Sire;scholar;1954.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Olivier_Sire
+Pascale Weber;scholar;1968.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pascale_Weber
+Patrick Boucheron;scholar;1965.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Patrick_Boucheron
+Philippe Aghion;scholar;1956.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Aghion
+Philippe Bordeyne;scholar;1959.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Bordeyne
+Philippe Hoffmann;scholar;1953.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Hoffmann
+Pierre Duviols;scholar;1928.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_Duviols
+Pierre Léna;scholar;1937.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Pierre_L%C3%A9na
+Rémi Brague;scholar;1947.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/R%C3%A9mi_Brague
+Renaud Barbaras;scholar;1955.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Renaud_Barbaras
+Séverine Autesserre;scholar;1976.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/S%C3%A9verine_Autesserre
+Thierry de Montbrial;scholar;1943.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Thierry_de_Montbrial
+Yves Roucaute;scholar;1953.0;Paris;48.859;2.347;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Yves_Roucaute
+André Leroi-Gourhan;scholar;1911.0;Paris 11;48.860162;2.381844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Andr%C3%A9_Leroi-Gourhan
+Sandra Laugier;scholar;1961.0;Paris 1;48.86832;2.326079;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Sandra_Laugier
+Anne Dufourmantelle;scholar;1964.0;Paris 8;48.873998;2.31129;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Anne_Dufourmantelle
+Dominique Chevallier;scholar;1928.0;Paris 8;48.873998;2.31129;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Dominique_Chevallier
+Marc Ferro;scholar;1924.0;Paris 8;48.873998;2.31129;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marc_Ferro
+René Pintard;scholar;1903.0;Paris 8;48.873998;2.31129;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Ren%C3%A9_Pintard
+Jacques Chevrier;scholar;1934.0;Rueil-Malmaison;48.874531;2.180455;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Chevrier
+Bertrand de Jouvenel;scholar;1903.0;Paris 9;48.87727;2.33371;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Bertrand_de_Jouvenel
+Claude Esteban;scholar;1935.0;Paris 9;48.87727;2.33371;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Claude_Esteban
+Edgar Morin;scholar;1921.0;Paris 9;48.87727;2.33371;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Edgar_Morin
+Alain Derville;scholar;1924.0;Paris 10;48.88143;2.366774;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Alain_Derville
+Angèle Kremer-Marietti;scholar;1927.0;Paris 10;48.88143;2.366774;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Ang%C3%A8le_Kremer-Marietti
+Georges Duby;scholar;1919.0;Paris 10;48.88143;2.366774;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Georges_Duby
+Jacques Scherer;scholar;1912.0;Paris 10;48.88143;2.366774;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Scherer
+Jean-Claude Margolin;scholar;1923.0;Paris 10;48.88143;2.366774;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jean-Claude_Margolin
+Miguel Abensour;scholar;1939.0;Paris 10;48.88143;2.366774;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Miguel_Abensour
+Danielle Tartakowsky;scholar;1947.0;Puteaux;48.884156;2.237199;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Danielle_Tartakowsky
+Francis Caballero;scholar;1940.0;Sofia;48.884773;2.348329;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Francis_Caballero
+Alain de Libera;scholar;1948.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Alain_de_Libera
+Dominique Charpin;scholar;1954.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Dominique_Charpin
+François Bricaire;scholar;1947.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Bricaire
+George Steiner;scholar;1929.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/George_Steiner
+Henry Laurens;scholar;1954.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Henry_Laurens
+Maurice Lever;scholar;1935.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Maurice_Lever
+Michel Arrivé;scholar;1936.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Michel_Arriv%C3%A9
+Michel Kaplan;scholar;1946.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Michel_Kaplan
+Michèle Piquard;scholar;1955.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Mich%C3%A8le_Piquard
+Olivier Pastré;scholar;1950.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Olivier_Pastr%C3%A9
+Pierre-Sylvain Filliozat;scholar;1936.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Pierre-Sylvain_Filliozat
+Yves Lequette;scholar;1946.0;Neuilly-sur-Seine;48.886191;2.265869;92;Hauts-de-Seine;Île-de-France;https://fr.wikipedia.org/wiki/Yves_Lequette
+François Gros (biologiste);scholar;1925.0;Paris 17;48.887702;2.304844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Gros_(biologiste)
+Guy Burgel;scholar;1939.0;Paris 17;48.887702;2.304844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Guy_Burgel
+Jacques Gandouin;scholar;1920.0;Paris 17;48.887702;2.304844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Gandouin
+Rémi Brissiaud;scholar;1949.0;Paris 17;48.887702;2.304844;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/R%C3%A9mi_Brissiaud
+Francine Kaufmann;scholar;1947.0;Paris 19;48.888949;2.396993;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Francine_Kaufmann
+Bertrand Herz;scholar;1930.0;Paris 18;48.896214;2.362997;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Bertrand_Herz
+Marcel Dorigny;scholar;1948.0;Paris 18;48.896214;2.362997;75;Paris;Île-de-France;https://fr.wikipedia.org/wiki/Marcel_Dorigny
+Raymond Barre;scholar;1924.0;Saint-Denis;48.921202;2.495905;93;La Réunion;Île-de-France;https://fr.wikipedia.org/wiki/Raymond_Barre
+Philippe Wolff;scholar;1913.0;Montmorency;48.989397;2.321988;95;Val-d'Oise;Île-de-France;https://fr.wikipedia.org/wiki/Philippe_Wolff
+Jacques Rossiaud;scholar;1932.0;Seine-et-Oise;49.003436;2.080953;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Jacques_Rossiaud
+Jean Hani;scholar;1917.0;Seine-et-Oise;49.003436;2.080953;78;Yvelines;Île-de-France;https://fr.wikipedia.org/wiki/Jean_Hani
+Emmanuel Le Roy Ladurie;scholar;1929.0;Moutiers-en-Cinglais;49.029857;-0.428608;14;Calvados;Normandie;https://fr.wikipedia.org/wiki/Emmanuel_Le_Roy_Ladurie
+Jean-Pierre Leguay (historien);scholar;1938.0;Canisy;49.07748;-1.159114;50;Manche;Normandie;https://fr.wikipedia.org/wiki/Jean-Pierre_Leguay_(historien)
+André Piganiol;scholar;1883.0;Havre;49.081779;-1.601172;50;Manche;Normandie;https://fr.wikipedia.org/wiki/Andr%C3%A9_Piganiol
+Éric Fouache;scholar;1965.0;Havre;49.081779;-1.601172;50;Manche;Normandie;https://fr.wikipedia.org/wiki/%C3%89ric_Fouache
+Gilles Prado;scholar;1947.0;Havre;49.081779;-1.601172;50;Manche;Normandie;https://fr.wikipedia.org/wiki/Gilles_Prado
+Olivier Picard;scholar;1940.0;Bernay;49.089387;0.595349;27;Eure;Normandie;https://fr.wikipedia.org/wiki/Olivier_Picard
+Aymond Tranquard;scholar;1932.0;Affreville;49.095466;-1.307512;50;Manche;Normandie;https://fr.wikipedia.org/wiki/Aymond_Tranquard
+François Déroche;scholar;1952.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_D%C3%A9roche
+Jean Schneider (médiéviste);scholar;1903.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Jean_Schneider_(m%C3%A9di%C3%A9viste)
+Maurice Bayen;scholar;1902.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Maurice_Bayen
+Philippe Contamine;scholar;1932.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Philippe_Contamine
+Pierre-Maurice Masson;scholar;1879.0;Metz;49.108385;6.194891;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Pierre-Maurice_Masson
+Sylvie Lainé;scholar;1957.0;Saint-Lô;49.113843;-1.080182;50;Manche;Normandie;https://fr.wikipedia.org/wiki/Sylvie_Lain%C3%A9
+Mario d'Angelo;scholar;1954.0;Hombourg-Haut;49.132671;6.778331;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Mario_d%27Angelo
+Frédéric Stasiak;scholar;1966.0;Jarny;49.153575;5.879061;54;Meurthe-et-Moselle;Grand Est;https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Stasiak
+Adrien Goetz;scholar;1966.0;Caen;49.187145;-0.371531;14;Calvados;Normandie;https://fr.wikipedia.org/wiki/Adrien_Goetz
+François Grimal;scholar;1945.0;Caen;49.187145;-0.371531;14;Calvados;Normandie;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Grimal
+Marcel Clément;scholar;1921.0;Crépy-en-Valois;49.234294;2.893527;60;Oise;Hauts-de-France;https://fr.wikipedia.org/wiki/Marcel_Cl%C3%A9ment
+Pol Trousset;scholar;1934.0;Reims;49.250948;4.055595;51;Marne;Grand Est;https://fr.wikipedia.org/wiki/Pol_Trousset
+Pierre Guiraud;scholar;1912.0;Sfax;49.266749;4.054452;51;Marne;Grand Est;https://fr.wikipedia.org/wiki/Pierre_Guiraud
+Dominique Sourdel;scholar;1921.0;Pont-Sainte-Maxence;49.309303;2.60379;60;Oise;Hauts-de-France;https://fr.wikipedia.org/wiki/Dominique_Sourdel
+Roger Apéry;scholar;1916.0;Rouen;49.349295;0.811661;27;Eure;Normandie;https://fr.wikipedia.org/wiki/Roger_Ap%C3%A9ry
+André Vauchez (historien);scholar;1938.0;Thionville;49.370681;6.150548;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Andr%C3%A9_Vauchez_(historien)
+Jean Baechler;scholar;1937.0;Thionville;49.370681;6.150548;57;Moselle;Grand Est;https://fr.wikipedia.org/wiki/Jean_Baechler
+Bernard Morel (économiste);scholar;1946.0;Bihorel;49.462037;1.127533;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/Bernard_Morel_(%C3%A9conomiste)
+Léon Malaprade;scholar;1903.0;Dieppe;49.478927;1.047849;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/L%C3%A9on_Malaprade
+Annie Ernaux;scholar;1940.0;Lillebonne;49.519589;0.534929;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/Annie_Ernaux
+Frantz Grenet;scholar;1952.0;Gruchet-le-Valasse;49.551491;0.492499;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/Frantz_Grenet
+Georges Contenau;scholar;1877.0;Laon;49.570287;3.614719;2;Aisne;Hauts-de-France;https://fr.wikipedia.org/wiki/Georges_Contenau
+Dominique Noguez;scholar;1942.0;Bolbec;49.575224;0.483302;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/Dominique_Noguez
+Maxime Crochemore;scholar;1947.0;Fécamp;49.750369;0.396705;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/Maxime_Crochemore
+François Cheng;scholar;1929.0;Nanchang;49.929141;4.66695;8;Ardennes;Grand Est;https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Cheng
+André Crépin;scholar;1928.0;Abbeville;50.105799;1.828902;80;Somme;Hauts-de-France;https://fr.wikipedia.org/wiki/Andr%C3%A9_Cr%C3%A9pin
+Pascale Cossart;scholar;1948.0;Cambrai;50.172628;3.240712;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Pascale_Cossart
+Bruno Béthouart;scholar;1948.0;Airon-Saint-Vaast;50.432107;1.660264;62;Pas-de-Calais;Hauts-de-France;https://fr.wikipedia.org/wiki/Bruno_B%C3%A9thouart
+Henri Laoust;scholar;1905.0;Fresnes-sur-Escaut;50.433148;3.574831;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Henri_Laoust
+Alfred Ernout;scholar;1879.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Alfred_Ernout
+Guy Debeyre;scholar;1911.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Guy_Debeyre
+Jacques Robichez;scholar;1914.0;La Madeleine;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Jacques_Robichez
+Jean-Marie Moeglin;scholar;1955.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Jean-Marie_Moeglin
+Patrick Artus;scholar;1951.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Patrick_Artus
+Paul Renard;scholar;1942.0;Lille;50.630951;3.045391;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Paul_Renard
+Hervé Inglebert;scholar;1960.0;Tourcoing;50.720797;3.157799;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Herv%C3%A9_Inglebert
+Marcel Dubois;scholar;1920.0;Tourcoing;50.720797;3.157799;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Marcel_Dubois
+Léon Vandermeersch;scholar;1928.0;Wervicq-Sud;50.760836;3.0485;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/L%C3%A9on_Vandermeersch
+Maurice-Ruben Hayoun;scholar;1950.0;Agadir;50.948783;1.836396;62;Pas-de-Calais;Hauts-de-France;https://fr.wikipedia.org/wiki/Maurice-Ruben_Hayoun
+Yves-Marie Duval;scholar;1934.0;Gravelines;50.989077;2.134207;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Yves-Marie_Duval
+Jean Viviès;scholar;1957.0;Lavelanet;42.962755;1.861999;9;Ariège;Occitanie;https://fr.wikipedia.org/wiki/Jean_Vivi%C3%A8s
+Maurice Euzennat;scholar;1926;Mont-Saint-Aignan;49.462037;1.127533;76;Seine-Maritime;Normandie;https://fr.wikipedia.org/wiki/Maurice_Euzennat
+Pierre-Yves Hénin;scholar;1946.0;Saint-Aubin-sur-Loire;46.443772;4.30193;71;Saône-et-Loire;Bourgogne-Franche-Comté;https://fr.wikipedia.org/wiki/Pierre-Yves_H%C3%A9nin
+Yves Modéran;scholar;1955.0;Bachy;50.172628;3.240712;59;Nord;Hauts-de-France;https://fr.wikipedia.org/wiki/Yves_Mod%C3%A9ran

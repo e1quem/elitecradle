@@ -15,21 +15,24 @@ def normalize_text(text):
     # Capitalize the first letter
     return text.capitalize()
 
-df_dp = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/parliament/processed/an_clean.csv", sep=None, engine='python')
-df_mn = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/ministers/processed/mn_clean.csv", sep=None, engine='python')
-df_pr = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/presidents/processed/presidents_clean.csv", sep=None, engine='python')
-df_sn = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/senators/processed/sn_clean.csv", sep=None, engine='python')
-df_cf = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/scholars/processed/cf_clean.csv", sep=None, engine='python')
-df_executives = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/processed/exec_clean.csv", sep=None, engine='python')
+df_dp = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/parliament/out/an_clean.csv", sep=None, engine='python')
+df_mn = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/ministers/out/mn_clean.csv", sep=None, engine='python')
+df_pr = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/presidents/out/presidents_clean.csv", sep=None, engine='python')
+df_sn = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/senators/out/sn_clean.csv", sep=None, engine='python')
+df_cf = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/scholars/out/cf_clean.csv", sep=None, engine='python')
+df_cfBIS = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/scholars/out/scholars_clean.csv", sep=None, engine='python')
+df_executives = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/out/exec_clean.csv", sep=None, engine='python')
+df_executivesBIS = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/out/CEOs_clean.csv", sep=None, engine='python')
+df_executivesTER = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/executives/out/business_person_clean.csv", sep=None, engine='python')
 
-df = pd.concat([df_dp, df_mn, df_pr, df_sn, df_cf, df_executives], ignore_index=True)
+df = pd.concat([df_dp, df_mn, df_pr, df_sn, df_cf, df_cfBIS, df_executives, df_executivesBIS, df_executivesTER], ignore_index=True)
 
 # Normalizing dob
 df['dob'] = pd.to_numeric(df['dob'], errors='coerce').astype('Int64')
 
 # We group lines sharing the same name and dob
 # Tag hierarchy
-hierarchy = ['president', 'minister', 'college_de_france', 'executive', 'senat', 'parliament']
+hierarchy = ['president', 'minister', 'college_de_france', 'scholar', 'executive', 'executiveBIS', 'executiveTER', 'senat', 'parliament']
 df['tag'] = pd.Categorical(df['tag'], categories=hierarchy, ordered=True)
 df = df.sort_values('tag')
 df = df.groupby(['name', 'dob'], as_index=False).first()

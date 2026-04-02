@@ -291,60 +291,140 @@ def extract_dob(soup):
 
     return None
 
+#def extract_pob(soup):
+#    infobox = soup.find("table", {"class": "infobox"})
+#    
+#    # 1. Infobox
+#    if infobox:
+#        for row in infobox.find_all("tr"):
+#
+#            # Searching for "Lieu de Naissance"
+#            if "lieu de naissance" in row.get_text().lower():
+#                td = row.find("td")
+#                if td:
+#                    # Paris : arr. logic
+#                    if "paris" in td.get_text().lower():
+#                        return extract_arrondissement(soup)
+#                    # Check if it's french or foreign
+#                    link = td.find("a", href=True)
+#                    if link:
+#                        if not is_in_france(link['href']): return "foreign"
+#                        city = link.get_text()
+#                    else:
+#                        city = td.get_text(separator=" ").split('(')[0].split('[')[0]
+#                    return city.strip()
+#
+#    # 2. Categories
+#    cats = soup.find("div", {"id": "mw-normal-catlinks"})
+#    if cats:
+#        # Looking for "Naissance à ..." category
+#        cat_link = cats.find("a", string=re.compile(r"Naissance à .+"))
+#        if cat_link:
+#            cat_text = cat_link.get_text()
+#            
+#            # Simple check for Paris in categories
+#            if "paris" in cat_text.lower():
+#                return extract_arrondissement(soup)
+#                
+#            if not is_in_france(cat_link['href']): 
+#                return "foreign"
+#                
+#            return cat_text.replace("Naissance à ", "").strip()
+#
+#    # 3. Intro paragraph
+#    content = soup.find("div", {"class": "mw-parser-output"})
+#    if content:
+#        p = content.find("p", recursive=False)
+#        if p:
+#            p_text = p.get_text()
+#            # Regex captures the city name after "à"
+#            match = re.search(r"n[ée]e?\s+(?:le\s+[^à]{1,30}?\s+)?à\s+([A-Z][\w\s\-]{1,20})", p_text)
+#            if match:
+#                city_name = match.group(1).strip()
+#
+#                # Simple Paris check for the intro
+#                if "paris" in city_name.lower():
+#                    return extract_arrondissement(soup)
+#                link = p.find("a", string=re.compile(re.escape(city_name)))
+#                if link and not is_in_france(link['href']): 
+#                    return "foreign"
+#                
+#                return city_name
+#
+#    return "Unknown"
+
 def extract_pob(soup):
-    infobox = soup.find("table", {"class": "infobox"})
-    
-    # 1. Infobox
-    if infobox:
-        for row in infobox.find_all("tr"):
-
-            # Searching for "Lieu de Naissance"
-            if "lieu de naissance" in row.get_text().lower():
-                td = row.find("td")
-                if td:
-                    # Paris : arr. logic
-                    if "paris" in td.get_text().lower():
-                        return extract_arrondissement(soup)
-                    # Check if it's french or foreign
-                    link = td.find("a", href=True)
-                    if link:
-                        if not is_in_france(link['href']): return "foreign"
-                        city = link.get_text()
-                    else:
-                        city = td.get_text(separator=" ").split('(')[0].split('[')[0]
-                    return city.strip()
-
-    # 2. Categories
+    # 1. Categories
     cats = soup.find("div", {"id": "mw-normal-catlinks"})
     if cats:
-        # Looking for "Naissance à ..." category
-        cat_link = cats.find("a", string=re.compile(r"Naissance à .+"))
-        if cat_link:
+        for cat_link in cats.find_all("a"):
             cat_text = cat_link.get_text()
             
-            # Simple check for Paris in categories
-            if "paris" in cat_text.lower():
-                return extract_arrondissement(soup)
+            # We check "naissenace" + preposition
+            if re.match(r"^Naissance (?:à|au|en|aux)\s+", cat_text, re.IGNORECASE):
                 
-            if not is_in_france(cat_link['href']): 
-                return "foreign"
-                
-            return cat_text.replace("Naissance à ", "").strip()
+                # We check if its not a date
+                if re.search(r"\d", cat_text):
+                    continue
+                    
+                # We check if it's not a month
+                mois_pattern = r"(?:janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)"
+                if re.search(rf"^Naissance en {mois_pattern}", cat_text, re.IGNORECASE):
+                    continue
+                    
+                if "paris" in cat_text.lower():
+                    return extract_arrondissement(soup)
+                    
+                if not is_in_france(cat_link['href']): 
+                    return "foreign"
+                    
+                # We only keep the city name
+                city = re.sub(r"^Naissance (?:à|au|en|aux)\s+", "", cat_text, flags=re.IGNORECASE)
+                return city.strip()
 
-    # 3. Intro paragraph
+    # 2. Infobox 
+    infobox = soup.find("table", {"class": "infobox"})
+    if infobox:
+        for row in infobox.find_all("tr"):
+            th = row.find("th")
+            if th and "naissance" in th.get_text().lower():
+                td = row.find("td")
+                if td:
+                    if "paris" in td.get_text().lower():
+                        return extract_arrondissement(soup)
+                    
+                    links = td.find_all("a", href=True)
+                    for link in links:
+                        href = link['href']
+                        if re.search(r"/wiki/\d+", href) or re.search(r"janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre", href.lower()):
+                            continue
+                        
+                        if not is_in_france(href): 
+                            return "foreign"
+                        return link.get_text().strip()
+
+    # 3. Intro paragraph 
     content = soup.find("div", {"class": "mw-parser-output"})
     if content:
         p = content.find("p", recursive=False)
         if p:
             p_text = p.get_text()
-            # Regex captures the city name after "à"
-            match = re.search(r"n[ée]e?\s+(?:le\s+[^à]{1,30}?\s+)?à\s+([A-Z][\w\s\-]{1,20})", p_text)
+            match = re.search(r"n[ée]e?[^,]*?(?:à|au|en|aux)\s+([A-Z][\w\s\-']{1,20})", p_text)
+            
             if match:
                 city_name = match.group(1).strip()
+                
+                mois_maj = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
+                if city_name in mois_maj:
+                    match_second = re.search(r"(?:à|au|en|aux)\s+([A-Z][\w\s\-']{1,20})", p_text[match.end():])
+                    if match_second:
+                        city_name = match_second.group(1).strip()
+                    else:
+                        return "Unknown"
 
-                # Simple Paris check for the intro
                 if "paris" in city_name.lower():
                     return extract_arrondissement(soup)
+                    
                 link = p.find("a", string=re.compile(re.escape(city_name)))
                 if link and not is_in_france(link['href']): 
                     return "foreign"
