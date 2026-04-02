@@ -293,7 +293,7 @@ def heatmap_correlation(df, level_name, groups, eco_vars):
     cols = [c for c in groups + eco_vars if c in df.columns]
     corr = df[cols].apply(pd.to_numeric, errors='coerce').corr(method='pearson').round(3)
     
-    fig, ax = plt.subplots(figsize=(7, 5))
+    fig, ax = plt.subplots(figsize=(5, 5))
     sns.heatmap(
         corr,
         ax=ax,

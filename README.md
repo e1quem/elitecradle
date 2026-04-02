@@ -162,19 +162,19 @@ To go beyond a basic visual analysis, we use multivariate linear regressions to 
 
 On a regional scale [Figure 11], most categories of figures are highly positively correlated together, and poverty rate shows a negative correlation across all variables. This negative effect of the poverty rate is significantly reduced at the departmental scale [Figure 11], albeit the correlation remains neutral or slightly negative. Between the city dataset [Figure 12] and the paris merged dataset [Figure 12], correlations are similar across all categories. For Paris arrondissements [Figure 13], our demographic exposure index is negatively correlated to the median income: we expect the median incomoe to decrease as the population increase. 
 
-**Figure 11: Correlation matrix heatmap for factors at the regional and departmental scale**
+**Figure 11: Correlation matrix heatmaps for variables at the regional and departmental scale**
 <p align="center">
-  <img src=analysis/out/correlation_region.png width="600">
-  <img src=analysis/out/correlation_department.png width="600">
+  <img src=analysis/out/correlation_region.png width="500">
+  <img src=analysis/out/correlation_department.png width="500">
 </p>
 
-**Figure 12: Correlation matrix heatmap for factors at the city and city - Paris merged scale**
+**Figure 12: Correlation matrix heatmaps for variables at the city and city - Paris merged scale**
 <p align="center">
-  <img src=analysis/out/correlation_city.png width="600">
-  <img src=analysis/out/correlation_city_-_paris_merged.png width="600">
+  <img src=analysis/out/correlation_city.png width="500">
+  <img src=analysis/out/correlation_city_-_paris_merged.png width="500">
 </p>
 
-**Figure 13: Correlation matrix heatmap for factors per Parisian arrondissement**
+**Figure 13: Correlation matrix heatmap for variables per Parisian arrondissement**
 <p align="center">
   <img src=analysis/out/correlation_arrondissements.png width="600">
 </p>
