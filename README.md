@@ -160,29 +160,21 @@ On a regional choropleth map [Figure 7], the weight of Île-de-France is particu
 
 To go beyond a basic visual analysis, we use multivariate linear regressions to examine the role of demographic and socio-economic factors in the origins of elites. 
 
-On a regional scale [Figure 11], most categories of figures are highly positively correlated together, and poverty rate shows a negative correlation across all variables. This negative effect of the poverty rate is significantly reduced at the departmental scale [Figure 12], albeit the correlation remains neutral or slightly negative. Between the city dataset [Figure 13] and the paris merged dataset [Figure 14], correlations are similar across all categories. For Paris arrondissements [Figure 15], our demographic exposure index is negatively correlated to the median income: we expect the median incomoe to decrease as the population increase. 
+On a regional scale [Figure 11], most categories of figures are highly positively correlated together, and poverty rate shows a negative correlation across all variables. This negative effect of the poverty rate is significantly reduced at the departmental scale [Figure 11], albeit the correlation remains neutral or slightly negative. Between the city dataset [Figure 12] and the paris merged dataset [Figure 12], correlations are similar across all categories. For Paris arrondissements [Figure 13], our demographic exposure index is negatively correlated to the median income: we expect the median incomoe to decrease as the population increase. 
 
-**Figure 11: Correlation matrix heatmap for factors at the regional scale**
+**Figure 11: Correlation matrix heatmap for factors at the regional and departmental scale**
 <p align="center">
   <img src=analysis/out/correlation_region.png width="600">
-</p>
-
-**Figure 12: Correlation matrix heatmap for factors at the departmental scale**
-<p align="center">
   <img src=analysis/out/correlation_department.png width="600">
 </p>
 
-**Figure 13: Correlation matrix heatmap for factors at the city scale**
+**Figure 12: Correlation matrix heatmap for factors at the city and city - Paris merged scale**
 <p align="center">
   <img src=analysis/out/correlation_city.png width="600">
-</p>
-
-**Figure 14: Correlation matrix heatmap for factors at the city scale (Paris merged)**
-<p align="center">
   <img src=analysis/out/correlation_city_-_paris_merged.png width="600">
 </p>
 
-**Figure 15: Correlation matrix heatmap for factors per Parisian arrondissement**
+**Figure 13: Correlation matrix heatmap for factors per Parisian arrondissement**
 <p align="center">
   <img src=analysis/out/correlation_arrondissements.png width="600">
 </p>
@@ -191,27 +183,27 @@ On a regional scale [Figure 11], most categories of figures are highly positivel
 
 We run log-linear multivariate regressions modeling the observed count of elite individuals by place of birth.
 
-On a regional scale and for the global cohort [Appendix 1], we use two explanatory variables for this small quantity of observations (17):  our demographic exposition metric and the rate of preparatory classes per ten thousand inhabitants. We obtain significant results ($***$ and $*$) and a high R-squared value (0.961) - which might indicate overfit given the small sample size. An increase of 1% in our demographic exposure index is correlated with a 0.83% increase in elite individuals count. The presence of preparatory classes is associated with a much larger increase of 2.64% in elite count. According to this model, Île-de-France (1 405 observed, 1 192.8 expected), Occitanie (563 observed, 486.6 expected) and Nouvelle-Aquitaine (606 observed, 531.3 expected) are among the overperforming regions [Figure 16]. Pays de la Loire (277 observed, 355 expected), Normandie (262 observed, 330.3 expected) and La Réunion (60 observed, 74.5 expected) are among the underperformers.
+On a regional scale and for the global cohort [Appendix 1], we use two explanatory variables for this small quantity of observations (17):  our demographic exposition metric and the rate of preparatory classes per ten thousand inhabitants. We obtain significant results ($***$ and $*$) and a high R-squared value (0.961) - which might indicate overfit given the small sample size. An increase of 1% in our demographic exposure index is correlated with a 0.83% increase in elite individuals count. The presence of preparatory classes is associated with a much larger increase of 2.64% in elite count. According to this model, Île-de-France (1 405 observed, 1 192.8 expected), Occitanie (563 observed, 486.6 expected) and Nouvelle-Aquitaine (606 observed, 531.3 expected) are among the overperforming regions [Figure 14]. Pays de la Loire (277 observed, 355 expected), Normandie (262 observed, 330.3 expected) and La Réunion (60 observed, 74.5 expected) are among the underperformers.
 
-**Figure 16: Regional plot of observed values, global cohort**
+**Figure 14: Regional plot of observed values, global cohort**
 <p align="center">
   <img src=analysis/out/regression_multi_regions.png width="600">
 </p>
 
 The departmental scale, with its 100 observations, allows us to use more variables in our model. We keep these two previous variables, and add the rate of managers and intellectual professions among the population as well as the poverty rate as supplementary variables. Our model obtains a 0.838 R-squared, with significant results ($***$ and $*$) [Appendix 2]. The demographic index and the rate of preparatory classes maintain a strong coefficient, respectively 0.77 and 2.06. The rate of managers and poverty are less decisive, with respective coefficients of 0.25 each. The positive coefficient of the poverty rate is a paradoxal result: the more elites come from a department the higher rate of managers, but also the higher the poverty rate. This could arise from high inequalities in richer departments, since areas of wealth production (Paris, Lyon) are also those that attract or create high levels of poverty, leading to a certain degree of social polarisation. 
 
-On a global basis [Figure 17], overperforming departments include Hauts-de-Seine (305 observed, 148.9 expected), Corse-du-Sud and Haute-Corse (36 and 31 observed, 15.7 and 19.1 expected) and Meurthe-et-Moselle (112 observed, 72.1 expected). The close-knit power network of Corse and the rich industrial legacy of Meurthe-et-Moselle help contextualize these results. The fact that Paris is not among the overperformers highlights that this department's elite production is consistent with what our explanatory variables predict. Underperformers include Seine-Saint-Denis (64 observed, 110.4 expected), Orne (18 observed, 33.4 expected), Essonne, Aube and Seine-et-Marne. For the executives model, Hauts-de-Seine is an especially pronounced outlier: 100 executives were observed, when our model was only expecting 14.7 individuals.
+On a global basis [Figure 15], overperforming departments include Hauts-de-Seine (305 observed, 148.9 expected), Corse-du-Sud and Haute-Corse (36 and 31 observed, 15.7 and 19.1 expected) and Meurthe-et-Moselle (112 observed, 72.1 expected). The close-knit power network of Corse and the rich industrial legacy of Meurthe-et-Moselle help contextualize these results. The fact that Paris is not among the overperformers highlights that this department's elite production is consistent with what our explanatory variables predict. Underperformers include Seine-Saint-Denis (64 observed, 110.4 expected), Orne (18 observed, 33.4 expected), Essonne, Aube and Seine-et-Marne. For the executives model, Hauts-de-Seine is an especially pronounced outlier: 100 executives were observed, when our model was only expecting 14.7 individuals.
 
-**Figure 17: Departmental plot of observed values, global cohort**
+**Figure 15: Departmental plot of observed values, global cohort**
 <p align="center">
   <img src=analysis/out/regression_multi_departments.png width="600">
 </p>
 
 At the city scale, analysing 34 868 French cities at once reveals to be challenging: they share highly different socio-economic situation, and uneven elite production. There is a huge number of small municipalities that have no secondary schools, no preparatory classes, and few managers and intellectual professions. In fact, only 2 232 cities produced an elite, and only a hundred of them produced more than 10. These highly concentrated origins mask the statistical relationships that we observed at the departmental level. To ensure that socio-economic variables are meaningful along elite production, we must therefore compare like with like. Hence, we begin by analysing the first quantile of cities in terms of our demographic index.
 
-For this Q1 set of 3 468 cities  [Appendix 3], we use our demographic exposure index, the rate of tertiary employment, the number of high schools (general path), and the number of preparatory classes. We obtain a 0.619 R-squared, with meaningful variables ($***$ and $*$). The coefficient of demographic exposure is only 0.43, that of tertiary is 0.08, that of high schools is 0.26 and that of preparatory classes is 0.18. Overperforming cities [Figure 18] include Boulogne-Billancourt (87 observed, 10.6 expected) and Neuilly-sur-Seine (105 observed, 13.3 expected). We observed highly similar results when using the *Paris merged* dataset. 
+For this Q1 set of 3 468 cities  [Appendix 3], we use our demographic exposure index, the rate of tertiary employment, the number of high schools (general path), and the number of preparatory classes. We obtain a 0.619 R-squared, with meaningful variables ($***$ and $*$). The coefficient of demographic exposure is only 0.43, that of tertiary is 0.08, that of high schools is 0.26 and that of preparatory classes is 0.18. Overperforming cities [Figure 16] include Boulogne-Billancourt (87 observed, 10.6 expected) and Neuilly-sur-Seine (105 observed, 13.3 expected). We observed highly similar results when using the *Paris merged* dataset. 
 
-**Figure 17: Departmental plot of observed values, global cohort**
+**Figure 16: Departmental plot of observed values, global cohort**
 <p align="center">
   <img src=analysis/out/regression_multi_city.png width="600">
 </p>
