@@ -71,6 +71,7 @@ Before manual cleaning, ```interim/merged_raw.csv``` contains 7745 individuals. 
 | *Academic*  | ```scholar```    | 589       | 9.06%          | Collège de France, Wikipedia |
 | *Corporate* | ```executive```  | 603       | 9.27%          | Pappers, Wikipedia           |
 | **Global**  |                  | **6 500**  | **100%**       |                              |
+
 <br><br>
 
 ### Exogenous data sources
