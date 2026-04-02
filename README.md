@@ -78,7 +78,12 @@ Our analysis is based on demographic, economic and social data.
 
 For demographic data, we use INSEE's [History of municipal populations - 1876 - 2023 population censuses](https://www.insee.fr/fr/statistiques/3698339Historique) dataset (```src/base-pop-historiques-1876-2023.xlsx```). These historical censuses are not conducted at regular intervals: we group them by calculating the average of each decade from 2009 to the beginning of the 20th century. For missing data, we estimate population growth at 5% per decade based on the most recent census. Finally, to avoid comparing a 1940 birth to 2023 population figures, we create a demographic exposure index giving us a unique metric per geographical entity:
 
+$$\sigma^2_{rs}=\frac{1}{n}\hspace{0.5em}\sum^n_{i=1} \left( \log\hspace{0.3em}\left(\hspace{0.3em}\frac{H_i}{C_i}\hspace{0.3em}\right) \hspace{0.3em}\log\hspace{0.3em}\left(\hspace{0.3em}\frac{H_i}{O_i}\hspace{0.3em}\right) + \log\hspace{0.3em}\left(\hspace{0.3em}\frac{L_i}{C_i}\hspace{0.3em}\right) \hspace{0.3em}\log\hspace{0.3em}\left(\hspace{0.3em}\frac{L_i}{O_i}\hspace{0.3em}\right)\right)$$
+
+$$expo\_demog=\sum(Population_{decade}\times Weight_{decade})$$
+
 $$\text{expo}\_\text{demog} = \sum (\text{Population}_{\text{decade}} \times \text{Weight}_{\text{decade}})$$
+
 Where: 
 - $\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth
 - $\text{Weight}_{\text{decade}}=\frac{n_\text{born in decade}}{N_\text{total}}$ (share of elites in our dataset born during that period)
