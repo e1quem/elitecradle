@@ -164,14 +164,14 @@ On a regional scale [Figure 11], most categories of figures are highly positivel
 
 **Figure 11: Correlation matrix heatmaps for variables at the regional and departmental scale**
 <p align="center">
-  <img src=analysis/out/correlation_region.png width="500">
-  <img src=analysis/out/correlation_department.png width="500">
+  <img src=analysis/out/correlation_region.png width="400">
+  <img src=analysis/out/correlation_department.png width="400">
 </p>
 
 **Figure 12: Correlation matrix heatmaps for variables at the city and city - Paris merged scale**
 <p align="center">
-  <img src=analysis/out/correlation_city.png width="500">
-  <img src=analysis/out/correlation_city_-_paris_merged.png width="500">
+  <img src=analysis/out/correlation_city.png width="400">
+  <img src=analysis/out/correlation_city_-_paris_merged.png width="400">
 </p>
 
 **Figure 13: Correlation matrix heatmap for variables per Parisian arrondissement**
