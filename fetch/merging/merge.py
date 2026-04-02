@@ -3,7 +3,7 @@ import pandas as pd
 import unicodedata
 import re
 
-base_path = Path("~/EliteCradle").expanduser()
+base_path = Path("~/elitecradle").expanduser()
 
 def normalize_text(text):
     if pd.isna(text):

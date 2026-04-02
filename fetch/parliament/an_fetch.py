@@ -7,7 +7,7 @@ import requests
 import time
 import re
 
-base_path = Path("~/EliteCradle").expanduser()
+base_path = Path("~/elitecradle").expanduser()
 
 # Solving connection issues for wikipedia
 utils.force_ipv4()

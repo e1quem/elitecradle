@@ -17,7 +17,7 @@ headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleW
 keywords = ["homme d'affaires", "femme d'affaires", "ingénieur", "actionnaire", "administrateur", "entreprise", "gouvernement", "banque", "finance", "directeur", "directrice", "CAC40"]
 suffixes = ["", "_(personnalité_publique)", "_(chevalier_de_la_Légion_d'honneur)", "_(PDG)", "_(dirigeant)", "_(homme_d'affaire)", "_(femme_d'affaire)", "_(entrepreneur)"]
 
-base_path = Path("~/EliteCradle").expanduser()
+base_path = Path("~/elitecradle").expanduser()
 
 def process(index, name, dob):
     try:
