@@ -114,7 +114,7 @@ df_edu = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/edu_
 df_prepa = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/analysis/interim/cpge.csv", sep=None, engine='python')
 
 # Personnalities
-df_ppl = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/out/merged_cleanBIS.csv", sep=None, engine='python')
+df_ppl = pd.read_csv("/Users/eyquem/Desktop/EliteGeoCradle/fetch/merging/out/merged_clean.csv", sep=None, engine='python')
 
 # Turning dob into decades intervals
 def categorize_decade(year):

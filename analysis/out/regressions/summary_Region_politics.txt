@@ -3,23 +3,23 @@
 Dep. Variable:               politics   R-squared:                       0.966
 Model:                            OLS   Adj. R-squared:                  0.961
 Method:                 Least Squares   F-statistic:                     200.3
-Date:                Sun, 29 Mar 2026   Prob (F-statistic):           5.00e-11
-Time:                        19:32:34   Log-Likelihood:                 3.2464
-No. Observations:                  17   AIC:                           -0.4928
-Df Residuals:                      14   BIC:                             2.007
+Date:                Thu, 02 Apr 2026   Prob (F-statistic):           5.00e-11
+Time:                        12:23:52   Log-Likelihood:                 3.2468
+No. Observations:                  17   AIC:                           -0.4936
+Df Residuals:                      14   BIC:                             2.006
 Df Model:                           2                                         
 Covariance Type:            nonrobust                                         
 ==============================================================================
                  coef    std err          t      P>|t|      [0.025      0.975]
 ------------------------------------------------------------------------------
-const         -5.9049      0.676     -8.734      0.000      -7.355      -4.455
-expo_demog     0.7754      0.043     17.975      0.000       0.683       0.868
-prepa_rate     2.2104      1.007      2.194      0.046       0.050       4.371
+const         -5.9038      0.676     -8.731      0.000      -7.354      -4.454
+expo_demog     0.7753      0.043     17.968      0.000       0.683       0.868
+prepa_rate     2.2175      1.002      2.213      0.044       0.068       4.367
 ==============================================================================
-Omnibus:                        0.274   Durbin-Watson:                   1.735
-Prob(Omnibus):                  0.872   Jarque-Bera (JB):                0.164
-Skew:                           0.198   Prob(JB):                        0.921
-Kurtosis:                       2.727   Cond. No.                         299.
+Omnibus:                        0.282   Durbin-Watson:                   1.730
+Prob(Omnibus):                  0.869   Jarque-Bera (JB):                0.164
+Skew:                           0.200   Prob(JB):                        0.921
+Kurtosis:                       2.733   Cond. No.                         298.
 ==============================================================================
 
 Notes:
