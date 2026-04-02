@@ -176,7 +176,7 @@ On a regional scale [Figure 11], most categories of figures are highly positivel
 
 **Figure 13: Correlation matrix heatmap for variables per Parisian arrondissement**
 <p align="center">
-  <img src=analysis/out/correlation_arrondissements.png width="600">
+  <img src=analysis/out/correlation_arrondissements.png width="500">
 </p>
 
 ### Regressions
