@@ -301,6 +301,7 @@ def heatmap_correlation(df, level_name, groups, eco_vars):
         vmin=-1, vmax=1, center=0,
         annot=True, fmt='.2f', annot_kws={'size': 6},
         linewidths=0.5, linecolor='white',
+        cbar=False,
         cbar_kws={'ticks': [-1, 0, 1]},
     )
     ax.set_title(f'{level_name} Correlation Matrix', pad=12, fontname='Helvetica')
