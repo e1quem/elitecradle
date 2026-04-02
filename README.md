@@ -87,9 +87,7 @@ Where:
 - $\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth.
 
 - $\text{Weight}\_{\text{decade}} = \frac{n_{\text{born in decade}}}{N_{\text{total}}}$
-
-
-$\quad$
+<br><br>
 
 For economic data at the departmental and regional scale, we obtain median income and poverty rate from INSEE's [Standard of living and poverty by region](https://www.insee.fr/fr/statistiques/7941411?sommaire=7941491) dataset (```src/RPM2024-F21.xlsx```) and DREES's [2023 Statistical Overview](https://data.drees.solidarites-sante.gouv.fr/explore/dataset/panorama-statistique-toutes-thematiques/information/) (```Panorama_statistique_2024.xlsx```). For municipalities, we obtain the median income from Geoptis's 2021 [Income of the French at the municipal scale](https://www.data.gouv.fr/datasets/revenu-des-francais-a-la-commune) dataset. 
 
