@@ -4,7 +4,7 @@ Dep. Variable:                scholar   R-squared:                       0.563
 Model:                            OLS   Adj. R-squared:                  0.544
 Method:                 Least Squares   F-statistic:                     30.56
 Date:                Thu, 02 Apr 2026   Prob (F-statistic):           2.40e-16
-Time:                        17:49:59   Log-Likelihood:                -80.842
+Time:                        20:07:44   Log-Likelihood:                -80.842
 No. Observations:                 100   AIC:                             171.7
 Df Residuals:                      95   BIC:                             184.7
 Df Model:                           4                                         

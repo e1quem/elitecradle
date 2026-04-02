@@ -4,7 +4,7 @@ Dep. Variable:              executive   R-squared:                       0.422
 Model:                            OLS   Adj. R-squared:                  0.421
 Method:                 Least Squares   F-statistic:                     631.6
 Date:                Thu, 02 Apr 2026   Prob (F-statistic):               0.00
-Time:                        17:49:59   Log-Likelihood:                 646.29
+Time:                        20:07:44   Log-Likelihood:                 646.29
 No. Observations:                3468   AIC:                            -1283.
 Df Residuals:                    3463   BIC:                            -1252.
 Df Model:                           4                                         
