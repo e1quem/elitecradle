@@ -2,13 +2,13 @@
 
 ## Abstract
 
-This research analyses the geographical origins of French political, corporate and academic figures under the Fifth Republic. Using web-scraping to construct and enrich a comprehensive biographical database of 6500 individuals, we quantify geographical hubs by cross-referencing our data with demographic and socio-economic factors from INSEE. Our scope ranges from aggregated regions to Parisian arrondissements. Our results highlight a Parisian dominancy and identify significant geographical outliers (overperformers like Neuilly-sur-Seine and underperformers like Colombes) through multivariate OLS regressions.
+This projet analyses the geographical origins of French political, corporate and academic figures under the Fifth Republic. Using web-scraping to construct and enrich a comprehensive biographical database of 6500 individuals, we quantify geographical hubs by cross-referencing our data with demographic and socio-economic factors from INSEE. Our scope ranges from aggregated regions to Parisian arrondissements. Our results highlight a Parisian dominancy and identify significant geographical outliers (overperformers like Neuilly-sur-Seine and underperformers like Colombes) through multivariate OLS regressions.
 
 ## Introduction
 
-While the role of social origin and education in the making of elites is a well documented theme in French sociology, the geographical origin of these individuals is often treated as a secondary variable. This project seeks to find which parts of the french territory produces the most elites, and understand the way demographic, economi and social factors drive this production.
+While the role of social origin and education in the making of elites is a well documented theme in French sociology, the geographical origin of these individuals is often treated as a secondary variable. This project seeks to find which parts of the french territory produces the most elites, and understand the way demographic, economic and social factors drive this production.
 
-This project was conceived as a way to master automated scraping of public sources, and was driven out of curiosity to settle a familial debate. Using public internet sources, we build a dataset using the place of birth (```pob```) as a common variable. We focus on three clusters of individuals: political (including presidents, ministers, Parliament members and senators), scholars (professors of the Collège de France, relevant academic figures) and corporate (CEOs, executives, administrators and board members of large companies). 
+This project was conceived as a way to master automated internet scraping, and was driven out of curiosity to settle a familial debate. Using public sources, we build a dataset using the place of birth (```pob```) as a common variable. We focus on three clusters of individuals: political (including presidents, ministers, Parliament members and senators), scholars (professors of the Collège de France, relevant academic figures) and corporate (CEOs, executives, administrators and board members of large companies). 
 
 In order to ensure that socio-economic and demographic characteristics remain broadly in line with the contemporary picture, we limit the scope of our study to the Fifth Frepublic. Geographically, we analyse mainland France and all DOMs except for Mayotte. This choice stems from data availability constraints from INSEE. 
 
@@ -17,52 +17,53 @@ In order to ensure that socio-economic and demographic characteristics remain br
 
 The ```fetch``` folder is dedicated to data acquisition, following a ```src```, ```interim```, ```out``` data pipeline. ```utils``` shares heuristics for Wikipedia scraping, geolocation and arrondissement finding. Each cohort presented different data obtention challenges, that had to be overcome with dedicated methods.
 
-### ```fetch/parliament```
+#### ```fetch/parliament```
 
 No database of all Parliament Members of the Fifth Republic is publicly downloadable [3]. The main reference is the [National Assembly Sycomore](https://www2.assemblee-nationale.fr/sycomore/recherche) whose search engine outdated pagination only displays the first 500 results of a query. To bypass this, we extract the HTML encoding of departments of the search engine (```src/departments_raw.txt```) and implement a department-by-department recursive query so as never to exceed the functional pagination limit.
 
-From this list of ids, we scrape 4539 standardised biographical profiles on the National Assembly websites. Using multithreading, we enrich the data we obtained using [geo.api.gouv.fr](https://geo.api.gouv.fr) to find further geographical data. For Parisian Parliament members, we use BeautifulSoup for Wikipedia scraping with a cascading fallback mechanism to find their arrondissement of birth, with a 68.4% recovery rate. 
+From this list of ids, we scrape 4539 standardised biographical profiles on the National Assembly websites. Using multithreading, we enrich this data using [geo.api.gouv.fr](https://geo.api.gouv.fr) for geographical information. For Parisian Parliament members, we use a Wikipedia scraping system with a cascading fallback mechanism to find their arrondissement of birth, achieving a 68.4% recovery rate. 
 
-After manual cleaning, ```out/an_clean.csv``` contains a clean dataset of 4539 National Assemble members.
+After manual cleaning, ```out/an_clean.csv``` contains a clean dataset of 4539 National Assembly members.
 
 [3] *This [data.gouv.fr dataset](https://www.data.gouv.fr/datasets/fichier-historique-des-deputes-et-de-leurs-mandats) produced by the National Assembly only goes back to 1997.  We dont use the [BRÉF database](https://zenodo.org/records/14628510) : while it contains data for 3266 senate members, it only has data for 2500 National Assembly Members.*
 
 
-### ```fetch/senators```
+#### ```fetch/senators```
 
-We use the [General Informations on Senator](https://data.senat.fr/les-senateurs/) database published by the French Senate as a starting base for Wikipedia scraping. We try various thematic URL suffixes and different arrangements in compound names to ensure high match rates, before checking for specific keywords on the page before extracting any data. After arrondissement checking and geographical data enrichment, ```out/sn_clean.csv```contains a dataset of 1477 senators.
+We use the [General Informations on Senator](https://data.senat.fr/les-senateurs/) database published by the French Senate as a starting base for Wikipedia scraping. We try various thematic URL suffixes and different arrangements of compound names to ensure high match rates, before checking for specific keywords on the page before extracting any data. After arrondissement checking and geographical data enrichment, ```out/sn_clean.csv``` contains a dataset of 1477 senators.
 
-### ```fetch/ministers```
+#### ```fetch/ministers```
 
-Instead of navigating within the tree structure of Wikipedia's [List of French Governments](https://fr.wikipedia.org/wiki/Liste_des_gouvernements_de_la_France) page, we use this 
-We use this [unofficial but unified list of all ministers of the Fifth Republic](http://www.histoire-france-web.fr/Documents/ministres.htm) as a source. After the usual steps, ```out/mn_clean.csv``` contains a dataset of 430 ministers. 
+Instead of navigating within the tree structure of Wikipedia's [List of French Governments](https://fr.wikipedia.org/wiki/Liste_des_gouvernements_de_la_France), we use this [unofficial but unified list of all ministers of the Fifth Republic](http://www.histoire-france-web.fr/Documents/ministres.htm) as a source. ```out/mn_clean.csv``` contains a dataset of 430 ministers. 
 
 
 ### ```fetch/scholars```
 
-Our first source is the [Historical List of Chairs at the Collège de France](https://www.college-de-france.fr/fr/actualites/liste-historique-des-chaires-du-college-de-france) database maintained by the Collège de France, from which we extract all chairs that were ongoing during the Fifth Republic. Many professors at the Collège de France were born abroad: we find full data for only 182 scholars. 
+Our first source is the [Historical List of Chairs at the Collège de France](https://www.college-de-france.fr/fr/actualites/liste-historique-des-chaires-du-college-de-france) maintained by the Collège de France, from which we extract all chairs that were ongoing during the Fifth Republic. Many professors at the Collège de France were born abroad: we find full data for only 182 scholars. 
 
-To counter this issue, we scrape Wikipedia's [French Scholars](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Universitaire_fran%C3%A7ais_du_XXe_si%C3%A8cle) category as a second source to further enrich our dataset, raising the total of scholars to 589. 
+To counter this issue, we scrape Wikipedia's [French Scholars](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Universitaire_fran%C3%A7ais_du_XXe_si%C3%A8cle) category as a second source to further enrich our dataset, raising the total amount of scholars to 589. 
 
 
-### ```fetch/executives```
+#### ```fetch/executives```
 
-There isn't any official list of CEOs and top executives of all CAC40 companies. We use this [amateur list of CAC40 companies]((https://www.bnains.org/archives/histocac/histocac.php)) as a source of [Pappers](https://www.pappers.fr) URLs, from which our Selenium Chrome scraper extracts names of administrators of these firms. From the 1340 names we found on Pappers, we could only find biographical information on Wikipedia for 406 of them. Accounting for those born abroad, this method has a low success rate, with only 232 individuals with full data.
+There isn't any official list of CEOs and top executives of all CAC40 companies. We use this [amateur list of CAC40 companies](https://www.bnains.org/archives/histocac/histocac.php) as a source of [Pappers](https://www.pappers.fr) URLs, from which our Selenium Chrome scraper extracts names of administrators of these firms. From the 1340 names we found on Pappers, we could only find biographical information for 406 of them. Accounting for those born abroad, this method has a low success rate, with full data for only 232 individuals.
 
 To further populate this category, we scrap Wikipedia's [French CEOs](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Chef_d%27entreprise_fran%C3%A7ais) and [French Business Personalities](https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Personnalit%C3%A9_fran%C3%A7aise_du_monde_des_affaires_du_XXIe_si%C3%A8cle) categories. This raises the total of executives to 603.
 
-### ```fetch/merging```
+#### ```fetch/merging```
 
-When merging all those datasets, we handle career progression by applying a strict tag hierarchy : ```president > minister > college_de_france > executive > senator > depute```. ```interim/merged_raw.csv``` contains 7745 individuals, but manual cleaning is still required: deleting individuals born before 1870, individuals born in foreign cities with french homonyms, correcting names of municipalities that have ceased to exist, etc.  After this manual cleaning, we are left with clean geographical data for 6500 individuals. 
+When merging all those datasets, we handle career progression by applying a strict tag hierarchy : ```president > minister > scholar > executive > senator > depute```. 
+
+```interim/merged_raw.csv``` contains 7745 individuals before manual cleaning: deleting individuals born before 1870 and those born in foreign cities with french homonyms, correcting names of municipalities that have ceased to exist, etc. We are left with an exploitable dataset of 6500 individuals. 
 
 | Category    | Sub-category     | Headcount | % of the total | Sources                      |
 | ----------- | ---------------- | --------- | -------------- | ---------------------------- |
 | *Political* | ```parliament``` | 3590      | 55.23%         | Sycomore, Wikipédia          |
-| *Political* | ```senat```      | 1280      | 19.69%         | Sénat, Wikipédia             |
-| *Political* | ```ministers```  | 430       | 6.61%          | Autre, Wikipédia             |
-| *Political* | ```president```  | 8         | 0.1%           | Wikipédia                    |
-| *Scholars*  | ```scholar```    | 589       | 9.06%          | Collège de France, Wikipédia |
-| *Corporate* | ```executive```  | 603       | 9.27%          | Pappers, Wikipédia           |
+| *Political* | ```senat```      | 1280      | 19.69%         | Senate, Wikipedia             |
+| *Political* | ```ministers```  | 430       | 6.61%          | Other, Wikipedia             |
+| *Political* | ```president```  | 8         | 0.1%           | Wikipedia                    |
+| *Academic*  | ```scholar```    | 589       | 9.06%          | Collège de France, Wikipedia |
+| *Corporate* | ```executive```  | 603       | 9.27%          | Pappers, Wikipedia           |
 | **Global**  |                  | **6500**  | **100%**       |                              |
 
 
@@ -75,7 +76,8 @@ In ```/analysis```, we analyse our clean dataset with rankings, maps and multiva
 
 Our analysis is based on demographic, economic and social data.
 
-For demographic data, we use INSEE's [History of municipal populations - 1876 - 2023 population censuses](https://www.insee.fr/fr/statistiques/3698339Historique) dataset (```src/base-pop-historiques-1876-2023.xlsx```). These historical censuses are not conducted at regular intervals: we group them by calculating the average of each decade from 2009 to the beginning of the 20th century. We use a simple but approximative solution for missing data: estimating population growth at 5% per decade based on the most recent census. Finally, to avoid comparing a 1940 birth to 2023 population figures, we create a demographic exposure index (```expo_demog```) giving us a unique number per geographical entity:
+For demographic data, we use INSEE's [History of municipal populations - 1876 - 2023 population censuses](https://www.insee.fr/fr/statistiques/3698339Historique) dataset (```src/base-pop-historiques-1876-2023.xlsx```). These historical censuses are not conducted at regular intervals: we group them by calculating the average of each decade from 2009 to the beginning of the 20th century. For missing data, we estimate population growth at 5% per decade based on the most recent census. Finally, to avoid comparing a 1940 birth to 2023 population figures, we create a demographic exposure index giving us a unique metric per geographical entity:
+
 $$\text{expo}\_\text{demog} = \sum (\text{Population}_{\text{decade}} \times \text{Weight}_{\text{decade}})$$
 Where: 
 - $\text{Population}_\text{decade}$ is the average municipal population for a given decade of birth
@@ -83,11 +85,11 @@ Where:
 
 For economic data at the departmental and regional scale, we use INSEE's [Standard of living and poverty by region](https://www.insee.fr/fr/statistiques/7941411?sommaire=7941491) dataset (```src/RPM2024-F21.xlsx```) and DREES's [2023 Statistical Overview](https://data.drees.solidarites-sante.gouv.fr/explore/dataset/panorama-statistique-toutes-thematiques/information/) (```Panorama_statistique_2024.xlsx```) to obtain median income and poverty rate. For municipalities, we can only obtain the median income from Geoptis's 2021 [Income of the French at the municipal scale](https://www.data.gouv.fr/datasets/revenu-des-francais-a-la-commune). 
 
-For various social data at each scale (population density, composition of employment, shares of diploma holders, etc.), we rely on the [Territory Observatory database](https://www.observatoire-des-territoires.gouv.fr/outils/cartographie-interactive/#bbox=-211484,6329234,794317,830849&c=indicator&selcodgeo=95176&view=map76). 
+For various social data at each scale (population density, share of diploma holders, etc.), we rely on the [Territory Observatory database](https://www.observatoire-des-territoires.gouv.fr/outils/cartographie-interactive/#bbox=-211484,6329234,794317,830849&c=indicator&selcodgeo=95176&view=map76). 
 
-For educational data, we rely on INSEE's [Secondary schools at the start of the 2024 academic year](https://www.insee.fr/fr/statistiques/2012787#tableau-TCRD_061_tab1_regions2016) list to find out the number of secondary schools per region and department. For municipal count, we use the list of secondary schools from these [2024 Ministry of Higher Education enrolment figures for higher education enrolment](https://data.enseignementsup-recherche.gouv.fr/explore/assets/fr-esr-atlas_regional-effectifs-d-etudiants-inscrits/). For the count of preparatory classes, we use the [Ministry of Higher Education count of students enrolled in preparatoy classes](https://data.enseignementsup-recherche.gouv.fr/explore/assets/fr-esr-atlas_regional-effectifs-d-etudiants-inscrits-detail_etablissements/export/) dataset. 
+For educational data, we use INSEE's [Secondary schools at the start of the 2024 academic year](https://www.insee.fr/fr/statistiques/2012787#tableau-TCRD_061_tab1_regions2016) list to find out the number of schools per region and department. For municipal count, we use the list of secondary schools from [2024 Ministry of Higher Education enrolment figures for higher education enrolment](https://data.enseignementsup-recherche.gouv.fr/explore/assets/fr-esr-atlas_regional-effectifs-d-etudiants-inscrits/). For preparatory classes, we use the [Ministry of Higher Education count of students enrolled in preparatoy classes](https://data.enseignementsup-recherche.gouv.fr/explore/assets/fr-esr-atlas_regional-effectifs-d-etudiants-inscrits-detail_etablissements/export/) dataset. 
 
-We use ```cross_sourcing.py``` to combine the count of personalities with demographic and socio-economic data for each geographical scale. Cities with the same name are distinguished by matching the department number. We use fuzzy matching with a 85% threshold to allow matches despite minor differences with official INSEE nomenclature. 
+We use ```cross_sourcing.py``` to combine our biographical dataset with demographic and socio-economic data for each geographical scale. Cities with the same name are distinguished by verifying their department number. We use fuzzy matching with a 85% threshold to allow matches despite minor differences with official INSEE nomenclature. 
 
 
 ### Rankings
