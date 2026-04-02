@@ -4,6 +4,8 @@
 
 This working paper analyses the geographical origins of French political, corporate and academic prominent figures under the Fifth Republic. Using web-scraping to construct and enrich a comprehensive biographical database of 6 500 individuals, we quantify geographical hubs by cross-referencing our data with demographic and socio-economic factors. Our scope ranges from aggregated regions to Parisian arrondissements. Our results highlight a Parisian dominance and identify significant geographical outliers (overperformers like Neuilly-sur-Seine and Boulogne-Billancourt) through multivariate OLS regressions.
 
+$\quad$
+
 ## Introduction
 
 While the role of social origin [1] and education [2] in the making of elites is a well documented theme in French sociology, the geographical origin of these individuals is often treated as a secondary variable. This project seeks to find which parts of the French territory produce the most elites, and understand the way demographic, economic and social factors drive this production.
@@ -17,6 +19,7 @@ In order to ensure that socio-economic and demographic characteristics remain br
 
 [2] *Bourdieu, P., & Passeron, J.-C. (1994). Les héritiers: Les étudiants et la culture. ; Bourdieu, P., & Passeron, J.-C. (2005). La reproduction: Éléments pour une théorie du système d’enseignement.*
 
+$\quad$
 
 ## Data acquisition and methodology
 
@@ -72,6 +75,8 @@ Before manual cleaning, ```interim/merged_raw.csv``` contains 7745 individuals. 
 | **Global**  |                  | **6 500**  | **100%**       |                              |
 
 
+$\quad$
+
 ### Exogenous data sources
 
 Our analysis is based on demographic, economic and social data.
@@ -99,9 +104,13 @@ For educational data at the departmental and regional scale, we use INSEE's [Sec
 We use ```cross_sourcing.py``` to combine our biographical dataset with demographic and socio-economic data per geographical aggregation. Cities with similar names are distinguished by verifying their department number. We use a 85% threshold fuzzy matching to allow matches despite minor differences with the official INSEE nomenclature. 
 
 
+$\quad$
+
 ## Analysis
 
 In ```/analysis```, we describe our dataset using maps and rankings before analysing it with multivariate regressions using socio-economic factors.
+
+$\quad$
 
 ### Rankings
 
@@ -134,6 +143,8 @@ This over-representation of affluent western Parisian suburbs questions the role
 These descriptive rankings underline peculiar cases like that of Neuilly-sur-Seine and Boulogne-Billancourt and justify the use of socio-economic variables for a thorough analysis of these observations. 
 
 
+$\quad$
+
 ### Maps
 
 A bubble map per category [Figure 6] gives a macro perspective of elites origins in mainland France. Visually, we notice a high concentration around Paris and its peripheral municipalities. The Nord department distinguishes itself by having multiple mid-size clusters instead of a unique large one. The weight of large cities is clearly distinguishable: Paris, Lyon, Marseille, etc. There is also a significant concentration along the south-east coastline of the country.
@@ -155,6 +166,8 @@ On a regional choropleth map [Figure 7], the weight of Île-de-France is particu
 **Figure 10: Choropleth map of elites origins per category for Parisian arrondissements**
 ![Arrondissements choropleth](analysis/out/choropleth_arrondissements.png)
 
+
+$\quad$
 
 ### Correlations
 
@@ -178,6 +191,8 @@ On a regional scale [Figure 11], most categories of figures are highly positivel
 <p align="center">
   <img src=analysis/out/correlation_arrondissements.png width="500">
 </p>
+
+$\quad$
 
 ### Regressions
 
@@ -211,12 +226,17 @@ For this Q1 set of 3 468 cities  [Appendix 3], we use our demographic exposure 
 For the remaining cities of the dataset, regardless of how we arrange our explanatory variables, our model never explains more than 20% of the observations. This is significant in itself: it seems that in small towns, the emergence of a leader is unexplained by our variables, or is linked to factors not captured by INSEE’s socio-economic metrics, such as a particular family or an exceptional teacher. The statistical laws governing geographical wealth and educational infrastructure only apply once a certain critical mass is reached, as shown with our Q1 model.
 
 
+$\quad$
 
 ## Conclusion
+
+$\quad$
 
 ### Results
 
 Our study confirms that while France is an ["indivisible, secular, democratic and social Republic"](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019240997/2022-01-22), the origin of its elites is geographically concentrated. The distribution of publicly visible French elites is amassed in urban and economically dense areas. Prominent figures originating from Paris highlight the significance of geographical and social factors such as the concentration of *Grandes Écoles*, political institutions, [symbolic, social and cultural capital](https://books.openedition.org/psorbonne/868) of the capital. We observe a strong overrepresentation of affluent Paris suburbs such as the Hauts-de-Seine department, and more specifically cities such as Neuilly-sur-Seine and Boulogne-Billancourt. Underperforming departments include Seine-Saint-Denis, Essonne and Orne among others. This concentration of elites origin is largely explained by demographic dynamics and educational infrastructure at macro territorial levels, but become weakly predictable for municipalities producing few elites, suggesting the presence of non-structural or idiosyncratic mechanisms in elite production for smaller localities.
+
+$\quad$
 
 ### Limits
 Our study has a number of limitations. First, 44.7% of the biographical data we analyse (all categories except for Parliament members) is fetched from Wikipedia. This part of the dataset is by definition biased: instead of reflecting pure elite origins, it induces a significant notoriety effect. We do not focus on elites in the broadest sense, but rather on elites having a visible digital footprint. Hence, our research question might be closer to "*What is the geographical origin of French elites referenced on Wikipedia?*" for almost half of the individuals we study. 
@@ -226,9 +246,9 @@ Secondly, due to our imperfect scraping methods, our dataset is likely missing a
 Third, studying the *place of birth* is a fragile proxy that reflects administrative and infrastructural constraints biased towards major cities and urban areas: the presence of maternity wards and hospitals. The data we analyse is influenced by infrastructures and administrative geography. However, the place of birth remains a clear and recorded set of administrative information that is easy to analyse. It would be almost impossible to identify the exact city in which these individuals were born, or would further reinforce the notoriety bias by retaining only extremely popular individuals whose biographical background is clearly documented.
 
 
+$\quad$
+
 ## Appendix
-
-
 
 **Appendix 1: Regional linear regression | log(global) ~ log(expo_demog) + log(prepa_rate)**
 ```
