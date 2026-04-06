@@ -13,7 +13,7 @@ import time
 
 # Network config
 utils.force_ipv4()
-base_path = Path("~/elitecradle").expanduser()
+base_path = Path("~/EliteCradle").expanduser()
 
 def format_name(name):
     # Deleting parenthesis

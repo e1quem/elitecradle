@@ -13,7 +13,7 @@ import warnings
 import os
 
 warnings.filterwarnings('ignore')
-base_path = Path("~/elitecradle").expanduser()
+base_path = Path("~/EliteCradle").expanduser()
 
 # Utilisation dans pandas
 df = pd.read_csv(base_path / "fetch/merging/out/merged_clean.csv", sep=None, engine='python')

@@ -9,7 +9,7 @@ import requests
 utils.force_ipv4()
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
 DOMAIN = "https://fr.wikipedia.org"
-base_path = Path("~/elitecradle").expanduser()
+base_path = Path("~/EliteCradle").expanduser()
 
 def get_category_links(start_url):
     persons = []

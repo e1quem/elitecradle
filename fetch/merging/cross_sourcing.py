@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 import unicodedata
 
-base_path = Path("~/elitecradle").expanduser()
+base_path = Path("~/EliteCradle").expanduser()
 df_source = pd.read_excel(base_path / "fetch/merging/src/base-pop-historiques-1876-2023.xlsx", header=5)
 path_export = base_path / "fetch/merging/interim/"
 

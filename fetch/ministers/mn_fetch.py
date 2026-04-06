@@ -9,7 +9,7 @@ import requests
 import socket
 import re
 
-base_path = Path("~/elitecradle").expanduser()
+base_path = Path("~/EliteCradle").expanduser()
 # Network config
 utils.force_ipv4()
 
