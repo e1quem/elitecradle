@@ -1,4 +1,4 @@
-# A geographical study of French elites origins
+# A Geographical Study of French Elites Origins
 
 ## Abstract
 
